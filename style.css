@@ -1,0 +1,38 @@
+#title {
+	color: orange;
+	text-align: center;
+	font-size: 300%;
+}
+
+#StaffHistory {
+	background-color: black;
+	color: grey;
+	font-size: 150%;
+	text-align: right;
+}
+
+#WebsiteProjects {
+	background-color: black;
+	color: grey;
+	font-size: 150%;
+	text-align: right	
+}
+
+#FourZeroFourone {
+	background-color: black;
+	color: red;
+	text-align: center;
+	font-size: 300%
+}
+
+IMG.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+DIV.container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle
+}
