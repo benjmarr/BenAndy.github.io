@@ -11,13 +11,6 @@
 	text-align: right;
 }
 
-#WebsiteProjects {
-	background-color: black;
-	color: grey;
-	font-size: 150%;
-	text-align: right	
-}
-
 #FourZeroFourone {
 	background-color: black;
 	color: red;
@@ -40,5 +33,16 @@ DIV.container {
 #FourZeroFourtwo {
 	color: grey;
 	font-size: 500%;
+	text-align: center;
+}
+
+#indexLinks {
+	color: grey;
+	font-size: 150%;
+}
+
+#FourZeroFourthree {
+	color: grey;
+	font-size: 300%;
 	text-align: center;
 }
