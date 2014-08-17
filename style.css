@@ -1,7 +1,5 @@
-#title {
-	color: orange;
-	text-align: center;
-	font-size: 300%;
+body {
+	background-color: black;
 }
 
 #StaffHistory {
@@ -24,25 +22,31 @@ IMG.center {
 	margin-right: auto;
 }
 
-DIV.container {
-    min-height: 10em;
-    display: table-cell;
-    vertical-align: middle
-}
-
 #FourZeroFourtwo {
 	color: grey;
 	font-size: 500%;
 	text-align: center;
 }
 
+#indexContact {
+	color: grey;
+	font-size: 130%;
+}
+
 #indexLinks {
 	color: grey;
 	font-size: 150%;
+	text-align: right;
 }
 
 #FourZeroFourthree {
 	color: grey;
 	font-size: 300%;
 	text-align: center;
+}
+
+#indexDivCenter {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
 }
