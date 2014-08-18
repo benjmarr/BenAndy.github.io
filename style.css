@@ -85,8 +85,24 @@ text-shadow: 1px 1px 0px #202020
 
 #footer {
     position: absolute;
-    bottom: 20px;
+    bottom: 16px;
     width: 644px;
     height: 20px;
     margin: 0 auto;
+}
+
+#indexME {
+	color: grey;
+	font-size: 130%;
+	text-align: center;
+}
+
+#indexSiteWIP {
+	color: red;
+	text-align: center;
+	font-size: 300%;
+}
+
+COLOURred {
+	color: red;
 }
