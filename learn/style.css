@@ -15,6 +15,19 @@ a:link {
   color: #FF8000;
 }
 
+#chapterOneTitle {
+	background-color: #A4A4A4;
+	font-size: 180%;
+	text-align: center;
+	color: #FF4000;
+}
+
+#chapter1intro {
+	background-color: #A4A4A4;
+	font-size: 120%;
+	text-align: left;
+}
+
 #homeLink {
 	background-color: #A4A4A4;
 	font-size: 200%;
