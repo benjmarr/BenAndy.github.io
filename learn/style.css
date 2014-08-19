@@ -15,20 +15,6 @@ a:link {
   color: #FF8000;
 }
 
-#FourZeroFourone {
-	background-color: #A4A4A4;
-	font-size: 500%;
-	text-align: center;
-	color: red;
-}
-
-#FourZeroFourtwo {
-	background-color: #A4A4A4;
-	font-size: 400%;
-	text-align: center;
-	color: red;
-} 
-
 #homeLink {
 	background-color: #A4A4A4;
 	font-size: 200%;
@@ -61,4 +47,42 @@ a:link {
 	background-color: #A4A4A4;
 	font-size: 140%;
 	text-align: right;
+}
+
+#FourZeroFourtwo {
+	color: grey;
+	font-size: 500%;
+	text-align: center;
+}
+
+#FourZeroFourone {
+	background-color: black;
+	color: red;
+	text-align: center;
+	font-size: 300%
+}
+
+footer {
+width: 100%;
+background: #336699;
+float: left;
+margin: 0 0 .5% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+
+address {
+font-size : 16px; 
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}
+
+#footer {
+    position: absolute;
+    bottom: 16px;
+    width: 644px;
+    height: 20px;
+    margin: 0 auto;
 }
