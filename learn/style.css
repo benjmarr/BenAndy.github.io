@@ -1,0 +1,57 @@
+body {
+	background-color: #A4A4A4;
+}
+
+colourGREY {
+	color: grey;
+	font-size: 140%;
+}
+
+
+#FourZeroFourone {
+	background-color: #A4A4A4;
+	font-size: 500%;
+	text-align: center;
+	color: red;
+}
+
+#FourZeroFourtwo {
+	background-color: #A4A4A4;
+	font-size: 400%;
+	text-align: center;
+	color: red;
+} 
+
+#homeLink {
+	background-color: #A4A4A4;
+	font-size: 200%;
+	text-align: left;
+	color: #FF8000;
+}
+
+#indexTitle {
+	background-color: #A4A4A4;
+	font-size: 300%;
+	text-align: center;
+	color: #FF4000;
+}
+
+#indexTitleTwo {
+	background-color: #A4A4A4;
+	font-size: 210%;
+	color: #FF4000;
+	text-align: center;
+}
+
+
+#indexOne {
+	background: #A4A4A4;
+	text-align: left;
+	font-size: 120%;
+}
+
+#indexChapters {
+	background-color: #A4A4A4;
+	font-size: 140%;
+	text-align: right;
+}
