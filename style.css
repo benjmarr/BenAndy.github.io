@@ -9,6 +9,18 @@ body {
 	text-align: right;
 }
 
+#shutupImageCenter {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+#shutupText {
+	text-align: center;
+	color: purple;
+	font-size: 300%;
+}
+
 #FourZeroFourone {
 	background-color: black;
 	color: red;

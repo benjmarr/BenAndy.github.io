@@ -7,6 +7,18 @@ colourGREY {
 	font-size: 140%;
 }
 
+#learnDEVELOPMENT {
+	color: red;
+	font-size: 400%;
+	text-align: center;
+}
+
+#learnDEVELOPMENTwait {
+	color: red;
+	font-size: 300%;
+	text-align: center;
+}
+
 a:visited {
   color: #FF8000;
 }
