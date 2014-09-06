@@ -1,0 +1,28 @@
+body {
+	background-color: #585858;
+}
+
+#index {
+	color: white;
+}
+
+.indexBlueStrip {
+	background-color: #585858;
+	height: 40pt;
+	width: 100%;
+	border-bottom: 3px solid #0080FF;
+	position: fixed;
+	font-size: 51px
+}
+
+.indexTextHeader {
+	margin: 0px 50px 0px 0px;
+	font-size: 39px;
+	text-align: right;
+}
+
+#indexText {
+	color: red;
+	font-size: 200%;
+	text-align: center;
+}
