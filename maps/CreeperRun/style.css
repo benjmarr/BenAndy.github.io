@@ -1,7 +1,7 @@
 h1 {
 	text-align: center;
 	font-size: 250%;
-	color: //Limeish color here
+	color: #00FF00;
 }
 
 #creator {
@@ -19,4 +19,10 @@ a:link {
 
 a {
 	text-decoration: none
+}
+
+a.creeper {
+	text-align: center;
+	font-size: 150%;
+	color: #00FF00;
 }
