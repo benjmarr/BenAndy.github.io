@@ -6,3 +6,20 @@ body {
 	text-align: right;
 	font-size: 60%;
 }
+
+#pageLinks {
+	text-align: right;
+	font-size: 50px;
+}
+
+a:visited {
+  color: #FF8000;
+}
+
+a:link {
+  color: #FF8000;
+}
+
+a {
+	text-decoration: none
+}
