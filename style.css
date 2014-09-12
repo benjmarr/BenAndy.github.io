@@ -9,7 +9,7 @@ body {
 
 #pageLinks {
 	text-align: right;
-	font-size: 50px;
+	font-size: 50px; 
 }
 
 a:visited {
@@ -22,4 +22,15 @@ a:link {
 
 a {
 	text-decoration: none
+}
+
+#latestNews {
+	text-align: right;
+	font-size: 40px;
+}
+
+#latestNewsInner {
+	background-color: #424242;
+	font-size: 20px;
+	color: #E6E6E6;
 }
