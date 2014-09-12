@@ -5,11 +5,13 @@ body {
 #copyright {
 	text-align: right;
 	font-size: 60%;
+	font-family: 'Squada One', cursive;
 }
 
 #pageLinks {
 	text-align: right;
-	font-size: 50px; 
+	font-size: 50px;
+	font-family: 'Coming Soon', cursive;
 }
 
 a:visited {
@@ -27,6 +29,7 @@ a {
 #latestNews {
 	text-align: right;
 	font-size: 40px;
+	font-family: 'Squada One', cursive;
 }
 
 #latestNewsInner {
