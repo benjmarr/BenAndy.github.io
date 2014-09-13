@@ -1,0 +1,12 @@
+body {
+	background-color: #585858;
+}
+
+#content {
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	font-size: 100px;
+	color: #D8D8D8;
+	/* MARGIN */
+	margin-top: 200px;
+}
