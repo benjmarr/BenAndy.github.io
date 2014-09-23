@@ -1,12 +1,7 @@
-h1 {
-	text-align: center;
-	font-size: 250%;
-	color: #00FF00;
-}
-
 #creator {
 	text-align: right;
 	font-size: 100%;
+	font-family: 'Oswald', sans-serif;
 }
 
 a:visited {
@@ -24,5 +19,12 @@ a {
 a.creeper {
 	text-align: center;
 	font-size: 150%;
+	color: #00FF00;
+}
+
+#title {
+	font-family: 'Play', sans-serif;
+	text-align: center;
+	font-size: 250%;
 	color: #00FF00;
 }
