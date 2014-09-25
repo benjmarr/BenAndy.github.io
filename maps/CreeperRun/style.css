@@ -28,3 +28,16 @@ a.creeper {
 	font-size: 250%;
 	color: #00FF00;
 }
+
+#readME {
+	font-family: 'Play', sans-serif;
+	text-align: left;
+	font-size: 150%;
+	color: #00FF00;
+}
+
+#readMEtext {
+	text-align: left;
+	color: black;
+	font-size: 100%;
+}
