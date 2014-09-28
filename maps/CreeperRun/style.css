@@ -41,3 +41,16 @@ a.creeper {
 	color: black;
 	font-size: 100%;
 }
+
+#info {
+	font-family: 'Play', sans-serif;
+	text-align: left;
+	font-size: 150%;
+	color: #00FF00;
+}
+
+#infoText {
+	text-align: left;
+	color: black;
+	font-size: 100%;
+}
