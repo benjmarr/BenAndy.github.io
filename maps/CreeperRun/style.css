@@ -14,6 +14,7 @@ a:link {
 
 a:hover {
 	color: #ccc;
+	text-decoration: underline; 
 }
 
 a {
