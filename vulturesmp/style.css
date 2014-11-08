@@ -49,5 +49,14 @@ a:hover {
   margin-left: 300px;
   margin-top: 120px;
   font-size: 20px;
-  margin-right: 30px; 
+  margin-right: 30px;
+}
+
+#downloadList {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 120px;
+    font-size: 20px;
+    margin-right: 30px;
 }
