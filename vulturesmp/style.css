@@ -42,3 +42,12 @@ a:hover {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 30px;
 }
+
+#AboutInfo {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: left;
+  margin-left: 300px;
+  margin-top: 120px;
+  font-size: 20px;
+  margin-right: 30px; 
+}
