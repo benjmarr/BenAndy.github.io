@@ -1,0 +1,48 @@
+body {
+  background-color: #2E2E2E;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #FF8000;
+}
+
+a:visited {
+  color: #FF8000;
+}
+
+a:hover {
+  color: #FF9999;
+}
+
+#bar {
+  margin-left: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#twittube {
+  margin-left: 15px;
+}
+
+#bar {
+  font-size: 40px;
+}
+
+#text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  color: #01DFD7;
+}
+
+#title {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 250px;
+  margin-right: 250px;
+  color: #FE9A2E;
+}
