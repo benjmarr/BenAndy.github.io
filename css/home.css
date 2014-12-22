@@ -46,3 +46,11 @@ a:hover {
   margin-right: 250px;
   color: #FE9A2E;
 }
+
+#date {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 250px;
+  margin-right: 250px;
+  color: #FE9A2E;
+}
