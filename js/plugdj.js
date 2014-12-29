@@ -1,4 +1,4 @@
-API.on(API.chatLog("Share these plug.dj changes with your freinds! "));
+API.on(API.chatLog("Share AutoPlug with your freinds! "));
 $("#woot").click();
-API.on(API.ADVANCE, autowoot);
+API.on(API.ADVANCE, autoplug);
 function autowoot(){ $("#woot").click(); }
