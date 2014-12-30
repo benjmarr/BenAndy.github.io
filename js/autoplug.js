@@ -5,4 +5,5 @@ $("#dj-button").click();
 $("#woot").click();
 API.on(API.ADVANCE, autoplug);
 function autoplug(){  $("#dj-button").click(); $("#woot").click(); }
+API.on(API.chatLog("AutoPlug: Alpha 0.1 "));
 API.on(API.chatLog("AutoPlug: AutoPlug activated! "));
