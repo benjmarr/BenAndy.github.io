@@ -15,6 +15,6 @@ $("#woot").click();
 API.on(API.ADVANCE, autoplug);
 function autoplug(){  $("#dj-button").click(); $("div.button.cancel").click(); $("#woot").click(); }
 API.on(API.chatLog("AutoPlug| AutoPlug loaded! "));
-API.on(API.chatLog(""));
+API.on(API.chatLog(" "));
 API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
 API.on(API.chatLog("AutoPlug| http://benandy.github.io/randoms/autoplug "));
