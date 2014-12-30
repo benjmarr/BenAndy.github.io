@@ -13,9 +13,9 @@ $("div.button.cancel").click();
 // 'Woot' the current song
 $("#woot").click();
 // Advertise in chat
-$("#chat-input-field").text("test");
+$("#chat-input-field").input("test");
 API.on(API.ADVANCE, autoplug);
-function autoplug(){  $("#dj-button").click(); $("div.button.cancel").click(); $("#woot").click(); $("#chat-input-field").text("test"); }
+function autoplug(){  $("#dj-button").click(); $("div.button.cancel").click(); $("#woot").click(); $("#chat-input-field").input("test"); }
 API.on(API.chatLog("AutoPlug| AutoPlug loaded! "));
 API.on(API.chatLog(" "));
 API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
