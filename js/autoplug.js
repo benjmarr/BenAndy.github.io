@@ -12,8 +12,6 @@ $("#dj-button").click();
 $("div.button.cancel").click();
 // 'Woot' the current song
 $("#woot").click();
-// Advertise in chat
-$("#chat-input-field").text("test");
 API.on(API.ADVANCE, autoplug);
 function autoplug(){  $("#dj-button").click(); $("div.button.cancel").click(); $("#woot").click(); }
 API.on(API.chatLog("AutoPlug| AutoPlug loaded! "));
