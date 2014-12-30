@@ -6,5 +6,5 @@ $("div.button.cancel").click();
 $("#woot").click();
 API.on(API.ADVANCE, autoplug);
 function autoplug(){  $("#dj-button").click(); $("#woot").click(); $("div.button.cancel").click(); }
-API.on(API.chatLog("AutoPlug: Alpha 0.2 "));
+API.on(API.chatLog("AutoPlug: Alpha 0.7 "));
 API.on(API.chatLog("AutoPlug: AutoPlug activated! "));
