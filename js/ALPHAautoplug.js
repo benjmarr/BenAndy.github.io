@@ -5,7 +5,7 @@ http://benandy.github.io
 DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| Loading AutoPlug version 0.1.5 "));
+API.on(API.chatLog("AutoPlug| Loading AutoPlug version 0.1.7 "));
 // Enter Dj Wait List
 $("#dj-button").click();
 // Cancel leaving Dj Wait List
