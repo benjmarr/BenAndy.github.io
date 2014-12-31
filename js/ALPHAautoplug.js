@@ -5,7 +5,7 @@ http://benandy.github.io
 DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| Loading AutoPlug version 0.2.5 "));
+API.on(API.chatLog("AutoPlug| Loading AutoPlug version 0.2.4 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -14,7 +14,7 @@ $("div.button.cancel").click();
 // 'Woot' the current song
 $("#woot").click();
 // Anti-AFK
-$("#chat-input").click();
+$(".chat-input-form").click();
 API.on(API.ADVANCE, autoplug);
 function autoplug(){ 
 
@@ -30,7 +30,7 @@ function autoplug(){
 	API.on(API.chatLog("AutoPlug| Song 'Wooted'"));
 
 	// Anti-AFK
-	$("#chat-input").click();
+	$(".chat-input-form").click();
 	API.on(API.chatLog("AutoPlug| AFK time has been reset"));
 }
 
