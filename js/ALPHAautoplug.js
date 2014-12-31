@@ -1,8 +1,8 @@
 /*
-Developed by Ben_Andy
-http://benandy.github.io
+	Developed by Ben_Andy
+	http://benandy.github.io
 
-DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
+	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
 API.on(API.chatLog("AutoPlug| AutoPlug v0.2.43 "));
