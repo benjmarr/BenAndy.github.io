@@ -14,7 +14,7 @@ $("div.button.cancel").click();
 // 'Woot' the current song
 $("#woot").click();
 // Anti-AFK
-API.sendChat("test");
+API.sendChat("AutoPlug online!");
 API.on(API.ADVANCE, autoplug);
 function autoplug(){ 
 
@@ -30,7 +30,7 @@ function autoplug(){
 	API.on(API.chatLog("AutoPlug| Song 'Wooted'"));
 
 	// Anti-AFK
-	API.sendChat("test");
+	API.sendChat("Not AFK ;)");
 	API.on(API.chatLog("AutoPlug| AFK time has been reset"));
 }
 
