@@ -30,8 +30,8 @@ function autoplug(){
 	API.on(API.chatLog("AutoPlug| Song 'Wooted'"));
 
 	// Anti-AFK
-	API.sendChat("Not AFK ;)");
 	API.on(API.chatLog("AutoPlug| AFK time has been reset"));
+	API.sendChat(" ");
 }
 
 API.on(API.chatLog("AutoPlug| AutoPlug loaded! "));
