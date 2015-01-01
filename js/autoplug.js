@@ -5,13 +5,13 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.3.39 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.3.40 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Anti-AFK
 setInterval(function() {
 	API.on(API.sendChat("l"));
 	API.on(API.chatLog("AutoPlug| Reset AFK time"));
-}, 18000000);
+}, 600000);
 // Enter Dj Wait List
 $("#dj-button").click();
 // Cancel leaving Dj Wait List
