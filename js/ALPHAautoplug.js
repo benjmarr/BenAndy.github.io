@@ -9,7 +9,7 @@ API.on(API.chatLog("AutoPlug| AutoPlug v0.2.54 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Anti-AFK
 setInterval(function() {
-	API.on(chatLog("message"));
+	API.on(API.chatLog("message"));
 }, 60 * 1000);
 // Enter Dj Wait List
 $("#dj-button").click();
