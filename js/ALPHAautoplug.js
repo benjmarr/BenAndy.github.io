@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.46 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.47 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -36,8 +36,6 @@ var antiAFK = setInterval(function() {
 }, 5220000);
 
 // Sharing AutoPlug
-setInterval(fn60sec, 60000);
-
 var shareAutoPlug = function fn60sec() {
 	API.on(API.chatLog("AutoPlug| "));
 	API.on(API.chatLog("AutoPlug| Share AutoPlug with your friends!"));
@@ -45,7 +43,6 @@ var shareAutoPlug = function fn60sec() {
 	API.on(API.chatLog("AutoPlug| "));
 }, 900000);
 
-// Stop Sharing
 var shareAutoPlugSTOP = setInterval(function() {
 	clearInterval(shareAutoPlug);
 }, 1800000);
