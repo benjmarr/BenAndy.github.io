@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.47 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.48 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -36,14 +36,13 @@ var antiAFK = setInterval(function() {
 }, 5220000);
 
 // Sharing AutoPlug
-var shareAutoPlug = function fn60sec() {
+var shareAutoPlug = (function() {
 	API.on(API.chatLog("AutoPlug| "));
 	API.on(API.chatLog("AutoPlug| Share AutoPlug with your friends!"));
 	API.on(API.chatLog("AutoPlug| http://benandy.github.io/randms/autoplug"));
 	API.on(API.chatLog("AutoPlug| "));
 }, 900000);
-
-var shareAutoPlugSTOP = setInterval(function() {
+setInterval(function() {
 	clearInterval(shareAutoPlug);
 }, 1800000);
 
