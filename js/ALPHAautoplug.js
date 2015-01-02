@@ -29,22 +29,19 @@ function autoplug(){
 }
 
 // Anti-AFK
-var antiAFK = setInterval(function() {
+setInterval(function() {
 	API.on(API.chatLog("AutoPlug| Reset AFK time"));
 	API.on(API.sendChat("lol"));
 	API.on(API.chatLog("AutoPlug| AFK time has been reset by sending a messsage into chat"));
 }, 5220000);
 
 // Sharing AutoPlug
-var shareAutoPlug = (function() {
+setInterval(function() {
 	API.on(API.chatLog("AutoPlug| "));
 	API.on(API.chatLog("AutoPlug| Share AutoPlug with your friends!"));
 	API.on(API.chatLog("AutoPlug| http://benandy.github.io/randms/autoplug"));
 	API.on(API.chatLog("AutoPlug| "));
 }, 900000);
-setInterval(function() {
-	clearInterval(shareAutoPlug);
-}, 1800000);
 
 API.on(API.chatLog(" "));
 API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
