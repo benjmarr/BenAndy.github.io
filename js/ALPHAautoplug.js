@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.4.44 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.44 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -29,17 +29,26 @@ function autoplug(){
 }
 
 // Anti-AFK
-setInterval(function() {
+var antiAFK = setInterval(function() {
 	API.on(API.chatLog("AutoPlug| Reset AFK time"));
 	API.on(API.sendChat("lol"));
 	API.on(API.chatLog("AutoPlug| AFK time has been reset by sending a messsage into chat"));
 }, 5220000);
 
 // Sharing AutoPlug
-setInterval(function() {
-	API.on(AWPI.chatLog("AutoPlug| Share AutoPlug with your friends!"));
-	API.on(AWPI.chatLog("AutoPlug| http://benandy.github.io/randoms/autoplug"));
-}, 900000);
+//setInterval(fn60sec, 60000);
+
+var shareAutoPlug = function fn60sec() {
+	API.on(API.chatLog("AutoPlug| "))
+	API.on(API.chatLog("AutoPlug| Share AutoPlug with your friends!"))
+	API.on(API.chatLog("AutoPlug| http://benandy.github.io/randms/autoplug"))
+	API.on(API.chatLog("AutoPlug| "))
+}, 900000
+
+// Stop Sharing
+var shareAutoPlugSTOP = setInterval(function() {
+	clearInterval(shareAutoPlug);
+}, 1800000);
 
 API.on(API.chatLog(" "));
 API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
