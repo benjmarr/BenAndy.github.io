@@ -10,7 +10,7 @@ API.on(API.chatLog("AutoPlug| <-- ALERT --- EXPECT BUGS AND GLITCHS "));
 API.on(API.chatLog("AutoPlug| <-- ALERT --- STABLE VERSION AT: http://benandy.github.io/randoms/autoplug "));
 // UPDATE FROM LINE
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.53 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.54 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -35,7 +35,6 @@ function autoplug(){
 
 // Anti-AFK
 setInterval(function() {
-	API.on(API.chatLog("AutoPlug| Reset AFK time"));
 	API.on(API.sendChat("k"));
 	API.on(API.chatLog("AutoPlug| AFK time has been reset by sending a messsage into chat"));
 }, 5220000);
