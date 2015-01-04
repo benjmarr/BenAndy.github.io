@@ -10,7 +10,7 @@ API.on(API.chatLog("AutoPlug| ALERT --- EXPECT BUGS AND GLITCHS "));
 API.on(API.chatLog("AutoPlug| ALERT --- STABLE VERSION AT: http://benandy.github.io/randoms/autoplug "));
 // UPDATE FROM LINE
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.57 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.58 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -24,12 +24,11 @@ function autoplug(){
 	// Enter Dj Wait List
 	API.on(API.sendChat("/cap 1"));
 	$("#dj-button").click();
-	API.on(API.chatLog("AutoPlug| Attemping to join Dj Wait Llist" ));
-	sleep(5);
-	API.on(API.chatLog("AutoPlug| messsage "));
-
-	// Cancel leaving Dj Wait List
 	$("div.button.cancel").click(); 
+	API.on(API.chatLog("AutoPlug| Attemping to join Dj Wait Llist" ));
+	var one = setInterval(function() {
+		API.on(API.chatLog("AutoPlug| messsage "));
+	}, 2000);
 
 	// 'Woot' the current song
 	$("#woot").click();
