@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.64 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.65 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
 // Enter Dj Wait List
@@ -57,7 +57,7 @@ setInterval (function() {
 	var capResetCount = setInterval(function() {
 		API.on(API.sendChat("/cap 50"));
 		clearInterval(capResetCount);
-	}, 100
+	}, 100);
 }, 180000);
 
 API.on(API.chatLog(" "));
