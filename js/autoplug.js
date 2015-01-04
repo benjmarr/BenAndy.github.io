@@ -5,8 +5,9 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.61 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.62 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
+
 // Enter Dj Wait List
 $("#dj-button").click();
 // Cancel leaving Dj Wait List
@@ -17,8 +18,8 @@ API.on(API.ADVANCE, autoplug);
 function autoplug(){ 
 
 	// Enter Dj Wait List
-	API.on(API.sendChat("/cap 1"));
 	$("#dj-button").click();
+	API.on(API.sendChat("/cap 1"));
 	$("div.button.cancel").click(); 
 	API.on(API.chatLog("AutoPlug| Attemping to join Dj Wait Llist" ));
 	var capCount = setInterval(function() {
