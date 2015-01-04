@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.54 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.5.55 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
@@ -38,7 +38,7 @@ setInterval(function() {
 setInterval(function() {
 	API.on(API.chatLog(" "));
 	API.on(API.chatLog("AutoPlug| Share AutoPlug with your friends!"));
-	API.on(API.chatLog("AutoPlug| http://benandy.github.io/randms/autoplug"));
+	API.on(API.chatLog("AutoPlug| http://benandy.github.io/randoms/autoplug"));
 	API.on(API.chatLog(" "));
 }, 900000);
 
