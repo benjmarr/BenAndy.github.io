@@ -5,11 +5,6 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| ALERT --- YOU ARE RUNNING A TESTING VERSION OF AutoPlug "));
-API.on(API.chatLog("AutoPlug| ALERT --- EXPECT BUGS AND GLITCHS "));
-API.on(API.chatLog("AutoPlug| ALERT --- STABLE VERSION AT: http://benandy.github.io/randoms/autoplug "));
-// UPDATE FROM LINE
-
 API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.62 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
@@ -25,8 +20,12 @@ function autoplug(){
 	// Enter Dj Wait List
 	$("#dj-button").click();
 	API.on(API.sendChat("/cap 1"));
-	$("div.button.cancel").click(); 
+	$("div.button.cancel").click();
 	API.on(API.chatLog("AutoPlug| Attemping to join Dj Wait Llist" ));
+	var cancelCount = setInterval(function() {
+		$("div.button.cancel").click();
+		clearInterval(cancelCount);
+	}, 100);
 	var capCount = setInterval(function() {
 		API.on(API.sendChat("/cap 50"));
 		clearInterval(capCount);

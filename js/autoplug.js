@@ -20,8 +20,12 @@ function autoplug(){
 	// Enter Dj Wait List
 	$("#dj-button").click();
 	API.on(API.sendChat("/cap 1"));
-	$("div.button.cancel").click(); 
+	$("div.button.cancel").click();
 	API.on(API.chatLog("AutoPlug| Attemping to join Dj Wait Llist" ));
+	var cancelCount = setInterval(function() {
+		$("div.button.cancel").click();
+		clearInterval(cancelCount);
+	}, 100);
 	var capCount = setInterval(function() {
 		API.on(API.sendChat("/cap 50"));
 		clearInterval(capCount);
