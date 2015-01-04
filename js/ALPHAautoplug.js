@@ -5,12 +5,12 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| <-- ALERT --- YOU ARE RUNNING A TESTING VERSION OF AutoPlug "));
-API.on(API.chatLog("AutoPlug| <-- ALERT --- EXPECT BUGS AND GLITCHS "));
-API.on(API.chatLog("AutoPlug| <-- ALERT --- STABLE VERSION AT: http://benandy.github.io/randoms/autoplug "));
+API.on(API.chatLog("AutoPlug| ALERT --- YOU ARE RUNNING A TESTING VERSION OF AutoPlug "));
+API.on(API.chatLog("AutoPlug| ALERT --- EXPECT BUGS AND GLITCHS "));
+API.on(API.chatLog("AutoPlug| ALERT --- STABLE VERSION AT: http://benandy.github.io/randoms/autoplug "));
 // UPDATE FROM LINE
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.55 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.56 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 // Enter Dj Wait List
 $("#dj-button").click();
