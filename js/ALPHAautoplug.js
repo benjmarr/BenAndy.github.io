@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.64 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.64 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
 // Enter Dj Wait List
@@ -49,6 +49,16 @@ setInterval(function() {
 	API.on(API.chatLog("AutoPlug| http://benandy.github.io/randoms/autoplug"));
 	API.on(API.chatLog(" "));
 }, 900000);
+
+// Cap-Avatar reload
+setInterval (function() {
+	API.on(API.chatLog("AutoPlug| Reloading avatars "));
+	API.on(API.sendChat("/cap 1"));
+	var capResetCount = setInterval(function() {
+		API.on(API.sendChat("/cap 50"));
+		clearInterval(capResetCount);
+	}, 100
+}, 180000);
 
 API.on(API.chatLog(" "));
 API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
