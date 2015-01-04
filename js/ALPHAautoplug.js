@@ -1,11 +1,11 @@
 /*
-	Developed by Ben_Andy
+	Developed by Ben_Andy (BenAndy)
 	http://benandy.github.io
 
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.62 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.6.64 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
 // Enter Dj Wait List
