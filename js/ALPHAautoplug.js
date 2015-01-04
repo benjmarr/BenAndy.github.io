@@ -51,7 +51,7 @@ setInterval(function() {
 }, 900000);
 
 // Cap-Avatar reload
-setInterval (function() {
+setInterval(function() {
 	API.on(API.chatLog("AutoPlug| Reloading avatars "));
 	API.on(API.sendChat("/cap 1"));
 	var capResetCount = setInterval(function() {
