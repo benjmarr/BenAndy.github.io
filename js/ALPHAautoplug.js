@@ -14,7 +14,7 @@ API.on(API.chatLog("AutoPlug| ALERT::: EXPECT BUGS/GLITCHES "));
 API.on(API.chatLog("AutoPlug| "));
 // UPDATE FROM LINE--
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.68 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.69 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
 // Enter Dj Wait List
