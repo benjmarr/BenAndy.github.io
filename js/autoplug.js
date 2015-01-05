@@ -5,16 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-// Testing copy
-API.on(API.chatLog("AutoPlug| "));
-API.on(API.chatLog("AutoPlug| ALERT::: THIS IS A TESTING COPY" ));
-API.on(API.chatLog("AutoPlug| ALERT::: OF AUTOPLUG! "));
-API.on(API.chatLog("AutoPlug| ALERT::: "));
-API.on(API.chatLog("AutoPlug| ALERT::: EXPECT BUGS/GLITCHES "));
-API.on(API.chatLog("AutoPlug| "));
-// UPDATE FROM LINE--
-
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.68 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.69 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
 // Enter Dj Wait List
