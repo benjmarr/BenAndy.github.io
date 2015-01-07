@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.snedChat("Loading VultureBot v0.0.3.4"));
+API.on(API.sendChat("Loading VultureBot v0.0.3.6"));
 API.on(API.sendChat("/cap 1"));
 API.on(API.sendChat("Capped avatars."));
 
