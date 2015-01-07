@@ -7,6 +7,10 @@
 
 API.on(API.chatLog("Loading VultureBot v0.0.2.3"));
 
+API.on(API.USER_JOIN, listener); {
+
+}
+
 API.on(API.ADVANCE, autoplug);
 function autoplug(){
 	// Auto woot

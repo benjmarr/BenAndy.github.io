@@ -49,16 +49,6 @@ setInterval(function() {
 	API.on(API.chatLog(" "));
 }, 900000);
 
-// Cap-Avatar reload
-setInterval(function() {
-	API.on(API.chatLog("AutoPlug| Reloading avatars "));
-	API.on(API.sendChat("/cap 1"));
-	var capResetCount = setInterval(function() {
-		API.on(API.sendChat("/cap 50"));
-		clearInterval(capResetCount);
-	}, 100);
-}, 180000);
-
 API.on(API.chatLog(" "));
 API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
 API.on(API.chatLog("AutoPlug| http://benandy.github.io/randoms/autoplug "));
