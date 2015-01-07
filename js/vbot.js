@@ -5,17 +5,8 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.sendChat("Loading VultureBot v0.0.3.7"));
-API.on(API.sendChat("/cap 1"));
-API.on(API.sendChat("Capped avatars."));
+API.on(API.sendChat("Loading VultureBot v0.0.3.8"));
 
-// When user joins the room																<-- TESTING
-API.on(API.USER_JOIN, listener) {
-	API.on(API.chatLog("USER_JOIN"));
-}
-//																						<-- TESTING
-
-API.on(API.sendChat("Loading plug.dj API"));
 API.on(API.ADVANCE, autoplug);
 function autoplug(){
 	// Auto woot
