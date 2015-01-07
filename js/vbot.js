@@ -6,7 +6,7 @@
 */
 
 
-API.on(API.chatLog("Loading VultureBot v0.1.4.9 "));
+API.on(API.chatLog("Loading VultureBot v0.1.4.12 "));
 API.on(API.ADVANCE, vulturebot);
 function vulturebot() {
 
