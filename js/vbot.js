@@ -22,8 +22,4 @@ function vulturebot() {
 		API.on(API.sendChat("Click this link to use it! "));
 		API.on(API.sendChat("http://goo.gl/NlQiko "))
 	}, 900000);
-
-	if .current = > 45 {
-		API.on(API.chatLog("> 45"));
-	}
 }
