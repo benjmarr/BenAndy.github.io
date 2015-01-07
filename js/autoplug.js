@@ -5,7 +5,7 @@
 	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.69 "));
+API.on(API.chatLog("AutoPlug| AutoPlug v0.1.7.71 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
 
 // Enter Dj Wait List
@@ -31,8 +31,11 @@ function autoplug(){
 	}, 1000);
 
 	// 'Woot' the current song
-	$("#woot").click();	
-	API.on(API.chatLog("AutoPlug| Song 'Wooted'" ));
+	var woot = setInterval(function() {
+		$("#woot").click();
+		API.on(API.chatLog("AutoPlug| Song 'Wooted'" ));
+		clearInterval(woot);
+	}, 2000);
 }
 
 // Anti-AFK
