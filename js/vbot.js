@@ -5,15 +5,18 @@
 	DO NOT USE ANY CODE FROM THIS SCRIPT WITHOUT DIRECT PERMISSIONS FROM IT'S OWNER
 */
 
-API.on(API.chatLog("Loading VultureBot v0.1.6.18 "));
+API.on(API.chatLog("Loading VultureBot v0.1.6.20 "));
 
 //UNDER DEVELOPMENT
 var underDev = setInterval(function() {
 	API.on(API.sendChat("I am still under development. Sorry for any bugs and/or troubles that occur within my code."));
 }, 300000);
 
-$(".button.snooze").click();
-$("#woot").click();
+// Autoplug Support
+var autoplugSupport = setInterval(function() {
+	API.on(API.sendChat("VultureBot supports AutoPlug!"));
+	API.on(API.sendChat("http://goo.gl/NlQiko"));
+}, 900000);
 
 API.on(API.ADVANCE, vulturebot);
 function vulturebot() {
@@ -28,11 +31,5 @@ function vulturebot() {
 	var songSnooze = setInterval(function() {
 		$(".button.snooze").click();
 		clearInterval(songSnooze);
-	}, 4000);	
-
-	// AutoPlug support
-	var autoplugSupport = setInterval(function() {
-		API.on(API.sendChat("VultureBot supports AutoPlug "));
-		API.on(API.sendChat("Click this link to use it! http://goo.gl/NlQiko "));
-	}, 900000);
+	}, 4000);
 }
