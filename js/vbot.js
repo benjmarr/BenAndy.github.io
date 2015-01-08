@@ -6,7 +6,7 @@
 */
 
 
-API.on(API.chatLog("Loading VultureBot v0.1.5.15 "));
+API.on(API.chatLog("Loading VultureBot v0.1.5.16 "));
 API.on(API.ADVANCE, vulturebot);
 function vulturebot() {
 
@@ -18,7 +18,7 @@ function vulturebot() {
 
 	// Snooze
 	var songSnooze = setInterval(function() {
-		$(".icon icon-playback-snooze").click();
+		$(".button.snooze").click();
 		clearInterval(songSnooze);
 	}, 1000);	
 
