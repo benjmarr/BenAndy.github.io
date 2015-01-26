@@ -54,3 +54,11 @@ a:hover {
   margin-right: 250px;
   color: #FE9A2E;
 }
+
+#version {
+  font-family: 'Oswald', sans-serif;
+  text-align: right;
+  height: 1px;
+  font-size: 10px;
+  margin-top: -1px; 
+}
