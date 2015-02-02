@@ -1,0 +1,45 @@
+body {
+  background-color: #0B3B39;
+}
+
+#vid {
+	margin-top: 15%;
+	height: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #FF8000;
+}
+
+a:visited {
+  color: #FF8000;
+}
+
+a:hover {
+  color: #FF9999;
+}
+
+#linkLeft {
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	height: 0px;
+	font-size: 20px; 
+}
+
+#linkCenter {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	height: 0px;
+	font-size: 20px; 
+}
+
+#linkRight {
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	height: 0px;
+	font-size: 20px; 
+}
