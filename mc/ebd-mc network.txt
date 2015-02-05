@@ -1,0 +1,68 @@
+hub.ecb-mc.net
+
+EULA Violations:
+	Zombies:
+		Slayer:
+			- Ability to use Ray Guns
+			- Ability to use Grenades
+		Slayer Plus(+):
+			- Ability to use Ray Guns
+			- Ability to use Grenades
+	Survival:
+		Supporter:
+			- Use of Free Signs for certain items
+			- Free copies of all Books in the Bookstore
+		VIP:
+			- Use of Free Signs for certain items
+			- Free copies of all Books in the Bookstore
+		Hero:
+			- Ability to use '/near' to see how far away players are within a 100 block radius
+			- Use of Free Signs for certain items
+			- Free copies of all Books in the Bookstore
+		Ulitmate:
+			- Ability to use '/near' to see how far away players are within a 100 block radius
+			- Ability to use '/feed' to fully fill your belly up
+			- Use of the '/stack' command to compact all items in your inventory into stacks including potions and armor
+			- Use of the '/back' command to teleport back to your last death point
+			- Use of Free Signs for certain items
+			- Free copies of all Books in the Bookstore
+		EnderGod:
+			- Every MobDisguise you can think of except Wither, Giant, and Enderdragon
+			- Ability to use '/near' to see how far away players are within a 100 block radius
+			- Ability to use '/feed' to fully fill your belly up
+			- Use of the '/stack' command to compact all items in your inventory into stacks including potions and armor
+			- Use of the '/back' command to teleport back to your last death point
+			- Use of Free Signs for certain items
+			- Free copies of all Books in the Bookstore
+			- Ability to disappear and go unnoticed using '/vanish'
+		EnderDragon:
+			- Every MobDisguise you can think of except Wither, Giant, and Enderdragon
+			- Ability to use '/near' to see how far away players are within a 100 block radius
+			- Ability to use '/feed' to fully fill your belly up
+			- Use of the '/stack' command to compact all items in your inventory into stacks including potions and armor
+			- Use of the '/back' command to teleport back to your last death point
+			- Use of Free Signs for certain items
+			- Free copies of all Books in the Bookstore
+			- Ability to disappear and go unnoticed using '/vanish'
+			- Use of the '/repair' command to repair non-enchanted items
+			- Use of the '/enderchest' command to get access to a virtual copy of your enderchest
+	Prison:
+		Premium:
+			- Use of the '/enderchest' command to get access to a virtual copy of your enderchest
+			- Cow farm
+			- Chicken farm
+			- Workarea with Anvil
+			- Shops with higher sell prices than other blocks and lower buy prices than other blocks (On select items)
+			- Exclusive premium mine which consists of logs, diamonds, iron, gold, and lapis
+			- Purchase and sale of lapis
+		Premium PLUS(+):
+			- Use of /enderchest - Remote enderchest access!
+			- Use of /craft - Craft stuff anywhere!
+			- Use of /feed - Omnomnom No more having to eat food!
+			- Pig/Squid farm
+			- Hostile mob farm
+			- Wood mine
+			- Slightly better mine than Premium
+			- Slightly better buy/sells than Premium
+		Ultra:
+			- Ultra kit
