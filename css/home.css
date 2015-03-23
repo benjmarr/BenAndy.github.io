@@ -56,5 +56,13 @@ a:hover {
 }
 
 #contactForm {
-  margin-left: 200px; 
+  margin-left: 200px;
+}
+
+#pics {
+  margin-top: 70px;
+  text-align: center;
+  color: #01DFD7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
