@@ -18,18 +18,6 @@ a:hover {
   color: #FF9999;
 }
 
-#VIDEO {
-	position: fixed;
-	z-index: 1;
-	width: 100%; 
-	height: 100%;
-}
-
-#top {
-	position: fixed; 
-	z-index: 100;
-}
-
 #linkLeft {
 	text-align: left;
 	font-family: 'Oswald', sans-serif;
