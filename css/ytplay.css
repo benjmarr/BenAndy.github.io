@@ -23,6 +23,8 @@ a:hover {
 	font-family: 'Oswald', sans-serif;
 	height: 0px;
 	font-size: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 #linkCenter {
@@ -30,6 +32,8 @@ a:hover {
 	font-family: 'Oswald', sans-serif;
 	height: 0px;
 	font-size: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 #linkRight {
@@ -37,6 +41,8 @@ a:hover {
 	font-family: 'Oswald', sans-serif;
 	height: 0px;
 	font-size: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 #selectaplaylistmate {
