@@ -23,3 +23,9 @@ body {
   font-size: 80%;
   font-family: 'Oswald', sans-serif;
 }
+
+#load {
+  font-size: 200%;
+  margin-top: 50%;
+  margin-left: 50%;
+}
