@@ -1,61 +1,57 @@
 body {
-  background: #011310;
-  overflow: hidden;
-}
-.loading-icon {
-  position: absolute;
-  vertical-align: middle;
-  border-radius: 50%;
-  background: transparent;
-}
-.loading-icon::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #1bc2a6;
-  animation: bounce 4s infinite;
-}
-.loading-icon::after{
-  content: "";
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #1bc2a6;
-  animation: bounce 4s 0.5s infinite;
+  background: url(http://cssdeck.com/assets/img/light_toast.png);
 }
 
-@keyframes bounce {
-  0% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    opacity: 1;
-  }
-  90% {
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+#sweet {
+  position: fixed;
+  margin: 0 45%;
+  top: 10em;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    opacity: 1;
-  }
-  90% {
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.intro {
+  background-color: #fff;
+  border: 2px dotted #f46;
+  box-shadow: 0 0 18px hsla(0,0%,0%,.5);
+  width: auto;
+  height: auto;
+  -webkit-animation: round 4.5s linear infinite;
+  animation: round 4.5s linear infinite;
+  transition: border-radius 0.3s linear;
+}
+
+.outro {
+  background-color: #1f1f24;
+  margin: 0px;
+  border: 5px solid #c16;
+  border-radius: 0px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 18px hsla(0,0%,0%,.5);
+  -webkit-animation: rounddd 8s linear infinite;
+  animation: rounddd 8s linear infinite;
+  transition: border-radius 0.3s linear;
+}
+
+.outro:hover {
+  border-radius: 40%; 
+}
+
+@-webkit-keyframes round {
+0% {-webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+}
+
+100% {-webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+
+@-webkit-keyframes rounddd {
+0% {-webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+  
+100% {-webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
 }
