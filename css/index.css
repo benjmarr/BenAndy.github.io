@@ -2,6 +2,13 @@ body {
   background: url(http://cssdeck.com/assets/img/light_toast.png);
 }
 
+#text {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  z-index: 1;
+  font-size: 250%;
+}
+
 #sweet {
   position: fixed;
   margin: 0 45%;
@@ -18,7 +25,6 @@ body {
   animation: round 4.5s linear infinite;
   transition: border-radius 0.3s linear;
 }
-
 .outro {
   background-color: #1f1f24;
   margin: 0px;
