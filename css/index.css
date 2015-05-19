@@ -1,0 +1,61 @@
+body {
+  background: #011310;
+  overflow: hidden;
+}
+.loading-icon {
+  position: absolute;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: transparent;
+}
+.loading-icon::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #1bc2a6;
+  animation: bounce 4s infinite;
+}
+.loading-icon::after{
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #1bc2a6;
+  animation: bounce 4s 0.5s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
