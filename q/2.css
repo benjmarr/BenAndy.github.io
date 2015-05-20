@@ -1,0 +1,124 @@
+.icon-heart {
+  height:2em;
+  width:2em;
+  display:inline-block;
+  position:relative;
+}
+
+.icon-heart:before, 
+.icon-heart:after,
+.icon-heart span:before, 
+.icon-heart span:after {
+  content:"";
+  display:block;
+}
+
+.icon-heart:before {
+  position:absolute;
+  left:.1em;
+  top:0px;
+  transform: rotate(-45deg);
+  background:#d90000;
+  height:2em;
+  width:1.2em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+
+.icon-heart:after {
+  position:absolute;
+  right:.12em;
+  top:0px;
+  transform: rotate(45deg);
+  background:#d90000;
+  height:2em;
+  width:1.2em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+
+.icon-heart span.dot:after {
+  height:.2em;
+  width:.2em;
+  left:-.4em;
+  top:50%;
+  background:#fff;
+  position:absolute;
+  z-index:999;
+  border-radius:100%;
+  -webkit-animation: heartbeat 2s linear 0s infinite; /* Chrome, Safari, Opera */
+  animation: heartbeat 2s linear 0s infinite;
+}
+
+.icon-heart span.line {
+  height:2px;
+  background:rgba(249,218,255,.5);
+  top:1.1em;
+  position:absolute;
+  left:-.2em;
+  display:block;
+  width:2.4em;
+  z-index:996;
+}
+
+.icon-heart span.line:before {
+  height:.5em;
+  top:-.27em;
+  position:absolute;
+  left:.4em;
+  display:block;
+  width:.5em;
+  z-index:998;
+  transform: rotate(-45deg);
+  border-top:2px solid rgba(249,218,255,.5);
+  border-right:2px solid rgba(249,218,255,.5);
+  z-index:998;
+  background:#d90000;
+}
+
+.icon-heart span.line:after {
+  height:.2em;
+  top:-.12em;
+  position:absolute;
+  left:1.2em;
+  display:block;
+  width:.2em;
+  z-index:997;
+  transform: rotate(-45deg);
+  border-top:2px solid rgba(249,218,255,.5);
+  border-right:2px solid rgba(249,218,255,.5);
+  z-index:998;
+  background:#d90000;
+}
+
+@-webkit-keyframes heartbeat {
+  0%   {background:rgba(255,255,255,0); left:-.4em; top:50%;}
+  20%  {background:rgba(255,255,255,.5); left:.2em; top:50%;}
+  35%  {background:rgba(255,255,255,1); left:.4em; top:30%;}
+  45%  {background:rgba(255,255,255,.5); left:.7em; top:50%;}
+  55%  {background:rgba(255,255,255,.5); left:.9em; top:50%;}
+  65%  {background:rgba(255,255,255,1); left:1.1em; top:42%;}
+  75%  {background:rgba(255,255,255,.5); left:1.2em; top:50%;}
+  100% {background:rgba(255,255,255,0); left:2.4em; }
+}
+
+@keyframes heartbeat {
+  0%   {background:rgba(255,255,255,0); left:-.4em; top:50%;}
+  20%  {background:rgba(255,255,255,.5); left:.2em; top:50%;}
+  35%  {background:rgba(255,255,255,1); left:.4em; top:30%;}
+  45%  {background:rgba(255,255,255,.5); left:.7em; top:50%;}
+  55%  {background:rgba(255,255,255,.5); left:.9em; top:50%;}
+  65%  {background:rgba(255,255,255,1); left:1.1em; top:42%;}
+  75%  {background:rgba(255,255,255,.5); left:1.2em; top:50%;}
+  100% {background:rgba(255,255,255,0); left:2.4em; }
+}
+
+body { 
+  text-align:center;
+  padding:13% 0 20px 0;
+  background:#F9DAFF;
+}
+
+.icon-heart {
+  zoom:3;
+}
