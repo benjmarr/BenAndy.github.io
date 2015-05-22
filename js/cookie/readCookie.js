@@ -1,5 +1,6 @@
 function gettimes() {
 	if(document.cookie) {
+	console.log("readCookie.js LOADED");
 		index = document.cookie.indexOf(cookie_name);
 		if (index != -1) {
 			countbegin = (document.cookie.indexOf("=", index) + 1);

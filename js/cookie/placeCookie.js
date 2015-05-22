@@ -1,5 +1,6 @@
 cookie_name = "Test Cookie";
 function write_cookie() {
+	console.log("placeCookie.js LOADED");
 	if(document.cookie) {
 		index = document.cookie.indexOf(cookie_name);
 	} else {
