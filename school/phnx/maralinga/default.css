@@ -1,3 +1,31 @@
 body {
-	background: url(http://benandy.github.io/schoo/phnx/maralinga/images/light_toast.png);
+	background: url(images/light_toast.png);
+}
+
+#title {
+	text-align: right;
+	font-size: 300%;
+	margin-right: 2%;
+	margin-top: 2%;
+ 	font-family: 'Oswald', sans-serif;
+}
+
+#SUBtitle {
+	font-family: 'Oswald', sans-serif;
+	font-size: 150%;
+	margin-left: 10%;
+}
+
+#text {
+	margin-right: 2%;
+	margin-left: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 120%;
+}
+
+#copyrightNotice {
+	text-align: center;
+	margin-top: 50%;
+	font-size: 80%;
+ 	font-family: 'Oswald', sans-serif;
 }
