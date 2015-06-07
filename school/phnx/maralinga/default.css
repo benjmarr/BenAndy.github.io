@@ -12,8 +12,12 @@
 	margin-bottom: 3%;
 }
 
+#preload {
+	overflow: hidden;
+}
+
 #header {
-	background: url("images/walk.gif");
+	background: url("images/bombExplosion.jpg");
 	background-size: cover;
 }
 
