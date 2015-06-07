@@ -1,31 +1,107 @@
-body {
-	background: url(images/light_toast.png);
-}
-
-#title {
-	text-align: right;
-	font-size: 300%;
-	margin-right: 2%;
-	margin-top: 2%;
- 	font-family: 'Oswald', sans-serif;
-}
-
-#SUBtitle {
-	font-family: 'Oswald', sans-serif;
-	font-size: 150%;
-	margin-left: 10%;
-}
-
-#text {
-	margin-right: 2%;
-	margin-left: 2%;
-	font-family: 'Oswald', sans-serif;
-	font-size: 120%;
-}
-
-#copyrightNotice {
+#copyright {
 	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 90%;
 	margin-top: 50%;
-	font-size: 80%;
- 	font-family: 'Oswald', sans-serif;
+}
+
+/* ABOVE IS ALL CREDIT TO BEN WATTS-MARR */
+/* BELOW IS ALL CREDIT TO CALEB STEWART */
+
+body {
+	/*background: #b0a9a2;*/
+	background: url("http://benandy.github.io/images/light_toast.png	");
+	overflow: hidden;
+}
+
+/*HEADER, COVER*/
+header {
+	background: url("images/bombExplosion.jpg");
+	background-color: #dadbdb;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	margin-left: -8px;
+	margin-right: -8px;
+	padding-top: 20vh;
+	transition: height 2s, background 2s, padding-top 2s;
+
+}
+
+header.up {
+	height: 110px;
+	background: black;
+	padding-top: 5px;
+	opacity: 0.7;
+}
+
+#pageHeading {
+	margin-top: 0px;
+	text-align: center;
+	/*Text Style*/
+	font-family: Source Sans Pro;
+	font-size: 50px;
+	font-weight: 200;
+	color: dimgray;
+	cursor: default;
+}
+
+#pageSubHeading {
+	font-size: 30px;
+	color: #6E6E6E;
+	cursor: default;
+}
+
+#pageSubHeading.up {
+	display: none;
+}
+
+#arrow {
+	padding-top: 0px;
+	position: absolute;
+	top: 75vh;
+	transform: rotate(360deg);
+	transition: top 2s, transform 0.5s;
+}
+
+#arrow.up {
+	top: 65px;
+	transform: rotate(180deg);
+}
+
+/*CONTENT BODY*/
+#body {
+	padding-top: 110vh;
+	transition: padding-top 2s;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+#body.up {
+	padding-top: 150px;
+}
+
+#contentFrame {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	/*height: 150%; --removed by Ben*/
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	/*Text Styles*/
+	font-family: Source Sans Pro;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+#contentFrame > p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#sectionHeader {
+	font-weight: 700;
+	font-size: 24px;
 }
