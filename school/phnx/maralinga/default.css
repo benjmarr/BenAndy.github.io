@@ -5,6 +5,18 @@
 	margin-top: 50%;
 }
 
+#muskText {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 200%;
+	margin-bottom: 3%;
+}
+
+#header {
+	background: url("images/walk.gif");
+	background-size: cover;
+}
+
 /* ABOVE IS ALL CREDIT TO BEN WATTS-MARR */
 /* BELOW IS ALL CREDIT TO CALEB STEWART */
 
@@ -16,9 +28,7 @@ body {
 
 /*HEADER, COVER*/
 header {
-	background: url("images/bombExplosion.jpg");
 	background-color: #dadbdb;
-	background-size: cover;
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
@@ -26,7 +36,7 @@ header {
 	margin-left: -8px;
 	margin-right: -8px;
 	padding-top: 20vh;
-	transition: height 2s, background 2s, padding-top 2s;
+	transition: height 2s, background 2s, padding-top 1s;
 
 }
 
@@ -44,13 +54,14 @@ header.up {
 	font-family: Source Sans Pro;
 	font-size: 50px;
 	font-weight: 200;
-	color: dimgray;
+	color: #0000FF;
 	cursor: default;
 }
 
 #pageSubHeading {
 	font-size: 30px;
-	color: #6E6E6E;
+	font-family: Source Sans Pro;
+	color: #0000FF;
 	cursor: default;
 }
 
@@ -63,7 +74,7 @@ header.up {
 	position: absolute;
 	top: 75vh;
 	transform: rotate(360deg);
-	transition: top 2s, transform 0.5s;
+	transition: top 1.5s, transform 3s;
 }
 
 #arrow.up {
@@ -74,7 +85,7 @@ header.up {
 /*CONTENT BODY*/
 #body {
 	padding-top: 110vh;
-	transition: padding-top 2s;
+	transition: padding-top 4.5s;
 	padding-left: 15%;
 	padding-right: 15%;
 }
@@ -103,5 +114,6 @@ header.up {
 
 #sectionHeader {
 	font-weight: 700;
+	margin-left: 25%;
 	font-size: 24px;
 }
