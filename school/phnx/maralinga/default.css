@@ -12,10 +12,6 @@
 	margin-bottom: 3%;
 }
 
-#preload {
-	overflow: hidden;
-}
-
 #header {
 	background: url("images/bombExplosion.jpg");
 	background-size: cover;
