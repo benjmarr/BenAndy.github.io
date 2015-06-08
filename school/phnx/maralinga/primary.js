@@ -4,39 +4,13 @@ console.log("");
 console.info("Page information gathered from various sites and put together by Vijay Chand, Cody Quarrell and Ben Watts-Marr.");
 console.info("Coded by Ben Watts-Marr with wonderful assisstance from Caleb Stewart\nContact him at calebs2500@gmail.com");
 
-/* Cover background - gif change */
-var gifCover1 = setInterval(function() {
-  document.getElementById("header").style.background = "url('images/boom.gif')";
-  document.getElementById("header").style.backgroundSize = "cover";
-  clearInterval(gifCover1);
-
-  var gifCover2 = setInterval(function() {
-    document.getElementById("header").style.background = "url('images/stuff.gif')";
-    document.getElementById("header").style.backgroundSize = "cover";
-    clearInterval(gifCover2);
-
-    var gifCover3 = setInterval(function() {
-      document.getElementById("header").style.background = "url('images/walk.gif')";
-      document.getElementById("header").style.backgroundSize = "cover";
-      clearInterval(gifCover3);
-
-      var backCover = setInterval(function() {
-        document.getElementById("header").style.background = "url('images/bombExplosion.jpg')";
-        document.getElementById("header").style.backgroundSize = "cover";
-        clearInterval(backCover);
-      }, 10000);
-    }, 10000);
-  }, 10000);
-}, 20000);
-/* End cover background - gif change */
-
 /* Muskequeers easter-egg */
 function muskequeers() {
   document.getElementById("muskInfo").src = "images/blank.png";
   document.getElementById("muskText").innerHTML = "VIJAY, CODY &amp; BEN";
 
   var ttm = setInterval(function() {
-    document.getElementById("muskText").innerHTML = "VIJAY, CODY &amp; BEN<br>THE THREE MUSKEQUEERS";
+    document.getElementById("muskText").innerHTML = "THE THREE MUSKEQUEERS";
     clearInterval(ttm);
   }, 2000);
 
@@ -69,9 +43,6 @@ function shrinkCover() {
   document.getElementById("body").className = "up";
 
   // following added by ben
-  document.getElementById("preload1").src = "images/blank.png";
-  document.getElementById("preload2").src = "images/blank.png";
-  document.getElementById("preload3").src = "images/blank.png";
   var arrowChange = setInterval(function() {
     document.getElementById("arrow").src = "images/arrowHover.png";
     clearInterval(arrowChange);
