@@ -62,12 +62,6 @@ function shrinkCover() {
   document.getElementById("arrow").className = "up";
   document.getElementById("arrow").onclick = expandCover;
   document.getElementById("body").className = "up";
-
-  // following added by ben
-  var arrowChange = setInterval(function() {
-    document.getElementById("arrow").src = "images/arrowHover.png";
-    clearInterval(arrowChange);
-  }, 500);
 }
 /* End of up cover */
 
