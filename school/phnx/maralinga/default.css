@@ -74,7 +74,7 @@ header.up {
 	position: absolute;
 	top: 75vh;
 	transform: rotate(360deg);
-	transition: top 1.5s, transform 3s;
+	transition: top 1.5s, transform 2s;
 }
 
 #arrow.up {
@@ -85,7 +85,7 @@ header.up {
 /*CONTENT BODY*/
 #body {
 	padding-top: 110vh;
-	transition: padding-top 4.5s;
+	transition: padding-top 3.5s;
 	padding-left: 15%;
 	padding-right: 15%;
 }

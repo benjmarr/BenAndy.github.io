@@ -4,6 +4,10 @@ console.log("");
 console.info("Page information gathered from various sites and put together by Vijay Chand, Cody Quarrell and Ben Watts-Marr.");
 console.info("Coded by Ben Watts-Marr with wonderful assisstance from Caleb Stewart\nContact him at calebs2500@gmail.com");
 
+var pageLoad = setInterval(function() {
+  document.getElementById("arrow").src = "images/arrow.png";
+}, 7500);
+
 function browserVersion() {
   var userAg = navigator.userAgent;
   if (userAg.indexOf("Chrome") != -1) {
