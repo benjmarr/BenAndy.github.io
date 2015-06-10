@@ -4,6 +4,28 @@ console.log("");
 console.info("Page information gathered from various sites and put together by Vijay Chand, Cody Quarrell and Ben Watts-Marr.");
 console.info("Coded by Ben Watts-Marr with wonderful assisstance from Caleb Stewart\nContact him at calebs2500@gmail.com");
 
+function browserVersion() {
+  var userAg = navigator.userAgent;
+  if (userAg.indexOf("Chrome") != -1) {
+    console.log("Browser 'Chrome' - Correct browser!");
+	} else if (userAg.indexOf("Firefox")!=-1) {
+    console.warn("Browser 'Firefox' - Incorrect browser!");
+    document.write("Note: You are using Firefox" + navigator.appVersion + ", this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
+	} else if (userAg.indexOf("Opera")!=-1) {
+    console.warn("Browser 'Opera' - Incorrect browser!");
+    document.write("Note: You are using Opera" + navigator.appVersion + ", this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
+	} else if (userAg.indexOf("MSIE")!=-1) {
+    console.warn("Browser 'Internet Explorer' - Incorrect browser!");
+    document.write("Note: You are using Internet Explorer" + navigator.appVersion + ", this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
+	} else if (userAg.indexOf("Safari")!=-1) {
+    console.warn("Browser 'Safari' - Incorrect browser!");
+    document.write("Note: You are using Safari" + navigator.appVersion + ", this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
+	} else {
+    console.warn("Browser 'Unknown' - Incorrect browser!");
+    document.write("Note: You are using an unknown browser, this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
+	}
+}
+
 /* Muskequeers easter-egg */
 function muskequeers() {
   document.getElementById("muskInfo").src = "images/blank.png";
@@ -33,7 +55,6 @@ function arrowHoverOut() {
 /* End of magical arrow hover stuff */
 
 /* Cover up */
-/* Credit to Caleb Stewart */
 function shrinkCover() {
   document.getElementById("document").style.overflow = "visible";
   document.getElementById("header").className = "up";
@@ -51,7 +72,6 @@ function shrinkCover() {
 /* End of up cover */
 
 /* Cover down */
-/* Credit to Caleb Stewart */
 function expandCover() {
   document.getElementById("document").style.overflow = "hidden";
   document.getElementById("header").className = "down";
