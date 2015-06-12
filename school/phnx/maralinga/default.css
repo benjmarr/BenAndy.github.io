@@ -1,3 +1,29 @@
+p {
+	font-size: 125%;
+	font-family: 'Indie Flower', cursive;
+}
+
+#nipples {
+	color: #FE2E2E;
+}
+
+#date {
+	font-family: 'Oswald', sans-serif;
+	font-size: 80%;
+}
+
+#divImage > img {
+	border-radius: 20px;
+}
+
+p#imageText {
+	font-family: 'Oswald', sans-serif;
+	text-align: right;
+	margin-right: 8%;
+	height: 1px;
+	font-size: 70%;
+}
+
 #copyright {
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
@@ -114,6 +140,7 @@ header.up {
 
 #sectionHeader {
 	font-weight: 700;
-	margin-left: 25%;
+	text-align: center;
 	font-size: 24px;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
