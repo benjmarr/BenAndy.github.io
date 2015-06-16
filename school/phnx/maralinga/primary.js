@@ -8,6 +8,34 @@ var pageLoad = setInterval(function() {
   document.getElementById("arrow").src = "images/arrow.png";
 }, 7500);
 
+var imageHeader = setInterval(function() {
+  document.getElementById("header").style.background = "url('images/radiationWarning.jpg')";
+  document.getElementById("header").style.backgroundSize = "cover";
+  clearInterval(imageHeader);
+
+  var imageHeader1 = setInterval(function() {
+    document.getElementById("header").style.background = "url('images/blastSite.jpg')";
+    document.getElementById("header").style.backgroundSize = "cover";
+    clearInterval(imageHeader1);
+
+    var imageHeader2 = setInterval(function() {
+      document.getElementById("header").style.background = "url('images/newsCast.jpg')";
+      document.getElementById("header").style.backgroundSize = "cover";
+      clearInterval(imageHeader2);
+
+      var imageHeader3 = setInterval(function() {
+          document.getElementById("header").style.background = "url('images/bombExplosion.jpg')";
+          document.getElementById("header").style.backgroundSize = "cover";
+          clearInterval(imageHeader3);
+      }, 5000);
+    }, 5000);
+  }, 5000);
+}, 5000);
+
+function bibliography() {
+
+}
+
 function browserVersion() {
   var userAg = navigator.userAgent;
   if (userAg.indexOf("Chrome") != -1) {
