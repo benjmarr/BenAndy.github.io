@@ -4,6 +4,32 @@ console.log("");
 console.info("Page information gathered from various sites and put together by Vijay Chand, Cody Quarrell and Ben Watts-Marr.");
 console.info("Coded by Ben Watts-Marr with wonderful assisstance from Caleb Stewart\nContact him at calebs2500@gmail.com");
 
+function copyright() {
+  document.getElementById("word").innerHTML = "<br>This page is under creative commons copyright. If any code is taken from this page you can and most likely will be sued. You have been warned.<br>Creative Commons Copyright &copy; 2015 - Ben Watts-Marr & Caleb Stewart<br><a onclick='copyrightClear()' id='aColourDownside' title='Click me to close the copyright notice...'>Close copyright notice...</a>";
+  var purk = setInterval(function() {
+    document.getElementById("word").innerHTML = "<a id='aColourDownside' onclick='bibliography()'>Bibliography</a> | <a id='aColourDownside' onclick='copyright()'>Copyright Notice</a>";
+    clearInterval(purk);
+  }, 30000)
+}
+
+function copyrightClear() {
+  document.getElementById("word").innerHTML = "<a id='aColourDownside' onclick='bibliography()'>Bibliography</a> | <a id='aColourDownside' onclick='copyright()'>Copyright Notice</a>";
+  clearInterval(purk);
+}
+
+function bibliography() {
+  document.getElementById("word").innerHTML = "<br>List of websites used to gather information for this site...<br>http://www.creativespirits.info/aboriginalculture/history/maralinga-how-british-nuclear-tests-changed-history-forever#axzz3coTK2xuZ<br>http://maps.google.com<br>http://www.naa.gov.au/collection/fact-sheets/fs129.aspx<br>http://www.sahistorians.org.au/175/chronology/september/25-september-1957-maralinga-atomic-tests.shtml<br>http://www.theage.com.au/articles/2003/05/11/1052280486255.html<br>http://www.theaustralian.com.au/arts/review/maralinga-nuclear-tests-frank-walker-shows-no-end-to-the-fallout/story-fn9n8gph-1227038874978<br><a onclick='closeBibli()' id='aColourDownside' title='Click me to close the bibliography!'>Close bibliography list...</a>";
+  var chantallesHairyNips = setInterval(function() {
+    document.getElementById("word").innerHTML = "<a id='aColourDownside' onclick='bibliography()'>Bibliography</a> | <a id='aColourDownside' onclick='copyright()'>Copyright Notice</a>";
+    clearInterval(chantallesHairyNips);
+  }, 30000);
+}
+
+function closeBibli() {
+  document.getElementById("word").innerHTML = "<a id='aColourDownside' onclick='bibliography()'>Bibliography</a> | <a id='aColourDownside' onclick='copyright()'>Copyright Notice</a>";
+  clearInterval(chantallesHairyNips);
+}
+
 var pageLoad = setInterval(function() {
   document.getElementById("arrow").src = "images/arrow.png";
 }, 7500);
@@ -31,10 +57,6 @@ var imageHeader = setInterval(function() {
     }, 5000);
   }, 5000);
 }, 5000);
-
-function bibliography() {
-
-}
 
 function browserVersion() {
   var userAg = navigator.userAgent;
