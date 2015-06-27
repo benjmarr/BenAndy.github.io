@@ -1,19 +1,23 @@
 #title {
   text-align: center;
   margin-top: 1%;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 300%;
 }
 
 #results {
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
 #cancelInfoGet {
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 button {
   background: none;
+  font-family: 'Ubuntu', sans-serif;
   color: #FF8000;
   font-weight: bold;
   text-align: center;
