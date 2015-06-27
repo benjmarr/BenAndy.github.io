@@ -1,42 +1,28 @@
+<!DOCTYPE html>
 <html>
-  <head>
+  <head lang="en">
     <link rel="icon" type="image/png" href="http://benandy.github.io/images/favicon.png" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <meta name="p:domain_verify" content="3190da8a412e157feb7d37d64c5c87ec"/>
     <meta name="author" content="Ben Andy" />
     <meta charset="UTF-8">
     <script src="js/primary.js"></script>
     <title>Coming soon...</title>
   </head>
-  <body>
-    <div id="uuid"></div>
-    <div id="text">
-      Coming soon...<br>
-    </div>
-    <div class="pulsatingCirle">
-      <span class="firstCirlce"></span>
-      <span class="secondCirlce"></span>
-      <span class="thirdCircle"></span>
-    </div>
-    <div class="pulsatingCirle">
-      <span class="firstCirlce"></span>
-      <span class="secondCirlce"></span>
-      <span class="thirdCircle"></span>
-    </div>
-    <div class="pulsatingCirle">
-      <span class="firstCirlce"></span>
-      <span class="secondCirlce"></span>
-      <span class="thirdCircle"></span>
-    </div>
-    <div class="pulsatingCirle">
-      <span class="firstCirlce"></span>
-      <span class="secondCirlce"></span>
-      <span class="thirdCircle"></span>
+  <body onload="buildSite()">
+    <div id="soon">
+      Loading...
     </div>
     <center>
-      <a href="r/ytplay.html" alt="Playlist">
-        <img src="images/emoji-wink.png" alt=";)" style="width: 100; height=100; margin-top: 0%;">
+      <video id="video" width="520" height="440" controls>
+        <source src="images/mudParty.mp4" type="video/mp4">
+          Loading...
+      </video>
+    </center>
+    <center>
+      <a href="r/ytplay.html" alt="Playlist" target="_blank">
+        <img src="images/emoji-wink.png" alt=";)" width="100" height="100" id="winky">
       </a>
     </center>
   </body>

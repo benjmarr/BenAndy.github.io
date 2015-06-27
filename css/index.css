@@ -2,87 +2,17 @@ body {
   background: url(http://benandy.github.io/images/light_toast.png);
 }
 
-#text {
-  font-family: 'Oswald', sans-serif;
+#soon {
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  z-index: 1;
-  font-size: 250%;
+  font-size: 300%;
+  margin-top: 3%;
 }
 
-/* Circle start */
-.pulsatingCirle{
-      width:25px;
-      height:25px;
-      display:block;
-      position:relative;
-      margin:10% auto;
-      transform:scale(5,5);
-      -webkit-transform:scale(5,5);
-    }
-  
-    .firstCirlce,
-    .secondCirlce,
-    .thirdCircle{
-      top:50%;
-      left:50%;
-      display:block;
-      border-radius:50%;
-      position:absolute;
-      vertical-align:middle;
-    }
-      
-    .firstCirlce{
-      width:10px;
-      height:10px;
-      margin:-5px 0 0 -5px;
-      background-color:#ccc;
-    }
-    
-    .secondCirlce{
-      width:16px;
-      height:16px;
-      margin:-9px 0 0 -9px;
-      border:1px solid #ccc;
-      animation:2000ms pulseIn ease-in-out infinite;
-      -webkit-animation:2000ms pulseIn ease-in-out infinite;            
-    }
-    
-    @keyframes pulseIn{
-      0%{
-        opacity:0;
-        transform:scale(0.2,0.2);
-      }
-      50%{
-        opacity:1;
-        transform:scale(1,1);
-      }
-      100%{
-              opacity:0;
-        transform:scale(0.2,0.2);
-      }
-    }
-    
-    @-webkit-keyframes pulseIn{
-            0%{
-        opacity:0;
-        -webkit-transform:scale(0.2,0.2);
-      }
-      50%{
-        opacity:1;
-        -webkit-transform:scale(1,1);
-      }
-      100%{
-              opacity:0;
-        -webkit-transform:scale(0.2,0.2);
-      }
-    }
-          
-    .thirdCircle{
-      width:24px;
-      height:24px;
-      border:1px solid #ccc;
-      margin:-13px 0 0 -13px;
-      animation:2000ms pulseIn 500ms ease-in-out infinite;
-      -webkit-animation:2000ms pulseIn 500ms ease-in-out infinite   
-    }
-/* Circle end */
+#winky {
+  margin-top: 1%;
+}
+
+#video {
+  text-align: center;
+}
