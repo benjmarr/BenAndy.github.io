@@ -5,7 +5,7 @@ function load() {
 }
 
 function getInfo() {
-  document.getElementById("cancelInfoGet").innerHTML = "<a onclick='stopGather()'><button type='button' onclick='stopGather()'>Re-gather browser information</button></a><br><br>";
+  document.getElementById("cancelInfoGet").innerHTML = "<a onclick='stopGather()'><button type='button' onclick='stopGather()'>Reload page</button></a><br><br>";
   document.getElementById("results").innerHTML = "";
 
   document.getElementById("browserVersion").innerHTML = "<strong>Version:</strong> " + navigator.appVersion;
