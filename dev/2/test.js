@@ -5,8 +5,8 @@ function load() {
 }
 
 function getInfo() {
-  document.getElementById("cancelInfoGet").innerHTML = "<button onclick='stopGather()'>Re-gather browser information</button><br><br>";
-  document.getElementById("results").innerHTML = "Gathering results...<br>Please wait!<br><br>";
+  document.getElementById("cancelInfoGet").innerHTML = "<button type='button' onclick='stopGather()'>Re-gather browser information</button><br><br>";
+  document.getElementById("results").innerHTML = "";
 
   document.getElementById("browserVersion").innerHTML = "<strong>Version:</strong> " + navigator.appVersion;
   document.getElementById("browserCodeName").innerHTML = "<strong>Code Name:</strong> " + navigator.appCodeName;
