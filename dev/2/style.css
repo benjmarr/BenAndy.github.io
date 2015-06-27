@@ -11,3 +11,14 @@
 #cancelInfoGet {
   text-align: center;
 }
+
+button {
+  background: none;
+  color: #FF8000;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 2%;
+}
