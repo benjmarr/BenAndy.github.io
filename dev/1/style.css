@@ -17,6 +17,13 @@ a:visited {
   color: #FF8000;
 }
 
+#welcomeIntro {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 2%;
+  margin-right: 30%;
+}
+
 #title {
   text-align: center;
   margin-top: 1%;
