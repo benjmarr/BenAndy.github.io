@@ -22,6 +22,7 @@ a:visited {
   font-family: 'Ubuntu', sans-serif;
   margin-left: 2%;
   margin-right: 30%;
+  font-size: 120%;
 }
 
 #title {
@@ -29,6 +30,27 @@ a:visited {
   margin-top: 1%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 400%;
+}
+
+#error404 {
+  font-family: 'Dosis', sans-serif;
+  color: #FE2E2E;
+  font-size: 400%;
+  margin-left: 20%;
+}
+
+#info404 {
+  color: #FE2E2E;
+  font-family: 'Dosis', sans-serif;
+  margin-left: 40%;
+  font-size: 300%;
+}
+
+#url404 {
+  color: #FE2E2E;
+  margin-left: 5%;
+  font-size: 200%;
+  font-family: 'Dosis', sans-serif;
 }
 
 #siteLinks {
@@ -58,5 +80,5 @@ a:visited {
   font-size: 130%;
   padding-top: 13px;
   padding-bottom: 13px;
-  text-align: center;
+    text-align: center;
 }
