@@ -13,4 +13,4 @@ function buildPage() {
 
 var getURL = setInterval(function() {
   document.getElementById("url404").innerHTML = "<br>" + window.location.href;
-}, 10);
+}, 1000);
