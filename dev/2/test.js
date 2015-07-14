@@ -1,13 +1,6 @@
 console.log("Creative commons copyright (c) Benjamin WM, 2015");
 
-function load() {
-
-}
-
 function getInfo() {
-  document.getElementById("cancelInfoGet").innerHTML = "<a onclick='stopGather()'><button type='button' onclick='stopGather()'>Reload page</button></a><br><br>";
-  document.getElementById("results").innerHTML = "";
-
   document.getElementById("browserVersion").innerHTML = "<strong>Version:</strong> " + navigator.appVersion;
   console.log("Version: " + navigator.appVersion);
   document.getElementById("browserCodeName").innerHTML = "<strong>Code Name:</strong> " + navigator.appCodeName;
@@ -26,8 +19,5 @@ function getInfo() {
   console.log("User agent: " + navigator.userAgent);
   document.getElementById("java").innerHTML = "<strong>Java Enabled:</strong> " + navigator.javaEnabled();
   console.log("Java enabled: " + navigator.javaEnabled());
-}
-
-function stopGather() {
-  window.location = "";
+  document.getElementById("maxTouchPoints").innerHTML = "<strong>Max Simultaneous Touch Contacts:</strong> " + navigator.maxTouchPoints;
 }

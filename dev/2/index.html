@@ -11,24 +11,19 @@
     <script src="test.js"></script>
     <title>Browser Info Grabber</title>
   </head>
-  <body onload="load()">
+  <body onload="getInfo()">
     <div id="title">
       Your Browser Information...<br><br>
     </div>
-    <div id="results">
-      <a onclick="getInfo()">
-        <button type="button" onclick="getInfo()">Get Browser Information</button>
-      </a>
-    </div>
-    <div id="cancelInfoGet"></div>
-    <div id="browserVersion"></div>
-    <div id="browserCodeName"></div>
-    <div id="cookieEnabled"></div>
-    <div id="language"></div>
-    <div id="online"></div>
-    <div id="platform"></div>
-    <div id="product"></div>
-    <div id="userAgent"></div>
-    <div id="java"></div>
+    <div id="browserVersion"><strong>Version: </strong>unknown</div>
+    <div id="browserCodeName"><strong>Code Name: </strong>unknown</div>
+    <div id="cookieEnabled"><strong>Cookies Enabled: </strong>unknown</div>
+    <div id="language"><strong>Language: </strong>unknown</div>
+    <div id="online"><strong>Online: </strong>unknown</div>
+    <div id="platform"><strong>Platform: </strong>unknown</div>
+    <div id="product"><strong>Product: </strong>unknown</div>
+    <div id="userAgent"><strong>User Agent: </strong>unknown</div>
+    <div id="java"><strong>Java Enabled: </strong>unknown</div>
+    <div id="maxTouchPoints"><strong>Max Simultaneous Touch Contacts: </strong>unknown</div>
   </body>
 </html>
