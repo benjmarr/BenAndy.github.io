@@ -2,11 +2,9 @@ console.log("main.js loaded.");
 
 function buildPage() {
   console.log("function buildPage() called");
+  document.getElementById("pageTitle").innerHTML = "Cycling &amp; Technology";
 }
 
-function pageOffline() {
-  console.log("function pageOffline() called");
-  function pageOnline() {
-    console.log("function pageOnline() called");
-  }
+function indexBuild() {
+  console.log("function indexBuild() called");
 }
