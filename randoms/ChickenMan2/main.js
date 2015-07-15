@@ -3,8 +3,6 @@ console.log("main.js file");
 function pageLoad() {
   console.log("Dev> function pageLoad() called");
   document.title = "ChickenMan 2.0";
-  document.getElementById("title").innerHTML = "<strong>ChickenMan</strong>";
-
-  // Index information
-  document.getElementById("info").innerHTML = "Welcome to the ChickMan site..."
+  document.getElementById("title").innerHTML = "<strong><a href='inedx.html'>ChickenMan</a></strong>";
+  document.getElementById("nav").innerHTML = "<a href='index.html'>Home</a> - <a href='pic.html'>Images</a><br><br>";
 }

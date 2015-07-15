@@ -1,14 +1,47 @@
 body {
-  background-color: #848484 ;
+  background: url("content/back.jpg");
+}
+
+a:visited {
+  color: #FFBF00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFBF00;
+  text-decoration: underline;
+}
+
+a:link {
+  color: #FFBF00;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 10px;
+}
+
+#nav {
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #info {
-  
+  margin-left: 8%;
+  background-color: #A4A4A4;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 1%;
+  font-size: 110%;
+  border-radius: 10px;
+  width: 91.5%;
 }
 
 #title {
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   font-size: 350%;
-  color: #DF7401;
+  color: #FFBF00;
 }
