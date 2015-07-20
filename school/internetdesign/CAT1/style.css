@@ -1,0 +1,104 @@
+body {
+  background: url(content/back.jpg);
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link {
+  color: #DF7401;
+}
+
+a:visited {
+  color: #DF7401;
+}
+
+h2 {
+  color: #DF7401;
+  text-align: right;
+  margin-right: 20%;
+}
+
+#indexLoad {
+  text-align: right;
+}
+
+#pageLoad {
+    font-size: 10 0%;
+    font-family: 'Play', sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #796161;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#aboutImage {
+  border-radius: 10%;
+  /*position: fixed;*/
+  margin-left: 70%;
+}
+
+#footerImage2 {
+  width: 1px;
+  height: 1px;
+  text-align: right;
+  margin-right: 10%;
+}
+
+#footerImage {
+  width: 1px;
+  height: 1px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+#footer {
+  bottom: 0px;
+  width: 101.1%;
+  height: 25px;
+  margin-left: -8px;
+  background-color: #829d8a;
+  opacity: 0.8;
+  font-family: 'Play', sans-serif;
+  color: #FFFFFF;
+  font-size: 150%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+#pageDefine {
+  font-size: 1%;
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
+}
+
+#pageContent {
+  font-size: 150%;
+  font-family: 'Play', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#header {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 400%;
+  color: #DF7401;
+}
+
+#linkOptions {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 200%;
+}
