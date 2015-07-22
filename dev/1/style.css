@@ -4,17 +4,32 @@ body {
 
 a:link {
   text-decoration: none;
-  color: #FF8000;
+  color: #4CC6EB;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #FAAC58;
+  color: #C6B378;
 }
 
 a:visited {
   text-decoration: none;
-  color: #FF8000;
+  color: #4CC6EB;
+}
+
+#topHeader {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #57DB8C;
+  opacity: 0.5;
+  font-size: 80%;
+  border-bottom-left-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -1.5%;
+  margin-left: 70%;
+  margin-right: -0.59691%
 }
 
 #useChrome {
@@ -38,7 +53,6 @@ a:visited {
 
 #title {
   text-align: center;
-  margin-top: 1%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 400%;
 }
@@ -69,27 +83,4 @@ a:visited {
   font-family: 'Ubuntu', sans-serif;
   margin-top: 1%;
   font-size: 200%;
-}
-
-#footerImage {
-  height: 1px;
-  width: 1px;
-  margin-left: 1%;
-}
-
-#footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 25px;
-  margin-top: -40px;
-  margin-left: -8px;
-  background-color: #829d8a;
-  opacity: 0.6;
-  font-family: 'Ubuntu', sans-serif;
-  color: #FFFFFF;
-  font-size: 130%;
-  padding-top: 13px;
-  padding-bottom: 13px;
-    text-align: center;
 }
