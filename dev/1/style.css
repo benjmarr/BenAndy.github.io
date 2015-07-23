@@ -17,6 +17,11 @@ a:visited {
   color: #4CC6EB;
 }
 
+#copyrightImage {
+  width: 3%;
+  height: 3%;
+}
+
 #topHeader {
   font-family: 'Montserrat', sans-serif;
   background-color: #57DB8C;
@@ -29,7 +34,7 @@ a:visited {
   padding-right: 10px;
   margin-top: -1.5%;
   margin-left: 70%;
-  margin-right: -0.59691%
+  margin-right: -0.59691%;
 }
 
 #useChrome {
@@ -41,14 +46,22 @@ a:visited {
   padding-bottom: 5px;
   margin-right: 30%;
   margin-left: 30%;
+  opacity: 0.8;
 }
 
 #welcomeIntro {
   text-align: left;
   font-family: 'Ubuntu', sans-serif;
   margin-left: 2%;
-  margin-right: 30%;
+  margin-right: 2%;
   font-size: 120%;
+  background-color: #81F7DD;
+  opacity: 0.8;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
 }
 
 #title {
