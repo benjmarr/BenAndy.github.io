@@ -1,5 +1,6 @@
 console.log("main.js file loaded");
 console.log("This is the main JavaScript file for the website.");
+console.warn("Copyright Ben WM (c) 2015");
 
 var doc = document; // USE "doc" as "document"
 var userAg = navigator.userAgent; // USE "userAg" as "navigator.userAgent"
@@ -9,7 +10,12 @@ function buildPage() { //Make the title, page links(navbar) & footer
   doc.title = "Benjamin!";
   doc.getElementById("title").innerHTML = "<a href='index.html'>Benjamin</a>";
   doc.getElementById("siteLinks").innerHTML = "<a href='index.html'>Home</a> - <a href='about.html'>About</a> - <a href='projects.html'>Projects</a> - <a href='contact.html'>Contact</a><br><br>";
-  doc.getElementById("topHeader").innerHTML = "Copyright Ben WM &copy; 2015<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>"; //get image from share drive
+  doc.getElementById("topHeader").innerHTML = "Copyright Ben WM &copy; 2015<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>";
+}
+
+function copyrightClose() { // Close the copyright notice
+  console.log("copyrightClose() function called");
+  doc.getElementById("topHeader").innerHTML = "<a target='_blank' href='http://benandy.github.io/github'>GitHub</a> - <a href='http://benandy.github.io'>Website</a> - <a href='contact.html'>Contact</a> - <a target='_blank' href='http://benandy.github.io/randoms/ytplay/original'>Music Playlist</a>";
 }
 
 function useChrome() { // Alert the user if they're not using Chrome
@@ -36,6 +42,7 @@ function page404() { // Get the 404 omnibox location
   var getURL = setInterval(function() {
     doc.getElementById("url404").innerHTML = "<br>" + window.location.href;
     doc.title = "Ben - 404";
+    clearInterval(getURL);
   }, 10);
 }
 
@@ -47,9 +54,4 @@ function copyrightUnHover() { // This is called when the mouse leaves the close 
 function copyrightHover() { // This is called when the mouse hoveres over the close copyright notice image
   console.log("copyrightHover() function called");
   doc.getElementById("copyrightImage").src = "images/xHover.png";
-}
-
-function copyrightClose() { // Close the copyright notice
-  console.log("copyrightClose() function called");
-  doc.getElementById("topHeader").style.visibility = "hidden";
 }
