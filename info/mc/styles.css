@@ -1,17 +1,20 @@
 body {
-  background-color: #E6E6E6;
+  background-color: #BAF0DA;
 }
 
 a:link {
   text-decoration: none;
+  color: #FFC85F;
 }
 
 a:visited {
   text-decoration: none;
+  color: #FFC85F;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #FFE2AB;
 }
 
 #servInfo {
@@ -26,6 +29,8 @@ a:hover {
   border-right-style: solid;
   border-left-style: solid;
   border-width: 1px;
+  background-color: #E6E6E6;
+  font-family: 'Cabin', sans-serif;
 }
 
 #servName {
@@ -39,6 +44,22 @@ a:hover {
   border-left-style: solid;
   border-width: 1px;
   font-size: 120%;
+  background-color: #E6E6E6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#end {
+  margin-left: 4%;
+  margin-right: 4%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #E6E6E6;
+  font-family: 'Poiret One', cursive;
 }
 
 #tableTitle {
@@ -54,9 +75,11 @@ a:hover {
   border-width: 1px;
   font-size: 110%;
   background-color: #BDBDBD;
+  font-family: 'Lato', sans-serif;
 }
 
 #subHead {
+  font-family: 'Lato', sans-serif;
   margin-left: 4%;
   margin-right: 4%;
   padding-left: 40px;
@@ -66,6 +89,7 @@ a:hover {
   border-width: 1px;
   border-bottom-style: hidden;
   font-size: 150%;
+  background-color: #E6E6E6;
 }
 
 #line {
