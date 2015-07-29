@@ -1,6 +1,5 @@
-console.log("main.js file loaded");
-console.log("This is the main JavaScript file for the website.");
-console.warn("Copyright Ben WM (c) 2015");
+console.log("main.js file loaded\nThis is the main JavaScript file for the website.\nMost, if not all, pages under this domain link to this JavaScript document.\nYou can view the JavaScript source code here > https://benandy.github.io/main.js");
+console.warn("Copyright Benjamin (c) 2015 - All Rights Reserved.");
 
 var doc = document; // USE "doc" as "document"
 var userAg = navigator.userAgent; // USE "userAg" as "navigator.userAgent"
@@ -10,7 +9,7 @@ function buildPage() { //Make the title, page links(navbar) & footer
   doc.title = "Benjamin!";
   doc.getElementById("title").innerHTML = "<a href='index.html'>Benjamin</a>";
   doc.getElementById("siteLinks").innerHTML = "<a href='index.html'>Home</a> - <a href='about.html'>About</a> - <a href='projects.html'>Projects</a> - <a href='contact.html'>Contact</a><br><br>";
-  doc.getElementById("topHeader").innerHTML = "Copyright Ben WM &copy; 2015<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>";
+  doc.getElementById("topHeader").innerHTML = "Copyright Benjamin &copy; 2015 - All Rights Reserved.<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>";
 }
 
 function copyrightClose() { // Close the copyright notice
@@ -54,4 +53,19 @@ function copyrightUnHover() { // This is called when the mouse leaves the close 
 function copyrightHover() { // This is called when the mouse hoveres over the close copyright notice image
   console.log("copyrightHover() function called");
   doc.getElementById("copyrightImage").src = "images/xHover.png";
+}
+
+function redirectGithubDOTcomSLASHbenandy() { // Redirect to "github.com/BenAndy"
+  console.log("redirectGithubDOTcomSLASHbenandy() function called");
+  window.location = "http://github.com/BenAndy/";
+}
+
+function redirectTwitterDOTcomSLASHbenUNDERSCOREandymc() {
+  console.log("redirectTwitterDOTcomSLASHbenUNDERSCOREandymc() function called");
+  window.location = "http://twitter.com/Ben_AndyMC/";
+}
+
+function redirectYoutubeDOTcomSLASHbenandygaming() {
+  console.log("redirectYoutubeDOTcomSLASHbenandygaming() function called");
+  window.location = "http://youtube.com/BenAndyGaming/";
 }
