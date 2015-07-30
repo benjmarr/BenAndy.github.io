@@ -14,7 +14,7 @@ function buildPage() { //Make the title, page links(navbar) & footer
 
 function copyrightClose() { // Close the copyright notice
   console.log("copyrightClose() function called");
-  doc.getElementById("topHeader").innerHTML = "<a target='_blank' href='http://benandy.github.io/github'>GitHub</a> - <a href='http://benandy.github.io'>Website</a> - <a href='contact.html'>Contact</a> - <a target='_blank' href='http://benandy.github.io/randoms/ytplay/original'>Music Playlist</a>";
+  doc.getElementById("topHeader").innerHTML = "<a target='_blank' href='http://benandy.github.io/github'>GitHub</a> - <a href='http://benandy.github.io'>Website</a> - <a href='contact.html'>Contact</a> - <a target='_blank' href='http://benandy.github.io/randoms/ytplay/original'>Music Playlist</a> - <a href='' onclick='reloadPage()'>Reload Page</a>";
 }
 
 function useChrome() { // Alert the user if they're not using Chrome
@@ -26,6 +26,11 @@ function useChrome() { // Alert the user if they're not using Chrome
     doc.getElementById("useChrome").style.visibility = "hidden";
     doc.getElementById("useChrome").innerHTML = "";
 	}
+}
+
+function reloadPage() { //When called, the page will be reloaded
+  console.log("reloadPage() function called");
+  window.location = window.location.href;
 }
 
 function closeUseChrome() { // Close the warn window about using Chrome

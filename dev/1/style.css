@@ -17,6 +17,24 @@ a:visited {
   color: #4CC6EB;
 }
 
+#randomImage {
+  border-radius: 10px;
+}
+
+#randomness {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #FE2E2E;
+  opacity: 0.7;
+  text-align: right;
+  margin-right: 2%;
+  margin-left: 45%;
+  border-radius: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 #copyrightImage {
   width: 3%;
   height: 3%;
@@ -62,6 +80,7 @@ a:visited {
   padding-top: 3px;
   padding-bottom: 3px;
   border-radius: 10px;
+  position: absolute;
 }
 
 #title {
