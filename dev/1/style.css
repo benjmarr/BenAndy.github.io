@@ -87,6 +87,20 @@ a:visited {
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   font-size: 400%;
+  margin-top: -2%;
+}
+
+#subTitle {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 200%;
+  color: #4CC6EB;
+}
+
+#siteLinks {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 200%;
 }
 
 #error404 {
@@ -108,11 +122,4 @@ a:visited {
   margin-left: 5%;
   font-size: 200%;
   font-family: 'Dosis', sans-serif;
-}
-
-#siteLinks {
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-  margin-top: 1%;
-  font-size: 200%;
 }
