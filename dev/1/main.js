@@ -28,6 +28,14 @@ function useChrome() { // Alert the user if they're not using Chrome
 	}
 }
 
+function noUseChome() { //Hides the useChrome window when useChrome() is not called
+  console.log("noUseChome() function called");
+  doc.getElementById("useChrome").style.height = "0px";
+  doc.getElementById("useChrome").style.width = "0px";
+  doc.getElementById("useChrome").style.visibility = "hidden";
+  doc.getElementById("useChrome").innerHTML = "";
+}
+
 function reloadPage() { //When called, the page will be reloaded
   console.log("reloadPage() function called");
   window.location = window.location.href;

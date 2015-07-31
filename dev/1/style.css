@@ -67,6 +67,32 @@ a:visited {
   opacity: 0.8;
 }
 
+#projectsIMG {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#projectsIntro {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 120%;
+  background-color: #FE2E2E;
+  opacity: 0.7;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+}
+
 #welcomeIntro {
   text-align: left;
   font-family: 'Ubuntu', sans-serif;
