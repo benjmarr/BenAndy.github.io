@@ -113,7 +113,7 @@ function redirectRandomsSLASHautoplug() { // Redirect to "randoms/autoplug"
   window.location = "http://benandy.github.io/randoms/autoplug";
 }
 
-function redirectDevSLASH2() { // Redirect to "dev/2"
+function redirectDevSLASH2() { // Redirect to "benandy.github.io/dev/2"
   console.log("redirectDevSLASH2() function called");
   window.location = "http://benandy.github.io/dev/2";
 }
