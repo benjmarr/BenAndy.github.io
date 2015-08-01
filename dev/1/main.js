@@ -130,10 +130,15 @@ function redirectRandomsSLASHchickenman2() { // Redirect to "benandy.github.io/r
 
 function redirectRandomsSLASHemma() { // Redirect to "benandy.github.io/randoms/emma"
   console.log("redirectRandomsSLASHemma() function called");
-  window.location = "http://benandy.github.io/randoms/emma"
+  window.location = "http://benandy.github.io/randoms/emma";
 }
 
 function redirectRandomsSLASHsharnie() { // Redirect to "benandy.github.io/randoms/sharnie"
   console.log("redirectRandomsSLASHsharnie() function called");
-  window.location = "http://benandy.github.io/randoms/sharnie"
+  window.location = "http://benandy.github.io/randoms/sharnie";
+}
+
+function redirectRandomsSLASHonelife() { // Redirect to "benandy.github.io/randoms/onelife"
+  console.log("redirectRandomsSLASHonelife() function called");
+  window.location = "http://benandy.github.io/randoms/onelife";
 }
