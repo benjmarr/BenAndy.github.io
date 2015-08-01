@@ -127,3 +127,8 @@ function redirectRandomsSLASHchickenman2() { // Redirect to "benandy.github.io/r
   console.log("redirectRandomsSLASHchickenman2() function called");
   window.location = "http://benandy.github.io/randoms/ChickenMan2";
 }
+
+function redirectRandomsSLASHemma() { // Redirect to "benandy.github.io/randoms/emma"
+  console.log("redirectRandomsSLASHemma() function called");
+  window.location = "http://benandy.github.io/randoms/emma"
+}
