@@ -132,3 +132,8 @@ function redirectRandomsSLASHemma() { // Redirect to "benandy.github.io/randoms/
   console.log("redirectRandomsSLASHemma() function called");
   window.location = "http://benandy.github.io/randoms/emma"
 }
+
+function redirectRandomsSLASHsharnie() { // Redirect to "benandy.github.io/randoms/sharnie"
+  console.log("redirectRandomsSLASHsharnie() function called");
+  window.location = "http://benandy.github.io/randoms/sharnie"
+}
