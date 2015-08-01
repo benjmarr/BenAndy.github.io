@@ -73,12 +73,57 @@ function redirectGithubDOTcomSLASHbenandy() { // Redirect to "github.com/BenAndy
   window.location = "http://github.com/BenAndy/";
 }
 
-function redirectTwitterDOTcomSLASHbenUNDERSCOREandymc() {
+function redirectTwitterDOTcomSLASHbenUNDERSCOREandymc() { // Redirect to "twitter.com/Ben_AndyMC"
   console.log("redirectTwitterDOTcomSLASHbenUNDERSCOREandymc() function called");
   window.location = "http://twitter.com/Ben_AndyMC/";
 }
 
-function redirectYoutubeDOTcomSLASHbenandygaming() {
+function redirectYoutubeDOTcomSLASHbenandygaming() { // Redirect to "youtube.com/BenAndyGaming"
   console.log("redirectYoutubeDOTcomSLASHbenandygaming() function called");
   window.location = "http://youtube.com/BenAndyGaming/";
+}
+
+function redirectRandomsSLASHmadi() { // Redirect to "benandy.github.io/randoms/madi"
+  console.log("redirectRandomsSLASHmadi() function called");
+  window.location = "http://benandy.github.io/randoms/madi";
+}
+
+function redirectRandomsSLASHytplaySLASHchill() { // Redirect to "benandy.github.io/randoms/ytplay/chill"
+  console.log("redirectRandomsSLASHytplaySLASHchill() function called");
+  window.location = "http://benandy.github.io/randoms/ytplay/chill";
+}
+
+function redirectThechunkDOTnetSLASHforumSLASH6637() { // Redirect to "thechunk.net/forum/6637"
+  console.log("redirectThechunkDOTnetSLASHforumSLASH6637() function called");
+  window.location = "https://thechunk.net/forum/6637";
+}
+
+function redirectDriveDOTgoogleDOTcomSLASHopenid1h3kv8CFr58bfykv87cOyaBmhehZRoRdaBoLO8ejHZQauthuser() { // Redirect to "drive.google.com/open?id=1h3kv8C-Fr58bfykv87cOyaBmhehZRoRdaBoLO8ejHZQ&authuser=0"
+  console.log("redirectDriveDOTgoogleDOTcomSLASHopenid1h3kv8CFr58bfykv87cOyaBmhehZRoRdaBoLO8ejHZQauthuser() function called");
+  window.location = "https://drive.google.com/open?id=1h3kv8C-Fr58bfykv87cOyaBmhehZRoRdaBoLO8ejHZQ&authuser=0";
+}
+
+function redirectRandomsSLASHytplay() { // Redirect to "benandy.github.io/randoms/ytplay"
+  console.log("redirectRandomsSLASHytplay() function called");
+  window.location = "http://benandy.github.io/randoms/ytplay";
+}
+
+function redirectRandomsSLASHautoplug() { // Redirect to "randoms/autoplug"
+  console.log("redirectRandomsSLASHautoplug() function called");
+  window.location = "http://benandy.github.io/randoms/autoplug";
+}
+
+function redirectDevSLASH2() { // Redirect to "dev/2"
+  console.log("redirectDevSLASH2() function called");
+  window.location = "http://benandy.github.io/dev/2";
+}
+
+function redirectThechunkDOTnetSLASHforumSLASH6549() { // Redirect to "thechunk.net/forum/6549"
+  console.log("redirectThechunkDOTnetSLASHforumSLASH6549() function called");
+  window.location = "https://thechunk.net/forum/6549";
+}
+
+function redirectRandomsSLASHchickenman2() { // Redirect to "benandy.github.io/randoms/ChickenMan2"
+  console.log("redirectRandomsSLASHchickenman2() function called");
+  window.location = "http://benandy.github.io/randoms/ChickenMan2";
 }
