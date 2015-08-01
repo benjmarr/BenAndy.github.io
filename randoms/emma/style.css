@@ -1,0 +1,12 @@
+body {
+  background-size: cover;
+  background-color: #48F89D;
+}
+
+#emma {
+  text-align: center;
+  font-size: 900%;
+  margin-top: 14%;
+  color: #4FC6F9;
+  font-family: 'Satisfy', cursive;
+}
