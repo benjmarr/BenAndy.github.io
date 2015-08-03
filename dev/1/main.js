@@ -8,12 +8,23 @@ console.warn("Copyright Benjamin (c) 2015 - All Rights Reserved.");
 var doc = document; // USE "doc" as "document"
 var userAg = navigator.userAgent; // USE "userAg" as "navigator.userAgent"
 
-function buildPage() { //Make the title, page links(navbar) & footer
+function buildPage() { // Make the title, page links(navbar) & footer
   console.log("buildPage() function called");
   doc.title = "Benjamin!";
   doc.getElementById("title").innerHTML = "<a href='index.html'>Benjamin</a>";
   doc.getElementById("siteLinks").innerHTML = "<a href='index.html'>Home</a> - <a href='about.html'>About</a> - <a href='projects.html'>Projects</a> - <a href='contact.html'>Contact</a><br><br>";
   doc.getElementById("topHeader").innerHTML = "Copyright Benjamin &copy; 2015 - All Rights Reserved.<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>";
+}
+
+function newsInformation() { // Load the news for the home page & any other specified page
+  console.log("newsInformation() function called");
+  doc.getElementById("newsTitle").innerHTML = "Loading";
+  doc.getElementById("newsInformation").innerHTML = "Please wait!";
+  var newsInformationDELAY = setInterval(function() {
+    doc.getElementById("newsTitle").innerHTML = "News";
+    doc.getElementById("newsInformation").innerHTML = "News, information, &amp; updates board for the website!";
+    clearInterval(newsInformationDELAY);
+  }, 1000);
 }
 
 function copyrightClose() { // Close the copyright notice

@@ -21,10 +21,6 @@ a:visited {
   color: #4CC6EB;
 }
 
-#randomImage {
-  border-radius: 10px;
-}
-
 #news {
   padding-top: 10px;
   padding-left: 10px;
@@ -39,22 +35,23 @@ a:visited {
   font-family: 'Ubuntu', sans-serif;
 }
 
-#newsTitle {
-
-}
-
-#randomness {
-  padding-top: 10px;
+#newsInformation {
+  padding-top: 1px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  background-color: #FE2E2E;
-  opacity: 0.7;
-  text-align: right;
-  margin-right: 2%;
-  margin-left: 45%;
-  border-radius: 10px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+#newsTitle {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 350%;
+  height: 25px;
 }
 
 #copyrightImage {
