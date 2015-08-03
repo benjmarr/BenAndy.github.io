@@ -1,3 +1,7 @@
+// #####################################################
+// # Copyright Benjamin (c) 2015 - All rights reserved #
+// #####################################################
+
 console.log("main.js file loaded\nThis is the main JavaScript file for the website.\nMost, if not all, pages under this domain link to this JavaScript document.\nYou can view the JavaScript source code here > https://benandy.github.io/main.js");
 console.warn("Copyright Benjamin (c) 2015 - All Rights Reserved.");
 
@@ -67,6 +71,10 @@ function copyrightHover() { // This is called when the mouse hoveres over the cl
   console.log("copyrightHover() function called");
   doc.getElementById("copyrightImage").src = "images/xHover.png";
 }
+
+// NOTE ###############################################################################
+// NOTE # Everything below this line is redirect functions unless specified otherwise #
+// NOTE ###############################################################################
 
 function redirectGithubDOTcomSLASHbenandy() { // Redirect to "github.com/BenAndy"
   console.log("redirectGithubDOTcomSLASHbenandy() function called");
