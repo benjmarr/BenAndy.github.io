@@ -16,17 +16,6 @@ function buildPage() { // Make the title, page links(navbar) & footer
   doc.getElementById("topHeader").innerHTML = "Copyright Benjamin &copy; 2015 - All Rights Reserved.<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>";
 }
 
-function newsInformation() { // Load the news for the home page & any other specified page
-  console.log("newsInformation() function called");
-  doc.getElementById("newsTitle").innerHTML = "Loading";
-  doc.getElementById("newsInformation").innerHTML = "Please wait!";
-  var newsInformationDELAY = setInterval(function() {
-    doc.getElementById("newsTitle").innerHTML = "News";
-    doc.getElementById("newsInformation").innerHTML = "News, information, &amp; updates board for the website!";
-    clearInterval(newsInformationDELAY);
-  }, 1000);
-}
-
 function copyrightClose() { // Close the copyright notice
   console.log("copyrightClose() function called");
   doc.getElementById("topHeader").innerHTML = "<a target='_blank' href='http://benandy.github.io/github'>GitHub</a> - <a href='http://benandy.github.io'>Website</a> - <a href='contact.html'>Contact</a> - <a target='_blank' href='http://benandy.github.io/randoms/ytplay/original'>Music Playlist</a> - <a href='' onclick='reloadPage()'>Reload Page</a>";
@@ -81,6 +70,26 @@ function copyrightUnHover() { // This is called when the mouse leaves the close 
 function copyrightHover() { // This is called when the mouse hoveres over the close copyright notice image
   console.log("copyrightHover() function called");
   doc.getElementById("copyrightImage").src = "images/xHover.png";
+}
+
+// NOTE #########################################################################
+// NOTE # Everything below this line is news scripts unless specified otherwise #
+// NOTE #########################################################################
+
+function newsInformation() { // Load the news for the home page & any other specified page
+  console.log("newsInformation() function called");
+  var newsInformationDELAY = setInterval(function() {
+    doc.getElementById("newsTitle").innerHTML = "News";
+    doc.getElementById("newsInformation").innerHTML = "News, information, &amp; updates board for the website!";
+    clearInterval(newsInformationDELAY);
+
+    var newsItemNAMEwebsiteReleased = setInterval(function() {
+      doc.getElementById("newsItemNAMEwebsiteReleasedTITLE").innerHTML = "New Site!";
+      doc.getElementById("newsItemNAMEwebsiteReleasedDATE").innerHTML = "13/7/204";
+      doc.getElementById("newsItemNAMEwebsiteReleasedCONTENT").innerHTML = "New website has been officially released! As you can see it is much different to the old, rather crappy, site. I've spent multiple hours into this to make it one of the best projects I've ever created!";
+      clearInterval(newsItemNAMEwebsiteReleased);
+    }, 300);
+  }, 1000);
 }
 
 // NOTE ###############################################################################
