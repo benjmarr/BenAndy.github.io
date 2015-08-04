@@ -1,0 +1,6 @@
+List of things to do before moving "dev/1" to "root".
+
+Delete "css"
+Delete "images"
+Delete "js/primary.js"
+Delete "vsmp.html"
