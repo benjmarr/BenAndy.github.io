@@ -1,10 +1,4 @@
-/*
-	DEVELOPED AND MANAGED BY Ben_Andy (BenAndy)
-	http://benandy.github.io
-
-	DO NOT USE ANY CODE FROM THIS SCRIPT WITHOUT DIRECT PERMISSIONS FROM IT'S OWNER
-*/
-
+// Copyright Benjamin (c) 2015 - All rights reserved
 API.on(API.chatLog("Loading VultureBot v0.1.6.20 "));
 
 //UNDER DEVELOPMENT

@@ -1,9 +1,4 @@
-/*
-	Developed by Ben_Andy (BenAndy)
-	http://benandy.github.io
-
-	DO NOT STEAL ANY CODE WITHOUT DIRECTLY GIVEN PERMISSIONS FROM IT'S OWNER
-*/
+// Copyright Benjamin (c) 2015 - All rights reserved
 
 API.on(API.chatLog("AutoPlug| AutoPlug v0.1.8.73 "));
 API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
@@ -14,7 +9,7 @@ $("div.button.cancel").click();
 // 'Woot' the current song
 $("#woot").click();
 API.on(API.ADVANCE, autoplug);
-function autoplug(){ 
+function autoplug(){
 
 	// Enter Dj Wait List
 	$("#dj-button").click();
