@@ -21,6 +21,10 @@ a:visited {
   color: #4CC6EB;
 }
 
+#newsAhref {
+  color: #FE2E2E;
+}
+
 #news {
   padding-top: 10px;
   padding-left: 10px;

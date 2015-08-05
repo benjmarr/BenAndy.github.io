@@ -53,11 +53,11 @@ function closeUseChrome() { // Close the warn window about using Chrome
   doc.getElementById("useChrome").innerHTML = "";
 }
 
-function page404() { // Get the 404 omnibox location
+function page404() { // The "404.html" page script
   console.log("page404() function called");
   var getURL = setInterval(function() {
     doc.getElementById("url404").innerHTML = "<br>" + window.location.href;
-    doc.title = "Ben - 404";
+    doc.title = "Benjamin - 404";
     clearInterval(getURL);
   }, 10);
 }
@@ -85,8 +85,8 @@ function newsInformation() { // Load the news for the home page & any other spec
 
     var newsItemNAMEwebsiteReleased = setInterval(function() {
       doc.getElementById("newsItemNAMEwebsiteReleasedTITLE").innerHTML = "New Site!";
-      doc.getElementById("newsItemNAMEwebsiteReleasedDATE").innerHTML = "13/7/204";
-      doc.getElementById("newsItemNAMEwebsiteReleasedCONTENT").innerHTML = "New website has been officially released! As you can see it is much different to the old, rather crappy, site. I've spent multiple hours into this to make it one of the best projects I've ever created!";
+      doc.getElementById("newsItemNAMEwebsiteReleasedDATE").innerHTML = "ADD_VALID_DATE";
+      doc.getElementById("newsItemNAMEwebsiteReleasedCONTENT").innerHTML = "New website has been officially released! As you can see it is much different to the old, rather crappy, site. I've spent multiple hours into this to make it one of the best projects I've ever created!<br><br><strong>What is in this new site?</strong> This site has many more pages to explore! As an example, my last website had nothing to do with any of my projects... This one does, <a href='prprojects.html' target='_blank' id='newsAhref'>click here</a>. I will get around to creating a site map, so you can explore the entire site to your heart's content!";
       clearInterval(newsItemNAMEwebsiteReleased);
     }, 300);
   }, 1000);
