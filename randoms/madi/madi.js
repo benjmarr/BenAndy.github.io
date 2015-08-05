@@ -1,3 +1,5 @@
+// Copyright Benjamin (c) 2015 - All rights reserveds
+
 console.log("madi.js file loaded\nCopyright Benjamin WM (c) 2015 - All rights reserved.");
 
 function buildPage() {

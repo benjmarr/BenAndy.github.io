@@ -1,3 +1,5 @@
+// Copyright Benjamin (c) 2015 - All rights reserved
+
 console.log("mx.js file loaded\nCopyright Ben WM (c) 2015");
 
 function pageLoad() {
