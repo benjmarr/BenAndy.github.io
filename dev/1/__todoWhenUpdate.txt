@@ -4,3 +4,5 @@ Delete "css"
 Delete "images"
 Delete "js/primary.js"
 Delete "vsmp.html"
+
+Delete THIS_FILE

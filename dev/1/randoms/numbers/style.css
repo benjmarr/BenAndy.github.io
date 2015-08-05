@@ -1,0 +1,23 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+body {
+  background-color: #000000;
+}
+
+#sideBar {
+  height: 101%;
+  width: 20px;
+  color: #00FF04;
+  font-size: 1%;
+  background-color: #00FF04;
+  position: absolute;
+  margin-top: -1%;
+  margin-left: -1%;
+}
+
+#xI {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #00FF04;
+  font-size: 100%;
+}
