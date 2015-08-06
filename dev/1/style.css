@@ -177,8 +177,26 @@ a:visited {
   position: absolute;
 }
 
+#contactAhref {
+  font-size: 150%;
+}
+
+#contactContent {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 2%;
+  margin-right: 60%;
+  background-color: #FE2E2E;
+  position: absolute;
+  opacity: 0.7;
+  font-size: 120%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
 #welcomeIntro {
-  text-align: left;
   font-family: 'Ubuntu', sans-serif;
   margin-left: 2%;
   margin-right: 60%;
