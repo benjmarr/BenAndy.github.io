@@ -5,6 +5,16 @@
 console.log("main.js file loaded\nThis is the main JavaScript file for the website.\nMost, if not all, pages under this domain link to this JavaScript document.\nYou can view the JavaScript source code here > https://benandy.github.io/main.js");
 console.warn("Copyright Benjamin (c) 2015 - All Rights Reserved.");
 
+var XMLHttpRequestDelay = setInterval(function() {
+  xhr.open("GET", "http://benandy.github.io", false);
+  xhr.send();
+  console.log("XMLHttpRequest status (http://benandy.github.io): " + xhr.status);
+  console.log("XMLHttpRequest statusText (http://benandy.github.io): " + xhr.statusText);
+  console.log("XMLHttpRequest delayed by '1000'");
+  clearInterval(XMLHttpRequestDelay);
+}, 1000);
+
+var xhr = new XMLHttpRequest(); // USE "xhr" as "new XMLHttpRequest()"
 var doc = document; // USE "doc" as "document"
 var userAg = navigator.userAgent; // USE "userAg" as "navigator.userAgent"
 
