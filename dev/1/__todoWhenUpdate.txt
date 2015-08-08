@@ -4,5 +4,8 @@ Delete "css"
 Delete "images"
 Delete "js/primary.js"
 Delete "vsmp.html"
+Delete "randoms/ytplay/ytplay.css"
+Delete "randoms/ytplay/country.html"
+Delete "randoms/ytplay/80s90s.html"
 
 Delete THIS_FILE
