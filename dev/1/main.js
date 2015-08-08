@@ -10,7 +10,6 @@ var XMLHttpRequestDelay = setInterval(function() {
   xhr.send();
   console.log("XMLHttpRequest status (http://benandy.github.io): " + xhr.status);
   console.log("XMLHttpRequest statusText (http://benandy.github.io): " + xhr.statusText);
-  console.log("XMLHttpRequest delayed by '1000'");
   clearInterval(XMLHttpRequestDelay);
 }, 1000);
 
@@ -24,6 +23,30 @@ function buildPage() { // Make the title, page links(navbar) & footer
   doc.getElementById("title").innerHTML = "<a href='index.html'>Benjamin</a>";
   doc.getElementById("siteLinks").innerHTML = "<a href='index.html'>Home</a> - <a href='about.html'>About</a> - <a href='projects.html'>Projects</a> - <a href='contact.html'>Contact</a><br><br>";
   doc.getElementById("topHeader").innerHTML = "Copyright Benjamin &copy; 2015 - All Rights Reserved.<img src='images/x.png' onmouseover='copyrightHover()' onmouseout='copyrightUnHover()' onclick='copyrightClose()' align='right' alt='Close the copyright notice' id='copyrightImage'>";
+}
+
+function ytplay() { // "randoms/ytplay" function
+  console.log("ytplay() function called");
+  doc.title = "YouTube Playlist";
+}
+
+function ytplayR() { // "randoms/ytplay" random playlist selection
+  console.log("ytplayR() function called");
+  var randomYtplay = setInterval(function() {
+    if (Math.random() < 0.5) {
+      doc.getElementById("random").innerHTML = "<a href='mixes.html'>Random Playlist</a>";
+      console.log("Random playlist slected: Mixes");
+    } else {
+      if (Math.random() < 0.5) {
+        doc.getElementById("random").innerHTML = "<a href='original.html'>Random Plalist</a>";
+        console.log("Random playlist slected: Original");
+      } else {
+        doc.getElementById("random").innerHTML = "<a href='chill.html'>Random Playlist</a>";
+        console.log("Random playlist slected: Chill");
+      }
+    }
+    clearInterval(randomYtplay);
+  }, 10);
 }
 
 function copyrightClose() { // Close the copyright notice
@@ -96,7 +119,7 @@ function newsInformation() { // Load the news for the home page & any other spec
     var newsItemNAMEwebsiteReleased = setInterval(function() {
       doc.getElementById("newsItemNAMEwebsiteReleasedTITLE").innerHTML = "New Site!";
       doc.getElementById("newsItemNAMEwebsiteReleasedDATE").innerHTML = "ADD_VALID_DATE";
-      doc.getElementById("newsItemNAMEwebsiteReleasedCONTENT").innerHTML = "New website has been officially released! As you can see it is much different to the old, rather crappy, site. I've spent multiple hours into this to make it one of the best projects I've ever created!<br><br><strong>What is in this new site?</strong> This site has many more pages to explore! As an example, my last website had nothing to do with any of my projects... This one does, <a href='projects.html' target='_blank' id='newsAhref'>click here</a>. I will get around to creating a site map, so you can explore the entire site to your heart's content!";
+      doc.getElementById("newsItemNAMEwebsiteReleasedCONTENT").innerHTML = "New website has been officially released! As you can see it is much different to the old, rather crappy, site. I've spent multiple hours into this to make it one of the best projects I've ever created!<br><br><strong>What is in this new site?</strong> This site has many more pages to explore! As an example, my last website had nothing to do with any of my projects... This one does, <a href='projects.html' target='_blank' id='newsAhref'>click here</a>. I will get around to creating a site map, so you can explore the entire site to your heart's content!<br><br><strong>- </strong>The <a href='randoms/ytplay/' target='_blank' id='newsAhref'>YouTube Playlist</a> now has a 'Random Plalist' option to the top left of the page.";
       clearInterval(newsItemNAMEwebsiteReleased);
     }, 300);
   }, 1000);
