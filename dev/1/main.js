@@ -211,3 +211,8 @@ function redirectRandomsSLASHonelife() { // Redirect to "benandy.github.io/rando
   console.log("redirectRandomsSLASHonelife() function called");
   window.location = "http://benandy.github.io/randoms/onelife";
 }
+
+function redirectVulturesmpDOTcom() { // Redirect to "vulturesmp.com"
+  console.log("redirectVulturesmpDOTcom() function called");
+  window.location = "http://vulturesmp.com";
+}
