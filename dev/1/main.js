@@ -13,9 +13,17 @@ var XMLHttpRequestDelay = setInterval(function() {
   clearInterval(XMLHttpRequestDelay);
 }, 1000);
 
+// NOTE ########################################################################
+// NOTE # Everything below this line is var changes unless specified otherwise #
+// NOTE ########################################################################
+
 var xhr = new XMLHttpRequest(); // USE "xhr" as "new XMLHttpRequest()"
 var doc = document; // USE "doc" as "document"
 var userAg = navigator.userAgent; // USE "userAg" as "navigator.userAgent"
+
+// NOTE #############################################################################
+// NOTE # Everything below this line is random functions unless specified otherwise #
+// NOTE #############################################################################
 
 function buildPage() { // Make the title, page links(navbar) & footer
   console.log("buildPage() function called");
