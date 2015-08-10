@@ -216,3 +216,8 @@ function redirectVulturesmpDOTcom() { // Redirect to "vulturesmp.com"
   console.log("redirectVulturesmpDOTcom() function called");
   window.location = "http://vulturesmp.com";
 }
+
+function redirectGistDOTgithubDOTcomSLASHbenandySLASH08ce80bc92e835fd4eea() { // Redirect to "https://gist.github.com/BenAndy/08ce80bc92e835fd4eea"
+  console.log("redirectGistDOTgithubDOTcomSLASHbenandySLASH08ce80bc92e835fd4eea() function called");
+  window.location = "https://gist.github.com/BenAndy/08ce80bc92e835fd4eea";
+}
