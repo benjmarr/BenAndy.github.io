@@ -3,5 +3,11 @@
 /* ##################################################### */
 
 body {
-  background-color: #372C2C;
+  width: 100%;
+  height: 100%;
+}
+
+#output {
+  /*color: #372C2C;*/
+  position: absolute;
 }
