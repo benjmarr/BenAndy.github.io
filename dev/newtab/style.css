@@ -3,11 +3,27 @@
 /* ##################################################### */
 
 body {
-  width: 100%;
-  height: 100%;
+  background-color: black;
 }
 
-#output {
-  /*color: #372C2C;*/
-  position: absolute;
+header {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+#header {
+  opacity: 0.0;
+  background: url("content/background/photo-1433785124354-92116416b870.jpg");
+	background-size: cover;
+}
+
+#time {
+  text-align: center;
+  cursor: default;
+  margin-top: 20%;
+  font-size: 500%;
 }
