@@ -3,12 +3,15 @@
   <head>
     <meta name="author" content="Benjamin">
     <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
     <link href="content/favicon.png" rel="icon" type="image/png">
     <link href="style.css" rel="stylesheet" tyle="text/css">
   </head>
-  <body onload="fadeinAnimation()">
-    <header id="header">
-      <p id="time">New Tab</p>
+  <body onload="time()">
+    <header id="header" style="background-size: cover;">
+      <p id="newtab"><a href="" target="_blank">New Tab</a></p>
+      <div id="clockbox"></div>
+      <div id="datebox"></div>
     </header>
     <script src="newtab.js"></script>
   </body>

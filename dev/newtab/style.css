@@ -15,15 +15,46 @@ header {
 	margin-right: -8px;
 }
 
-#header {
-  opacity: 0.0;
-  background: url("content/background/photo-1433785124354-92116416b870.jpg");
-	background-size: cover;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-#time {
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 200;
+  color: white;
+  text-decoration: underline;
+}
+
+#clockbox {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
   cursor: default;
-  margin-top: 20%;
-  font-size: 500%;
+  font-size: 800%;
+  margin-top: 10%;
+  margin-bottom: -3%;
+}
+
+#datebox {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  cursor: default;
+  width: 100%;
+  font-size: 300%;
+}
+
+#newtab {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  cursor: default;
+  height: 0%;
+  font-size: 100%;
 }
