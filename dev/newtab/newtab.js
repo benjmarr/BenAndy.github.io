@@ -7,13 +7,16 @@ document.title = "New Tab";
 //photo-1438216983993-cdcd7dea84ce.jpg
 //photo-1433785124354-92116416b870.jpg
 
-if (Math.random() < 0.5) {
-  document.getElementById("header").style.backgroundImage = "url('content/background/photo-1434145175661-472d90344c15.jpg')";
-} else if (Math.random() < 0.5) {
-  document.getElementById("header").style.backgroundImage = "url('content/background/photo-1433785124354-92116416b870.jpg')";
-} else {
-  document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438216983993-cdcd7dea84ce.jpg')";
-}
+var background = setInterval(function() {
+  if (Math.random() < 0.5) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1434145175661-472d90344c15.jpg')";
+  } else if (Math.random() < 0.5) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1433785124354-92116416b870.jpg')";
+  } else {
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438216983993-cdcd7dea84ce.jpg')";
+  }
+  clearInterval(background);
+}, 100);
 
 function time() {
   console.log("clockLoad");
