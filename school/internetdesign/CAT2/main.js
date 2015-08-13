@@ -1,3 +1,7 @@
+// #####################################
+// # Copyright Ben Watts-Marr (c) 2015 #
+// #####################################
+
 console.log("main.js file loaded\nCopyright Ben Watts-Marr (c) 2015");
 
 function buildPage() {
@@ -9,6 +13,28 @@ function buildPage() {
     clearInterval(headerChange);
     document.getElementById("copyright").innerHTML = "<a onclick='windowLocationHome()'>Home</a> - <a onclick='windowLocationMenu()'>Menu</a> - <a onclick='windowLocationAbout()'>About</a> - <a onclick='windowLocationContact()'>Contact</a> - <a onclick='reloadPage()'>Reload Page</a>"
   }, 10000);
+}
+
+function xHoverHOVER() {
+  console.log("xHoverHOVER() function called");
+  document.getElementById("formSentImage").src = "http://benandy.github.io/dev/1/images/xHover.png";
+}
+
+function xHoverOUT() {
+  console.log("xHoverOUT() function called");
+  document.getElementById("formSentImage").src = "http://benandy.github.io/dev/1/images/x.png";
+}
+
+function xHoverCLOSE() {
+  console.log("xHoverCLOSE() function called");
+  document.getElementById("contactFormSent").style.visibility = "hidden";
+  document.getElementById("contactFormSent").innerHTML = "";
+  document.getElementById("nope").innerHTML = "";
+}
+
+function contacFormSend() {
+  console.log("contacFormSend() function called");
+  window.location = "scontact.html";
 }
 
 function windowLocationHome() {
