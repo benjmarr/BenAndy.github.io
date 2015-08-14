@@ -31,6 +31,17 @@ a:hover {
   text-decoration: underline;
 }
 
+#unsplash {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 80%;
+  text-align: right;
+	position: relative;
+	bottom: 1;
+  z-index: 1;
+  cursor: default;
+}
+
 #clockbox {
   color: white;
   font-family: 'Titillium Web', sans-serif;
