@@ -31,13 +31,26 @@ a:hover {
   text-decoration: underline;
 }
 
+#optionsImg {
+  height: 3%;
+  width: 3%;
+}
+
+#options {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+	position: relative;
+  z-index: 1;
+  cursor: default;
+}
+
 #unsplash {
   color: white;
+  height: 0px;
   font-family: 'Titillium Web', sans-serif;
   font-size: 80%;
   text-align: right;
 	position: relative;
-	bottom: 1;
   z-index: 1;
   cursor: default;
 }

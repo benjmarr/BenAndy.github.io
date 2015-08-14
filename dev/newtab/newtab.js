@@ -4,6 +4,14 @@
 
 document.title = "New Tab"
 
+function optionsHover() {
+
+}
+
+function optionsNotHover() {
+  
+}
+
 var background = setInterval(function() {
   if (Math.random() < 0.5) {
     document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436891620584-47fd0e565afb.jpg')";
@@ -21,7 +29,6 @@ var tmonth=new Array("January","February","March","April","May","June","July","A
 setInterval(GetClock,1000);
 
 function GetClock() {
-  console.log("secondCount");
   var d=new Date();
   var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
   var d=new Date();
