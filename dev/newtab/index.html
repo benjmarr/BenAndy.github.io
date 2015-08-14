@@ -10,13 +10,21 @@
   </head>
   <body>
     <header id="header" style="background-size: cover;">
-      <p id="newtab"><a href="" target="_blank">New Tab</a></p>
+      <p id="newtab">New Tab</p>
       <div id="clockbox">Loading...</div>
       <div id="datebox">Please wait!</div>
     </header>
-    <div id="unsplash">Images provided by <a href="http://unsplash.com" target="_blank">unsplash.com</a></div>
+    <div id="unsplash">Images provided by unsplash.com</div>
     <div id="options">
       <img id="optionsImg" src="content/options.png" alt="Options Cog" title="Options" onclick="options()" onmouseover="optionsHover()" onmouseout="optionsNotHover()">
+      <div id="optionsMenu">
+        <span><img src="content/x.png" onclick="optionsClose()" id="optionsX"></span>
+        <strong><center>Options</center></strong>
+        <br>&bull; <span id="optionTextColour"><a onclick="optionsTEXTCOLOUR1()">Colour Scheme</a></span>
+        <br><br><br><strong><center>Information</center></strong>
+        &bull; New Tab page copyright &amp; Benjamin, 2015 - All rights reserved.
+        <br>&bull; Images provided by <a href="http://unsplash.com" target="_blank">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank">License</a>)
+      </div>
     </div>
   </body>
 </html>

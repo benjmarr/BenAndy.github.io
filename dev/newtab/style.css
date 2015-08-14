@@ -31,6 +31,25 @@ a:hover {
   text-decoration: underline;
 }
 
+#optionsX {
+  width: 3%;
+  height: 3%;
+}
+
+#optionsMenu {
+  background-color: black;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  visibility: hidden;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
 #optionsImg {
   height: 3%;
   width: 3%;
