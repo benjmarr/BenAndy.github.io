@@ -2,18 +2,15 @@
 // # Copyright Benjamin (c) All rights reserved - 2015 #
 // #####################################################
 
-document.title = "New Tab";
-
-//photo-1438216983993-cdcd7dea84ce.jpg
-//photo-1433785124354-92116416b870.jpg
+document.title = "New Tab"
 
 var background = setInterval(function() {
   if (Math.random() < 0.5) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1434145175661-472d90344c15.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436891620584-47fd0e565afb.jpg')";
   } else if (Math.random() < 0.5) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1433785124354-92116416b870.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436891678271-9c672565d8f6.jpg')";
   } else {
-    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438216983993-cdcd7dea84ce.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1437532437759-a0ce0535dfed.jpg')";
   }
   clearInterval(background);
 }, 100);
