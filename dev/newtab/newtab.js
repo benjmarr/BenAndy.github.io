@@ -36,14 +36,6 @@ function optionsTEXTCOLOUR2() {
   document.getElementById("newtab").style.color = "white";
 }
 
-function optionsHover() {
-  document.getElementById("optionsImg").src = "content/optionsHover.png";
-}
-
-function optionsNotHover() {
-  document.getElementById("optionsImg").src = "content/options.png";
-}
-
 var background = setInterval(function() {
   if (Math.random() < 0.3) {
     document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436891620584-47fd0e565afb.jpg')";
@@ -56,6 +48,15 @@ var background = setInterval(function() {
   }
   clearInterval(background);
 }, 1);
+
+setInterval(options1,1000);
+function options1() {
+  document.getElementById("optionsImg").src = "content/options.png";
+  var options = setInterval(function() {
+    document.getElementById("optionsImg").src = "content/optionsHover.png";
+    clearInterval(options);
+  }, 500);
+}
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");

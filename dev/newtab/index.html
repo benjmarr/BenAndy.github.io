@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
     <link href="content/favicon.png" rel="icon" type="image/png">
-    <link href="style.css" rel="stylesheet" tyle="text/css">
+    <link href="style.css" rel="stylesheet" tyle="text/css" title="x">
     <script src="newtab.js"></script>
   </head>
   <body>
@@ -16,13 +16,13 @@
     </header>
     <div id="unsplash">Images provided by unsplash.com</div>
     <div id="options">
-      <img id="optionsImg" src="content/options.png" alt="Options Cog" title="Options" onclick="options()" onmouseover="optionsHover()" onmouseout="optionsNotHover()">
+      <img id="optionsImg" src="content/options.png" alt="Options Cog" title="Options" onclick="options()">
       <div id="optionsMenu">
         <span><img src="content/x.png" onclick="optionsClose()" id="optionsX"></span>
-        <strong><center>Options</center></strong>
-        <br>&bull; <span id="optionTextColour"><a onclick="optionsTEXTCOLOUR1()">Colour Scheme</a></span>
+        <strong><center>Options<br>(Work in progress - Not all features will work)</center></strong>
+        <br>&bull; <span id="optionTextColour"><a onclick="optionsTEXTCOLOUR1(), switch_style('x1')">Colour Scheme</a></span>
         <br><br><br><strong><center>Information</center></strong>
-        &bull; New Tab page copyright &amp; Benjamin, 2015 - All rights reserved.
+        &bull; New Tab page copyright &copy; Benjamin, 2015 - All rights reserved.
         <br>&bull; Images provided by <a href="http://unsplash.com" target="_blank">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank">License</a>)
       </div>
     </div>
