@@ -4,12 +4,16 @@
 
 document.title = "New Tab"
 
-function optionsHover() {
+function options() {
+  
+}
 
+function optionsHover() {
+  document.getElementById("optionsImg").src = "content/optionsHover.png";
 }
 
 function optionsNotHover() {
-  
+  document.getElementById("optionsImg").src = "content/options.png";
 }
 
 var background = setInterval(function() {
