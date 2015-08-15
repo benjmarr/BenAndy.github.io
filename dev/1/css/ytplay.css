@@ -34,6 +34,22 @@ img {
   border-radius: 10px;
 }
 
+#playlistAuthor {
+  color: #FF8000;
+  font-size: 80%;
+  position: absolute;
+}
+
+#lineBreak {
+  background-color: #FF8000;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: #FF8000;
+  height: 10px;
+  font-size: 0px;
+  border-radius: 10px;
+}
+
 #custom {
   color: #FF8000;
 	font-family: 'Oswald', sans-serif;
@@ -85,5 +101,6 @@ img {
   font-family: 'Oswald', sans-serif;
   height: 0px;
   font-size: 40px;
-  margin-top: 10%;
+  color: #FF8000;
+  margin-top: 5%;
 }
