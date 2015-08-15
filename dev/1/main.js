@@ -46,7 +46,7 @@ function ytplayR() { // "randoms/ytplay" random playlist selection
       console.log("Random playlist slected: Mixes");
     } else {
       if (Math.random() < 0.5) {
-        doc.getElementById("random").innerHTML = "<a href='original.html'>Random Plalist</a>";
+        doc.getElementById("random").innerHTML = "<a href='original.html'>Random Playlist</a>";
         console.log("Random playlist slected: Original");
       } else {
         doc.getElementById("random").innerHTML = "<a href='chill.html'>Random Playlist</a>";
