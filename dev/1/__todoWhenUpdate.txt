@@ -7,5 +7,7 @@ Delete "vsmp.html"
 Delete "randoms/ytplay/ytplay.css"
 Delete "randoms/ytplay/country.html"
 Delete "randoms/ytplay/80s90s.html"
+Delete "80s/90s" YOUTUBE playlist
+Delete "Country" YOUTUBE playlist
 
 Delete THIS_FILE
