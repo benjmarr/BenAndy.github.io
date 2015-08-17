@@ -31,6 +31,16 @@ a:hover {
   text-decoration: underline;
 }
 
+img > #link {
+  border-radius: 10px;
+}
+
+#link {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
 #optionsX {
   width: 3%;
   height: 3%;
