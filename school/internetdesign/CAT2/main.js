@@ -4,8 +4,8 @@
 
 console.log("main.js file loaded\nCopyright Ben Watts-Marr (c) 2015");
 
-function buildPage() {
-  console.log("buildPage() function called.");
+var pageLoad = setInterval(function() {
+  clearInterval(pageLoad);
   document.getElementById("title").innerHTML = "<a href='index.html'>Henry's Cafe</a>&nbsp&nbsp<a href='index.html'><span onmouseover='logoHover()' onmouseout='logoOut()'><img id='titleLogoImage' src='content/logo.png' alt='Logo' height='3%' width='3%'></a></span>";
   document.getElementById("nav").innerHTML = "<a href='index.html'>Home</a> - <a href='menu.html'>Menu</a> - <a href='about.html'>About</a> - <a href='contact.html'>Contact</a>";
   document.getElementById("copyright").innerHTML = "Copyright Ben Watts-Marr &copy; 2015";
@@ -13,7 +13,15 @@ function buildPage() {
     clearInterval(headerChange);
     document.getElementById("copyright").innerHTML = "<a onclick='windowLocationHome()'>Home</a> - <a onclick='windowLocationMenu()'>Menu</a> - <a onclick='windowLocationAbout()'>About</a> - <a onclick='windowLocationContact()'>Contact</a> - <a onclick='reloadPage()'>Reload Page</a>"
   }, 10000);
-}
+}, 10);
+
+var userAg = navigator.userAgent;
+var map = setInterval(function() {
+  if (userAg.indexOf("Safari")!=-1) {
+      document.getElementById("map").innerHTML = "<a href='https://www.google.com/maps/d/viewer?mid=zQ73pULRxiR0.kDii_js51sbw' target='_blank'>Our Location: CLICK HERE</a>";
+    }
+  clearInterval(map);
+}, 10);
 
 function xHoverHOVER() {
   console.log("xHoverHOVER() function called");
