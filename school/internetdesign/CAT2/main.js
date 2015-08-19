@@ -17,11 +17,13 @@ var pageLoad = setInterval(function() {
 
 var userAg = navigator.userAgent;
 var map = setInterval(function() {
-  if (userAg.indexOf("Safari")!=-1) {
-      document.getElementById("map").innerHTML = "<a href='https://www.google.com/maps/d/viewer?mid=zQ73pULRxiR0.kDii_js51sbw' target='_blank'>Our Location: CLICK HERE</a>";
-    }
   clearInterval(map);
-}, 10);
+  if (userAg.indexOf("Sarafi") != -1) {
+    document.getElementById("map").innerHTML = "<a href='https://www.google.com/maps/d/viewer?mid=zQ73pULRxiR0.kDii_js51sbw' target='_blank'>Our Location: CLICK HERE</a>";
+  } else {
+    console.log(userAg);
+  }
+}, 1000);
 
 function xHoverHOVER() {
   console.log("xHoverHOVER() function called");
