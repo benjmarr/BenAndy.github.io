@@ -16,8 +16,18 @@ function optionsClose() {
   document.getElementById("optionsImg").style.height = "3%";
 }
 
+function optionsSOCIALMEDIA1() {
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social Media Icons</a>";
+  document.getElementById("link").style.visibility = "hidden";
+}
+
+function optionsSOCIALMEDIA2() {
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a>";
+  document.getElementById("link").style.visibility = "visible";
+}
+
 function optionsTEXTCOLOUR1() {
-  document.getElementById("optionTextColour").innerHTML = "<a onclick='optionsTEXTCOLOUR2()'>Colour Scheme</a>";
+  document.getElementById("optionTextColour").innerHTML = "<a onclick='optionsTEXTCOLOUR2()'>Colour Scheme</a> (FEATURE UNDER DEVELOPMENT)";
   document.getElementById("optionsMenu").style.backgroundColor = "white";
   document.getElementById("options").style.color = "black";
   document.getElementById("unsplash").style.color = "black";
@@ -27,7 +37,7 @@ function optionsTEXTCOLOUR1() {
 }
 
 function optionsTEXTCOLOUR2() {
-  document.getElementById("optionTextColour").innerHTML = "<a onclick='optionsTEXTCOLOUR1()'>Colour Scheme</a>";
+  document.getElementById("optionTextColour").innerHTML = "<a onclick='optionsTEXTCOLOUR1()'>Colour Scheme</a> (FEATURE UNDER DEVELOPMENT)";
   document.getElementById("optionsMenu").style.backgroundColor = "black";
   document.getElementById("options").style.color = "white";
   document.getElementById("unsplash").style.color = "white";
