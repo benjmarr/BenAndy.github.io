@@ -140,6 +140,17 @@ h3 {
   border-color: #CCCE86;
 }
 
+#about {
+  font-family: 'Slabo 27px', serif;
+  font-size: 120%;
+  background-color: #B9BA8B;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 #pageContent {
   font-family: 'Slabo 27px', serif;
   background-color: #B9BA8B;

@@ -16,14 +16,16 @@ var pageLoad = setInterval(function() {
 }, 10);
 
 var userAg = navigator.userAgent;
-var map = setInterval(function() {
-  clearInterval(map);
-  if (userAg.indexOf("Sarafi") != -1) {
-    document.getElementById("map").innerHTML = "<a href='https://www.google.com/maps/d/viewer?mid=zQ73pULRxiR0.kDii_js51sbw' target='_blank'>Our Location: CLICK HERE</a>";
-  } else {
-    console.log(userAg);
-  }
-}, 1000);
+function loadMap() {
+  var map = setInterval(function() {
+    clearInterval(map);
+    if (userAg.indexOf("Sarafi") != -1) {
+      document.getElementById("map").innerHTML = "<a href='https://www.google.com/maps/d/viewer?mid=zQ73pULRxiR0.kDii_js51sbw' target='_blank'>Our Location: CLICK HERE</a>";
+    } else {
+      console.log(userAg);
+    }
+  }, 1000);
+}
 
 function xHoverHOVER() {
   console.log("xHoverHOVER() function called");
