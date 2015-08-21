@@ -2,7 +2,7 @@
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved");;
 
-API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.74"));
+API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.75"));
 API.on(API.chatLog("AutoPlug >> Copyright Benjamin (c) 2015 - All rights reserved"));
 
 var loadDelay = setInterval(function() {
@@ -26,4 +26,5 @@ setInterval(function() {
 	var afkResetMsg = " ! ";
 	API.on(API.sendChat(afkResetMsg));
 	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
-}, 5220000);
+}, 3000);
+// }, 5220000);
