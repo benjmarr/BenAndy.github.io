@@ -2,5 +2,28 @@
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved");;
 
-API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.8.73"));
+API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.74"));
 API.on(API.chatLog("AutoPlug >> Copyright Benjamin (c) 2015 - All rights reserved"));
+
+var loadDelay = setInterval(function() {
+	clearInterval(loadDely);
+	$("dj-button").click();
+	$("div.button.cancel").click();
+	$("#woot").click();
+})
+
+API.on(API.ADVANCE, autoplug);
+function autoplug() {
+	$("dj-button").click();
+	$("div.button.cancel").click();
+
+	var wootDelay = setInterval(function() {
+		$("#woot").click();
+	}, 3000);
+}
+
+setInterval(function() {
+	var afkResetMsg = " ! ";
+	API.on(API.sendChat(afkResetMsg));
+	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
+}, 5220000);
