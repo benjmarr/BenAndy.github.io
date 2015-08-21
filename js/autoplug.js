@@ -1,53 +1,29 @@
 // Copyright Benjamin (c) 2015 - All rights reserved
 
-API.on(API.chatLog("AutoPlug| AutoPlug v0.1.8.73 "));
-API.on(API.chatLog("AutoPlug| Developed and copyrighted (c) by Ben_Andy "));
+console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved");;
 
-// Enter Dj Wait List
-$("#dj-button").click();
-$("div.button.cancel").click();
-// 'Woot' the current song
-$("#woot").click();
-API.on(API.ADVANCE, autoplug);
-function autoplug(){
+API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.76"));
+API.on(API.chatLog("AutoPlug >> Copyright Benjamin (c) 2015 - All rights reserved"));
 
-	// Enter Dj Wait List
-	$("#dj-button").click();
-	API.on(API.sendChat("/cap 1"));
+var loadDelay = setInterval(function() {
+	clearInterval(loadDely);
+	$("dj-button").click();
 	$("div.button.cancel").click();
-	API.on(API.chatLog("AutoPlug| Attemping to join Dj Wait Llist "));
-	var cancelCount = setInterval(function() {
-		$("div.button.cancel").click();
-		clearInterval(cancelCount);
-	}, 100);
-	var capCount = setInterval(function() {
-		API.on(API.sendChat("/cap 50"));
-		clearInterval(capCount);
-	}, 1000);
+	$("#woot").click();
+})
 
-	// 'Woot' the current song
-	var woot = setInterval(function() {
+API.on(API.ADVANCE, autoplug);
+function autoplug() {
+	$("dj-button").click();
+	$("div.button.cancel").click();
+
+	var wootDelay = setInterval(function() {
 		$("#woot").click();
-		API.on(API.chatLog("AutoPlug| Song 'Wooted'" ));
-		clearInterval(woot);
-	}, 2000);
+	}, 3000);
 }
 
-// Anti-AFK
 setInterval(function() {
-	API.on(API.sendChat("k"));
-	API.on(API.chatLog("AutoPlug| AFK time has been reset by sending a messsage into chat "));
+	var afkResetMsg = " ! ";
+	API.on(API.sendChat(afkResetMsg));
+	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
 }, 5220000);
-
-// Sharing AutoPlug
-setInterval(function() {
-	API.on(API.chatLog(" "));
-	API.on(API.chatLog("AutoPlug| Share AutoPlug with your friends! "));
-	API.on(API.chatLog("AutoPlug| http://benandy.github.io/r/A0 "));
-	API.on(API.chatLog(" "));
-}, 900000);
-
-API.on(API.chatLog(" "));
-API.on(API.chatLog("AutoPlug| Share AutoPlug with your freinds! "));
-API.on(API.chatLog("AutoPlug| http://benandy.github.io/r/A0 "));
-API.on(API.chatLog(" "));
