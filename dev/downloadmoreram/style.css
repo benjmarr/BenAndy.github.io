@@ -1,0 +1,32 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+body {
+  background-color: #F7F1C3;
+}
+
+button {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 250%;
+  background-color: #DAD4AA;
+  border-style: groove;
+  border-radius: 10px;
+}
+
+#download {
+  text-align: center;
+  padding-top: 5%;
+}
+
+#title {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 300%;
+  background-color: #DAD4AA;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
