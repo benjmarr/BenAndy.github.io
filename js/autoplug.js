@@ -2,7 +2,9 @@
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
 
-API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.80"));
+var version = "v0.2.9.81";
+
+API.on(API.chatLog("AutoPlug >> AutoPlug " + version));
 
 var loadDelay = setInterval(function() {
 	clearInterval(loadDelay);
