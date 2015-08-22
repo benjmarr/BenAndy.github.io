@@ -2,7 +2,7 @@
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved");;
 
-API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.77"));
+API.on(API.chatLog("AutoPlug >> AutoPlug v0.2.9.78"));
 API.on(API.chatLog("AutoPlug >> Copyright Benjamin (c) 2015 - All rights reserved"));
 
 var loadDelay = setInterval(function() {
@@ -10,7 +10,7 @@ var loadDelay = setInterval(function() {
 	$("dj-button").click();
 	$("div.button.cancel").click();
 	$("#woot").click();
-})
+}, 10);
 
 API.on(API.ADVANCE, autoplug);
 function autoplug() {
@@ -20,7 +20,7 @@ function autoplug() {
 	var wootDelay = setInterval(function() {
 		clearInterval(wootDelay);
 		$("#woot").click();
-	}, 3000);
+	}, 5000);
 }
 
 setInterval(function() {
