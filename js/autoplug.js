@@ -1,8 +1,9 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
+console.log("AutoPlug " + version);
 
-var version = "v0.2.10.88";
+var version = "v0.2.10.89";
 
 API.on(API.chatLog("Starting AutoPlug " + version + "!\nPlease wait."));
 
