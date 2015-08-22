@@ -1,10 +1,10 @@
-// Copyright Benjamin (c) 2015 - All rights reserved
+// Copyright Benjamin (c) 2015 - All rights reserved.
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
 
-var version = "v0.2.9.81";
+var version = "v0.2.9.82";
 
-API.on(API.chatLog("AutoPlug >> AutoPlug " + version));
+API.on(API.chatLog("Starting AutoPlug " + version + "! Please wait."));
 
 var loadDelay = setInterval(function() {
 	clearInterval(loadDelay);
@@ -29,3 +29,5 @@ setInterval(function() {
 	API.on(API.sendChat(afkResetMsg));
 	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
 }, 5220000);
+
+API.on(API.chatLog("AutoPlug " + version + "loaded."));
