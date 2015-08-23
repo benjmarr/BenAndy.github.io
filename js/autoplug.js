@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.12.111";
+var version = "v0.2.12.112";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -32,7 +32,6 @@ API.on(API.ADVANCE, autoplug);
 function autoplug() {
 	$("#dj-button").click();
 	$("div.button.cancel").click();
-}
 
 	var wootDelay = setInterval(function() {
 		clearInterval(wootDelay);
