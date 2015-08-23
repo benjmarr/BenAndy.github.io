@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.11.102";
+var version = "v0.2.11.103";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -10,7 +10,7 @@ console.log(app);
 API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 
 var autoplugActive = setInterval(function() {
-	if (Math.random < 0.3) {
+	if (Math.random < 0.5) {
 		$("#chat-input-field").attr("placeholder","Created by Benjamin!");
 	} else {
 		$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
@@ -18,8 +18,8 @@ var autoplugActive = setInterval(function() {
 	var autoplugActiveMSG = setInterval(function() {
 		clearInterval(autoplugActiveMSG);
 		$("#chat-input-field").attr("placeholder",app);
-	}, 2000);
-}, 3000);
+	}, 1000);
+}, 2000);
 
 var loadDelay = setInterval(function() {
 	clearInterval(loadDelay);
