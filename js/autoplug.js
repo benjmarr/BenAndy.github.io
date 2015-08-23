@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.13.117";
+var version = "v0.2.13.119";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -28,22 +28,23 @@ var loadDelay = setInterval(function() {
 	$("#woot").click();
 }, 10);
 
+setInterval(function() {
+	var afkResetMsg = " ! ";
+	API.on(API.sendChat(afkResetMsg));
+	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
+}, 5220000);
+
 API.on(API.ADVANCE, autoplug);
 function autoplug() {
 	$("#dj-button").click();
 	$("div.button.cancel").click();
+	API.on(API.chatLog("Song time: " + API.getTimeRemaining()));
 
 	var wootDelay = setInterval(function() {
 		clearInterval(wootDelay);
 		$("#woot").click();
 	}, 5000);
 }
-
-setInterval(function() {
-	var afkResetMsg = " ! ";
-	API.on(API.sendChat(afkResetMsg));
-	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
-}, 5220000);
 
 API.on(API.WAIT_LIST_UPDATE, waitlistupdate);
 function waitlistupdate() {
