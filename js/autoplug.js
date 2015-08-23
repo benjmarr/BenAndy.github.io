@@ -3,15 +3,17 @@
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
 console.log("AutoPlug " + version);
 
-var version = "v0.2.11.93";
+var version = "v0.2.11.95";
+var app = "AutoPlug " + version;
+var appDetail = app + " for Plug.Dj";
 
-API.on(API.chatLog("Starting AutoPlug " + version + "!\nPlease wait."));
+API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 
 var autoplugActive = setInterval(function() {
 	$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
 	var autoplugActiveMSG = setInterval(function() {
 		clearInterval(autoplugActiveMSG);
-		$("#chat-input-field").attr("placeholder","AutoPlug " + version);
+		$("#chat-input-field").attr("placeholder",app);
 	}, 1000);
 }, 2000);
 
@@ -39,4 +41,4 @@ setInterval(function() {
 	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
 }, 5220000);
 
-API.on(API.chatLog("AutoPlug " + version + " loaded."));
+API.on(API.chatLog(app + " loaded."));
