@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.12.113";
+var version = "v0.2.12.114";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -49,7 +49,6 @@ API.on(API.WAIT_LIST_UPDATE, waitlistupdate);
 function waitlistupdate() {
 	$("#dj-button").click();
 	$("div.button.cancel").click();
-	API.on(API.sendChat("list_update"));
 }
 
 API.on(API.chatLog(app + " loaded."));
