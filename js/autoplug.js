@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.12.107";
+var version = "v0.2.12.108";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -47,7 +47,7 @@ setInterval(function() {
 
 API.on(API.CHAT_COMMAND, callback);
 function callback(value) {
-	if (value = "test") {
+	if (value = test) {
 		alert("known");
 	} else {
 		alert("unk");
