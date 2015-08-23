@@ -1,9 +1,9 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
-console.log("AutoPlug " + version);
+console.log(app);
 
-var version = "v0.2.11.95";
+var version = "v0.2.11.96";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
