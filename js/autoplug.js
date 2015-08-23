@@ -3,13 +3,17 @@
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
 console.log("AutoPlug " + version);
 
-var version = "v0.2.10.90";
+var version = "v0.2.11.91";
 
 API.on(API.chatLog("Starting AutoPlug " + version + "!\nPlease wait."));
 
-var perSecond = setInterval(function() {
+var autoplugActive = setInterval(function() {
 	$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
-}, 1000);
+	var autoplugAtiveMSG = setInterval(function() {
+		clearInterval(autoplugAtiveMSG);
+		$("#chat-input-field").attr("placeholder","AutoPlug " + version);
+	})
+}, 2000);
 
 var loadDelay = setInterval(function() {
 	clearInterval(loadDelay);
