@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.11.99";
+var version = "v0.2.11.100";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -15,7 +15,8 @@ var autoplugActive = setInterval(function() {
 		clearInterval(autoplugActiveMSG);
 		$("#chat-input-field").attr("placeholder",app);
 		var autoplugActiveMSGC = setInterval(function() {
-			$("#chat-input-field").attr("placeholder","By Benjamin~");
+			clearInterval(autoplugActiveMSGC);
+			$("#chat-input-field").attr("placeholder","Created by Benjamin");
 		}, 1000);
 	}, 2000);
 }, 3000);
