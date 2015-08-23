@@ -4,11 +4,18 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 #image {
+  margin-top: 1%;
   width: 40%;
   height: 40%;
 }
 
 #text {
   text-align: center;
+  margin-top: -1.1%;
+  margin-bottom: -1.1%;
 }
