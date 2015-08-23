@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.12.106";
+var version = "v0.2.12.107";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 
@@ -45,9 +45,13 @@ setInterval(function() {
 	API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
 }, 5220000);
 
-API.on(API.CHAT_COMMAND, test);
-function test(value) {
-    alert(value + ' typed as chat command');
+API.on(API.CHAT_COMMAND, callback);
+function callback(value) {
+	if (value = "test") {
+		alert("known");
+	} else {
+		alert("unk");
+	}
 }
 
 API.on(API.chatLog(app + " loaded."));
