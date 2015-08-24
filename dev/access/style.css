@@ -1,0 +1,47 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+body {
+  background-color: #000000;
+}
+
+.red {
+  color: red;
+}
+
+.lime {
+  color: lime;
+}
+
+#daLIST {
+  font-size: 110%;
+  color: #fff600;
+  height: 0px;
+  margin-left: 42%;
+}
+
+#attemptLIST {
+  font-size: 110%;
+  color: #fff600;
+  height: 0px;
+  margin-left: 37%;
+}
+
+#locationLIST {
+  font-size: 110%;
+  color: #fff600;
+  height: 0px;
+  margin-left: 25%;
+}
+
+#serialLIST {
+  font-size: 110%;
+  color: #fff600;
+  height: 0px;
+  margin-left: 10%;
+}
+
+#ipLIST {
+  font-size: 110%;
+  color: #fff600;
+  height: 0px;
+}

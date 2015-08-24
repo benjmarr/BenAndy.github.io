@@ -1,5 +1,5 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
-var version = "v0.1.2.23";
+var version = "v0.1.2.24";
 var appver = "PLAY " + version;
 var appDetail = appver + " online game script";
 var loadDelayTime = 1000;
