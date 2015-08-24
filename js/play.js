@@ -12,4 +12,6 @@ alert("Loading " + appDetail + "! Please wait...\n\nPlease allow exactly " + loa
 var loadDelay = setInterval(function() {
   clearInterval(loadDelay);
   document.title = appver + "~";
+
+  document.getElementById("loading").innerHTML = "Loading...<br />Please wait.";
 }, loadDelayTime);
