@@ -46,14 +46,22 @@ function optionsTEXTCOLOUR2() {
   document.getElementById("newtab").style.color = "white";
 }
 
+var newtabcopyright = setInterval(function() {
+  document.getElementById("newtab").innerHTML = "Created by Benjamin!";
+  var newtabtab = setInterval(function() {
+    clearInterval(newtabtab);
+    document.getElementById("newtab").innerHTML = "New Tab";
+  }, 2000);
+}, 5000)
+
 var background = setInterval(function() {
   if (Math.random() < 0.3) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436891620584-47fd0e565afb.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436564989038-18b9958df72b.jpg')";
   } else {
     if (Math.random() < 0.3) {
-      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436891678271-9c672565d8f6.jpg')";
+      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438027316524-6078d503224b.jpg')";
     } else {
-      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1437532437759-a0ce0535dfed.jpg')";
+      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438755582627-221038b62986.jpg')";
     }
   }
   clearInterval(background);

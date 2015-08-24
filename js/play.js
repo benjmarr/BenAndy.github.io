@@ -1,13 +1,15 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
-var version = "v0.1.2.15";
-var namever = "PLAY " + version;
+var version = "v0.1.2.23";
+var appver = "PLAY " + version;
+var appDetail = appver + " online game script";
+var loadDelayTime = 1000;
+var loadDelaySEC = loadDelayTime / 1000 + " second(s)";
 
-console.log("play.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
-console.log(namever);
+console.log("play.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.\nPlease allow exactly " + loadDelaySEC + " for the script to start.");
+console.log(appDetail);
 
-alert("Loading " + namever + "!");
-var load = setInterval(function() {
-  clearInterval(load);
-  document.getElementsByTagName("body")[0].innerHTML = "<iframe src='http://benandy.github.io/dev/PLAY/PLAY.html></iframe>'";
-  document.title = namever;
-}, 1000);
+alert("Loading " + appDetail + "! Please wait...\n\nPlease allow exactly " + loadDelaySEC + " for the script to start.");
+var loadDelay = setInterval(function() {
+  clearInterval(loadDelay);
+  document.title = appver + "~";
+}, loadDelayTime);
