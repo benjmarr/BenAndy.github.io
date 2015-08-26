@@ -42,6 +42,8 @@ var pageLoad = setInterval(function() {
     clearInterval(locationReload);
     clearInterval(serialReload);
     clearInterval(ipReload);
+    document.getElementById("alert").innerHTML = "ACCESS GRANTED<div id='alertMSG'><a href=''>RELOAD</a></div>EVENTUAL ID<br />" + Math.random();
+    document.getElementById("alert").style.visibility = "visible";
     setInterval(function() {
       document.getElementById("daLIST").innerHTML = "ACCESS<br /><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br />";
       var accessGRANTED = setInterval(function() {
@@ -54,7 +56,7 @@ var pageLoad = setInterval(function() {
   }, COMPLETEtime);
 
   var randomsReload = setInterval(function() {
-    document.getElementById("randoms").innerHTML = "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3;
+    document.getElementById("randoms").innerHTML = "<br />" + Math.random() + Math.random() * 3 + "<br />" + Math.random() + Math.random() * 3 + "<br />" + Math.random() + Math.random() * 3 + "<br />" + Math.random() + Math.random() * 3 + "<br />" + Math.random() + Math.random() * 3;
     if (Math.random() < 0.3) {
       document.getElementById("randoms").style.color = "red";
     } else {
@@ -96,6 +98,7 @@ var pageLoad = setInterval(function() {
     }
   }, 200);
   var serialReload = setInterval(function() {
+    document.title = Math.random();
     document.getElementById("serialLIST").innerHTML = "SERIAL ID<br /><br />" + Math.random() + "<br />" + Math.random() + "<br />" + Math.random() + "<br />" + Math.random() + "<br />" + Math.random();
   }, 50);
   var ipReload = setInterval(function() {

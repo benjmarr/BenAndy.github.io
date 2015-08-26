@@ -4,12 +4,46 @@ body {
   background-color: #000000;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
 .red {
   color: red;
 }
 
 .lime {
   color: lime;
+}
+
+#alertMSG {
+  background-color: #000000;
+  color: white;
+}
+
+#alert {
+  /*visibility: hidden;*/
+  background-color: lime;
+  text-align: center;
+  margin-top: 17%;
+  font-size: 200%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 #randoms {
