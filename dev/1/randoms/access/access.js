@@ -42,7 +42,7 @@ var pageLoad = setInterval(function() {
     clearInterval(locationReload);
     clearInterval(serialReload);
     clearInterval(ipReload);
-    document.getElementById("alert").innerHTML = "ACCESS GRANTED<div id='alertMSG'><a href=''>RELOAD</a></div>EVENTUAL ID<br />" + Math.random();
+    document.getElementById("alert").innerHTML = "ACCESS GRANTED<div id='alertMSG'><a href=''>RELOAD</a></div>EVENTUAL ID<br />" + Math.random() * COMPLETEtime;
     document.getElementById("alert").style.visibility = "visible";
     setInterval(function() {
       document.getElementById("daLIST").innerHTML = "ACCESS<br /><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br />";

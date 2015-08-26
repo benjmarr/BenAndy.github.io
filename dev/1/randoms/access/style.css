@@ -33,7 +33,7 @@ a:link {
 }
 
 #alert {
-  /*visibility: hidden;*/
+  visibility: hidden;
   background-color: lime;
   text-align: center;
   margin-top: 17%;
