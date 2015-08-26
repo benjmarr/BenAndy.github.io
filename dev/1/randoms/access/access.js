@@ -4,8 +4,63 @@ var load = 1;
 var loadTIME = 1 / 1000;
 var pageLoad = setInterval(function() {
   clearInterval(pageLoad);
+  console.log("Copyright Benjamin (c) 2015 - All rights reserved");
   console.log("JavaScript file delayed by " + loadTIME);
   document.title = "Serial Access";
+
+  if (Math.random() < 0.3) {
+    var COMPLETEtime = 60000;
+    var COMPLETEhalfWay = COMPLETEtime / 2;
+    console.log("ACCESS TIME IS " + COMPLETEtime / 1000 + " SECONDS");
+    var COMPLETEtimeHalf = setInterval(function() {
+      clearInterval(COMPLETEtimeHalf);
+      console.log("ACCESS TIME IS 50% COMPLETE");
+    }, COMPLETEhalfWay);
+  } else if (Math.random() < 0.3) {
+    var COMPLETEtime = 120000;
+    var COMPLETEhalfWay = COMPLETEtime / 2;
+    console.log("ACCESS TIME IS " + COMPLETEtime / 1000 + " SECONDS");
+    var COMPLETEtimeHalf = setInterval(function() {
+      clearInterval(COMPLETEtimeHalf);
+      console.log("ACCESS TIME IS 50% COMPLETE");
+    }, COMPLETEhalfWay);
+  } else {
+    var COMPLETEtime = 240000;
+    var COMPLETEhalfWay = COMPLETEtime / 2;
+    console.log("ACCESS TIME IS " + COMPLETEtime / 1000 + " SECONDS");
+    var COMPLETEtimeHalf = setInterval(function() {
+      clearInterval(COMPLETEtimeHalf);
+      console.log("ACCESS TIME IS 50% COMPLETE");
+    }, COMPLETEhalfWay);
+  }
+
+  var COMPLETE = setInterval(function() {
+    clearInterval(COMPLETE);
+    clearInterval(randomsReload);
+    clearInterval(daReload);
+    clearInterval(attemptReload);
+    clearInterval(locationReload);
+    clearInterval(serialReload);
+    clearInterval(ipReload);
+    setInterval(function() {
+      document.getElementById("daLIST").innerHTML = "ACCESS<br /><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br /><span class='lime'>[ACCESS GRANTED] <</span><br />";
+      var accessGRANTED = setInterval(function() {
+        document.getElementById("daLIST").innerHTML = "ACCESS<br /><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br />";
+        clearInterval(accessGRANTED);
+      }, 1000);
+    }, 2000);
+    document.getElementById("daLIST").innerHTML = "ACCESS<br /><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br /><span class='lime'>[ACCESS GRANTED]</span><br />";
+    document.getElementById("randoms").style.color = "lime";
+  }, COMPLETEtime);
+
+  var randomsReload = setInterval(function() {
+    document.getElementById("randoms").innerHTML = "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3 + "<br />" + Math.random() * 3;
+    if (Math.random() < 0.3) {
+      document.getElementById("randoms").style.color = "red";
+    } else {
+      document.getElementById("randoms").style.color = "lime";
+    }
+  }, 100);
 
   var daReload = setInterval(function() {
     if (Math.random() < 0.3) {

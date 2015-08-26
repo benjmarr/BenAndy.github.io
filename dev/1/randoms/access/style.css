@@ -12,6 +12,12 @@ body {
   color: lime;
 }
 
+#randoms {
+  font-size: 110%;
+  height: 0px;
+  text-align: right
+}
+
 #daLIST {
   font-size: 110%;
   color: #fff600;
