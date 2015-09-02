@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.13.126";
+var version = "v0.2.13.127";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var songTime = API.getTimeRemaining();
@@ -11,22 +11,19 @@ console.log(app);
 
 API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 
-startLoad = setInterval(function() {
-	clearInterval(startLoad);
+var setTimeout(function() {
 	var autoplugActive = setInterval(function() {
 		if (Math.random() < 0.5) {
 			$("#chat-input-field").attr("placeholder","Created by Benjamin!");
 		} else {
 			$("#chat-input-field").attr("placeholder",app);
 		}
-		var autoplugActiveMSG = setInterval(function() {
-			clearInterval(autoplugActiveMSG);
+		var setTimeout(function() {
 			$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
 		}, 1000);
 	}, 2000);
 
-	var loadDelay = setInterval(function() {
-		clearInterval(loadDelay);
+	var setTimeout(function() {
 		$("#dj-button").click();
 		$("div.button.cancel").click();
 		$("#woot").click();
@@ -45,8 +42,7 @@ startLoad = setInterval(function() {
 		setTimeout(function() {
 			API.on(API.chatLog("Song time: " + songTime));
 		}, 500);
-		var wootDelay = setInterval(function() {
-			clearInterval(wootDelay);
+		var setTimeout(function() {
 			$("#woot").click();
 		}, 5000);
 	}
