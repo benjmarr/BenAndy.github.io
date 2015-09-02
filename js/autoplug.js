@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.131";
+var version = "v0.2.14.132";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -43,14 +43,10 @@ setTimeout(function() {
 			var commandfunction = value.substring(value.indexOf("/")+1,value.indexOf(" "));
 		}
 		var commandcontent =  value.substring(value.indexOf(" ")+1,value.length);
-		console.log("commandfunction: " + commandfunction);
-		console.log("commandcontent: " + commandcontent);
 		switch(commandfunction)
 		{
 			case "stop":
-				console.log("addmsg called");
-				msgs.push(commandcontent);
-				API.chatLog("Msg added: \'" + commandcontent + "\'", true);
+				alert(appDetail);
 			break;
 		}
 	}
