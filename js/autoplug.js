@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.132";
+var version = "v0.2.14.133";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -42,7 +42,6 @@ setTimeout(function() {
 		} else {
 			var commandfunction = value.substring(value.indexOf("/")+1,value.indexOf(" "));
 		}
-		var commandcontent =  value.substring(value.indexOf(" ")+1,value.length);
 		switch(commandfunction)
 		{
 			case "stop":
