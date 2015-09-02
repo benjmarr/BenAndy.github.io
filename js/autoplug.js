@@ -1,8 +1,9 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.13.119";
+var version = "v0.2.13.120";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
+var songTime = API.getTimeRemaining();
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
 console.log(app);
@@ -38,7 +39,7 @@ API.on(API.ADVANCE, autoplug);
 function autoplug() {
 	$("#dj-button").click();
 	$("div.button.cancel").click();
-	API.on(API.chatLog("Song time: " + API.getTimeRemaining()));
+	API.on(API.chatLog("Song time: " + songTime / 60));
 
 	var wootDelay = setInterval(function() {
 		clearInterval(wootDelay);
