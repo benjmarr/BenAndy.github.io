@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.143";
+var version = "v0.2.14.144";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -62,6 +62,11 @@ setTimeout(function() {
 			break;
 			case "stop":
 				stop();
+				// NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE
+				// NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE
+				// NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE
+				// NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE NOTE
+				// WORKING ON THIS STOPPING FEATURE
 				API.on(API.chatLog(appDetail + "stopped."));
 			break;
 		}
