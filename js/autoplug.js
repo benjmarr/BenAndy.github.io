@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.129";
+var version = "v0.2.14.130";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -10,19 +10,19 @@ console.log(app);
 
 API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 
-var setTimeout(function() {
+setTimeout(function() {
 	var autoplugActive = setInterval(function() {
 		if (Math.random() < 0.5) {
 			$("#chat-input-field").attr("placeholder","Created by Benjamin!");
 		} else {
 			$("#chat-input-field").attr("placeholder",app);
 		}
-		var setTimeout(function() {
+		setTimeout(function() {
 			$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
 		}, 1000);
 	}, 2000);
 
-	var setTimeout(function() {
+	setTimeout(function() {
 		$("#dj-button").click();
 		$("div.button.cancel").click();
 		$("#woot").click();
@@ -43,7 +43,7 @@ var setTimeout(function() {
 	function autoplug() {
 		$("#dj-button").click();
 		$("div.button.cancel").click();
-		var setTimeout(function() {
+		setTimeout(function() {
 			$("#woot").click();
 		}, 5000);
 	}
