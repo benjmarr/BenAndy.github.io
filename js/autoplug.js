@@ -42,7 +42,7 @@ startLoad = setInterval(function() {
 	function autoplug() {
 		$("#dj-button").click();
 		$("div.button.cancel").click();
-		API.on(API.chatLog("Song time: " + songTime / 60));
+		API.on(API.chatLog("Song time: " + songTime));
 
 		var wootDelay = setInterval(function() {
 			clearInterval(wootDelay);
