@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.137";
+var version = "v0.2.14.139";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -53,9 +53,15 @@ setTimeout(function() {
 				API.on(API.chatLog("- List of all the custom AutoPlug commands."));
 				API.on(API.chatLog("/copyright"));
 				API.on(API.chatLog("- Copyright information."));
+				API.on(API.chatLog("/song"));
+				API.on(API.chatLog("- Returns the name of the current media."));
+				API.on(API.chatLog("")); // Leave blank
 			break;
 			case "copyright":
 				API.on(API.chatLog(appDetail + " is under creative commons copyright laws."));
+			break;
+			case "song":
+				API.on(API.chatLog(API.getMedia()));
 			break;
 		}
 	}
