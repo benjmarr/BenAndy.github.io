@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.133";
+var version = "v0.2.14.134";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -37,11 +37,6 @@ setTimeout(function() {
 	API.on(API.CHAT_COMMAND, command);
 	function command(value) {
   	var commandfunction = "";
-		if (value.indexOf(" ") == -1) {
-			var commandfunction = value.substring(value.indexOf("/")+1,value.length);
-		} else {
-			var commandfunction = value.substring(value.indexOf("/")+1,value.indexOf(" "));
-		}
 		switch(commandfunction)
 		{
 			case "stop":
