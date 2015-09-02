@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.135";
+var version = "v0.2.14.136";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -11,6 +11,9 @@ console.log(app);
 API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 
 setTimeout(function() {
+	setTimeout(function() {
+		API.on(API.chatLog("Type '/commands' in chat to list all the custom " + app + " commands!"));
+	}, 1500);
 	var autoplugActive = setInterval(function() {
 		if (Math.random() < 0.5) {
 			$("#chat-input-field").attr("placeholder","Created by Benjamin!");
