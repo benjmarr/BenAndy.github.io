@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.142";
+var version = "v0.2.14.143";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -61,7 +61,7 @@ setTimeout(function() {
 				API.on(API.chatLog(appDetail + " is under creative commons copyright laws."));
 			break;
 			case "stop":
-				stop(stopAll,goToEnd);
+				stop();
 				API.on(API.chatLog(appDetail + "stopped."));
 			break;
 		}
