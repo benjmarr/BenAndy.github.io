@@ -2,7 +2,7 @@
 // # Copyright Benjamin (c) All rights reserved - 2015 #
 // #####################################################
 
-document.title = "New Tab"
+document.title = "New Tab";
 
 function options() {
   document.getElementById("optionsMenu").style.visibility = "visible";
@@ -48,13 +48,12 @@ function optionsTEXTCOLOUR2() {
 
 var newtabcopyright = setInterval(function() {
   document.getElementById("newtab").innerHTML = "Created by Benjamin!";
-  var newtabtab = setInterval(function() {
-    clearInterval(newtabtab);
+  setTimeout(function() {
     document.getElementById("newtab").innerHTML = "New Tab";
   }, 2000);
 }, 5000)
 
-var background = setInterval(function() {
+setTimeout(function() {
   if (Math.random() < 0.3) {
     document.getElementById("header").style.backgroundImage = "url('content/background/photo-1428948304740-392e214d312f.jpg')";
   } else {
@@ -64,15 +63,13 @@ var background = setInterval(function() {
       document.getElementById("header").style.backgroundImage = "url('content/background/photo-1415931633537-351070d20b81.jpg')";
     }
   }
-  clearInterval(background);
 }, 100);
 
 setInterval(options1,1000);
 function options1() {
   document.getElementById("optionsImg").src = "content/options.png";
-  var options = setInterval(function() {
+  setTimeout(function() {
     document.getElementById("optionsImg").src = "content/optionsHover.png";
-    clearInterval(options);
   }, 500);
 }
 
