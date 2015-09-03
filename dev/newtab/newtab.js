@@ -56,16 +56,16 @@ var newtabcopyright = setInterval(function() {
 
 var background = setInterval(function() {
   if (Math.random() < 0.3) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1436564989038-18b9958df72b.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1428948304740-392e214d312f.jpg')";
   } else {
     if (Math.random() < 0.3) {
-      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438027316524-6078d503224b.jpg')";
+      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1431932441182-250651654c23.jpg')";
     } else {
-      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1438755582627-221038b62986.jpg')";
+      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1415931633537-351070d20b81.jpg')";
     }
   }
   clearInterval(background);
-}, 1);
+}, 100);
 
 setInterval(options1,1000);
 function options1() {
