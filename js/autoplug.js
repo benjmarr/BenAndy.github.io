@@ -20,7 +20,7 @@ setTimeout(function() {
 	var autoplugActive = setInterval(function() {
 		chatBoxMessage = chatBoxMessage.substring(1, chatBoxMessage.length) + chatBoxMessage.substring(0, 1);
 		$("#chat-input-field").attr("placeholder", chatBoxMessage);		
-	}, 40)
+	}, 100)
 
 	setTimeout(function() {
 		$("#dj-button").click();
