@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
-// Thanks to Buudyblind (James) for some help with the code! https://twitter.com/BuddehDev
+// Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.159";
+var version = "v0.2.14.160";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -53,7 +53,7 @@ setTimeout(function() {
 				API.on(API.chatLog("'/stop' Stop the AutoPlug script"));
 				API.on(API.chatLog("'/reload' Reload the page"));
 				API.on(API.chatLog("'/playlist' Opens your playlist menu"))
-				API.on(API.chatLog("")); // Leave blank
+				API.on(API.chatLog(" ")); // Leave blank
 			break;
 			case "copyright":
 				API.on(API.chatLog(appDetail + " is under creative commons copyright laws."));
