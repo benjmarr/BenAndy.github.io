@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.150";
+var version = "v0.2.14.149";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -16,16 +16,11 @@ setTimeout(function() {
 		setTimeout(afk, 1);
 	}, 1500);
 
+	var chatBoxMessage = "Created by Benjamin! | " + app + " | Click here to type your chat message! | ";
 	var autoplugActive = setInterval(function() {
-		if (Math.random() < 0.5) {
-			$("#chat-input-field").attr("placeholder","Created by Benjamin!");
-		} else {
-			$("#chat-input-field").attr("placeholder",app);
-		}
-		setTimeout(function() {
-			$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
-		}, 1000);
-	}, 2000);
+		chatBoxMessage = chatBoxMessage.substring(1, chatBoxMessage.length) + chatBoxMessage.substring(0, 1);
+		$("#chat-input-field").attr("placeholder", chatBoxMessage);		
+	}, 40)
 
 	setTimeout(function() {
 		$("#dj-button").click();
@@ -38,7 +33,7 @@ setTimeout(function() {
 			var afkResetMsg = " ! ";
 			API.on(API.sendChat(afkResetMsg));
 			API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
-		}, 1800000);
+		}, 5220000);
 	}
 
 
@@ -63,8 +58,6 @@ setTimeout(function() {
 				API.on(API.chatLog("- Stop the AutoPlug script."));
 				API.on(API.chatLog("/reload"));
 				API.on(API.chatLog("- Reload the current page."));
-				API.on(API.chatLog("/afk"));
-				API.on(API.chatLog("- Anti-AFK commands & information."));
 				API.on(API.chatLog("")); // Leave blank
 			break;
 			case "copyright":
@@ -78,21 +71,12 @@ setTimeout(function() {
 				window.location = "";
 			break;
 			case "afkoff":
-				API.on(API.chatLog("Anti-AFK feature turned off."));
 				clearInterval(antiAfk);
+				API.on(API.chatLog("Anti-AFK feature turned off."));
 			break;
 			case "afkon":
-				clearInterval(antiAfk);
-				API.on(API.chatLog("Anti-AFK feature turned on."));
 				setTimeout(afk, 1);
-			break;
-			case "afk":
-				API.on(API.chatLog("Anti-AFK information..."));
-				API.on(API.chatLog("Every 30 minutes '" + afkResetMsg + "' will be sent into the chat to reset the AFK time. On some communities with bots managing them, you can be kicked for being AFK. This feature will stop the bot from kicking you from the community."));
-				API.on(API.chatLog("Anti-AFK commands."));
-				API.on(API.chatLog("'/afkon' - Turns on the anti-AFK feature."));
-				API.on(API.chatLog("'/afkoff' - Turns off the anti-AFK feature."));
-				API.on(API.chatLog("'/afk' - Lists information about the anti-AFK feature."));
+				API.on(API.chatLog("Anti-AFK feature turned on."));
 			break;
 		}
 	}
