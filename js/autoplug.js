@@ -1,13 +1,14 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buudyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.154";
+var version = "v0.2.14.156";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
 var afkResetMsg = " ! ";
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
+console.log("Thanks to Buudyblind (James) for some help with the code! https://twitter.com/BuddehDev");
 console.log(app);
 
 API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
@@ -18,20 +19,11 @@ setTimeout(function() {
 		setTimeout(afk, 1000);
 	}, 1500);
 
-	var chatBoxMessage = "Created by Benjamin! | " + app + " | Click here to type your chat message! | ";
+	var chatBoxMessage = "Created by Benjamin! | " + appDetail + " | Click here to type your chat message! | ";
 	var autoplugActive = setInterval(function() {
 		chatBoxMessage = chatBoxMessage.substring(1, chatBoxMessage.length) + chatBoxMessage.substring(0, 1);
 		$("#chat-input-field").attr("placeholder", chatBoxMessage);
 	}, 100);
-	// 	if (Math.random() < 0.5) {
-	// 		$("#chat-input-field").attr("placeholder","Created by Benjamin!");
-	// 	} else {
-	// 		$("#chat-input-field").attr("placeholder",app);
-	// 	}
-	// 	setTimeout(function() {
-	// 		$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
-	// 	}, 1000);
-	// }, 2000);
 
 	setTimeout(function() {
 		$("#dj-button").click();
