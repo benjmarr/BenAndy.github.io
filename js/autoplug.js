@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.148";
+var version = "v0.2.14.149";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -34,7 +34,6 @@ setTimeout(function() {
 	}, 10);
 
 	function afk() {
-		API.on(API.sendChat("afk ON"));
 		var antiAfk = setInterval(function() {
 			var afkResetMsg = " ! ";
 			API.on(API.sendChat(afkResetMsg));
@@ -76,11 +75,11 @@ setTimeout(function() {
 				API.on(API.chatLog("Reloading the page..."));
 				window.location = "";
 			break;
-			case "afk off":
+			case "afkoff":
 				clearInterval(antiAfk);
 				API.on(API.chatLog("Anti-AFK feature turned off."));
 			break;
-			case "afk on":
+			case "afkon":
 				setTimeout(afk, 1);
 				API.on(API.chatLog("Anti-AFK feature turned on."));
 			break;
