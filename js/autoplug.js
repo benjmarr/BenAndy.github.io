@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.160";
+var version = "v0.2.14.161";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -52,7 +52,8 @@ setTimeout(function() {
 				API.on(API.chatLog("'/copyright' Copyright information"));
 				API.on(API.chatLog("'/stop' Stop the AutoPlug script"));
 				API.on(API.chatLog("'/reload' Reload the page"));
-				API.on(API.chatLog("'/playlist' Opens your playlist menu"))
+				API.on(API.chatLog("'/playlist' Opens your playlist menu"));
+				API.on(API.chatLog("'/history' Opens the Dj history list"));
 				API.on(API.chatLog(" ")); // Leave blank
 			break;
 			case "copyright":
@@ -69,6 +70,9 @@ setTimeout(function() {
 				API.on(API.chatLog("Opening your playlist menu..."));
 			 	$("#your-active-playlist").click();
 			break;
+			case "history":
+				API.on(API.chatLog("Openeing Dj history list..."));
+				$(".icon icon-history-white").click();
 		}
 	}
 
