@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.149";
+var version = "v0.2.14.150";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -38,7 +38,7 @@ setTimeout(function() {
 			var afkResetMsg = " ! ";
 			API.on(API.sendChat(afkResetMsg));
 			API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
-		}, 5220000);
+		}, 1800000);
 	}
 
 
@@ -63,6 +63,8 @@ setTimeout(function() {
 				API.on(API.chatLog("- Stop the AutoPlug script."));
 				API.on(API.chatLog("/reload"));
 				API.on(API.chatLog("- Reload the current page."));
+				API.on(API.chatLog("/afk"));
+				API.on(API.chatLog("- Anti-AFK commands & information."));
 				API.on(API.chatLog("")); // Leave blank
 			break;
 			case "copyright":
@@ -76,12 +78,21 @@ setTimeout(function() {
 				window.location = "";
 			break;
 			case "afkoff":
-				clearInterval(antiAfk);
 				API.on(API.chatLog("Anti-AFK feature turned off."));
+				clearInterval(antiAfk);
 			break;
 			case "afkon":
-				setTimeout(afk, 1);
+				clearInterval(antiAfk);
 				API.on(API.chatLog("Anti-AFK feature turned on."));
+				setTimeout(afk, 1);
+			break;
+			case "afk":
+				API.on(API.chatLog("Anti-AFK information..."));
+				API.on(API.chatLog("Every 30 minutes '" + afkResetMsg + "' will be sent into the chat to reset the AFK time. On some communities with bots managing them, you can be kicked for being AFK. This feature will stop the bot from kicking you from the community."));
+				API.on(API.chatLog("Anti-AFK commands."));
+				API.on(API.chatLog("'/afkon' - Turns on the anti-AFK feature."));
+				API.on(API.chatLog("'/afkoff' - Turns off the anti-AFK feature."));
+				API.on(API.chatLog("'/afk' - Lists information about the anti-AFK feature."));
 			break;
 		}
 	}
