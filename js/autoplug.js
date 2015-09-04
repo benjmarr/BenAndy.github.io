@@ -1,6 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
+// Thanks to Buudyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.152";
+var version = "v0.2.14.153";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -14,19 +15,23 @@ API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 setTimeout(function() {
 	setTimeout(function() {
 		API.on(API.chatLog("Type '/commands' in chat to list all the custom " + app + " commands!"));
-		setTimeout(afk, 1);
+		setTimeout(afk, 1000);
 	}, 1500);
 
+	var chatBoxMessage = "Created by Benjamin! | " + app + " | Click here to type your chat message! | ";
 	var autoplugActive = setInterval(function() {
-		if (Math.random() < 0.5) {
-			$("#chat-input-field").attr("placeholder","Created by Benjamin!");
-		} else {
-			$("#chat-input-field").attr("placeholder",app);
-		}
-		setTimeout(function() {
-			$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
-		}, 1000);
-	}, 2000);
+		chatBoxMessage = chatBoxMessage.substring(1, chatBoxMessage.length) + chatBoxMessage.substring(0, 1);
+		$("#chat-input-field").attr("placeholder", chatBoxMessage);
+	}, 100)
+	// 	if (Math.random() < 0.5) {
+	// 		$("#chat-input-field").attr("placeholder","Created by Benjamin!");
+	// 	} else {
+	// 		$("#chat-input-field").attr("placeholder",app);
+	// 	}
+	// 	setTimeout(function() {
+	// 		$("#chat-input-field").attr("placeholder","Click here to type your chat message!");
+	// 	}, 1000);
+	// }, 2000);
 
 	setTimeout(function() {
 		$("#dj-button").click();
@@ -34,15 +39,11 @@ setTimeout(function() {
 		$("#woot").click();
 	}, 10);
 
-	function afk() {
-		API.on(API.chatLog("afkon"));
-		var antiAfk = setInterval(function() {
-			API.on(API.sendChat(afkResetMsg));
-			API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
-		}, 1800000);
-	}
-
-
+	API.on(API.chatLog("afkon"));
+	var antiAfk = setInterval(function() {
+		API.on(API.sendChat(afkResetMsg));
+		API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
+	}, 1800000);
 
 	API.on(API.CHAT_COMMAND, command);
 	function command(value) {
@@ -64,8 +65,6 @@ setTimeout(function() {
 				API.on(API.chatLog("- Stop the AutoPlug script."));
 				API.on(API.chatLog("/reload"));
 				API.on(API.chatLog("- Reload the current page."));
-				API.on(API.chatLog("/afk"));
-				API.on(API.chatLog("- Anti-AFK commands & information."));
 				API.on(API.chatLog("")); // Leave blank
 			break;
 			case "copyright":
@@ -77,23 +76,6 @@ setTimeout(function() {
 			case "reload":
 				API.on(API.chatLog("Reloading the page..."));
 				window.location = "";
-			break;
-			case "afkoff":
-				API.on(API.chatLog("Anti-AFK feature turned off."));
-				clearInterval(antiAfk);
-			break;
-			case "afkon":
-				clearInterval(antiAfk);
-				API.on(API.chatLog("Anti-AFK feature turned on."));
-				setTimeout(afk, 1);
-			break;
-			case "afk":
-				API.on(API.chatLog("Anti-AFK information..."));
-				API.on(API.chatLog("Every 30 minutes '" + afkResetMsg + "' will be sent into the chat to reset the AFK time. On some communities with bots managing them, you can be kicked for being AFK. This feature will stop the bot from kicking you from the community."));
-				API.on(API.chatLog("Anti-AFK commands."));
-				API.on(API.chatLog("'/afkon' - Turns on the anti-AFK feature."));
-				API.on(API.chatLog("'/afkoff' - Turns off the anti-AFK feature."));
-				API.on(API.chatLog("'/afk' - Lists information about the anti-AFK feature."));
 			break;
 		}
 	}
