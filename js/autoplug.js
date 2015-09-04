@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.146";
+var version = "v0.2.14.148";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -13,7 +13,9 @@ API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 setTimeout(function() {
 	setTimeout(function() {
 		API.on(API.chatLog("Type '/commands' in chat to list all the custom " + app + " commands!"));
+		setTimeout(afk, 1);
 	}, 1500);
+
 	var autoplugActive = setInterval(function() {
 		if (Math.random() < 0.5) {
 			$("#chat-input-field").attr("placeholder","Created by Benjamin!");
@@ -31,11 +33,16 @@ setTimeout(function() {
 		$("#woot").click();
 	}, 10);
 
-	setInterval(function() {
-		var afkResetMsg = " ! ";
-		API.on(API.sendChat(afkResetMsg));
-		API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
-	}, 5220000);
+	function afk() {
+		API.on(API.sendChat("afk ON"));
+		var antiAfk = setInterval(function() {
+			var afkResetMsg = " ! ";
+			API.on(API.sendChat(afkResetMsg));
+			API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
+		}, 5220000);
+	}
+
+
 
 	API.on(API.CHAT_COMMAND, command);
 	function command(value) {
@@ -55,6 +62,8 @@ setTimeout(function() {
 				API.on(API.chatLog("- Copyright information."));
 				API.on(API.chatLog("/stop"));
 				API.on(API.chatLog("- Stop the AutoPlug script."));
+				API.on(API.chatLog("/reload"));
+				API.on(API.chatLog("- Reload the current page."));
 				API.on(API.chatLog("")); // Leave blank
 			break;
 			case "copyright":
@@ -66,6 +75,14 @@ setTimeout(function() {
 			case "reload":
 				API.on(API.chatLog("Reloading the page..."));
 				window.location = "";
+			break;
+			case "afk off":
+				clearInterval(antiAfk);
+				API.on(API.chatLog("Anti-AFK feature turned off."));
+			break;
+			case "afk on":
+				setTimeout(afk, 1);
+				API.on(API.chatLog("Anti-AFK feature turned on."));
 			break;
 		}
 	}
