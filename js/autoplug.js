@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.161";
+var version = "v0.2.14.163";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -16,7 +16,6 @@ API.on(API.chatLog("Starting " + app + "!\nPlease wait."));
 setTimeout(function() {
 	setTimeout(function() {
 		API.on(API.chatLog("Type '/commands' in chat to list all the custom " + app + " commands!"));
-		setTimeout(afk, 1000);
 	}, 1500);
 
 	var chatBoxMessage = "Created by Benjamin! | " + appDetail + " | Click here to type your chat message! | ";
@@ -72,7 +71,7 @@ setTimeout(function() {
 			break;
 			case "history":
 				API.on(API.chatLog("Openeing Dj history list..."));
-				$(".icon icon-history-white").click();
+				$("#history-button").click();
 		}
 	}
 
