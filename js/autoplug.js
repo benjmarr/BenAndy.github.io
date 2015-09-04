@@ -1,9 +1,10 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.150";
+var version = "v0.2.14.151";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
+var afkResetMsg = " ! ";
 
 console.log("autoplug.js file loaded\nCopyirght Benjamin (c) 2015 - All rights reserved.");
 console.log(app);
@@ -35,7 +36,6 @@ setTimeout(function() {
 
 	function afk() {
 		var antiAfk = setInterval(function() {
-			var afkResetMsg = " ! ";
 			API.on(API.sendChat(afkResetMsg));
 			API.on(API.chatLog("AutoPlug >> AFK time has been reset by sending" + afkResetMsg + "into chat."));
 		}, 1800000);
