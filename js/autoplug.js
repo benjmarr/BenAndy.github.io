@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 
-var version = "v0.2.14.145";
+var version = "v0.2.14.146";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -61,8 +61,11 @@ setTimeout(function() {
 				API.on(API.chatLog(appDetail + " is under creative commons copyright laws."));
 			break;
 			case "stop":
-				stop();
-				API.on(API.chatLog(appDetail + " stopped."));
+				API.on(API.chatLog("To stop " + app + " the webpage will have to be reloaded - Don't worry as you will not lose your place in the wait list. If you wish to continue with the reload, type '/reload'."));
+			break;
+			case "reload":
+				API.on(API.chatLog("Reloading the page..."));
+				window.location = "";
 			break;
 		}
 	}
