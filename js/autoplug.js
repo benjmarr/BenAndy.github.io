@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buudyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.153";
+var version = "v0.2.14.154";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -22,7 +22,7 @@ setTimeout(function() {
 	var autoplugActive = setInterval(function() {
 		chatBoxMessage = chatBoxMessage.substring(1, chatBoxMessage.length) + chatBoxMessage.substring(0, 1);
 		$("#chat-input-field").attr("placeholder", chatBoxMessage);
-	}, 100)
+	}, 100);
 	// 	if (Math.random() < 0.5) {
 	// 		$("#chat-input-field").attr("placeholder","Created by Benjamin!");
 	// 	} else {
