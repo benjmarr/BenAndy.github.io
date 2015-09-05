@@ -54,16 +54,76 @@ var newtabcopyright = setInterval(function() {
 }, 5000)
 
 setTimeout(function() {
-  if (Math.random() < 0.3) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/photo-1428948304740-392e214d312f.jpg')";
-  } else {
-    if (Math.random() < 0.3) {
-      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1431932441182-250651654c23.jpg')";
-    } else {
-      document.getElementById("header").style.backgroundImage = "url('content/background/photo-1415931633537-351070d20b81.jpg')";
-    }
-  }
-}, 100);
+  var randomBackground = Math.floor((Math.random() * 17) + 1);
+  console.log("Background ID: " + randomBackground + "\nSource: http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg");
+  if (randomBackground == 1) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back1.jpg')";
+  };
+
+  if (randomBackground == 2) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back2.jpg')";
+  };
+
+  if (randomBackground == 3) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back3.jpg')";
+  };
+
+  if (randomBackground == 4) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back4.jpg')";
+  };
+
+  if (randomBackground == 5) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back5.jpg')";
+  };
+
+  if (randomBackground == 6) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back6.jpg')";
+  };
+
+  if (randomBackground == 7) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back7.jpg')";
+  };
+
+  if (randomBackground == 8) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back8.jpg')";
+  };
+
+  if (randomBackground == 9) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back9.jpg')";
+  };
+
+  if (randomBackground == 10) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back10.jpg')";
+  };
+
+  if (randomBackground == 11) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back11.jpg')";
+  };
+
+  if (randomBackground == 12) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back12.jpg')";
+  };
+
+  if (randomBackground == 13) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back13.jpg')";
+  };
+
+  if (randomBackground == 14) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back14.jpg')";
+  };
+
+  if (randomBackground == 15) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back15.jpg')";
+  };
+
+  if (randomBackground == 16) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back16.jpg')";
+  };
+
+  if (randomBackground == 17) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back17.jpg')";
+  };
+}, 10);
 
 setInterval(options1,1000);
 function options1() {
