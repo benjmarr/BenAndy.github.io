@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.169";
+var version = "v0.2.14.170";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -90,7 +90,7 @@ setTimeout(function() {
 				}
 				setTimeout(function() {
 					API.on(API.chatLog("Anti-AFK feature is now " + afkOnOffStatus));
-				}, 10);
+				}, 20);
 			break;
 		}
 	}
