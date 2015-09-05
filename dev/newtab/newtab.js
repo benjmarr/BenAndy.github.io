@@ -1,6 +1,6 @@
-// #####################################################
-// # Copyright Benjamin (c) All rights reserved - 2015 #
-// #####################################################
+// Copyright Benjamin (c) All rights reserved - 2015
+// Special thanks to Caleb Stewart for helping me with the random background image selection!
+// https://twitter.com/RagingCow25
 
 document.title = "New Tab";
 
@@ -45,13 +45,6 @@ function optionsTEXTCOLOUR2() {
   document.getElementById("datebox").style.color = "white";
   document.getElementById("newtab").style.color = "white";
 }
-
-var newtabcopyright = setInterval(function() {
-  document.getElementById("newtab").innerHTML = "Created by Benjamin!";
-  setTimeout(function() {
-    document.getElementById("newtab").innerHTML = "New Tab";
-  }, 2000);
-}, 5000)
 
 setTimeout(function() {
   var randomBackground = Math.floor((Math.random() * 17) + 1);
