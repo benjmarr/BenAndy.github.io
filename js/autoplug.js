@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.166";
+var version = "v0.2.14.169";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -31,6 +31,7 @@ setTimeout(function() {
 	}, 10);
 
 	var afkOnOff = 1;
+	console.log(afkOnOff);
 	var antiAfk = setInterval(function() {
 		API.on(API.sendChat(afkResetMsg));
 		API.on(API.chatLog("AFK time has been reset by sending" + afkResetMsg + "into chat."));
@@ -54,6 +55,7 @@ setTimeout(function() {
 				API.on(API.chatLog("'/reload' Reload the page"));
 				API.on(API.chatLog("'/playlist' Opens your playlist menu"));
 				API.on(API.chatLog("'/history' Opens the Dj history list"));
+				API.on(API.chatLog("'/afktoggle' Toggle the anti-AFK feature"));
 				API.on(API.chatLog(" ")); // Leave blank
 			break;
 			case "copyright":
@@ -76,14 +78,18 @@ setTimeout(function() {
 			break;
 			case "afktoggle":
 				if (afkOnOff == 1) {
-					var afkOnOff = 0;
-					var afkOnOffStatus = "off";
+					setTimeout(function() {
+						var afkOnOff = 0;
+						var afkOnOffStatus = "off";
+					}, 10);
 				} else {
-					var afkOnOff = 1;
-					var afkOnOffStatus = "on";
+					setTimeout(function() {
+						var afkOnOff = 1;
+						var afkOnOffStatus = "on";
+					}, 10);
 				}
 				setTimeout(function() {
-					API.on(API.chatLog("Anti-AFK is now " + afkOnOffStatus));
+					API.on(API.chatLog("Anti-AFK feature is now " + afkOnOffStatus));
 				}, 10);
 			break;
 		}
