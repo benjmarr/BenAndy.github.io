@@ -31,7 +31,6 @@ setTimeout(function() {
 	}, 10);
 
 	var afkOnOff = 1;
-	console.log(afkOnOff);
 	var antiAfk = setInterval(function() {
 		API.on(API.sendChat(afkResetMsg));
 		API.on(API.chatLog("AFK time has been reset by sending" + afkResetMsg + "into chat."));
