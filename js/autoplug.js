@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.175";
+var version = "v0.2.14.176";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -84,7 +84,7 @@ setTimeout(function() {
 						console.log(afkOnOff);
 						afkOnOffStatus = "off";
 					}, 10);
-				} else {
+				} else if (afkOnOff == 0) {
 					setTimeout(function() {
 						var afkOnOff = 1;
 						console.log(afkOnOff);
