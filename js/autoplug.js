@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.163";
+var version = "v0.2.14.165";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -70,8 +70,21 @@ setTimeout(function() {
 			 	$("#your-active-playlist").click();
 			break;
 			case "history":
-				API.on(API.chatLog("Openeing Dj history list..."));
+				API.on(API.chatLog("Opening Dj history list..."));
 				$("#history-button").click();
+			break;
+			case "afktoggle":
+				if (afkOnOff == 1) {
+					var afkOnOff = 0;
+					var afkOnOffStatus = "off";
+				} else {
+					var afkOnOff = 1;
+					var afkOnOffStatus = "on";
+				}
+				setTimeout(function() {
+					API.on(API.chatLog("Anti-AFK is now " + afkOnOffStatus));
+				}, 10);
+			break;
 		}
 	}
 
