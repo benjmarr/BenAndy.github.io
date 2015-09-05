@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.171";
+var version = "v0.2.14.172";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
@@ -31,7 +31,7 @@ setTimeout(function() {
 	}, 10);
 
 	var afkOnOff = 1;
-	var afkOnOffStatus = "on";
+	var afkOnOffStatus = "on (Default)";
 	var antiAfk = setInterval(function() {
 		API.on(API.sendChat(afkResetMsg));
 		API.on(API.chatLog("AFK time has been reset by sending" + afkResetMsg + "into chat."));
