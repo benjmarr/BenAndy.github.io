@@ -49,6 +49,9 @@ function optionsTEXTCOLOUR2() {
 setTimeout(function() {
   var randomBackground = Math.floor((Math.random() * 17) + 1);
   console.log("Background ID: " + randomBackground + "\nSource: http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg");
+  setTimeout(function() {
+    document.getElementById("body").style.opacity = "1";
+  }, 1000);
   if (randomBackground == 1) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back1.jpg')";
   };
@@ -116,7 +119,7 @@ setTimeout(function() {
   if (randomBackground == 17) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back17.jpg')";
   };
-}, 10);
+}, 50);
 
 setInterval(options1,1000);
 function options1() {

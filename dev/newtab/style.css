@@ -1,9 +1,9 @@
-/* ##################################################### */
-/* # Copyright Benjamin (c) All rights reserved - 2015 # */
-/* ##################################################### */
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
 
 body {
+  opacity: 0;
   background-color: black;
+  transition: opacity 5s;
 }
 
 header {
