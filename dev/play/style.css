@@ -5,7 +5,9 @@ body {
 }
 
 #menu {
+  opacity: 0;
   margin-top: 15%;
+	transition: opacity 5s;
 }
 
 #mainMenu {
