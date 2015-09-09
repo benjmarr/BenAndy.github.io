@@ -53,6 +53,15 @@ setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
     setTimeout(function() {
       document.getElementById("optionsImg").style.opacity = "1";
+      setTimeout(function() {
+        document.getElementById("link1").style.opacity = "1";
+        setTimeout(function() {
+          document.getElementById("link2").style.opacity = "1";
+          setTimeout(function() {
+            document.getElementById("link3").style.opacity = "1";
+          }, 1000);
+        }, 1000);
+      }, 1000);
     }, 2000);
   }, 1500);
   if (randomBackground == 1) {
