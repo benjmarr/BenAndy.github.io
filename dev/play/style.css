@@ -1,5 +1,15 @@
 /*Copyright Benjamin (c) 2015 - All rights reserved*/
 
 #mainMenuOPTIONS {
+  border-radius: 10px;
+  background-color: #FF1D1D;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
+  position: absolute;
+  cursor: pointer;
 }
