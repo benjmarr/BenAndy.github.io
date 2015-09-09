@@ -57,6 +57,11 @@ img > #link {
   transition: opacity 1s;
 }
 
+#link4 {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
 #optionsX {
   width: 3%;
   height: 3%;
@@ -101,6 +106,17 @@ img > #link {
 	position: relative;
   z-index: 1;
   cursor: default;
+}
+
+#welcomeMessage {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  cursor: default;
+  font-size: 250%;
+  margin-top: 5%;
+  opacity: 0;
+  transition: opacity 3s;
 }
 
 #clockbox {

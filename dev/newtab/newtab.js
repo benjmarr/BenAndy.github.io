@@ -59,6 +59,9 @@ setTimeout(function() {
           document.getElementById("link2").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("link3").style.opacity = "1";
+            setTimeout(function() {
+              document.getElementById("link4").style.opacity = "1";
+            }, 1000);
           }, 1000);
         }, 1000);
       }, 1000);
@@ -142,17 +145,151 @@ function GetClock() {
   var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
   var d=new Date();
   var nhour=d.getHours(),nmin=d.getMinutes(),ap;
-  if (nhour==0) {
-    ap=" AM";nhour=12;
-  } else if (nhour<12) {
+
+  if (nhour == 0) {
     ap=" AM";
-  } else if (nhour==12) {
+    nhour=12;
+  } else if (nhour < 12) {
+    ap=" AM";
+  } else if (nhour == 12) {
     ap=" PM";
-  } else if (nhour>12) {
-    ap=" PM";nhour-=12;
-  } if (nmin<=9) {
+  } else if (nhour > 12) {
+    ap=" PM";
+    nhour-=12;
+  }
+
+  if (nmin<=9) {
     nmin="0"+nmin;
   }
+
   document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
   document.getElementById("clockbox").innerHTML=""+nhour+":"+nmin+ap+"";
+
+  setTimeout(function() {
+    if (nhour == 0) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 1) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 2) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 3) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 4) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 5) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 6) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 7) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 8) {
+      document.getElementById("welcomeMessage").innerHTML = "Good morning";
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 9) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good morning";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 10) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good morning";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 11) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good morning";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 12) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 13) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 14) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 15) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 16) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 17) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 18) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 19) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 20) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 21) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 22) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 23) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (nhour == 24) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    }
+  }, 200);
 }
