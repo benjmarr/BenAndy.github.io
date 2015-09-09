@@ -62,8 +62,11 @@ img > #link {
 }
 
 #optionsImg {
+  opacity: 0;
   height: 3%;
   width: 3%;
+  cursor: pointer;
+  transition: opacity 5s;
 }
 
 #options {

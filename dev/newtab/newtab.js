@@ -6,7 +6,7 @@ document.title = "New Tab";
 
 function options() {
   document.getElementById("optionsMenu").style.visibility = "visible";
-  document.getElementById("optionsImg").style.visibility = "hidden";
+  document.getElementById("optionsImg").style.opacity = "hidden";
   document.getElementById("optionsImg").style.height = "0px";
 }
 
@@ -51,7 +51,10 @@ setTimeout(function() {
   console.log("Background ID: " + randomBackground + "\nSource: http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg");
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
-  }, 1000);
+    setTimeout(function() {
+      document.getElementById("optionsImg").style.opacity = "1";
+    }, 2000);
+  }, 1500);
   if (randomBackground == 1) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back1.jpg')";
   };
@@ -120,14 +123,6 @@ setTimeout(function() {
     document.getElementById("header").style.backgroundImage = "url('content/background/back17.jpg')";
   };
 }, 50);
-
-setInterval(options1,1000);
-function options1() {
-  document.getElementById("optionsImg").src = "content/options.png";
-  setTimeout(function() {
-    document.getElementById("optionsImg").src = "content/optionsHover.png";
-  }, 500);
-}
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
