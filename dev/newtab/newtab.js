@@ -17,33 +17,13 @@ function optionsClose() {
 }
 
 function optionsSOCIALMEDIA1() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social Media Icons</a>";
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social Media Icons</a> [OFF]";
   document.getElementById("link").style.visibility = "hidden";
 }
 
 function optionsSOCIALMEDIA2() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a>";
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a> [ON]";
   document.getElementById("link").style.visibility = "visible";
-}
-
-function optionsTEXTCOLOUR1() {
-  document.getElementById("optionTextColour").innerHTML = "<a onclick='optionsTEXTCOLOUR2()'>Colour Scheme</a> (FEATURE UNDER DEVELOPMENT)";
-  document.getElementById("optionsMenu").style.backgroundColor = "white";
-  document.getElementById("options").style.color = "black";
-  document.getElementById("unsplash").style.color = "black";
-  document.getElementById("clockbox").style.color = "black";
-  document.getElementById("datebox").style.color = "black";
-  document.getElementById("newtab").style.color = "black";
-}
-
-function optionsTEXTCOLOUR2() {
-  document.getElementById("optionTextColour").innerHTML = "<a onclick='optionsTEXTCOLOUR1()'>Colour Scheme</a> (FEATURE UNDER DEVELOPMENT)";
-  document.getElementById("optionsMenu").style.backgroundColor = "black";
-  document.getElementById("options").style.color = "white";
-  document.getElementById("unsplash").style.color = "white";
-  document.getElementById("clockbox").style.color = "white";
-  document.getElementById("datebox").style.color = "white";
-  document.getElementById("newtab").style.color = "white";
 }
 
 setTimeout(function() {
@@ -61,10 +41,13 @@ setTimeout(function() {
             document.getElementById("link3").style.opacity = "1";
             setTimeout(function() {
               document.getElementById("link4").style.opacity = "1";
-            }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
+              setTimeout(function() {
+                document.getElementById("link5").style.opacity = "1";
+              }, 500);
+            }, 500);
+          }, 500);
+        }, 500);
+      }, 500);
     }, 2000);
   }, 1500);
   if (randomBackground == 1) {
@@ -145,6 +128,7 @@ function GetClock() {
   var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
   var d=new Date();
   var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+  var thour = d.getHours();
 
   if (nhour == 0) {
     ap=" AM";
@@ -161,131 +145,131 @@ function GetClock() {
   if (nmin<=9) {
     nmin="0"+nmin;
   }
-
   document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
   document.getElementById("clockbox").innerHTML=""+nhour+":"+nmin+ap+"";
 
   setTimeout(function() {
-    if (nhour == 0) {
+    if (thour == 0) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 1) {
+    } else if (thour == 1) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 2) {
+    } else if (thour == 2) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 3) {
+    } else if (thour == 3) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 4) {
+    } else if (thour == 4) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 5) {
+    } else if (thour == 5) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 6) {
+    } else if (thour == 6) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 7) {
+    } else if (thour == 7) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 8) {
+    } else if (thour == 8) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 9) {
+    } else if (thour == 9) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good morning";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 10) {
+    } else if (thour == 10) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good morning";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 11) {
+    } else if (thour == 11) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good morning";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 12) {
+    } else if (thour == 12) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 13) {
+    } else if (thour == 13) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 14) {
+    } else if (thour == 14) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 15) {
+    } else if (thour == 15) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 16) {
+    } else if (thour == 16) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 17) {
+    } else if (thour == 17) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 18) {
-      setTimeout(function() {
-        document.getElementById("welcomeMessage").style.opacity = "1";
-      }, 3000);
-    } else if (nhour == 19) {
+    } else if (thour == 18) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 20) {
+    } else if (thour == 19) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 21) {
+    } else if (thour == 20) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 22) {
+    } else if (thour == 21) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 23) {
+    } else if (thour == 22) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
-    } else if (nhour == 24) {
+    } else if (thour == 23) {
+      setTimeout(function() {
+        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").style.opacity = "1";
+      }, 3000);
+    } else if (thour == 24) {
       setTimeout(function() {
         document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";

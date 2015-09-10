@@ -44,22 +44,27 @@ img > #link {
 
 #link1 {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 3s;
 }
 
 #link2 {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 3s;
 }
 
 #link3 {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 3s;
 }
 
 #link4 {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 3s;
+}
+
+#link5 {
+  opacity: 0;
+  transition: opacity 3s;
 }
 
 #optionsX {
