@@ -138,7 +138,7 @@ setTimeout(function() {
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 
-setInterval(GetClock,10);
+setInterval(GetClock,100);
 function GetClock() {
   var d=new Date();
   var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
