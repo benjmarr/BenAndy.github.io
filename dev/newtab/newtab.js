@@ -172,7 +172,7 @@ function GetClock() {
         document.getElementById("dateAlert").innerHTML = "Happy new year!";
         setTimeout(function() {
           document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000)
+        }, 2000);
       };
     } else if (tmonth[nmonth] == "February") {
 
@@ -202,7 +202,14 @@ function GetClock() {
         document.getElementById("dateAlert").innerHTML = "Happy birthday, Benjamin!";
         setTimeout(function() {
           document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000)
+        }, 2000);
+      }
+      if (ndate == 28) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy birthday, Vijay!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000);
       };
     } else if (tmonth[nmonth] == "November") {
 
@@ -212,7 +219,7 @@ function GetClock() {
         document.getElementById("dateAlert").innerHTML = "Merry Christmas!";
         setTimeout(function() {
           document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000)
+        }, 2000);
       };
     } else {
       document.getElementById("dateAlert").style.visibility = "hidden";
