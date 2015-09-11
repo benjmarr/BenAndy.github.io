@@ -11,9 +11,10 @@
   <body id="body">
     <header id="header" style="background-size: cover;">
       <p id="newtab">New Tab</p>
-      <div id="clockbox">Loading...</div>
-      <div id="datebox">Please wait!</div>
-      <div id="welcomeMessage">Hello!</div>
+      <div id="clockbox"></div>
+      <div id="datebox"></div>
+      <div id="dateAlert"></div>
+      <div id="welcomeMessage"></div>
     </header>
     <div id="unsplash">Images provided by unsplash.com</div>
     <div id="options">
@@ -25,8 +26,8 @@
         <br />&bull; <span id="optionSocialMedia"><a onclick="optionsSOCIALMEDIA1()">Social Media Icons</a> [ON]</span>
         <br /><br /><br /><strong><center>Information</center></strong>
         &bull; New Tab page copyright &copy; Benjamin, 2015 - All rights reserved.
-        <br />&bull; Images provided by <a href="http://unsplash.com" target="_blank">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank">License</a>)
-        <br />&bull; Special thanks to <a href="https://twitter.com/RagingCow25" target="_blank">Caleb Stewart</a> for helping with the background selection code!
+        <br />&bull; Images provided by <a href="http://unsplash.com" target="_blank" onclick="optionsClose()">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank" onclick="optionsClose()">License</a>)
+        <br />&bull; Special thanks to <a href="https://twitter.com/RagingCow25" target="_blank" onclick="optionsClose()">Caleb Stewart</a> for helping with the background selection code!
       </div>
     </div>
     <div id="link" onmouseover="linkHover()" onmouseout="linkOutHover()">

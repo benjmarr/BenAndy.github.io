@@ -161,8 +161,63 @@ function GetClock() {
   if (nmin<=9) {
     nmin="0"+nmin;
   }
+
   document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
   document.getElementById("clockbox").innerHTML=""+nhour+":"+nmin+ap+"";
+
+  setTimeout(function() {
+    if (tmonth[nmonth] == "January") {
+      if (ndate == 1) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy new year!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000)
+      };
+    } else if (tmonth[nmonth] == "February") {
+
+    } else if (tmonth[nmonth] == "March") {
+
+    } else if (tmonth[nmonth] == "April") {
+
+    } else if (tmonth[nmonth] == "May") {
+
+    } else if (tmonth[nmonth] == "June") {
+
+    } else if (tmonth[nmonth] == "July") {
+
+    } else if (tmonth[nmonth] == "August") {
+
+    } else if (tmonth[nmonth] == "September") {
+      if (ndate == 11) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy birthday, Chantalle!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000);
+      };
+    } else if (tmonth[nmonth] == "October") {
+      if (ndate == 17) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy birthday, Benjamin!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000)
+      };
+    } else if (tmonth[nmonth] == "November") {
+
+    } else if (tmonth[nmonth] == "December") {
+      if (ndate == 24) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Merry Christmas!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000)
+      };
+    } else {
+      document.getElementById("dateAlert").style.visibility = "hidden";
+    }
+  }, 2000);
 
   setTimeout(function() {
     if (thour == 0) {
@@ -291,5 +346,5 @@ function GetClock() {
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
     }
-  }, 200);
+  }, 3000);
 }

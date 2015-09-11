@@ -114,6 +114,17 @@ img > #link {
   cursor: default;
 }
 
+#dateAlert {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  cursor: default;
+  font-size: 250%;
+  margin-top: 5%;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
 #welcomeMessage {
   color: white;
   font-family: 'Titillium Web', sans-serif;
