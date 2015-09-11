@@ -177,7 +177,13 @@ function GetClock() {
     } else if (tmonth[nmonth] == "February") {
 
     } else if (tmonth[nmonth] == "March") {
-
+      if (ndate == 27) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy Easter!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000);
+      };
     } else if (tmonth[nmonth] == "April") {
 
     } else if (tmonth[nmonth] == "May") {
