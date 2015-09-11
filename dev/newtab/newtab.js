@@ -257,7 +257,7 @@ function GetClock() {
       }, 3000);
     } else if (thour == 18) {
       setTimeout(function() {
-        document.getElementById("welcomeMessage").innerHTML = "Good evening";
+        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
       }, 3000);
     } else if (thour == 19) {
