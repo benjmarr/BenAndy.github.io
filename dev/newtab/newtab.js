@@ -4,26 +4,42 @@
 
 document.title = "New Tab";
 
+function linkHover() {
+  document.getElementById("link").style.opacity = "1";
+}
+
+function linkOutHover() {
+  document.getElementById("link").style.opacity = "0.7";
+}
+
 function options() {
-  document.getElementById("optionsMenu").style.visibility = "visible";
-  document.getElementById("optionsImg").style.opacity = "hidden";
-  document.getElementById("optionsImg").style.height = "0px";
+  document.getElementById("optionsMenu").style.opacity = "0.9";
+  document.getElementById("optionsImg").style.opacity = "0";
 }
 
 function optionsClose() {
-  document.getElementById("optionsMenu").style.visibility = "hidden";
-  document.getElementById("optionsImg").style.visibility = "visible";
-  document.getElementById("optionsImg").style.height = "3%";
+  document.getElementById("optionsMenu").style.opacity = "0";
+  document.getElementById("optionsImg").style.opacity = "0.9";
+}
+
+function optionsRELOAD() {
+  document.getElementById("optionRELOAD").innerHTML = "<a onclick='optionsRELOAD()'>Reloading...</a>";
+  document.getElementById("optionsMenu").style.opacity = "0";
+  document.getElementById("link").style.opacity = "0";
+  document.getElementById("body").style.opacity = "0";
+  setTimeout(function() {
+    window.location = "";
+  }, 2500);
 }
 
 function optionsSOCIALMEDIA1() {
   document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social Media Icons</a> [OFF]";
-  document.getElementById("link").style.visibility = "hidden";
+  document.getElementById("link").style.opacity = "0";
 }
 
 function optionsSOCIALMEDIA2() {
   document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a> [ON]";
-  document.getElementById("link").style.visibility = "visible";
+  document.getElementById("link").style.opacity = "0.7";
 }
 
 setTimeout(function() {

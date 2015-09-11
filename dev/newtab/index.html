@@ -21,6 +21,7 @@
       <div id="optionsMenu">
         <span><img src="content/x.png" onclick="optionsClose()" id="optionsX" /></span>
         <strong><center>Options<br /></center></strong>
+        <br />&bull; <span id="optionRELOAD"><a onclick="optionsRELOAD()">Reload the page</a></span>
         <br />&bull; <span id="optionSocialMedia"><a onclick="optionsSOCIALMEDIA1()">Social Media Icons</a> [ON]</span>
         <br /><br /><br /><strong><center>Information</center></strong>
         &bull; New Tab page copyright &copy; Benjamin, 2015 - All rights reserved.
@@ -28,7 +29,7 @@
         <br />&bull; Special thanks to <a href="https://twitter.com/RagingCow25" target="_blank">Caleb Stewart</a> for helping with the background selection code!
       </div>
     </div>
-    <div id="link">
+    <div id="link" onmouseover="linkHover()" onmouseout="linkOutHover()">
       <a id="link1" href="https://google.com"><img alt="Google" src="content/link/google.png" width="60" height="60" /></a>
       <a id="link2" href="https://twitter.com"><img alt="Twitter" src="content/link/twitter.png" width="60" href="60" /></a>
       <a id="link3" href="https://facebook.com"><img alt="Facebook" src="content/link/fbLogo.png" width="60" height="60" /></a>
