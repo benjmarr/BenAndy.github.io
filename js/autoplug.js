@@ -81,14 +81,14 @@ setTimeout(function() {
 				if (afkOnOff == 1) {
 					setTimeout(function() {
 						var afkOnOff = 0;
-						console.log(afkOnOff);
 						afkOnOffStatus = "off";
+						console.log(afkOnOff);
 					}, 10);
 				} else if (afkOnOff == 0) {
 					setTimeout(function() {
 						var afkOnOff = 1;
-						console.log(afkOnOff);
 						afkOnOffStatus = "on";
+						console.log(afkOnOff);
 					}, 10);
 				}
 				setTimeout(function() {
