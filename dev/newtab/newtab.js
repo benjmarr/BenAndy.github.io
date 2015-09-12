@@ -174,6 +174,13 @@ function GetClock() {
           document.getElementById("dateAlert").style.opacity = "1";
         }, 2000);
       };
+      if (ndate == 26) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy Australia day!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000);
+      };
     } else if (tmonth[nmonth] == "February") {
 
     } else if (tmonth[nmonth] == "March") {

@@ -1,1 +1,22 @@
 /*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: blue;
+  margin-top: -1%;
+}
+
+#title {
+  text-align: center;
+  padding-top: 1.5%;
+  font-size: 300%;
+  padding-bottom: 1%;
+}
+
+#navLinks {
+  text-align: center;
+  font-size: 200%;
+}
