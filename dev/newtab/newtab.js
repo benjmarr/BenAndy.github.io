@@ -43,7 +43,8 @@ function optionsSOCIALMEDIA2() {
 }
 
 setTimeout(function() {
-  var randomBackground = Math.floor((Math.random() * 17) + 1);
+  var randomBackground = Math.floor((Math.random() * 21) + 1);
+  document.getElementById("ImageUpdateDate").innerHTML = "Sunday, 13<sup>th</sup> September 2015";
   console.log("Background ID: " + randomBackground + "\nSource: http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg");
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
@@ -132,6 +133,22 @@ setTimeout(function() {
 
   if (randomBackground == 17) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back17.jpg')";
+  };
+
+  if (randomBackground == 18) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back18.jpg')";
+  };
+
+  if (randomBackground == 19) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back19.jpg')";
+  };
+
+  if (randomBackground == 20) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back20.jpg')";
+  };
+
+  if (randomBackground == 21) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
   };
 }, 50);
 
