@@ -44,8 +44,10 @@ function optionsSOCIALMEDIA2() {
 
 setTimeout(function() {
   var randomBackground = Math.floor((Math.random() * 21) + 1);
+  var imgURL = "http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg";
   document.getElementById("ImageUpdateDate").innerHTML = "Sunday, 13<sup>th</sup> September 2015";
-  console.log("Background ID: " + randomBackground + "\nSource: http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg");
+  document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
+  console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
     setTimeout(function() {
