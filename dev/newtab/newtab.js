@@ -4,6 +4,14 @@
 
 document.title = "New Tab";
 
+function active() {
+  clearTimeout(activeTime);
+  document.getElementById("body").style.opacity = "1";
+  var activeTime = setTimeout(function() {
+    document.getElementById("body").style.opacity = "0.2";
+  }, 10000);
+}
+
 function linkHover() {
   document.getElementById("link").style.opacity = "1";
 }
@@ -37,9 +45,9 @@ function optionsSOCIALMEDIA1() {
   document.getElementById("link").style.opacity = "0";
 }
 
-function optionsSOCIALMEDIA2() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a> [ON]";
-  document.getElementById("link").style.opacity = "0.7";
+function optionsPAGEFADE2() {
+  document.getElementById("optionPageFade").innerHTML = "<a onclick='optionsPAGEFADE2()'>Page Fade (10s)</a> [ON]";
+  clearInterval(activeOff);
 }
 
 setTimeout(function() {
