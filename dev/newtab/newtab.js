@@ -76,7 +76,7 @@ setTimeout(function() {
         }, 500);
       }, 500);
     }, 2000);
-  }, 1500);
+  }, 2000);
   if (randomBackground == 1) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back1.jpg')";
   };
