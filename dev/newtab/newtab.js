@@ -5,9 +5,12 @@
 document.title = "New Tab";
 
 function active() {
-  clearTimeout(activeTime);
+  window.setTimeout(function() {
+    window.clearTimeout(activeTimer);
+  }, 10);
+  var activeTimer;
   document.getElementById("body").style.opacity = "1";
-  var activeTime = setTimeout(function() {
+  activeTimer = setTimeout(function() {
     document.getElementById("body").style.opacity = "0.2";
   }, 10000);
 }
