@@ -48,9 +48,10 @@ function optionsSOCIALMEDIA1() {
   document.getElementById("link").style.opacity = "0";
 }
 
-function optionsPAGEFADE2() {
-  document.getElementById("optionPageFade").innerHTML = "<a onclick='optionsPAGEFADE2()'>Page Fade (10s)</a> [ON]";
-  clearInterval(activeOff);
+
+function optionsSOCIALMEDIA2() {
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a> [ON]";
+  document.getElementById("link").style.opacity = "0.6";
 }
 
 setTimeout(function() {
