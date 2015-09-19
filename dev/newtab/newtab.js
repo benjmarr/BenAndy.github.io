@@ -4,17 +4,8 @@
 
 document.title = "New Tab";
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-
-function active() {
-  window.setTimeout(function() {
-    window.clearTimeout(activeTimer);
-  }, 10);
-  var activeTimer;
-  document.getElementById("body").style.opacity = "1";
-  activeTimer = setTimeout(function() {
-    document.getElementById("body").style.opacity = "0.2";
-  }, 10000);
-}
+var backNumber = 21;
+var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 
 function linkHover() {
   document.getElementById("link").style.opacity = "1";
@@ -32,6 +23,22 @@ function options() {
 function optionsClose() {
   document.getElementById("optionsMenu").style.opacity = "0";
   document.getElementById("optionsImg").style.opacity = "0.9";
+}
+
+function optionsNEWBACK() {
+  setTimeout(function() {
+    var newBack = Math.floor((Math.random() * backNumber) + 1);
+    document.getElementById("header").style.opacity = "0";
+    setTimeout(function() {
+      document.getElementById("header").style.backgroundImage = "url('content/background/back" + newBack + ".jpg')";
+      setTimeout(function() {
+        document.getElementById("header").style.opacity = "1";
+      }, 200);
+    }, 500);
+    setTimeout(function() {
+      document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + newBack + "]";
+    }, 100);
+  }, 500);
 }
 
 function optionsRELOAD() {
@@ -55,10 +62,10 @@ function optionsSOCIALMEDIA2() {
 }
 
 setTimeout(function() {
-  var randomBackground = Math.floor((Math.random() * 21) + 1);
   var imgURL = "http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg";
   document.getElementById("ImageUpdateDate").innerHTML = "Sunday, 13<sup>th</sup> September 2015";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
+  document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
@@ -164,7 +171,7 @@ setTimeout(function() {
   if (randomBackground == 21) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
   };
-}, 50);
+}, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE ON LINE 8
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
