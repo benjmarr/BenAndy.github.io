@@ -1,4 +1,3 @@
-
 document.title = "Cookies";
 
 function getCookie(NameOfCookie) {
