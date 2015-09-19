@@ -225,7 +225,13 @@ function GetClock() {
     } else if (tmonth[nmonth] == "April") {
 
     } else if (tmonth[nmonth] == "May") {
-
+      if (ndate == 2) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy birthday, Caleb!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000);
+      };
     } else if (tmonth[nmonth] == "June") {
 
     } else if (tmonth[nmonth] == "July") {
