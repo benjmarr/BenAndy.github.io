@@ -3,6 +3,7 @@
 // https://twitter.com/RagingCow25
 
 document.title = "New Tab";
+console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
 
 function active() {
   window.setTimeout(function() {
@@ -47,7 +48,6 @@ function optionsSOCIALMEDIA1() {
   document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social Media Icons</a> [OFF]";
   document.getElementById("link").style.opacity = "0";
 }
-
 
 function optionsSOCIALMEDIA2() {
   document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a> [ON]";
