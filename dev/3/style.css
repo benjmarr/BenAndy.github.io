@@ -12,6 +12,8 @@ body {
   font-size: 500%;
   padding-bottom: 5%;
   cursor: default;
+  transition: color 2s;
+  transition: font-size 1s;
 }
 
 .startButton {
@@ -21,6 +23,7 @@ body {
   background-color: #DEDEDE;
   transition: background-color 0.8s;
   cursor: pointer;
+  transition: width 1s;
 }
 
 .startText {
