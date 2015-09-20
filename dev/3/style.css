@@ -1,0 +1,32 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+body {
+  background-color: #FCFCFC;
+  transition: background-color 1s;
+}
+
+.title {
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  margin-top: 13%;
+  font-size: 500%;
+  padding-bottom: 5%;
+  cursor: default;
+}
+
+.startButton {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #DEDEDE;
+  transition: background-color 0.8s;
+  cursor: pointer;
+}
+
+.startText {
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 23%;
+  transition: padding-top 1s;
+}
