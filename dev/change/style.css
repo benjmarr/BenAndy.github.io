@@ -5,6 +5,24 @@ body {
   transition: background-color 1s;
 }
 
+#titleSCREEN {
+  transition: opacity 1s;
+}
+
+#begin {
+  position: absolute;
+  visibility: hidden;
+}
+
+.beginTITLE {
+  color: #E4E4E4;
+  text-align: center;
+  font-size: 300%;
+  margin-top: -100%;
+  transition: margin-top 2s;
+  font-family: 'Play', sans-serif;
+}
+
 .title {
   font-family: 'Play', sans-serif;
   text-align: center;
@@ -13,6 +31,14 @@ body {
   padding-bottom: 5%;
   cursor: default;
   transition: font-size 1s;
+}
+
+.startButtonX {
+  width: 150px;
+  background-color: #3CFF63;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 100px;
 }
 
 .startButton {

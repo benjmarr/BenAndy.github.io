@@ -20,5 +20,20 @@ function startUnHover() {
 }
 
 function startClick() {
-
+  document.getElementById("titleReset").innerHTML = "<div class='startButtonX' onmouseover='startHover()' id='startButton'><div class='startText' id='startText'>Begin</div></div>";
+  document.getElementById("titleSCREEN").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("body").style.backgroundColor = "#FCFCFC";
+    setTimeout(function() {
+      document.getElementById("titleSCREEN").style.visibility = "hidden";
+      document.getElementById("body").style.backgroundColor = "#3E3E3E";
+      document.getElementById("titleSCREEN").innerHTML = "";
+      document.getElementById("titleSCREEN").style.position = "absolute";
+      setTimeout(function() {
+        document.getElementById("begin").style.position = "fixed";
+        document.getElementById("begin").style.visibility = "visible";
+        document.getElementById("beginTITLE").style.marginTop = "1%";
+      }, 200);
+    }, 500);
+  }, 500);
 }
