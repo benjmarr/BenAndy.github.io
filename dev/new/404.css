@@ -1,0 +1,15 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+body {
+  background-color: #3A3A3A;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  margin-top: 5%;
+  background-color: #DEDEDE;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 300%;
+}
