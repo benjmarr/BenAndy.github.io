@@ -7,7 +7,6 @@ function startHover() {
   document.getElementById("startButton").style.backgroundColor = "#3CFF63";
   document.getElementById("startText").style.paddingTop = "25%";
   document.getElementById("body").style.backgroundColor = "#CCCCCC";
-  document.getElementById("startButton").style.width = "150px";
   document.getElementById("title").style.fontSize = "550%";
 }
 
@@ -15,12 +14,11 @@ function startUnHover() {
   document.getElementById("startButton").style.backgroundColor = "#DEDEDE";
   document.getElementById("startText").style.paddingTop = "20%";
   document.getElementById("body").style.backgroundColor = "#FCFCFC";
-  document.getElementById("startButton").style.width = "100px";
   document.getElementById("title").style.fontSize = "500%";
 }
 
 function startClick() {
-  document.getElementById("titleReset").innerHTML = "<div class='startButtonX' onmouseover='startHover()' id='startButton'><div class='startText' id='startText'>Begin</div></div>";
+  document.getElementById("titleReset").innerHTML = "<div class='startButton' onmouseover='startHover()' id='startButton'><div class='startText' id='startText'>Begin</div></div>";
   document.getElementById("titleSCREEN").style.opacity = "0";
   setTimeout(function() {
     document.getElementById("body").style.backgroundColor = "#FCFCFC";
@@ -33,6 +31,12 @@ function startClick() {
         document.getElementById("begin").style.position = "fixed";
         document.getElementById("begin").style.visibility = "visible";
         document.getElementById("beginTITLE").style.marginTop = "1%";
+        setTimeout(function() {
+          document.getElementById("beginANY").style.opacity = "1";
+          setTimeout(function() {
+            document.getElementById("quote").style.opacity = "1";
+          }, 500);
+        }, 2000);
       }, 200);
     }, 500);
   }, 500);
