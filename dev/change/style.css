@@ -17,11 +17,12 @@ body {
 .quote {
   text-align: center;
   color: #E4E4E4;
-  font-family: 'Play', sans-serif;
+  font-family: 'Candal', sans-serif;
   opacity: 0;
   transition: opacity 2s;
   margin-top: 10%;
   font-size: 300%;
+  cursor: default;
   height: 0px;
 }
 
@@ -29,6 +30,7 @@ body {
   color: #E4E4E4;
   text-align: center;
   font-size: 300%;
+  cursor: default;
   margin-top: -100%;
   transition: margin-top 2s;
   font-family: 'Play', sans-serif;
@@ -41,6 +43,7 @@ body {
   font-size: 300%;
   margin-left: 30%;
   color: #E4E4E4;
+  cursor: default;
 }
 
 .title {
