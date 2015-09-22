@@ -1,7 +1,8 @@
 /*Copyright Benjamin (c) 2015 - All rights reserved*/
 
 body {
-  background-color: #3A3A3A;
+  background-color: #000000;
+  transition: background-color 2s;
 }
 
 .circle {
