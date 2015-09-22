@@ -14,6 +14,11 @@ function mainBuildPage() {
   }, 500);
 }
 
+function pageClose() {
+  document.getElementById("body").style.backgroundColor = "#838383";
+  document.getElementById("body").style.opacity = "0";
+}
+
 function page404() {
   var url = window.location.href;
   console.log("Requested URL: " + url);
