@@ -11,6 +11,10 @@ function page404() {
     document.getElementById("404y").style.width = "500px";
     setTimeout(function() {
       document.getElementById("404x").style.opacity = "1";
+      setTimeout(function() {
+        document.getElementById("help").style.opacity = "1";
+      }, 300);
     }, 400);
   }, 1);
+  document.getElementById("help").innerHTML = "The requested URL was not found!<br /><strong class='red'>" + url + "</strong><br />Please make sure that you have typed all the characters in correctly and try again. If you are 100% certain all the characters are typed correctly, then the requested page may not exist anymore.";
 }

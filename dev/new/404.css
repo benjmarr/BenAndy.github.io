@@ -5,11 +5,15 @@ body {
   transition: background-color 2s;
 }
 
+.red {
+  color: #FF6E6E;
+}
+
 .circle {
   border-radius: 50%;
   height: 500px;
   width: 800px;
-  margin-top: 5%;
+  margin-top: 2%;
   background-color: #DEDEDE;
   transition: width 1s;
 }
@@ -21,4 +25,14 @@ body {
   padding-top: 15%;
   opacity: 0;
   transition: opacity 1s;
+}
+
+.help {
+  padding-top: 2%;
+  font-size: 200%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+  color: #DEDEDE;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
