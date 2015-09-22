@@ -9,6 +9,9 @@ function mainBuildPage() {
       document.getElementById("header").style.marginTop = "0%";
       setTimeout(function() {
         document.getElementById("nav").style.opacity = "1";
+        setTimeout(function() {
+          document.getElementById("welcome").style.opacity = "1";
+        }, 500);
       }, 1000);
     }, 500);
   }, 500);
