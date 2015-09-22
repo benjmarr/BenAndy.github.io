@@ -1,0 +1,45 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+body {
+  transition: background-color 1s;
+  background-color: #838383;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+#nav {
+  transition: opacity 1s;
+  opacity: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 200%;
+  text-align: center;
+}
+
+#hometitle {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 300%;
+}
+
+.header {
+  background-color: #353535;
+  color: #E1E1E1;
+  transition: margin-top 1s;
+  margin-top: -100%;
+  border-radius: 10px;
+}

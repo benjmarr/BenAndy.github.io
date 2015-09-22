@@ -2,6 +2,18 @@
 
 console.log("Copyright Benjamin (c) 2015 - All rights reserved");
 
+function mainBuildPage() {
+  setTimeout(function() {
+    document.getElementById("body").style.backgroundColor = "#555555";
+    setTimeout(function() {
+      document.getElementById("header").style.marginTop = "0%";
+      setTimeout(function() {
+        document.getElementById("nav").style.opacity = "1";
+      }, 1000);
+    }, 500);
+  }, 500);
+}
+
 function page404() {
   var url = window.location.href;
   console.log("Requested URL: " + url);
