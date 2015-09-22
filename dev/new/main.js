@@ -11,6 +11,9 @@ function mainBuildPage() {
         document.getElementById("nav").style.opacity = "1";
         setTimeout(function() {
           document.getElementById("welcome").style.opacity = "1";
+          setTimeout(function() {
+            document.getElementById("news").style.opacity = "1";
+          }, 500);
         }, 500);
       }, 1000);
     }, 500);

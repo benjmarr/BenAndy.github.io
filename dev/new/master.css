@@ -63,3 +63,23 @@ a:hover {
   margin-left: 1%;
   margin-right: 55%;
 }
+
+.news > h1 {
+  text-align: center;
+}
+
+.news {
+  transition: opacity 1s;
+  opacity: 0;
+  background-color: #353535;
+  color: #E1E1E1;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-right: 1%;
+  margin-left: 55%;
+  text-align: right;
+}
