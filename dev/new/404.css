@@ -2,7 +2,7 @@
 
 body {
   background-color: #000000;
-  transition: background-color 2s;
+  transition: background-color 3s;
 }
 
 .red {
@@ -24,7 +24,7 @@ body {
   height: 0px;
   padding-top: 15%;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 
 .help {
@@ -32,7 +32,7 @@ body {
   font-size: 200%;
   text-align: center;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 4s;
   color: #DEDEDE;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
