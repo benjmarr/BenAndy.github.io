@@ -11,5 +11,5 @@ function page404() {
     setTimeout(function() {
       document.getElementById("404x").style.opacity = "1";
     }, 400);
-  }, 200);
+  }, 100);
 }
