@@ -7,9 +7,14 @@ body {
 .circle {
   border-radius: 50%;
   height: 500px;
-  width: 500px;
   margin-top: 5%;
   background-color: #DEDEDE;
+  transition: width 1s;
+}
+
+.text {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 300%;
+  font-size: 600%;
+  height: 0px;
+  padding-top: 15%;
 }
