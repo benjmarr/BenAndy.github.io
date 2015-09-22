@@ -19,7 +19,7 @@ function page404() {
       }, 300);
     }, 400);
   }, 1);
-  document.getElementById("help").innerHTML = "The requested URL was not found!<br /><strong class='red' id='url'>" + url + "</strong><br />Please make sure that you have typed all the characters in correctly and try again. If you are 100% certain all the characters are typed correctly, then the requested page may not exist anymore.";
+  document.getElementById("help").innerHTML = "The requested URL was not found!<br /><strong class='red' id='url'>" + url + "</strong><br />Please make sure that you have typed all the characters in correctly and try again. If you are 100% certain all the characters are typed correctly, then the requested page may not exist anymore.<br />< <a onclick='back()'>Back</a> | <a onclick='home()'>Home</a> >";
   setTimeout(function() {
     setInterval(function() {
       setTimeout(function() {
@@ -28,4 +28,18 @@ function page404() {
       document.getElementById("url").style.color = "#FF1C1C";
     }, 2000);
   }, 2000);
+}
+
+function back() {
+  document.getElementById("body").style.opacity = "0";
+  setTimeout(function() {
+    window.history.back();
+  }, 800);
+}
+
+function home() {
+  document.getElementById("body").style.opacity = "0";
+  setTimeout(function() {
+    window.location = "http://benandy.github.io";
+  }, 800);
 }

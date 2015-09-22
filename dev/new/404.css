@@ -2,12 +2,18 @@
 
 body {
   background-color: #000000;
-  transition: background-color 3s;
+  opacity: 1;
+  transition: background-color 3s, opacity 1s;
+}
+
+a {
+  cursor: pointer;
 }
 
 .red {
   color: #FF6E6E;
   opacity: 0;
+  cursor: default;
   transition: color 1s, opacity 1s;
 }
 
@@ -15,6 +21,7 @@ body {
   border-radius: 50%;
   height: 500px;
   width: 800px;
+  cursor: default;
   margin-top: 2%;
   background-color: #DEDEDE;
   transition: width 1s;
@@ -24,6 +31,7 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 600%;
   height: 0px;
+  cursor: default;
   padding-top: 15%;
   opacity: 0;
   transition: opacity 2s;
@@ -31,6 +39,7 @@ body {
 
 .help {
   padding-top: 2%;
+  cursor: default;
   font-size: 200%;
   text-align: center;
   opacity: 0;
