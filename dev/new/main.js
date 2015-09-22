@@ -8,5 +8,8 @@ function page404() {
   document.getElementById("404x").innerHTML = "Error 404<br />Page was not found";
   setTimeout(function() {
     document.getElementById("404y").style.width = "500px";
-  }, 500);
+    setTimeout(function() {
+      document.getElementById("404x").style.opacity = "1";
+    }, 400);
+  }, 200);
 }
