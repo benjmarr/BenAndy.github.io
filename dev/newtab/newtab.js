@@ -4,7 +4,7 @@
 
 document.title = "New Tab";
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backNumber = 21;
+var backNumber = 24;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 
 function linkHover() {
@@ -63,7 +63,7 @@ function optionsSOCIALMEDIA2() {
 
 setTimeout(function() {
   var imgURL = "http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg";
-  document.getElementById("ImageUpdateDate").innerHTML = "Sunday, 13<sup>th</sup> September 2015";
+  document.getElementById("ImageUpdateDate").innerHTML = "Wednesday, 23<sup>rd</sup> September 2015";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
@@ -169,6 +169,18 @@ setTimeout(function() {
   };
 
   if (randomBackground == 21) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
+  };
+
+  if (randomBackground == 22) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
+  };
+
+  if (randomBackground == 23) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
+  };
+
+  if (randomBackground == 24) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
   };
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE ON LINE 8
