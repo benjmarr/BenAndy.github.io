@@ -3,7 +3,7 @@
 body {
   background-color: #000000;
   opacity: 1;
-  transition: background-color 3s, opacity 1s;
+  transition: background-color 1s, opacity 1s;
 }
 
 a {

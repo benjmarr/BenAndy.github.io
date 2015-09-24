@@ -14,6 +14,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: inherit;
+  cursor: pointer;
 }
 
 #nav {
