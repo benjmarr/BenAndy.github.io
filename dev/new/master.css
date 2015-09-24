@@ -37,6 +37,26 @@ a:hover {
   font-size: 300%;
 }
 
+.newsLog {
+  transition: opacity 1s;
+  background-color: #838383;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0;
+}
+
+.newsTitle {
+  text-align: center;
+  font-size: 200%;
+}
+
+.newsDate {
+  text-align: right;
+}
+
 .header {
   background-color: #353535;
   color: #E1E1E1;
@@ -81,7 +101,6 @@ a:hover {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  text-align: right;
   position: absolute;
   width: 45%;
   top: 105px;
