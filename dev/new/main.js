@@ -13,9 +13,6 @@ function mainBuildPage() {
           document.getElementById("welcome").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("news").style.opacity = "1";
-            setTimeout(function() {
-              document.getElementById("newsLog").style.opacity = "1";
-            }, 100);
           }, 500);
         }, 500);
       }, 1000);

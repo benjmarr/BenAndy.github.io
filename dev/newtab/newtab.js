@@ -281,7 +281,13 @@ function GetClock() {
         }, 2000);
       };
     } else if (tmonth[nmonth] == "November") {
-
+      if (ndate == 16) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        document.getElementById("dateAlert").innerHTML = "Happy birthday, Emma!";
+        setTimeout(function() {
+          document.getElementById("dateAlert").style.opacity = "1";
+        }, 2000);
+      };
     } else if (tmonth[nmonth] == "December") {
       if (ndate == 24) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
