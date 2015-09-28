@@ -20,6 +20,28 @@ function mainBuildPage() {
   }, 500);
 }
 
+function contactPageBuild() {
+  setTimeout(function() {
+    document.getElementById("body").style.backgroundColor = "#555555";
+    setTimeout(function() {
+      document.getElementById("header").style.marginTop = "0%";
+      setTimeout(function() {
+        document.getElementById("nav").style.opacity = "1";
+        setTimeout(function() {
+          document.getElementById("discord").style.marginLeft = "73%";
+          setTimeout(function() {
+            document.getElementById("contact").style.opacity = "1";
+            setTimeout(function() {
+              document.getElementById("connectButtonCONTACT").style.opacity = "1";
+              document.getElementById("connectButtonCONTACT").style.borderRadius = "10px";
+            }, 500);
+          }, 500);
+        }, 500);
+      }, 1000);
+    }, 500);
+  }, 500);
+}
+
 function pageClose() {
   document.getElementById("body").style.backgroundColor = "#838383";
   document.getElementById("body").style.opacity = "0";
