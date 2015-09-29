@@ -226,40 +226,35 @@ function GetClock() {
   document.getElementById("clockbox").innerHTML=""+nhour+":"+nmin+ap+"";
 
   setTimeout(function() {
+    var alertShow = document.getElementById("dateAlert").style.opacity = "1";
+    var alertName = document.getElementById("dateAlert");
+
     if (tmonth[nmonth] == "January") {
       if (ndate == 1) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy new year!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy new year!";
+        setTimeout(function() {alertShow}, 1000);
       };
       if (ndate == 26) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy Australia day!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy Australia day!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "February") {
 
     } else if (tmonth[nmonth] == "March") {
       if (ndate == 27) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy Easter!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy Easter!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "April") {
 
     } else if (tmonth[nmonth] == "May") {
       if (ndate == 2) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy birthday, Caleb!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy birthday, Caleb!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "June") {
 
@@ -270,41 +265,31 @@ function GetClock() {
     } else if (tmonth[nmonth] == "September") {
       if (ndate == 11) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy birthday, Chantalle!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy birthday, Chantalle!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "October") {
       if (ndate == 17) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy birthday, Benjamin!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy birthday, Benjamin!";
+        setTimeout(function() {alertShow}, 1000);
       }
       if (ndate == 28) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy birthday, Vijay!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy birthday, Vijay!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "November") {
       if (ndate == 16) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Happy birthday, Emma!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Happy birthday, Emma!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "December") {
       if (ndate == 24) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        document.getElementById("dateAlert").innerHTML = "Merry Christmas!";
-        setTimeout(function() {
-          document.getElementById("dateAlert").style.opacity = "1";
-        }, 2000);
+        alertName.innerHTML = "Merry Christmas!";
+        setTimeout(function() {alertShow}, 1000);
       };
     } else {
       document.getElementById("dateAlert").style.visibility = "hidden";
