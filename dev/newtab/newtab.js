@@ -16,13 +16,21 @@ function linkOutHover() {
 }
 
 function options() {
+  document.getElementById("optionsMenu").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0.9";
   document.getElementById("optionsImg").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("optionsImg").style.visibility = "hidden";
+  }, 600);
 }
 
 function optionsClose() {
+  document.getElementById("optionsImg").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0";
   document.getElementById("optionsImg").style.opacity = "0.9";
+  setTimeout(function() {
+    document.getElementById("optionsMenu").style.visibility = "hidden";
+  }, 600);
 }
 
 function optionsNEWBACK() {
@@ -36,7 +44,9 @@ function optionsNEWBACK() {
       }, 200);
     }, 500);
     setTimeout(function() {
+      var newimgURL = "http://benandy.github.io/dev/newtab/content/background/back" + newBack + ".jpg";
       document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + newBack + "]";
+      document.getElementById("ImageURL").innerHTML = "<a href='" + newimgURL + "' target='_blank'>" + newimgURL + "</a>";
     }, 100);
   }, 500);
 }

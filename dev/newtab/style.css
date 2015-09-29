@@ -1,5 +1,9 @@
 /*Copyright Benjamin (c) 2015 - All rights reserved*/
 
+.titanic {
+  float: none;
+}
+
 body {
   opacity: 0;
   background-color: black;
@@ -85,6 +89,7 @@ img > #link {
   margin-right: 20%;
   margin-top: 6%;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.5s;
 }
 
