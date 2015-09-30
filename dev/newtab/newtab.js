@@ -2,7 +2,6 @@
 // Special thanks to Caleb Stewart for helping me with the random background image selection!
 // https://twitter.com/RagingCow25
 
-document.title = "New Tab";
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
 var backNumber = 24;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
@@ -228,14 +227,13 @@ function GetClock() {
   setTimeout(function() {
     var alertShow = document.getElementById("dateAlert").style.opacity = "1";
     var alertName = document.getElementById("dateAlert");
-    var titleAlert = setTimeout(function() {document.title = thisAlert;}, 500);
 
     if (tmonth[nmonth] == "January") {
       if (ndate == 1) {
         var thisAlert = "Happy new year!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "February") {
 
@@ -244,7 +242,7 @@ function GetClock() {
         var thisAlert = "Happy Easter!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "April") {
 
@@ -253,7 +251,7 @@ function GetClock() {
         var thisAlert = "Happy birthday, Caleb";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "June") {
 
@@ -266,40 +264,40 @@ function GetClock() {
         var thisAlert = "Happy birthday, Chantalle!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "October") {
       if (ndate == 1) {
         var thisAlert = "Emma is love <3"; // THIS WAS A DARE >.>
         document.getElementById("welcomeMessage").style.visibility = "hidden"; // THIS WAS A DARE >.>
         alertName.innerHTML = thisAlert; // THIS WAS A DARE >.>
-        setTimeout(function() {alertShow; titleAlert}, 1000); // THIS WAS A DARE >.>
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000); // THIS WAS A DARE >.>
       };
       if (ndate == 17) {
         var thisAlert = "Happy birthday, Benjamin";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
       if (ndate == 28) {
         var thisAlert = "Happy birthday, Vijay!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "November") {
       if (ndate == 16) {
         var thisAlert = "Happy birthday, Emma!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "December") {
       if (ndate == 24) {
         var thisAlert = "Merry Christmas!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; titleAlert}, 1000);
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else {
       document.getElementById("dateAlert").style.visibility = "hidden";
