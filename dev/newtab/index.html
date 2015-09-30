@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-AU" onkeydown="keypress()">
   <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <meta name="author" content="Benjamin">
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
@@ -34,12 +35,12 @@
         <br />&bull; Special thanks to <a href="https://twitter.com/RagingCow25" target="_blank" onclick="optionsClose()">Caleb Stewart</a> for helping with the background selection code!
       </div>
     </div>
-    <div id="link" onmouseover="linkHover()" onmouseout="linkOutHover()">
-      <a id="link1" href="https://google.com"><img alt="Google" src="content/link/google.png" width="60" height="60" /></a>
-      <a id="link2" href="https://twitter.com"><img alt="Twitter" src="content/link/twitter.png" width="60" href="60" /></a>
-      <a id="link3" href="https://facebook.com"><img alt="Facebook" src="content/link/fbLogo.png" width="60" height="60" /></a>
-      <a id="link4" href="https://youtube.com"><img alt="YouTube" src="content/link/youtube.png" width="80" height="60" /></a>
-      <a id="link5" href="https://pinterest.com"><img alt="Pinterest" src="content/link/pinterest.png" width="60" height="60" /></a>
+    <div id="link">
+      <a id="link1" class="linked" href="https://google.com"><img alt="Google" src="content/link/google.png" width="60" height="60" /></a>
+      <a id="link2" class="linked" href="https://twitter.com"><img alt="Twitter" src="content/link/twitter.png" width="60" href="60" /></a>
+      <a id="link3" class="linked" href="https://facebook.com"><img alt="Facebook" src="content/link/fbLogo.png" width="60" height="60" /></a>
+      <a id="link4" class="linked" href="https://youtube.com"><img alt="YouTube" src="content/link/youtube.png" width="80" height="60" /></a>
+      <a id="link5" class="linked" href="https://pinterest.com"><img alt="Pinterest" src="content/link/pinterest.png" width="60" height="60" /></a>
     </div>
   </body>
 </html>

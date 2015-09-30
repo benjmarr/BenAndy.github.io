@@ -6,14 +6,6 @@ console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
 var backNumber = 24;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 
-function linkHover() {
-  document.getElementById("link").style.opacity = "1";
-}
-
-function linkOutHover() {
-  document.getElementById("link").style.opacity = "0.7";
-}
-
 function options() {
   document.getElementById("optionsMenu").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0.9";
@@ -81,15 +73,15 @@ setTimeout(function() {
     setTimeout(function() {
       document.getElementById("optionsImg").style.opacity = "1";
       setTimeout(function() {
-        document.getElementById("link1").style.opacity = "1";
+        document.getElementById("link1").style.opacity = "0.6";
         setTimeout(function() {
-          document.getElementById("link2").style.opacity = "1";
+          document.getElementById("link2").style.opacity = "0.6";
           setTimeout(function() {
-            document.getElementById("link3").style.opacity = "1";
+            document.getElementById("link3").style.opacity = "0.6";
             setTimeout(function() {
-              document.getElementById("link4").style.opacity = "1";
+              document.getElementById("link4").style.opacity = "0.6";
               setTimeout(function() {
-                document.getElementById("link5").style.opacity = "1";
+                document.getElementById("link5").style.opacity = "0.6";
               }, 500);
             }, 500);
           }, 500);
@@ -335,3 +327,36 @@ function keypress(e) {
     }, 600);
   }
 }
+
+setTimeout(function() {
+  document.getElementById("link1").onmouseover = function() {
+    document.getElementById("link1").style.opacity = "1";
+  }
+  document.getElementById("link1").onmouseout = function() {
+    document.getElementById("link1").style.opacity = "0.6";
+  }
+  document.getElementById("link2").onmouseover = function() {
+    document.getElementById("link2").style.opacity = "1";
+  }
+  document.getElementById("link2").onmouseout = function() {
+    document.getElementById("link2").style.opacity = "0.6";
+  }
+  document.getElementById("link3").onmouseover = function() {
+    document.getElementById("link3").style.opacity = "1";
+  }
+  document.getElementById("link3").onmouseout = function() {
+    document.getElementById("link3").style.opacity = "0.6";
+  }
+  document.getElementById("link4").onmouseover = function() {
+    document.getElementById("link4").style.opacity = "1";
+  }
+  document.getElementById("link4").onmouseout = function() {
+    document.getElementById("link4").style.opacity = "0.6";
+  }
+  document.getElementById("link5").onmouseover = function() {
+    document.getElementById("link5").style.opacity = "1";
+  }
+  document.getElementById("link5").onmouseout = function() {
+    document.getElementById("link5").style.opacity = "0.6";
+  }
+}, 100);
