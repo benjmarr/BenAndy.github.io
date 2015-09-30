@@ -17,11 +17,20 @@ function shortcuts() {
   }, 600);
 }
 
+function shortcutClose() {
+  document.getElementById("shortcutMenu").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("shortcutMenu").style.visibility = "hidden";
+  }, 600);
+}
+
 function options() {
   document.getElementById("optionsMenu").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0.9";
   document.getElementById("optionsImg").style.opacity = "0";
+  document.getElementById("shortcutMenu").style.opacity = "0";
   setTimeout(function() {
+    document.getElementById("shortcutMenu").style.visibility = "hidden";
     document.getElementById("optionsImg").style.visibility = "hidden";
   }, 600);
 }
@@ -99,6 +108,9 @@ setTimeout(function() {
               document.getElementById("link4").style.opacity = "0.6";
               setTimeout(function() {
                 document.getElementById("link5").style.opacity = "0.6";
+                setTimeout(function() {
+                  document.getElementById("link6").style.opacity = "0.6";
+                }, 500);
               }, 500);
             }, 500);
           }, 500);
@@ -344,6 +356,15 @@ function keypress(e) {
       document.getElementById("optionsImg").style.visibility = "visible";
       document.getElementById("optionsImg").style.opacity = "0.9";
     }, 600);
+  } else if (e.keyCode == "79") {
+    document.getElementById("optionsMenu").style.visibility = "visible";
+    document.getElementById("optionsMenu").style.opacity = "0.9";
+    document.getElementById("optionsImg").style.opacity = "0";
+    document.getElementById("shortcutMenu").style.opacity = "0";
+    setTimeout(function() {
+      document.getElementById("shortcutMenu").style.visibility = "hidden";
+      document.getElementById("optionsImg").style.visibility = "hidden";
+    }, 600);
   }
 }
 
@@ -377,5 +398,11 @@ setTimeout(function() {
   }
   document.getElementById("link5").onmouseout = function() {
     document.getElementById("link5").style.opacity = "0.6";
+  }
+  document.getElementById("link6").onmouseover = function() {
+    document.getElementById("link6").style.opacity = "1";
+  }
+  document.getElementById("link6").onmouseout = function() {
+    document.getElementById("link6").style.opacity = "0.6";
   }
 }, 100);

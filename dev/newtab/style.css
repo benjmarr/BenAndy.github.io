@@ -59,6 +59,11 @@ img > #link {
   height: 3%;
 }
 
+#shortcutX {
+  width: 13%;
+  height: 13%;
+}
+
 #shortcutMenu {
   background-color: black;
   border-radius: 10px;
@@ -66,9 +71,9 @@ img > #link {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 6%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s;
