@@ -62,12 +62,12 @@ function optionsRELOAD() {
 }
 
 function optionsSOCIALMEDIA1() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social Media Icons</a> [OFF]";
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social media icons</a> [OFF]";
   document.getElementById("link").style.opacity = "0";
 }
 
 function optionsSOCIALMEDIA2() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social Media Icons</a> [ON]";
+  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social media icons</a> [ON]";
   document.getElementById("link").style.opacity = "0.6";
 }
 
@@ -75,7 +75,7 @@ setTimeout(function() {
   var imgURL = "http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg";
   document.getElementById("ImageUpdateDate").innerHTML = "Wednesday, 23<sup>rd</sup> September 2015";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
-  document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + randomBackground + "]";
+  document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
@@ -193,7 +193,7 @@ setTimeout(function() {
   if (randomBackground == 24) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
   };
-}, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE ON LINE 8
+}, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
@@ -228,33 +228,32 @@ function GetClock() {
   setTimeout(function() {
     var alertShow = document.getElementById("dateAlert").style.opacity = "1";
     var alertName = document.getElementById("dateAlert");
+    var titleAlert = setTimeout(function() {document.title = thisAlert;}, 500);
 
     if (tmonth[nmonth] == "January") {
       if (ndate == 1) {
+        var thisAlert = "Happy new year!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy new year!";
-        setTimeout(function() {alertShow}, 1000);
-      };
-      if (ndate == 26) {
-        document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy Australia day!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else if (tmonth[nmonth] == "February") {
 
     } else if (tmonth[nmonth] == "March") {
       if (ndate == 27) {
+        var thisAlert = "Happy Easter!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy Easter!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else if (tmonth[nmonth] == "April") {
 
     } else if (tmonth[nmonth] == "May") {
       if (ndate == 2) {
+        var thisAlert = "Happy birthday, Caleb";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy birthday, Caleb!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else if (tmonth[nmonth] == "June") {
 
@@ -264,37 +263,43 @@ function GetClock() {
 
     } else if (tmonth[nmonth] == "September") {
       if (ndate == 11) {
+        var thisAlert = "Happy birthday, Chantalle!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy birthday, Chantalle!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else if (tmonth[nmonth] == "October") {
       if (ndate == 1) {
+        var thisAlert = "Emma is love <3"; // THIS WAS A DARE >.>
         document.getElementById("welcomeMessage").style.visibility = "hidden"; // THIS WAS A DARE >.>
-        alertName.innerHTML = "Emma is love"; // THIS WAS A DARE >.>
-        setTimeout(function() {alertShow}, 1000); // THIS WAS A DARE >.>
+        alertName.innerHTML = thisAlert; // THIS WAS A DARE >.>
+        setTimeout(function() {alertShow; titleAlert}, 1000); // THIS WAS A DARE >.>
       };
       if (ndate == 17) {
+        var thisAlert = "Happy birthday, Benjamin";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy birthday, Benjamin!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
       if (ndate == 28) {
+        var thisAlert = "Happy birthday, Vijay!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy birthday, Vijay!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else if (tmonth[nmonth] == "November") {
       if (ndate == 16) {
+        var thisAlert = "Happy birthday, Emma!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Happy birthday, Emma!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else if (tmonth[nmonth] == "December") {
       if (ndate == 24) {
+        var thisAlert = "Merry Christmas!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Merry Christmas!";
-        setTimeout(function() {alertShow}, 1000);
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; titleAlert}, 1000);
       };
     } else {
       document.getElementById("dateAlert").style.visibility = "hidden";
@@ -319,4 +324,16 @@ function GetClock() {
       }, 3000);
     }
   }, 3000);
+}
+
+function keypress(e) {
+  e = e || window.event;
+  if (e.keyCode == "27") {
+    document.getElementById("optionsMenu").style.opacity = "0";
+    setTimeout(function() {
+      document.getElementById("optionsMenu").style.visibility = "hidden";
+      document.getElementById("optionsImg").style.visibility = "visible";
+      document.getElementById("optionsImg").style.opacity = "0.9";
+    }, 600);
+  }
 }
