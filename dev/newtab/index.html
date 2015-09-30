@@ -21,6 +21,9 @@
     <div id="unsplash">Images provided by unsplash.com</div>
     <div id="options">
       <img id="optionsImg" src="content/options.png" alt="Options Cog" title="Options &amp; Information" onclick="options()" />
+      <div id="shortcutMenu">
+        <span><img src="content/x.png" onclick="shortcutClose()" id="optionsX" /></span>
+      </div>
       <div id="optionsMenu">
         <span><img src="content/x.png" onclick="optionsClose()" id="optionsX" /></span>
         <strong><center>Options<br /></center></strong>
@@ -29,6 +32,7 @@
         <br />&bull; <span id="optionSocialMedia"><a onclick="optionsSOCIALMEDIA1()">Social media icons</a> [ON]</span>
         <br /><br /><br /><strong><center>Information</center></strong>
         &bull; New Tab page copyright &copy; Benjamin, 2015 - All rights reserved.
+        <br />&bull; <a onclick="shortcuts()">Keyboard shortcuts</a> (WORK IN PROGRESS)
         <br />&bull; Background images last updated on <span id="ImageUpdateDate">...</span>
         <br />&bull; Background image URL: <span id="ImageURL">...</span>
         <br />&bull; Images provided by <a href="http://unsplash.com" target="_blank" onclick="optionsClose()">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank" onclick="optionsClose()">License</a>)

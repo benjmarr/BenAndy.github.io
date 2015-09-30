@@ -6,6 +6,17 @@ console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
 var backNumber = 24;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 
+function shortcuts() {
+  document.getElementById("shortcutMenu").style.visibility = "visible";
+  document.getElementById("shortcutMenu").style.opacity = "0.9";
+  document.getElementById("optionsImg").style.visibility = "visible";
+  document.getElementById("optionsImg").style.opacity = "1";
+  document.getElementById("optionsMenu").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("optionsMenu").style.visibility = "hidden";
+  }, 600);
+}
+
 function options() {
   document.getElementById("optionsMenu").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0.9";
@@ -326,8 +337,10 @@ function keypress(e) {
   e = e || window.event;
   if (e.keyCode == "27") {
     document.getElementById("optionsMenu").style.opacity = "0";
+    document.getElementById("shortcutMenu").style.opacity = "0";
     setTimeout(function() {
       document.getElementById("optionsMenu").style.visibility = "hidden";
+      document.getElementById("shortcutMenu").style.visibility = "hidden";
       document.getElementById("optionsImg").style.visibility = "visible";
       document.getElementById("optionsImg").style.opacity = "0.9";
     }, 600);

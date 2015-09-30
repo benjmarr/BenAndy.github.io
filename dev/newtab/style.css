@@ -34,6 +34,7 @@ a:hover {
   font-weight: 200;
   color: white;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 img > #link {
@@ -56,6 +57,22 @@ img > #link {
 #optionsX {
   width: 3%;
   height: 3%;
+}
+
+#shortcutMenu {
+  background-color: black;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 6%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+  position: absolute;
 }
 
 #optionsMenu {
