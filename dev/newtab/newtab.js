@@ -55,11 +55,17 @@ function optionsRELOAD() {
 function optionsSOCIALMEDIA1() {
   document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social media icons</a> [OFF]";
   document.getElementById("link").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("link").style.visibility = "hidden";
+  }, 800);
 }
 
 function optionsSOCIALMEDIA2() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social media icons</a> [ON]";
-  document.getElementById("link").style.opacity = "0.6";
+  document.getElementById("link").style.visibility = "visible";
+  setTimeout(function() {
+    document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social media icons</a> [ON]";
+    document.getElementById("link").style.opacity = "0.6";
+  }, 800);
 }
 
 setTimeout(function() {
