@@ -270,9 +270,9 @@ function GetClock() {
       };
     } else if (tmonth[nmonth] == "October") {
       if (ndate == 1) {
-        document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = "Emma is love";
-        setTimeout(function() {alertShow}, 1000);
+        document.getElementById("welcomeMessage").style.visibility = "hidden"; // THIS WAS A DARE >.>
+        alertName.innerHTML = "Emma is love"; // THIS WAS A DARE >.>
+        setTimeout(function() {alertShow}, 1000); // THIS WAS A DARE >.>
       };
       if (ndate == 17) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
