@@ -269,11 +269,16 @@ function GetClock() {
         setTimeout(function() {alertShow}, 1000);
       };
     } else if (tmonth[nmonth] == "October") {
+      if (ndate == 1) {
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = "Emma is love";
+        setTimeout(function() {alertShow}, 1000);
+      };
       if (ndate == 17) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = "Happy birthday, Benjamin!";
         setTimeout(function() {alertShow}, 1000);
-      }
+      };
       if (ndate == 28) {
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = "Happy birthday, Vijay!";
