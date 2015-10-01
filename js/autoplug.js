@@ -1,7 +1,8 @@
 // Copyright Benjamin (c) 2015 - All rights reserved.
 // Thanks to Buddyblind (James) for some help with the code! https://twitter.com/BuddehDev
 
-var version = "v0.2.14.176";
+document.write("Sadly, plug.dj has had to shut down their services. Since AutoPlug was designed for plug.dj and plug.dj only, Autoplug will no longer be updated. <a href='http://blog.plug.dj' target='_blank'>http://blog.plug.dj</a>");
+var version = "v0.2.14.177";
 var app = "AutoPlug " + version;
 var appDetail = app + " for Plug.Dj";
 var load = 500;
