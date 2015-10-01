@@ -6,6 +6,8 @@ console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
 var backNumber = 24;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 
+var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
+
 function shortcuts() {
   document.getElementById("shortcutMenu").style.visibility = "visible";
   document.getElementById("shortcutMenu").style.opacity = "0.9";
@@ -242,7 +244,17 @@ function GetClock() {
     nmin="0"+nmin;
   }
 
-  document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
+  if (ndate == 1) {
+    var strdndth = "st";
+  } else if (ndate == 2) {
+    var strdndth = "nd";
+  } else if (ndate == 3) {
+    var strdndth = "rd";
+  } else {
+    var strdndth = "th";
+  }
+
+  document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"" + "<sup>" + strdndth + "</sup>";
   document.getElementById("clockbox").innerHTML=""+nhour+":"+nmin+ap+"";
 
   setTimeout(function() {
@@ -295,7 +307,11 @@ function GetClock() {
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000); // THIS WAS A DARE >.>
       };
       if (ndate == 17) {
-        var thisAlert = "Happy birthday, Benjamin";
+        if (decideHappyBirthdayBenjaminORHappyBirthdayOlivia == 1) {
+          var thisAlert = "Happy birthday, Benjamin!";
+        } else {
+          var thisAlert = "Happy birthday, Olivia!";
+        }
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
