@@ -291,7 +291,12 @@ function GetClock() {
     } else if (tmonth[nmonth] == "July") {
 
     } else if (tmonth[nmonth] == "August") {
-
+      if (ndate == 26) {
+        var thisAlert = "Happy birthday, James!";
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
+      };
     } else if (tmonth[nmonth] == "September") {
       if (ndate == 11) {
         var thisAlert = "Happy birthday, Chantalle!";
