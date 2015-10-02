@@ -273,6 +273,12 @@ function GetClock() {
     } else if (tmonth[nmonth] == "February") {
 
     } else if (tmonth[nmonth] == "March") {
+      if (ndate == 16) {
+        var thisAlert = "Happy birthday, Amber!";
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
+      };
       if (ndate == 27) {
         var thisAlert = "Happy Easter!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
@@ -280,7 +286,12 @@ function GetClock() {
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "April") {
-
+      if (ndate == "23") {
+        var thisAlert = "Happy birthday, Lorelle!";
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
+      };
     } else if (tmonth[nmonth] == "May") {
       if (ndate == 2) {
         var thisAlert = "Happy birthday, Caleb";
@@ -293,12 +304,7 @@ function GetClock() {
     } else if (tmonth[nmonth] == "July") {
 
     } else if (tmonth[nmonth] == "August") {
-      if (ndate == 26) {
-        var thisAlert = "Happy birthday, James!";
-        document.getElementById("welcomeMessage").style.visibility = "hidden";
-        alertName.innerHTML = thisAlert;
-        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
-      };
+
     } else if (tmonth[nmonth] == "September") {
       if (ndate == 11) {
         var thisAlert = "Happy birthday, Chantalle!";
@@ -307,12 +313,6 @@ function GetClock() {
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "October") {
-      if (ndate == 1) {
-        var thisAlert = "Emma is love <3"; // THIS WAS A DARE >.>
-        document.getElementById("welcomeMessage").style.visibility = "hidden"; // THIS WAS A DARE >.>
-        alertName.innerHTML = thisAlert; // THIS WAS A DARE >.>
-        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000); // THIS WAS A DARE >.>
-      };
       if (ndate == 17) {
         if (decideHappyBirthdayBenjaminORHappyBirthdayOlivia == 1) {
           var thisAlert = "Happy birthday, Benjamin!";
