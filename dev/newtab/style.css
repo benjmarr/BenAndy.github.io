@@ -46,6 +46,11 @@ img > #link {
   transition: opacity 1s;
 }
 
+#header {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
 #link {
   position: absolute;
   bottom: 0;

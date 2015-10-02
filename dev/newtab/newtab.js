@@ -5,6 +5,7 @@
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
 var backNumber = 24;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
+var PAGEurl = "http://benandy.github.io/dev/newtab";
 
 var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
 
@@ -67,10 +68,11 @@ function optionsNEWBACK() {
 function optionsRELOAD() {
   document.getElementById("optionRELOAD").innerHTML = "<a onclick='optionsRELOAD()'>Reloading...</a>";
   document.getElementById("optionsMenu").style.opacity = "0";
+  document.getElementById("shortcutMenu").style.opacity = "0";
   document.getElementById("link").style.opacity = "0";
   document.getElementById("body").style.opacity = "0";
   setTimeout(function() {
-    window.location = "";
+    window.location = pageURL;
   }, 2500);
 }
 
@@ -386,6 +388,16 @@ function keypress(e) {
       document.getElementById("shortcutMenu").style.visibility = "hidden";
       document.getElementById("optionsImg").style.visibility = "hidden";
     }, 600);
+  } else if (e.keyCode == "82") {
+    document.getElementById("optionsMenu").style.opacity = "0";
+    document.getElementById("shortcutMenu").style.opacity = "0";
+    document.getElementById("link").style.opacity = "0";
+    setTimeout(function() {
+      document.getElementById("header").style.opacity = "0";
+      setTimeout(function() {
+        window.location = PAGEurl;
+      }, 500);
+    }, 500);
   }
 }
 
