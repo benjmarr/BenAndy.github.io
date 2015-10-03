@@ -3,7 +3,7 @@
 // https://twitter.com/RagingCow25
 
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backNumber = 24;
+var backNumber = 29;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 var PAGEurl = "http://benandy.github.io/dev/newtab";
 
@@ -94,7 +94,6 @@ function optionsSOCIALMEDIA2() {
 
 setTimeout(function() {
   var imgURL = "http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg";
-  document.getElementById("ImageUpdateDate").innerHTML = "Wednesday, 23<sup>rd</sup> September 2015";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
@@ -207,16 +206,37 @@ setTimeout(function() {
   };
 
   if (randomBackground == 22) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/back22.jpg')";
   };
 
   if (randomBackground == 23) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/back23.jpg')";
   };
 
   if (randomBackground == 24) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
+    document.getElementById("header").style.backgroundImage = "url('content/background/back24.jpg')";
   };
+
+  if (randomBackground == 25) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back25.jpg')";
+  };
+
+  if (randomBackground == 26) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back26.jpg')";
+  };
+
+  if (randomBackground == 27) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back27.jpg')";
+  };
+
+  if (randomBackground == 28) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back28.jpg')";
+  };
+
+  if (randomBackground == 29) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back29.jpg')";
+  };
+  document.getElementById("ImageUpdateDate").innerHTML = "Saturday, 3<sup>rd</sup> October 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
