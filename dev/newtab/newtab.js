@@ -277,7 +277,7 @@ function GetClock() {
   }
 
   document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"" + "<sup>" + strdndth + "</sup>";
-  document.getElementById("clockbox").innerHTML=""+nhour+":"+nmin+ap+"";
+  document.getElementById("clockbox").innerHTML = "" + nhour + ":" + nmin + ap + "";
 
   setTimeout(function() {
     var alertShow = document.getElementById("dateAlert").style.opacity = "1";
