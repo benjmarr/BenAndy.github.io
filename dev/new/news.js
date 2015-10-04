@@ -2,9 +2,9 @@
 
 setTimeout(function() {
   var thisItemID = "1";
-  document.getElementById("newsItem" + thisItemID + "DATE").innerHTML = "Saturday, 17<sup>th</sup> October 2015";
+  document.getElementById("newsItem" + thisItemID + "DATE").innerHTML = "day, dateNumber<sup>st/nd/rd/th</sup> month year";
   document.getElementById("newsItem" + thisItemID + "TITLE").innerHTML = "New Website!";
-  document.getElementById("newsItem" + thisItemID + "CONTENT").innerHTML = "TODO; ADD CONTENT";
+  document.getElementById("newsItem" + thisItemID + "CONTENT").innerHTML = "New Website wooyee";
 }, 500);
 
 setTimeout(function() {
