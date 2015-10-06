@@ -369,7 +369,7 @@ function GetClock() {
   }, 2000);
 
   setTimeout(function() {
-    if (thour < 11) {
+    if (thour < 12) {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
