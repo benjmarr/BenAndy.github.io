@@ -373,17 +373,17 @@ function GetClock() {
       document.getElementById("welcomeMessage").innerHTML = "Good morning";
       setTimeout(function() {
         document.getElementById("welcomeMessage").style.opacity = "1";
-      }, 3000);
+      }, 2000);
     } else if (thour < 18) {
+      document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
       setTimeout(function() {
-        document.getElementById("welcomeMessage").innerHTML = "Good afternoon";
         document.getElementById("welcomeMessage").style.opacity = "1";
-      }, 3000);
+      }, 2000);
     } else {
+      document.getElementById("welcomeMessage").innerHTML = "Good evening";
       setTimeout(function() {
-        document.getElementById("welcomeMessage").innerHTML = "Good evening";
         document.getElementById("welcomeMessage").style.opacity = "1";
-      }, 3000);
+      }, 2000);
     }
   }, 3000);
 }
