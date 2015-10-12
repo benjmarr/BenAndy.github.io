@@ -1,0 +1,11 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  opacity: 0;
+  background-color: #FFFFFF;
+  transition: opacity 1s, background-color 1s;
+}
