@@ -1,0 +1,12 @@
+{
+  "name": "Benjamin's NewTab",
+  "description": "TO_ADD",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "128": "content/favicon128x128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
