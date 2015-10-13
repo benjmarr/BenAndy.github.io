@@ -3,7 +3,7 @@
 // https://twitter.com/RagingCow25
 
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backNumber = 29;
+var backNumber = 32;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 var PAGEurl = "http://benandy.github.io/dev/newtab";
 
@@ -236,7 +236,19 @@ setTimeout(function() {
   if (randomBackground == 29) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back29.jpg')";
   };
-  document.getElementById("ImageUpdateDate").innerHTML = "Saturday, 3<sup>rd</sup> October 2015";
+
+  if (randomBackground == 30) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back30.jpg')";
+  };
+
+  if (randomBackground == 31) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back31.jpg')";
+  };
+
+  if (randomBackground == 32) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back32.jpg')";
+  };
+  document.getElementById("ImageUpdateDate").innerHTML = "Tuesday, 13<sup>th</sup> October 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
