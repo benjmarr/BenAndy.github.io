@@ -58,7 +58,7 @@ function optionsNEWBACK() {
       }, 200);
     }, 500);
     setTimeout(function() {
-      var newimgURL = "http://benandy.github.io/dev/newtab/content/background/back" + newBack + ".jpg";
+      var newimgURL = PAGEurl + "/content/background/back" + newBack + ".jpg";
       document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + newBack + "]";
       document.getElementById("ImageURL").innerHTML = "<a href='" + newimgURL + "' target='_blank'>" + newimgURL + "</a>";
     }, 100);
@@ -72,7 +72,7 @@ function optionsRELOAD() {
   document.getElementById("link").style.opacity = "0";
   document.getElementById("body").style.opacity = "0";
   setTimeout(function() {
-    window.location = pageURL;
+    window.location = PAGEurl;
   }, 2500);
 }
 
@@ -93,7 +93,7 @@ function optionsSOCIALMEDIA2() {
 }
 
 setTimeout(function() {
-  var imgURL = "http://benandy.github.io/dev/newtab/content/background/back" + randomBackground + ".jpg";
+  var imgURL = PAGEurl + "/content/background/back" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
@@ -119,8 +119,8 @@ setTimeout(function() {
           }, 500);
         }, 500);
       }, 500);
-    }, 2000);
-  }, 2000);
+    }, 500);
+  }, 250);
   if (randomBackground == 1) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back1.jpg')";
   };
