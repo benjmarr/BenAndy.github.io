@@ -473,11 +473,11 @@ setTimeout(function() {
 }, 100);
 
 if (document.addEventListener) {
-  document.addEventListener('contextmenu', function(e) {
+  document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
   }, false);
 } else {
-  document.attachEvent('oncontextmenu', function() {
+  document.attachEvent("oncontextmenu", function() {
     window.event.returnValue = false;
   });
 }
