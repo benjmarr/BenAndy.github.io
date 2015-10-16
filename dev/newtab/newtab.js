@@ -9,7 +9,8 @@ var PAGEurl = "http://benandy.github.io/dev/newtab";
 
 var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
 
-function shortcuts() {
+
+document.getElementById("shortcutList").addEventListener("click", function() {
   document.getElementById("shortcutMenu").style.visibility = "visible";
   document.getElementById("shortcutMenu").style.opacity = "0.9";
   document.getElementById("optionsImg").style.visibility = "visible";
@@ -18,16 +19,18 @@ function shortcuts() {
   setTimeout(function() {
     document.getElementById("optionsMenu").style.visibility = "hidden";
   }, 600);
-}
+}, false);
 
-function shortcutClose() {
-  document.getElementById("shortcutMenu").style.opacity = "0";
-  setTimeout(function() {
-    document.getElementById("shortcutMenu").style.visibility = "hidden";
-  }, 600);
-}
+document.getElementById("shortcutX").addEventListener("click", function() {
+  function shortcutClose() {
+    document.getElementById("shortcutMenu").style.opacity = "0";
+    setTimeout(function() {
+      document.getElementById("shortcutMenu").style.visibility = "hidden";
+    }, 600);
+  }
+}, false);
 
-function options() {
+document.getElementById("optionsImg").addEventListener("click", function() {
   document.getElementById("optionsMenu").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0.9";
   document.getElementById("optionsImg").style.opacity = "0";
@@ -36,18 +39,27 @@ function options() {
     document.getElementById("shortcutMenu").style.visibility = "hidden";
     document.getElementById("optionsImg").style.visibility = "hidden";
   }, 600);
-}
+}, false);
 
-function optionsClose() {
+document.getElementById("optionsX").addEventListener("click", function() {
   document.getElementById("optionsImg").style.visibility = "visible";
   document.getElementById("optionsMenu").style.opacity = "0";
   document.getElementById("optionsImg").style.opacity = "0.9";
   setTimeout(function() {
     document.getElementById("optionsMenu").style.visibility = "hidden";
   }, 600);
-}
+}, false);
 
-function optionsNEWBACK() {
+document.getElementById("shortcutX").addEventListener("click", function() {
+  document.getElementById("optionsImg").style.visibility = "visible";
+  document.getElementById("optionsMenu").style.opacity = "0";
+  document.getElementById("optionsImg").style.opacity = "0.9";
+  setTimeout(function() {
+    document.getElementById("optionsMenu").style.visibility = "hidden";
+  }, 600);
+}, false);
+
+document.getElementById("optionNEWBACK").addEventListener("click", function() {
   setTimeout(function() {
     var newBack = Math.floor((Math.random() * backNumber) + 1);
     document.getElementById("header").style.opacity = "0";
@@ -59,43 +71,27 @@ function optionsNEWBACK() {
     }, 500);
     setTimeout(function() {
       var newimgURL = PAGEurl + "/content/background/back" + newBack + ".jpg";
-      document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the Background image</a> [ID: " + newBack + "]";
+      document.getElementById("optionNEWBACK").innerHTML = "<a>Change the Background image</a> [ID: " + newBack + "]";
       document.getElementById("ImageURL").innerHTML = "<a href='" + newimgURL + "' target='_blank'>" + newimgURL + "</a>";
     }, 100);
   }, 500);
-}
+}, false);
 
-function optionsRELOAD() {
-  document.getElementById("optionRELOAD").innerHTML = "<a onclick='optionsRELOAD()'>Reloading...</a>";
+document.getElementById("optionRELOAD").addEventListener("click", function() {
+  document.getElementById("optionRELOAD").innerHTML = "<a>Reloading...</a>";
   document.getElementById("optionsMenu").style.opacity = "0";
   document.getElementById("shortcutMenu").style.opacity = "0";
   document.getElementById("link").style.opacity = "0";
   document.getElementById("body").style.opacity = "0";
   setTimeout(function() {
-    window.location = PAGEurl;
+    window.location = "";
   }, 2500);
-}
-
-function optionsSOCIALMEDIA1() {
-  document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA2()'>Social media icons</a> [OFF]";
-  document.getElementById("link").style.opacity = "0";
-  setTimeout(function() {
-    document.getElementById("link").style.visibility = "hidden";
-  }, 800);
-}
-
-function optionsSOCIALMEDIA2() {
-  document.getElementById("link").style.visibility = "visible";
-  setTimeout(function() {
-    document.getElementById("optionSocialMedia").innerHTML = "<a onclick='optionsSOCIALMEDIA1()'>Social media icons</a> [ON]";
-    document.getElementById("link").style.opacity = "0.6";
-  }, 800);
-}
+}, false);
 
 setTimeout(function() {
   var imgURL = PAGEurl + "/content/background/back" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
-  document.getElementById("optionNEWBACK").innerHTML = "<a onclick='optionsNEWBACK()'>Change the background image</a> [ID: " + randomBackground + "]";
+  document.getElementById("optionNEWBACK").innerHTML = "<a>Change the background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
@@ -400,7 +396,7 @@ function GetClock() {
   }, 3000);
 }
 
-function keypress(e) {
+document.addEventListener("keydown", function(e) {
   e = e || window.event;
   if (e.keyCode == "27") {
     document.getElementById("optionsMenu").style.opacity = "0";
@@ -431,7 +427,7 @@ function keypress(e) {
       }, 500);
     }, 500);
   }
-}
+}, false);
 
 setTimeout(function() {
   document.getElementById("link1").onmouseover = function() {

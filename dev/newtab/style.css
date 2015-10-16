@@ -83,6 +83,7 @@ img > #link {
   visibility: hidden;
   transition: opacity 0.5s;
   position: absolute;
+  font-size: 120%;
 }
 
 #optionsMenu {
@@ -98,6 +99,7 @@ img > #link {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s;
+  font-size: 120%;
 }
 
 #optionsImg {
@@ -143,7 +145,7 @@ img > #link {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   cursor: default;
-  font-size: 250%;
+  font-size: 350%;
   margin-top: 5%;
   opacity: 0;
   transition: opacity 3s;
@@ -154,7 +156,7 @@ img > #link {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   cursor: default;
-  font-size: 800%;
+  font-size: 1070%;
   margin-top: 10%;
   margin-bottom: -3%;
 }
@@ -174,5 +176,5 @@ img > #link {
   text-align: center;
   cursor: default;
   height: 0%;
-  font-size: 100%;
+  font-size: 135%;
 }

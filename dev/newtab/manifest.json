@@ -1,7 +1,7 @@
 {
   "name": "Benjamin's NewTab",
-  "description": "STILL UNDER DEVELOPMENT - Replace your boring default new tab page with a more modern and bright new tab page! Featuring time, date, social media icons and links, date alerts, many background images and a welcome message. Background images are updated every 10 days.",
-  "version": "1.0.2",
+  "description": "Replace your boring default new tab page with a more modern and bright new tab page! Featuring time, date, social media icons and links, date alerts, many background images and a welcome message. Background images are updated every 10 days.",
+  "version": "1.1.4",
   "manifest_version": 2,
   "icons": {
     "128": "content/favicon128x128.png"

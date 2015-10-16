@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-AU" onkeydown="keypress()">
+<html lang="en-AU">
   <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <meta name="author" content="Benjamin">
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
     <link href="content/favicon.png" rel="icon" type="image/png">
     <link href="style.css" rel="stylesheet" tyle="text/css" title="x">
     <title>New Tab</title>
-    <script src="newtab.js"></script>
   </head>
   <body id="body">
     <header id="header" style="background-size: cover;">
@@ -20,27 +18,26 @@
     </header>
     <div id="unsplash">Images provided by unsplash.com</div>
     <div id="options">
-      <img id="optionsImg" src="content/options.png" alt="Options Cog" title="Options &amp; Information" onclick="options()" />
+      <img id="optionsImg" src="content/options.png" alt="Options Cog" title="Options &amp; Information" />
       <div id="shortcutMenu">
-        <span><img src="content/x.png" onclick="shortcutClose()" id="shortcutX" /></span>
+        <span><img src="content/x.png" id="shortcutX" /></span>
         <strong><center>Keyboard Shortcut List</center></strong>
         <br />&bull;"ESC" Close any open menu.
         <br />&bull;"O" Opens the options menu.
         <br />&bull;"R" Reloads the page.
       </div>
       <div id="optionsMenu">
-        <span><img src="content/x.png" onclick="optionsClose()" id="optionsX" /></span>
+        <span><img src="content/x.png" id="optionsX" /></span>
         <strong><center>Options<br /></center></strong>
-        <br />&bull; <span id="optionRELOAD"><a onclick="optionsRELOAD()">Reload the page</a></span>
-        <br />&bull; <span id="optionNEWBACK"><a onclick="optionsNEWBACK()">Change the background image</a> [ID: ...]</span>
-        <br />&bull; <span id="optionSocialMedia"><a onclick="optionsSOCIALMEDIA1()">Social media icons</a> [ON]</span>
+        <br />&bull; <span id="optionRELOAD"><a>Reload the page</a></span>
+        <br />&bull; <span id="optionNEWBACK"><a>Change the background image</a> [ID: ...]</span>
         <br /><br /><br /><strong><center>Information</center></strong>
         &bull; New Tab page copyright &copy; Benjamin, 2015 - All rights reserved.
-        <br />&bull; <a onclick="shortcuts()">Keyboard shortcut list</a>
+        <br />&bull; <a id="shortcutList">Keyboard shortcut list</a>
         <br />&bull; Background images last updated on <span id="ImageUpdateDate">...</span>
         <br />&bull; Background image URL: <span id="ImageURL">...</span>
-        <br />&bull; Images provided by <a href="http://unsplash.com" target="_blank" onclick="optionsClose()">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank" onclick="optionsClose()">License</a>)
-        <br />&bull; Special thanks to <a href="https://twitter.com/RagingCow25" target="_blank" onclick="optionsClose()">Caleb Stewart</a> for helping with the background selection code!
+        <br />&bull; Images provided by <a href="http://unsplash.com" target="_blank">unsplash.com</a> (<a href="https://unsplash.com/license" target="_blank">License</a>)
+        <br />&bull; Special thanks to <a href="https://twitter.com/RagingCow25" target="_blank">Caleb Stewart</a> for helping with the background selection code!
       </div>
     </div>
     <div id="link">
@@ -52,4 +49,5 @@
       <a id="link6" class="linked" href="https://instagram.com"><img alt="Intsagram" title="Instagram" src="content/link/instagram.png" width="60" href="60" /></a>
     </div>
   </body>
+  <script src="newtab.js"></script>
 </html>
