@@ -1,10 +1,8 @@
 // Copyright Benjamin (c) All rights reserved - 2015
-// Special thanks to Caleb Stewart for helping me with the random background image selection!
-// https://twitter.com/RagingCow25
 
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backNumber = 41;
-var randomBackground = Math.floor((Math.random() * backNumber) + 1);
+var backgroundNumber = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41);
+var randomBackground = backgroundNumber[Math.floor(Math.random() * backgroundNumber.length)];
 var PAGEurl = "http://benandy.github.io/dev/newtab";
 
 var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
@@ -117,174 +115,12 @@ setTimeout(function() {
       }, 500);
     }, 500);
   }, 250);
-  if (randomBackground == 1) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back1.jpg')";
-  };
-
-  if (randomBackground == 2) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back2.jpg')";
-  };
-
-  if (randomBackground == 3) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back3.jpg')";
-  };
-
-  if (randomBackground == 4) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back4.jpg')";
-  };
-
-  if (randomBackground == 5) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back5.jpg')";
-  };
-
-  if (randomBackground == 6) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back6.jpg')";
-  };
-
-  if (randomBackground == 7) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back7.jpg')";
-  };
-
-  if (randomBackground == 8) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back8.jpg')";
-  };
-
-  if (randomBackground == 9) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back9.jpg')";
-  };
-
-  if (randomBackground == 10) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back10.jpg')";
-  };
-
-  if (randomBackground == 11) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back11.jpg')";
-  };
-
-  if (randomBackground == 12) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back12.jpg')";
-  };
-
-  if (randomBackground == 13) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back13.jpg')";
-  };
-
-  if (randomBackground == 14) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back14.jpg')";
-  };
-
-  if (randomBackground == 15) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back15.jpg')";
-  };
-
-  if (randomBackground == 16) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back16.jpg')";
-  };
-
-  if (randomBackground == 17) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back17.jpg')";
-  };
-
-  if (randomBackground == 18) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back18.jpg')";
-  };
-
-  if (randomBackground == 19) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back19.jpg')";
-  };
-
-  if (randomBackground == 20) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back20.jpg')";
-  };
-
-  if (randomBackground == 21) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back21.jpg')";
-  };
-
-  if (randomBackground == 22) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back22.jpg')";
-  };
-
-  if (randomBackground == 23) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back23.jpg')";
-  };
-
-  if (randomBackground == 24) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back24.jpg')";
-  };
-
-  if (randomBackground == 25) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back25.jpg')";
-  };
-
-  if (randomBackground == 26) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back26.jpg')";
-  };
-
-  if (randomBackground == 27) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back27.jpg')";
-  };
-
-  if (randomBackground == 28) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back28.jpg')";
-  };
-
-  if (randomBackground == 29) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back29.jpg')";
-  };
-
-  if (randomBackground == 30) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back30.jpg')";
-  };
-
-  if (randomBackground == 31) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back31.jpg')";
-  };
-
-  if (randomBackground == 32) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back32.jpg')";
-  };
-
-  if (randomBackground == 33) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back33.jpg')";
-  };
-
-  if (randomBackground == 34) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back34.jpg')";
-  };
-
-  if (randomBackground == 35) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back35.jpg')";
-  };
-
-  if (randomBackground == 36) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back36.jpg')";
-  };
-
-  if (randomBackground == 37) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back37.jpg')";
-  };
-
-  if (randomBackground == 38) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back38.jpg')";
-  };
-
-  if (randomBackground == 39) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back39.jpg')";
-  };
-
-  if (randomBackground == 40) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back40.jpg')";
-  };
-
-  if (randomBackground == 41) {
-    document.getElementById("header").style.backgroundImage = "url('content/background/back41.jpg')";
-  };
+  document.getElementById("header").style.backgroundImage = "url('content/background/back" + randomBackground + ".jpg')";
   document.getElementById("ImageUpdateDate").innerHTML = "Friday, 23<sup>rd</sup> October 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
-var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+var tday = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var tmonth = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 
 setInterval(GetClock,100);
 function GetClock() {
@@ -320,7 +156,7 @@ function GetClock() {
     var strdndth = "th";
   }
 
-  document.getElementById("datebox").innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"" + "<sup>" + strdndth + "</sup>";
+  document.getElementById("datebox").innerHTML = "" + tday[nday] + ", " +tmonth[nmonth]+ " " +ndate+ "" + "<sup>" + strdndth + "</sup>";
   document.getElementById("clockbox").innerHTML = "" + nhour + ":" + nmin + ap + "";
 
   setTimeout(function() {
