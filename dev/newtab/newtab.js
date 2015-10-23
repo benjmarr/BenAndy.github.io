@@ -3,7 +3,7 @@
 // https://twitter.com/RagingCow25
 
 console.log("New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backNumber = 32;
+var backNumber = 41;
 var randomBackground = Math.floor((Math.random() * backNumber) + 1);
 var PAGEurl = "http://benandy.github.io/dev/newtab";
 
@@ -244,7 +244,43 @@ setTimeout(function() {
   if (randomBackground == 32) {
     document.getElementById("header").style.backgroundImage = "url('content/background/back32.jpg')";
   };
-  document.getElementById("ImageUpdateDate").innerHTML = "Tuesday, 13<sup>th</sup> October 2015";
+
+  if (randomBackground == 33) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back33.jpg')";
+  };
+
+  if (randomBackground == 34) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back34.jpg')";
+  };
+
+  if (randomBackground == 35) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back35.jpg')";
+  };
+
+  if (randomBackground == 36) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back36.jpg')";
+  };
+
+  if (randomBackground == 37) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back37.jpg')";
+  };
+
+  if (randomBackground == 38) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back38.jpg')";
+  };
+
+  if (randomBackground == 39) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back39.jpg')";
+  };
+
+  if (randomBackground == 40) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back40.jpg')";
+  };
+
+  if (randomBackground == 41) {
+    document.getElementById("header").style.backgroundImage = "url('content/background/back41.jpg')";
+  };
+  document.getElementById("ImageUpdateDate").innerHTML = "Friday, 23<sup>rd</sup> October 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
