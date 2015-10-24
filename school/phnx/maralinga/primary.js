@@ -64,8 +64,8 @@ function browserVersion() {
     console.log("Browser 'Chrome' - Correct browser!");
 	} else if (userAg.indexOf("Firefox")!=-1) {
     console.warn("Browser 'Firefox' - Incorrect browser!");
-    document.write("Note: You are using Firefox" + navigator.appVersion + ", this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
-	} else if (userAg.indexOf("Opera")!=-1) {
+    console.log("Browser 'Firefox' - Correct browser!");
+    } else if (userAg.indexOf("Opera")!=-1) {
     console.warn("Browser 'Opera' - Incorrect browser!");
     document.write("Note: You are using Opera" + navigator.appVersion + ", this webpage will not work on this browser!\nPlease use Google Chrome to view this page. This page is developed around the Google Chrome browser and due to issues with different browsers responding in different ways I have limited this webpage to only Google Chrome.\n\n - Thanks, Ben.");
 	} else if (userAg.indexOf("MSIE")!=-1) {
