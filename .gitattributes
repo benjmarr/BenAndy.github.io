@@ -1,5 +1,1 @@
-*.psd filter=lfs diff=lfs merge=lfs -text
-newtab.js filter=lfs diff=lfs merge=lfs -text
-manifest.json filter=lfs diff=lfs merge=lfs -text
-index.html filter=lfs diff=lfs merge=lfs -text
-dev/newtab/newtab.js filter=lfs diff=lfs merge=lfs -text
+
