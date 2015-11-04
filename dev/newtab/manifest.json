@@ -1,8 +1,14 @@
 {
   "name": "Benjamin's NewTab",
   "description": "Replace your new tab page with a more modern page! Featuring time, dates, many background images, welcome messages and more!",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "manifest_version": 2,
+  "author": "Benjamin",
+  "offline_enabled": true,
+  "homepage_url": "http://benandy.github.io/",
+  "omnibox": {
+    "keyword": "newtab"
+  },
   "icons": {
     "128": "content/favicon128x128.png"
   },
