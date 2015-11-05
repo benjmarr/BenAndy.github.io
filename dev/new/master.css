@@ -17,12 +17,6 @@ a:hover {
   cursor: pointer;
 }
 
-#connectButtonCONTACT {
-  transition: opacity 1s, border-radius 3s;
-  border-radius: 0px;
-  opacity: 0;
-}
-
 #nav {
   transition: opacity 1s;
   opacity: 0;
@@ -33,12 +27,6 @@ a:hover {
   font-family: 'Orbitron', sans-serif;
   font-size: 200%;
   text-align: center;
-}
-
-#discord {
-  transition: margin-left 1s;
-  text-align: right;
-  margin-left: -100%;
 }
 
 #hometitle {
@@ -94,27 +82,6 @@ a:hover {
   border-radius: 10px;
   position: absolute;
   width: 45%;
-  left: 2%;
-  top: 105px;
-}
-
-.contact > h1 {
-  text-align: center;
-}
-
-.contact {
-  transition: opacity 1s;
-  opacity: 0;
-  background-color: #353535;
-  color: #E1E1E1;
-  font-family: 'Orbitron', sans-serif;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10px;
-  position: absolute;
-  width: 60%;
   left: 2%;
   top: 105px;
 }
