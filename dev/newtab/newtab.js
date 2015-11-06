@@ -1,7 +1,8 @@
 // Copyright Benjamin (c) All rights reserved - 2015
 
 console.log("Skye New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backgroundNumber = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44);
+var backgroundNumber = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+// NOTE Maximum of 20 backgrounds NOTE Add number onto end for new images, delete lowest number (This is just a weird developer note)
 var randomBackground = backgroundNumber[Math.floor(Math.random() * backgroundNumber.length)];
 var PAGEurl = "http://benandy.github.io/dev/newtab";
 
@@ -62,13 +63,13 @@ document.getElementById("optionNEWBACK").addEventListener("click", function() {
     var newBack = Math.floor((Math.random() * randomBackground) + 1);
     document.getElementById("header").style.opacity = "0";
     setTimeout(function() {
-      document.getElementById("header").style.backgroundImage = "url('content/background/back" + newBack + ".jpg')";
+      document.getElementById("header").style.backgroundImage = "url('content/background/" + newBack + ".jpg')";
       setTimeout(function() {
         document.getElementById("header").style.opacity = "1";
       }, 200);
     }, 500);
     setTimeout(function() {
-      var newimgURL = PAGEurl + "/content/background/back" + newBack + ".jpg";
+      var newimgURL = PAGEurl + "/content/background/" + newBack + ".jpg";
       document.getElementById("optionNEWBACK").innerHTML = "<a>Change the Background image</a> [ID: " + newBack + "]";
       document.getElementById("ImageURL").innerHTML = "<a href='" + newimgURL + "' target='_blank'>" + newimgURL + "</a>";
     }, 100);
@@ -87,7 +88,7 @@ document.getElementById("optionRELOAD").addEventListener("click", function() {
 }, false);
 
 setTimeout(function() {
-  var imgURL = PAGEurl + "/content/background/back" + randomBackground + ".jpg";
+  var imgURL = PAGEurl + "/content/background/" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a>Change the background image</a> [ID: " + randomBackground + "]";
   console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
@@ -115,7 +116,7 @@ setTimeout(function() {
       }, 500);
     }, 500);
   }, 250);
-  document.getElementById("header").style.backgroundImage = "url('content/background/back" + randomBackground + ".jpg')";
+  document.getElementById("header").style.backgroundImage = "url('content/background/" + randomBackground + ".jpg')";
   document.getElementById("ImageUpdateDate").innerHTML = "Monday, 2<sup>nd</sup> November 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
