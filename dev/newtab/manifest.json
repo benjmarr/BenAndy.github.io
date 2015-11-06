@@ -1,7 +1,7 @@
 {
   "name": "Skye New Tab",
   "description": "Replace your new tab page with a more modern page! Featuring time, dates, many background images, welcome messages and more!",
-  "version": "1.2.11",
+  "version": "1.2.12",
   "manifest_version": 2,
   "author": "Benjamin",
   "offline_enabled": true,
