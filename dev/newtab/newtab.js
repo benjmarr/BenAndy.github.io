@@ -238,8 +238,14 @@ function GetClock() {
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "December") {
-      if (ndate == 24) {
+      if (ndate == 25) {
         var thisAlert = "Merry Christmas!";
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
+      };
+      if (ndate == 26) {
+        var thisAlert = "Happy birthday, Sophie!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
         alertName.innerHTML = thisAlert;
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
