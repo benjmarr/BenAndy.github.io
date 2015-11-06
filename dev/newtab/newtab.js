@@ -59,7 +59,7 @@ document.getElementById("shortcutX").addEventListener("click", function() {
 
 document.getElementById("optionNEWBACK").addEventListener("click", function() {
   setTimeout(function() {
-    var newBack = Math.floor((Math.random() * backNumber) + 1);
+    var newBack = Math.floor((Math.random() * randomBackground) + 1);
     document.getElementById("header").style.opacity = "0";
     setTimeout(function() {
       document.getElementById("header").style.backgroundImage = "url('content/background/back" + newBack + ".jpg')";
