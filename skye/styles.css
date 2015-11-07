@@ -20,3 +20,29 @@ header {
   opacity: 0;
   transition: opacity 2s, color 1s;
 }
+
+#xInstall {
+  border-style: solid;
+  background-color: #515151;
+  font-family: 'Titillium Web', sans-serif;
+  color: #D7D7D7;
+  font-size: 400%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.navMenu {
+  border-style: solid;
+  background-color: #515151;
+  font-family: 'Titillium Web', sans-serif;
+  color: #D7D7D7;
+  font-size: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s;
+}

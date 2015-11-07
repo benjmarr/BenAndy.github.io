@@ -4,7 +4,7 @@ console.log("Skye New Tab page copyright (c) Benjamin, 2015 - All rights reserve
 var backgroundNumber = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
 // NOTE Maximum of 20 backgrounds NOTE Add number onto end for new images, delete lowest number (This is just a weird developer note)
 var randomBackground = backgroundNumber[Math.floor(Math.random() * backgroundNumber.length)];
-var PAGEurl = "http://benandy.github.io/dev/newtab";
+var PAGEurl = "http://benandy.github.io/skye/newtab";
 
 var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
 
