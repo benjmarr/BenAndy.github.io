@@ -37,10 +37,6 @@ document.getElementById("navReviews").addEventListener("click", function() {
 
 document.getElementById("navGithub").addEventListener("click", function() {
   window.open("https://github.com/BenAndy/BenAndy.github.io/tree/master/skye/newtab","_blank");
-}, false)
-
-document.getElementById("navScreenshots").addEventListener("click", function() {
-  window.location = "screenshots.html";
 }, false);
 
 document.getElementById("navSupport").addEventListener("click", function() {
