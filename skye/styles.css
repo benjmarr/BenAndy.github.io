@@ -1,0 +1,22 @@
+/*Copyright Benjamin (c) All rights reserved - 2015*/
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  background-size: cover;
+}
+
+#title {
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 500%;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 2s, color 1s;
+}
