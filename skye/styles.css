@@ -1,5 +1,9 @@
 /*Copyright Benjamin (c) All rights reserved - 2015*/
 
+.titanic {
+  float: none;
+}
+
 header {
   height: 100vh;
   width: 100vw;
@@ -8,6 +12,21 @@ header {
   margin-left: -8px;
   margin-right: -8px;
   background-size: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+ text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 #title {
@@ -45,4 +64,17 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: color 0.5s, background-color 0.5s;
+}
+
+#information {
+  color: white;
+  font-family: 'Titillium web', sans-serif;
+  background-color: #646464;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  opacity: 0.9;
 }
