@@ -187,6 +187,12 @@ function GetClock() {
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "April") {
+      if (ndate == "18") {
+        var thisAlert = "Happy birthday, Matt!";
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000)
+      };
       if (ndate == "23") {
         var thisAlert = "Happy birthday, Lorelle!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
