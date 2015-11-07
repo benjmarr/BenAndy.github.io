@@ -5,6 +5,9 @@
 }
 
 body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   opacity: 0;
   background-color: black;
   transition: opacity 2s;
