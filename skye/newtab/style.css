@@ -148,10 +148,11 @@ img > #link {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   cursor: default;
-  font-size: 100%;
+  font-size: 150%;
   margin-top: 0.5%;
   opacity: 0;
-  transition: opacity 2s;
+  font-weight: 200;
+  transition: opacity 2s, color 0.5s;
 }
 
 #welcomeMessage {

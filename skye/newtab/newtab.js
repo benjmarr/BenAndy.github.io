@@ -89,7 +89,7 @@ document.getElementById("optionRELOAD").addEventListener("click", function() {
 
 setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtube.com/user/raylfli
   setTimeout(function() {
-    document.getElementById("quoteBox").style.opacity = "1";
+    document.getElementById("quoteBox").style.opacity = "0.8";
   }, 3000);
   var quoteChoose = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
   var quoteNumber = quoteChoose[Math.floor(Math.random() * quoteChoose.length)];
@@ -171,7 +171,7 @@ setTimeout(function() {
     }, 500);
   }, 250);
   document.getElementById("header").style.backgroundImage = "url('content/background/" + randomBackground + ".jpg')";
-  document.getElementById("ImageUpdateDate").innerHTML = "Monday, 2<sup>nd</sup> November 2015";
+  document.getElementById("ImageUpdateDate").innerHTML = "Sunday, 8<sup>th</sup> November 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
