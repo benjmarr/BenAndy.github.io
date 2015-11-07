@@ -140,6 +140,17 @@ img > #link {
   transition: opacity 3s, font-size 1s;
 }
 
+#quoteBox {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  cursor: default;
+  font-size: 100%;
+  margin-top: 0.5%;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
 #welcomeMessage {
   color: white;
   font-family: 'Titillium Web', sans-serif;
@@ -157,7 +168,7 @@ img > #link {
   text-align: center;
   cursor: default;
   font-size: 1070%;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-bottom: -3%;
 }
 

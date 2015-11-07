@@ -87,6 +87,25 @@ document.getElementById("optionRELOAD").addEventListener("click", function() {
   }, 2500);
 }, false);
 
+setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtube.com/user/raylfli
+  setTimeout(function() {
+    document.getElementById("quoteBox").style.opacity = "1";
+  }, 3000);
+  var quoteChoose = Array(1,2,3);
+  var quoteNumber = quoteChoose[Math.floor(Math.random() * quoteChoose.length)];
+  setTimeout(function() {
+    var marked1 = "<sup>&quot;</sup>";
+    var marked2 = "<sup>&quot; - ";
+    if (quoteNumber == 1) {
+      document.getElementById("quoteBox").innerHTML = marked1 + "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible." + marked2 + "Francis of Assisi</sup>";
+    } else if (quoteNumber == 2) {
+      document.getElementById("quoteBox").innerHTML = marked1 + "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." + marked2 + "Helen Keller</sup>";
+    } else if (quoteNumber == 3) {
+      document.getElementById("quoteBox").innerHTML = marked1 + "Try to be a rainbow in someone's cloud." + marked2 + "Maya Angelou</sup>";
+    }
+  }, 100);
+}, 50);
+
 setTimeout(function() {
   var imgURL = PAGEurl + "/content/background/" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
