@@ -21,12 +21,10 @@ document.getElementById("shortcutList").addEventListener("click", function() {
 }, false);
 
 document.getElementById("shortcutX").addEventListener("click", function() {
-  function shortcutClose() {
-    document.getElementById("shortcutMenu").style.opacity = "0";
-    setTimeout(function() {
-      document.getElementById("shortcutMenu").style.visibility = "hidden";
-    }, 600);
-  }
+  document.getElementById("shortcutMenu").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("shortcutMenu").style.visibility = "hidden";
+  }, 600);
 }, false);
 
 document.getElementById("optionsImg").addEventListener("click", function() {
@@ -58,7 +56,7 @@ document.getElementById("optionNEWBACK").addEventListener("click", function() {
       setTimeout(function() {
         document.getElementById("header").style.opacity = "1";
       }, 200);
-    }, 500);
+    }, 60);
     setTimeout(function() {
       var newimgURL = PAGEurl + "/content/background/" + newBack + ".jpg";
       document.getElementById("optionNEWBACK").innerHTML = "<a>Change the Background image</a> [ID: " + newBack + "]";
