@@ -49,15 +49,6 @@ document.getElementById("optionsX").addEventListener("click", function() {
   }, 600);
 }, false);
 
-document.getElementById("shortcutX").addEventListener("click", function() {
-  document.getElementById("optionsImg").style.visibility = "visible";
-  document.getElementById("optionsMenu").style.opacity = "0";
-  document.getElementById("optionsImg").style.opacity = "0.9";
-  setTimeout(function() {
-    document.getElementById("optionsMenu").style.visibility = "hidden";
-  }, 600);
-}, false);
-
 document.getElementById("optionNEWBACK").addEventListener("click", function() {
   setTimeout(function() {
     var newBack = Math.floor((Math.random() * randomBackground) + 1);
