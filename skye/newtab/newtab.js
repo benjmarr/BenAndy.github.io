@@ -78,7 +78,7 @@ document.getElementById("optionRELOAD").addEventListener("click", function() {
 
 setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtube.com/user/raylfli
   setTimeout(function() {
-    document.getElementById("quoteBox").style.opacity = "0.8";
+    document.getElementById("quoteBox").style.opacity = "1";
   }, 3000);
   var quoteChoose = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
   var quoteNumber = quoteChoose[Math.floor(Math.random() * quoteChoose.length)];
@@ -134,7 +134,7 @@ setTimeout(function() {
   var imgURL = PAGEurl + "/content/background/" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a>Change the background image</a> [ID: " + randomBackground + "]";
-  console.log("Background ID: " + randomBackground + "\nSource:" + imgURL);
+  console.log("Background ID: " + randomBackground + "\nSource: " + imgURL);
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
     setTimeout(function() {
@@ -404,4 +404,54 @@ if (document.addEventListener) {
   document.attachEvent("oncontextmenu", function() {
     window.event.returnValue = false;
   });
+}
+
+document.getElementById("optionTIMER").addEventListener("click", function() {setTimeout(timer,10)}, false);
+var sec = 0;
+var min = 0;
+var hour = 0;
+function timer() {
+  var secondCount;
+  secondCount = setInterval(time, 1000);
+  document.getElementById("timer").style.opacity = "1";
+  document.getElementById("optionsMenu").style.opacity = "0";
+  document.getElementById("optionsImg").style.visibility = "visible";
+  setTimeout(function() {
+    document.getElementById("optionsImg").style.opacity = "1";
+    document.getElementById("optionsMenu").style.visibility = "hidden";
+  }, 50);
+}
+
+function time() {
+  sec = sec + 1;
+
+  if (sec < 10) {
+    document.getElementById("timerSecond").innerHTML = "0" + sec;
+  } else {
+    document.getElementById("timerSecond").innerHTML = sec;
+  }
+
+  if (min < 10) {
+    document.getElementById("timerMinute").innerHTML = "0" + min;
+  } else {
+    document.getElementById("timerMinute").innerHTMl = min;
+  }
+
+  if (hour < 10) {
+    document.getElementById("timerHour").innerHTML = "0" + hour;
+  } else {
+    document.getElementById("timerHour").innerHTML = hour;
+  }
+
+  if (sec == 58) {
+    setTimeout(function() {
+      min = min + 1;
+      sec = sec - 60;
+    }, 1000);
+  }
+
+  if (min == 60) {
+    hour = hour + 1;
+    min = min - 60;
+  }
 }
