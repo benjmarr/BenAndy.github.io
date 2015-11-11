@@ -420,6 +420,16 @@ function timer() {
     document.getElementById("optionsImg").style.opacity = "1";
     document.getElementById("optionsMenu").style.visibility = "hidden";
   }, 50);
+
+  document.getElementById("timerButton").innerHTML = "<span id='timerStop'><a>Stop the timer</a></span>";
+
+  document.getElementById("timerStop").addEventListener("click", function() {
+    document.getElementById("timerButton").innerHTML = "Timer stopped."
+    clearInterval(secondCount);
+    setTimeout(function() {
+      document.getElementById("timer").style.opacity = "0";
+    }, 500);
+  }, false);
 }
 
 function time() {
@@ -453,5 +463,33 @@ function time() {
   if (min == 60) {
     hour = hour + 1;
     min = min - 60;
+  }
+
+  var stopHour;
+  var stopMinute;
+  var stopSecond;
+
+  if (hour == 0) {
+    stopHour = "no hours";
+  } else if (hour == 1) {
+    stopHour = "1 hour";
+  } else {
+    stopHour = hour + " hours";
+  }
+
+  if (min == 0) {
+    stopMinute = "no minutes";
+  } else if (min == 1) {
+    stopMinute = "1 minute";
+  } else {
+    stopMinute = min + " hours";
+  }
+
+  if (sec == 0) {
+    stopSecond = "no seconds";
+  } else if (sec == 1) {
+    stopSecond = "1 second";
+  } else {
+    stopSecond = sec + " seconds";
   }
 }

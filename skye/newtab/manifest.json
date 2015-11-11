@@ -1,13 +1,16 @@
 {
-  "version": "1.4.21",
+  "version": "1.4.23",
   "name": "Skye New Tab",
   "short_name": "Skye New Tab",
   "description": "Replace your new tab page with a more modern page! Featuring time, dates, many background images, welcome messages and more!",
   "manifest_version": 2,
   "author": "Benjamin",
   "offline_enabled": true,
-  "homepage_url": "http://benandy.github.io/",
+  "homepage_url": "http://benandy.github.io/skye",
   "incognito": "split",
+  "background": {
+    "scripts": ["background.js"]
+  },
   "omnibox": {
     "keyword": "skye"
   },
@@ -16,5 +19,9 @@
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
-  }
+  },
+  "permissions": [
+    "tabs",
+    "http://benandy.github.io/"
+  ]
 }
