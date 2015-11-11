@@ -125,7 +125,7 @@ setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtu
     } else if (quoteNumber == 19) {
       document.getElementById("quoteBox").innerHTML = marked1 + "Genius is 1% inspiration, 99% perspiration." + marked2 + "Thomas Edison</sup>";
     } else if (quoteNumber == 20) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "A comfort zone is a beautiful place, but nothing ever grows there." + marked2 + "Author Unknown</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "How come you can drink a drink, but you can't food a food." + marked2 + "Jaden Smith</sup>";
     }
   }, 100);
 }, 50);
