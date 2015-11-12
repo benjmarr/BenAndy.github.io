@@ -59,7 +59,7 @@ img > #link {
   bottom: 0;
   z-index: 1;
   opacity: 1;
-  transition: width 1s, height 1s, opacity 0.5s;
+  transition: width 1s, height 1s, opacity 0.2s;
 }
 
 #optionsX {
