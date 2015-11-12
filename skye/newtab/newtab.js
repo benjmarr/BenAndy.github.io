@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) All rights reserved - 2015
 
 console.log("Skye New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backgroundNumber = Array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+var backgroundNumber = Array(21,22,23,24,25,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
 // NOTE Maximum of 20 backgrounds NOTE Add number onto end for new images, delete lowest number (This is just a weird developer note)
 var randomBackground = backgroundNumber[Math.floor(Math.random() * backgroundNumber.length)];
 var PAGEurl = "http://benandy.github.io/skye/newtab";
@@ -85,9 +85,9 @@ setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtu
   setTimeout(function() {
     var marked1 = "<sup>&quot;</sup>";
     var marked2 = "<sup>&quot; - ";
-    // NOTE Change quote number 1
+    // NOTE Change quote number 2
     if (quoteNumber == 1) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible." + marked2 + "Francis of Assisi</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Do not let the behavior of others destroy your inner peace." + marked2 + "Dalai Lama</sup>";
     } else if (quoteNumber == 2) {
       document.getElementById("quoteBox").innerHTML = marked1 + "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." + marked2 + "Helen Keller</sup>";
     } else if (quoteNumber == 3) {
@@ -160,7 +160,7 @@ setTimeout(function() {
     }, 500);
   }, 250);
   document.getElementById("header").style.backgroundImage = "url('content/background/" + randomBackground + ".jpg')";
-  document.getElementById("ImageUpdateDate").innerHTML = "Sunday, 8<sup>th</sup> November 2015";
+  document.getElementById("ImageUpdateDate").innerHTML = "Thursday, 12<sup>th</sup> November 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
