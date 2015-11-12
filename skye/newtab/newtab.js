@@ -324,6 +324,7 @@ function GetClock() {
   }, 3000);
 }
 
+var dimScreen = 1;
 document.addEventListener("keydown", function(e) {
   e = e || window.event;
   if (e.keyCode == "27") {
@@ -354,6 +355,18 @@ document.addEventListener("keydown", function(e) {
         window.location = "";
       }, 500);
     }, 500);
+  } else if (e.keyCode == "38") {
+    if (dimScreen !== 1) {
+      dimScreen = dimScreen + 0.1;
+      console.log(dimScreen);
+      document.getElementById("body").style.opacity = dimScreen;
+    }
+  } else if (e.keyCode == "40") {
+    if (dimScreen !== 0) {
+      dimScreen = dimScreen - 0.1;
+      console.log(dimScreen);
+      document.getElementById("body").style.opacity = dimScreen;
+    }
   }
 }, false);
 
