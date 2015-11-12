@@ -8,7 +8,6 @@ var PAGEurl = "http://benandy.github.io/skye/newtab";
 
 var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
 
-
 document.getElementById("shortcutList").addEventListener("click", function() {
   document.getElementById("shortcutMenu").style.visibility = "visible";
   document.getElementById("shortcutMenu").style.opacity = "0.9";
@@ -49,14 +48,14 @@ document.getElementById("optionsX").addEventListener("click", function() {
 
 document.getElementById("optionNEWBACK").addEventListener("click", function() {
   setTimeout(function() {
-    var newBack = Math.floor((Math.random() * randomBackground) + 1);
+    var newBack = backgroundNumber[Math.floor(Math.random() * backgroundNumber.length)];
     document.getElementById("header").style.opacity = "0";
     setTimeout(function() {
       document.getElementById("header").style.backgroundImage = "url('content/background/" + newBack + ".jpg')";
       setTimeout(function() {
         document.getElementById("header").style.opacity = "1";
-      }, 200);
-    }, 60);
+      }, 500);
+    }, 500);
     setTimeout(function() {
       var newimgURL = PAGEurl + "/content/background/" + newBack + ".jpg";
       document.getElementById("optionNEWBACK").innerHTML = "<a>Change the Background image</a> [ID: " + newBack + "]";
@@ -158,7 +157,7 @@ setTimeout(function() {
         }, 500);
       }, 500);
     }, 500);
-  }, 250);
+  }, 50);
   document.getElementById("header").style.backgroundImage = "url('content/background/" + randomBackground + ".jpg')";
   document.getElementById("ImageUpdateDate").innerHTML = "Thursday, 12<sup>th</sup> November 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
@@ -358,13 +357,11 @@ document.addEventListener("keydown", function(e) {
   } else if (e.keyCode == "38") {
     if (dimScreen !== 1) {
       dimScreen = dimScreen + 0.1;
-      console.log(dimScreen);
       document.getElementById("body").style.opacity = dimScreen;
     }
   } else if (e.keyCode == "40") {
     if (dimScreen > 0) {
       dimScreen = dimScreen - 0.1;
-      console.log(dimScreen);
       document.getElementById("body").style.opacity = dimScreen;
     }
   }
@@ -432,7 +429,7 @@ function timer() {
   setTimeout(function() {
     document.getElementById("optionsImg").style.opacity = "1";
     document.getElementById("optionsMenu").style.visibility = "hidden";
-  }, 50);
+  }, 1100);
 
   document.getElementById("timerButton").innerHTML = "<span id='timerStop'><a>Stop the timer</a></span>";
 
