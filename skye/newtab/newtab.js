@@ -362,7 +362,7 @@ document.addEventListener("keydown", function(e) {
       document.getElementById("body").style.opacity = dimScreen;
     }
   } else if (e.keyCode == "40") {
-    if (dimScreen !== 0) {
+    if (dimScreen > 0) {
       dimScreen = dimScreen - 0.1;
       console.log(dimScreen);
       document.getElementById("body").style.opacity = dimScreen;
