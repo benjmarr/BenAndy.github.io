@@ -371,6 +371,7 @@ setTimeout(function() {
   document.getElementById("link1").onmouseover = function() {
     document.getElementById("link1").style.opacity = "1";
     document.getElementById("link1").style.webkitFilter = "grayscale(0)";
+    document.getElementById("link1").addEventListener("click", function() {window.location = "https://google.com";}, false);
   }
   document.getElementById("link1").onmouseout = function() {
     document.getElementById("link1").style.opacity = "0.6";
@@ -379,6 +380,7 @@ setTimeout(function() {
   document.getElementById("link2").onmouseover = function() {
     document.getElementById("link2").style.opacity = "1";
     document.getElementById("link2").style.webkitFilter = "grayscale(0)";
+    document.getElementById("link2").addEventListener("click", function() {window.location = "https://twitter.com";}, false);
   }
   document.getElementById("link2").onmouseout = function() {
     document.getElementById("link2").style.opacity = "0.6";
@@ -387,6 +389,7 @@ setTimeout(function() {
   document.getElementById("link3").onmouseover = function() {
     document.getElementById("link3").style.opacity = "1";
     document.getElementById("link3").style.webkitFilter = "grayscale(0)";
+    document.getElementById("link3").addEventListener("click", function() {window.location = "https://facebook.com";}, false);
   }
   document.getElementById("link3").onmouseout = function() {
     document.getElementById("link3").style.opacity = "0.6";
@@ -395,6 +398,7 @@ setTimeout(function() {
   document.getElementById("link4").onmouseover = function() {
     document.getElementById("link4").style.opacity = "1";
     document.getElementById("link4").style.webkitFilter = "grayscale(0)";
+    document.getElementById("link4").addEventListener("click", function() {window.location = "https://youtube.com";}, false);
   }
   document.getElementById("link4").onmouseout = function() {
     document.getElementById("link4").style.opacity = "0.6";
@@ -403,6 +407,7 @@ setTimeout(function() {
   document.getElementById("link5").onmouseover = function() {
     document.getElementById("link5").style.opacity = "1";
     document.getElementById("link5").style.webkitFilter = "grayscale(0)";
+    document.getElementById("link5").addEventListener("click", function() {window.location = "https://pinterest.com";}, false);
   }
   document.getElementById("link5").onmouseout = function() {
     document.getElementById("link5").style.opacity = "0.6";
@@ -411,6 +416,7 @@ setTimeout(function() {
   document.getElementById("link6").onmouseover = function() {
     document.getElementById("link6").style.opacity = "1";
     document.getElementById("link6").style.webkitFilter = "grayscale(0)";
+    document.getElementById("link6").addEventListener("click", function() {window.location = "https://instagram.com";}, false);
   }
   document.getElementById("link6").onmouseout = function() {
     document.getElementById("link6").style.opacity = "0.6";
