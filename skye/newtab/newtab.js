@@ -139,17 +139,17 @@ setTimeout(function() {
     setTimeout(function() {
       document.getElementById("optionsImg").style.opacity = "1";
       setTimeout(function() {
-        document.getElementById("link1").style.opacity = "0.6";
+        document.getElementById("link1").style.opacity = "0.7";
         setTimeout(function() {
-          document.getElementById("link2").style.opacity = "0.6";
+          document.getElementById("link2").style.opacity = "0.7";
           setTimeout(function() {
-            document.getElementById("link3").style.opacity = "0.6";
+            document.getElementById("link3").style.opacity = "0.7";
             setTimeout(function() {
-              document.getElementById("link4").style.opacity = "0.6";
+              document.getElementById("link4").style.opacity = "0.7";
               setTimeout(function() {
-                document.getElementById("link5").style.opacity = "0.6";
+                document.getElementById("link5").style.opacity = "0.7";
                 setTimeout(function() {
-                  document.getElementById("link6").style.opacity = "0.6";
+                  document.getElementById("link6").style.opacity = "0.7";
                 }, 500);
               }, 500);
             }, 500);
@@ -374,7 +374,7 @@ setTimeout(function() {
     document.getElementById("link1").addEventListener("click", function() {window.location = "https://google.com";}, false);
   }
   document.getElementById("link1").onmouseout = function() {
-    document.getElementById("link1").style.opacity = "0.6";
+    document.getElementById("link1").style.opacity = "0.7";
     document.getElementById("link1").style.webkitFilter = "grayscale(1)";
   }
   document.getElementById("link2").onmouseover = function() {
@@ -383,7 +383,7 @@ setTimeout(function() {
     document.getElementById("link2").addEventListener("click", function() {window.location = "https://twitter.com";}, false);
   }
   document.getElementById("link2").onmouseout = function() {
-    document.getElementById("link2").style.opacity = "0.6";
+    document.getElementById("link2").style.opacity = "0.7";
     document.getElementById("link2").style.webkitFilter = "grayscale(1)";
   }
   document.getElementById("link3").onmouseover = function() {
@@ -392,7 +392,7 @@ setTimeout(function() {
     document.getElementById("link3").addEventListener("click", function() {window.location = "https://facebook.com";}, false);
   }
   document.getElementById("link3").onmouseout = function() {
-    document.getElementById("link3").style.opacity = "0.6";
+    document.getElementById("link3").style.opacity = "0.7";
     document.getElementById("link3").style.webkitFilter = "grayscale(1)";
   }
   document.getElementById("link4").onmouseover = function() {
@@ -401,7 +401,7 @@ setTimeout(function() {
     document.getElementById("link4").addEventListener("click", function() {window.location = "https://youtube.com";}, false);
   }
   document.getElementById("link4").onmouseout = function() {
-    document.getElementById("link4").style.opacity = "0.6";
+    document.getElementById("link4").style.opacity = "0.7";
     document.getElementById("link4").style.webkitFilter = "grayscale(1)";
   }
   document.getElementById("link5").onmouseover = function() {
@@ -410,7 +410,7 @@ setTimeout(function() {
     document.getElementById("link5").addEventListener("click", function() {window.location = "https://pinterest.com";}, false);
   }
   document.getElementById("link5").onmouseout = function() {
-    document.getElementById("link5").style.opacity = "0.6";
+    document.getElementById("link5").style.opacity = "0.7";
     document.getElementById("link5").style.webkitFilter = "grayscale(1)";
   }
   document.getElementById("link6").onmouseover = function() {
@@ -419,7 +419,7 @@ setTimeout(function() {
     document.getElementById("link6").addEventListener("click", function() {window.location = "https://instagram.com";}, false);
   }
   document.getElementById("link6").onmouseout = function() {
-    document.getElementById("link6").style.opacity = "0.6";
+    document.getElementById("link6").style.opacity = "0.7";
     document.getElementById("link6").style.webkitFilter = "grayscale(1)";
   }
 }, 100);
