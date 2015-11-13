@@ -52,3 +52,21 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
+
+setTimeout(function() {
+  var userAg = navigator.userAgent;
+  if (userAg.indexOf("Chrome") != -1) {
+    console.log("Chrome browser");
+  } else {
+    console.log("Wrong browser for extension.");
+    document.getElementById("header").style.opacity = "0.3";
+    document.getElementById("information").style.opacity = "0.3";
+    document.getElementById("title").style.opacity = "0.3";
+    document.getElementById("navContact").style.opacity = "0.3";
+    document.getElementById("navReviews").style.opacity = "0.3";
+    document.getElementById("navGithub").style.opacity = "0.3";
+    document.getElementById("navSupport").style.opacity = "0.3";
+    document.getElementById("xInstall").style.opacity = "0.3";
+    document.getElementById("wrongBrowserAlert").style.opacity = "1";
+  }
+}, 2000);
