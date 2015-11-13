@@ -46,7 +46,8 @@ img > #link {
 
 .linked {
   opacity: 0;
-  transition: opacity 1s;
+  -webkit-filter: grayscale(1);
+  transition: opacity 1s, -webkit-filter 1s;
 }
 
 #header {
