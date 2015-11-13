@@ -18,10 +18,14 @@ function getCookie(cname) {
     console.log("getCookie()");
 }
 
-setCookie("gray", "1", 365);
-console.log("Cookie set");
+function set1() {
+  setCookie("gray", "1", 365);
+}
 
-function callTheCookie() {
-  var onoff = getCookie("gray");
-  alert("value: " + onoff);
+function set2() {
+  setCookie("gray", "0", 365);
+}
+
+function workKunt() {
+  alert(getCookie("gray"));
 }
