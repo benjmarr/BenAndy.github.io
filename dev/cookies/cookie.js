@@ -22,7 +22,7 @@ function set1() {
   setCookie("gray", "1", 365);
 }
 
-function set2() {
+function set0() {
   setCookie("gray", "0", 365);
 }
 
