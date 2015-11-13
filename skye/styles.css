@@ -92,11 +92,11 @@ a:hover {
   background-color: #000000;
   font-size: 200%;
   color: white;
-  opacity: 0;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
+  visibility: hidden;
   transition: opacity 1s;
 }

@@ -67,6 +67,6 @@ setTimeout(function() {
     document.getElementById("navGithub").style.opacity = "0.3";
     document.getElementById("navSupport").style.opacity = "0.3";
     document.getElementById("xInstall").style.opacity = "0.3";
-    document.getElementById("wrongBrowserAlert").style.opacity = "1";
+    document.getElementById("wrongBrowserAlert").style.visibility = "visible";
   }
 }, 2000);
