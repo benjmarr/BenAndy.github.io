@@ -342,6 +342,7 @@ function GetClock() {
 }
 
 var dimScreen = 1;
+var grayscaleBack = 0;
 document.addEventListener("keydown", function(e) {
   e = e || window.event;
   if (e.keyCode == "27") {
@@ -381,6 +382,14 @@ document.addEventListener("keydown", function(e) {
     if (dimScreen > 0) {
       dimScreen = dimScreen - 0.1;
       document.getElementById("body").style.opacity = dimScreen;
+    }
+  } else if (e.keyCode == "71") {
+    if (grayscaleBack == 0) {
+      document.getElementById("header").style.webkitFilter = "grayscale(1)";
+      grayscaleBack = 1;
+    } else {
+      document.getElementById("header").style.webkitFilter = "grayscale(0)";
+      grayscaleBack = 0;
     }
   }
 }, false);

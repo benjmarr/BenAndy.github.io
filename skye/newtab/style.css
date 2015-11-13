@@ -6,8 +6,6 @@
 
 body {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   opacity: 0;
   background-color: black;
   transition: opacity 2s;
@@ -52,8 +50,8 @@ img > #link {
 }
 
 #header {
-  transition: opacity 1s;
   opacity: 1;
+  transition: opacity 1s, -webkit-filter 1s;
 }
 
 #link {
