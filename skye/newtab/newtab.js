@@ -504,20 +504,4 @@ function time() {
   } else {
     stopHour = hour + " hours";
   }
-
-  if (min == 0) {
-    stopMinute = "no minutes";
-  } else if (min == 1) {
-    stopMinute = "1 minute";
-  } else {
-    stopMinute = min + " hours";
-  }
-
-  if (sec == 0) {
-    stopSecond = "no seconds";
-  } else if (sec == 1) {
-    stopSecond = "1 second";
-  } else {
-    stopSecond = sec + " seconds";
-  }
 }

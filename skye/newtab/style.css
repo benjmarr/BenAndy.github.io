@@ -47,6 +47,7 @@ img > #link {
 .linked {
   opacity: 0;
   -webkit-filter: grayscale(1);
+  padding-right: 10px;
   transition: opacity 1s, -webkit-filter 1s;
 }
 
@@ -60,6 +61,8 @@ img > #link {
   bottom: 0;
   z-index: 1;
   opacity: 1;
+  padding-left: 10px;
+  padding-bottom: 10px;
   transition: width 1s, height 1s, opacity 0.2s;
 }
 
