@@ -18,7 +18,7 @@ function getCookie(cname) {
     console.log("getCookie()");
 }
 
-setCookie("gray", "one", 365);
+setCookie("gray", "1", 365);
 console.log("Cookie set");
 
 function callTheCookie() {
