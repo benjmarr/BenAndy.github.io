@@ -46,7 +46,7 @@ img > #link {
 
 .linked {
   opacity: 0;
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(0);
   padding-right: 10px;
   transition: opacity 1s, -webkit-filter 1s;
 }
@@ -66,8 +66,8 @@ img > #link {
 }
 
 #optionsX {
-  width: 3%;
-  height: 3%;
+  width: 2%;
+  height: 2%;
 }
 
 #shortcutX {
@@ -110,8 +110,8 @@ img > #link {
 
 #optionsImg {
   opacity: 0;
-  height: 3%;
-  width: 3%;
+  height: 2%;
+  width: 2%;
   cursor: pointer;
   transition: opacity 0.5s;
 }

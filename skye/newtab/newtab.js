@@ -83,48 +83,48 @@ setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtu
   var quoteNumber = quoteChoose[Math.floor(Math.random() * quoteChoose.length)];
   setTimeout(function() {
     var marked1 = "<sup>&quot;</sup>";
-    var marked2 = "<sup>&quot; - ";
+    var marked2 = "<sup>&quot;</sup> - ";
     // NOTE Change quote number 2
     if (quoteNumber == 1) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Do not let the behavior of others destroy your inner peace." + marked2 + "Dalai Lama</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Do not let the behavior of others destroy your inner peace." + marked2 + "Dalai Lama";
     } else if (quoteNumber == 2) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." + marked2 + "Helen Keller</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." + marked2 + "Helen Keller";
     } else if (quoteNumber == 3) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Try to be a rainbow in someone's cloud." + marked2 + "Maya Angelou</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Try to be a rainbow in someone's cloud." + marked2 + "Maya Angelou";
     } else if (quoteNumber == 4) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Anyone who has ever made anything of importance was disciplined." + marked2 + "Andrew Hendrixson</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Anyone who has ever made anything of importance was disciplined." + marked2 + "Andrew Hendrixson";
     } else if (quoteNumber == 5) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Don’t spend time beating on a wall, hoping to transform it into a door." + marked2 + " Coco Chanel</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Don’t spend time beating on a wall, hoping to transform it into a door." + marked2 + " Coco Chanel";
     } else if (quoteNumber == 6) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Creativity is intelligence having fun." + marked2 + "Albert Einstein</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Creativity is intelligence having fun." + marked2 + "Albert Einstein";
     } else if (quoteNumber == 7) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Optimism is the one quality more associated with success and happiness than any other." + marked2 + "Brian Tracy</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Optimism is the one quality more associated with success and happiness than any other." + marked2 + "Brian Tracy";
     } else if (quoteNumber == 8) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Always keep your eyes open. Keep watching. Because whatever you see can inspire you." + marked2 + "Grace Coddington</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Always keep your eyes open. Keep watching. Because whatever you see can inspire you." + marked2 + "Grace Coddington";
     } else if (quoteNumber == 9) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "What you get by achieving your goals is not as important as what you become by achieving your goals." + marked2 + "Henry David Thoreau</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "What you get by achieving your goals is not as important as what you become by achieving your goals." + marked2 + "Henry David Thoreau";
     } else if (quoteNumber == 10) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "If the plan doesn’t work, change the plan, but never the goal." + marked2 + "Author Unknown</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "If the plan doesn’t work, change the plan, but never the goal." + marked2 + "Author Unknown";
     } else if (quoteNumber == 11) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "I destroy my enemies when I make them my friends." + marked2 + "Abraham Lincoln</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "I destroy my enemies when I make them my friends." + marked2 + "Abraham Lincoln";
     } else if (quoteNumber == 12) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Don’t live the same year 75 times and call it a life." + marked2 + "Robin Sharma</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Don’t live the same year 75 times and call it a life." + marked2 + "Robin Sharma";
     } else if (quoteNumber == 13) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "You cannot save people, you can just love them." + marked2 + "Anaïs Nin</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "You cannot save people, you can just love them." + marked2 + "Anaïs Nin";
     } else if (quoteNumber == 14) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "It wasn’t raining when Noah built the ark." + marked2 + "Howard Ruff</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "It wasn’t raining when Noah built the ark." + marked2 + "Howard Ruff";
     } else if (quoteNumber == 15) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Take your dreams seriously." + marked2 + "Author Unknown</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Take your dreams seriously." + marked2 + "Author Unknown";
     } else if (quoteNumber == 16) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "There is no way to happiness. Happiness is the way." + marked2 + "Thich Nhat Hanh</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "There is no way to happiness. Happiness is the way." + marked2 + "Thich Nhat Hanh";
     } else if (quoteNumber == 17) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Champions keep playing until they get it right." + marked2 + "Billie Jean King</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Champions keep playing until they get it right." + marked2 + "Billie Jean King";
     } else if (quoteNumber == 18) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "You will succeed because most people are lazy." + marked2 + "Shahir Zag</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "You will succeed because most people are lazy." + marked2 + "Shahir Zag";
     } else if (quoteNumber == 19) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "Genius is 1% inspiration, 99% perspiration." + marked2 + "Thomas Edison</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "Genius is 1% inspiration, 99% perspiration." + marked2 + "Thomas Edison";
     } else if (quoteNumber == 20) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "How come you can drink a drink, but you can't food a food." + marked2 + "Jaden Smith</sup>";
+      document.getElementById("quoteBox").innerHTML = marked1 + "How come you can drink a drink, but you can't food a food." + marked2 + "Jaden Smith";
     }
   }, 100);
 }, 50);
@@ -150,6 +150,24 @@ setTimeout(function() {
                 document.getElementById("link5").style.opacity = "0.7";
                 setTimeout(function() {
                   document.getElementById("link6").style.opacity = "0.7";
+                  setTimeout(function() {
+                    document.getElementById("link1").style.webkitFilter = "grayscale(1)";
+                    setTimeout(function() {
+                      document.getElementById("link2").style.webkitFilter = "grayscale(1)";
+                      setTimeout(function() {
+                        document.getElementById("link3").style.webkitFilter = "grayscale(1)";
+                        setTimeout(function() {
+                          document.getElementById("link4").style.webkitFilter = "grayscale(1)";
+                          setTimeout(function() {
+                            document.getElementById("link5").style.webkitFilter = "grayscale(1)";
+                            setInterval(function() {
+                              document.getElementById("link6").style.webkitFilter = "grayscale(1)";
+                            }, 500);
+                          }, 500);
+                        }, 500);
+                      }, 500);
+                    }, 500);
+                  }, 500);
                 }, 500);
               }, 500);
             }, 500);
