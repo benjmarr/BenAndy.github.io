@@ -8,6 +8,25 @@ var PAGEurl = "http://benandy.github.io/skye/newtab";
 
 var decideHappyBirthdayBenjaminORHappyBirthdayOlivia = Math.floor((Math.random() * 2) + 1);
 
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+    console.log("setCookie()");
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
 document.getElementById("shortcutList").addEventListener("click", function() {
   document.getElementById("shortcutMenu").style.visibility = "visible";
   document.getElementById("shortcutMenu").style.opacity = "0.9";
@@ -142,6 +161,7 @@ setTimeout(function() {
         document.getElementById("link1").style.opacity = "0.7";
         setTimeout(function() {
           document.getElementById("link2").style.opacity = "0.7";
+          document.getElementById("header").style.webkitFilter = "grayscale(0)";
           setTimeout(function() {
             document.getElementById("link3").style.opacity = "0.7";
             setTimeout(function() {
