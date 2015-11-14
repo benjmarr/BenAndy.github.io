@@ -151,41 +151,40 @@ setTimeout(function() {
   var imgURL = PAGEurl + "/content/background/" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a>Change the background image</a> [ID: " + randomBackground + "]";
+  document.getElementById("body").style.opacity = "1";
   setTimeout(function() {
-    document.getElementById("body").style.opacity = "1";
+    document.getElementById("optionsImg").style.opacity = "1";
+    if (getCookie("grayscaleBackCOOKIE") == 0) {
+      document.getElementById("header").style.webkitFilter = "grayscale(0)";
+    } else {
+      document.getElementById("header").style.webkitFilter = "grayscale(1)";
+    };
+  }, 1500);
+
+  setTimeout(function() {
+    document.getElementById("link1").style.opacity = "0.7";
     setTimeout(function() {
-      document.getElementById("optionsImg").style.opacity = "1";
+      document.getElementById("link2").style.opacity = "0.7";
       setTimeout(function() {
-        document.getElementById("link1").style.opacity = "0.7";
+        document.getElementById("link3").style.opacity = "0.7";
         setTimeout(function() {
-          document.getElementById("link2").style.opacity = "0.7";
-          if (getCookie("grayscaleBackCOOKIE") == 0) {
-            document.getElementById("header").style.webkitFilter = "grayscale(0)";
-          } else {
-            document.getElementById("header").style.webkitFilter = "grayscale(1)";
-          };
+          document.getElementById("link4").style.opacity = "0.7";
           setTimeout(function() {
-            document.getElementById("link3").style.opacity = "0.7";
+            document.getElementById("link5").style.opacity = "0.7";
             setTimeout(function() {
-              document.getElementById("link4").style.opacity = "0.7";
+              document.getElementById("link6").style.opacity = "0.7";
               setTimeout(function() {
-                document.getElementById("link5").style.opacity = "0.7";
+                document.getElementById("link1").style.webkitFilter = "grayscale(1)";
                 setTimeout(function() {
-                  document.getElementById("link6").style.opacity = "0.7";
+                  document.getElementById("link2").style.webkitFilter = "grayscale(1)";
                   setTimeout(function() {
-                    document.getElementById("link1").style.webkitFilter = "grayscale(1)";
+                    document.getElementById("link3").style.webkitFilter = "grayscale(1)";
                     setTimeout(function() {
-                      document.getElementById("link2").style.webkitFilter = "grayscale(1)";
+                      document.getElementById("link4").style.webkitFilter = "grayscale(1)";
                       setTimeout(function() {
-                        document.getElementById("link3").style.webkitFilter = "grayscale(1)";
-                        setTimeout(function() {
-                          document.getElementById("link4").style.webkitFilter = "grayscale(1)";
-                          setTimeout(function() {
-                            document.getElementById("link5").style.webkitFilter = "grayscale(1)";
-                            setInterval(function() {
-                              document.getElementById("link6").style.webkitFilter = "grayscale(1)";
-                            }, 500);
-                          }, 500);
+                        document.getElementById("link5").style.webkitFilter = "grayscale(1)";
+                        setInterval(function() {
+                          document.getElementById("link6").style.webkitFilter = "grayscale(1)";
                         }, 500);
                       }, 500);
                     }, 500);
@@ -197,7 +196,8 @@ setTimeout(function() {
         }, 500);
       }, 500);
     }, 500);
-  }, 50);
+  }, 500);
+
   document.getElementById("header").style.backgroundImage = "url('content/background/" + randomBackground + ".jpg')";
   document.getElementById("ImageUpdateDate").innerHTML = "Thursday, 12<sup>th</sup> November 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
@@ -421,7 +421,7 @@ document.addEventListener("keydown", function(e) {
     }
   } else if (e.keyCode == "123") {
     if (lookedConsole == 0) {
-      console.log("\nI see you're looking at the console aye..? Feel free to play around on here... Just don't ruin anything.\nJavaScript source: " + PAGEurl + "/newtab.js");
+      console.log("\nI see you're looking at the console, aye..? Feel free to play around on here... Just don't ruin anything.\nJavaScript source: " + PAGEurl + "/newtab.js");
       lookedConsole = 1;
     };
   }
