@@ -1,5 +1,5 @@
 {
-  "version": "1.5.39",
+  "version": "1.5.40",
   "name": "Skye New Tab",
   "short_name": "Skye New Tab",
   "description": "Replace your new tab page with a more modern page! Featuring time, dates, many background images, welcome messages and more!",
@@ -22,6 +22,6 @@
   },
   "permissions": [
     "cookies",
-    "http://benandy.github.io/"
+    "*://benandy.github.io/"
   ]
 }

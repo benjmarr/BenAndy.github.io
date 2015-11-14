@@ -13,7 +13,6 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + "; " + expires;
-    console.log("setCookie()");
 }
 
 function getCookie(cname) {
@@ -161,7 +160,11 @@ setTimeout(function() {
         document.getElementById("link1").style.opacity = "0.7";
         setTimeout(function() {
           document.getElementById("link2").style.opacity = "0.7";
-          document.getElementById("header").style.webkitFilter = "grayscale(0)";
+          if (getCookie("grayscaleBackCOOKIE") == 0) {
+            document.getElementById("header").style.webkitFilter = "grayscale(0)";
+          } else {
+            document.getElementById("header").style.webkitFilter = "grayscale(1)";
+          };
           setTimeout(function() {
             document.getElementById("link3").style.opacity = "0.7";
             setTimeout(function() {
@@ -368,7 +371,6 @@ function GetClock() {
 }
 
 var dimScreen = 1;
-var grayscaleBack = 0;
 document.addEventListener("keydown", function(e) {
   e = e || window.event;
   if (e.keyCode == "27") {
@@ -410,15 +412,19 @@ document.addEventListener("keydown", function(e) {
       document.getElementById("body").style.opacity = dimScreen;
     }
   } else if (e.keyCode == "71") {
-    if (grayscaleBack == 0) {
+    if (getCookie("grayscaleBackCOOKIE") == 0) {
       document.getElementById("header").style.webkitFilter = "grayscale(1)";
-      grayscaleBack = 1;
+      setCookie("grayscaleBackCOOKIE", 1, 365);
     } else {
       document.getElementById("header").style.webkitFilter = "grayscale(0)";
-      grayscaleBack = 0;
+      setCookie("grayscaleBackCOOKIE", 0, 365);
     }
   }
 }, false);
+
+if (getCookie("grayscaleBackCOOKIE") == "") {
+  setCookie("grayscaleBackCOOKIE", 0, 365);
+};
 
 setTimeout(function() {
   document.getElementById("link1").onmouseover = function() {
