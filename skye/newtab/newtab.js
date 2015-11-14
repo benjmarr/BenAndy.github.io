@@ -76,7 +76,7 @@ document.getElementById("optionNEWBACK").addEventListener("click", function() {
     }, 500);
     setTimeout(function() {
       var newimgURL = PAGEurl + "/content/background/" + newBack + ".jpg";
-      document.getElementById("optionNEWBACK").innerHTML = "<a>Change the Background image</a> [ID: " + newBack + "]";
+      document.getElementById("optionNEWBACK").innerHTML = "<a>Change the background image</a> [ID: " + newBack + "]";
       document.getElementById("ImageURL").innerHTML = "<a href='" + newimgURL + "' target='_blank'>" + newimgURL + "</a>";
     }, 100);
   }, 500);
