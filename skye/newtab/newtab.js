@@ -151,7 +151,6 @@ setTimeout(function() {
   var imgURL = PAGEurl + "/content/background/" + randomBackground + ".jpg";
   document.getElementById("ImageURL").innerHTML = "<a href='" + imgURL + "' target='_blank'>" + imgURL + "</a>";
   document.getElementById("optionNEWBACK").innerHTML = "<a>Change the background image</a> [ID: " + randomBackground + "]";
-  console.log("Background ID: " + randomBackground + "\nSource: " + imgURL);
   setTimeout(function() {
     document.getElementById("body").style.opacity = "1";
     setTimeout(function() {
@@ -371,6 +370,7 @@ function GetClock() {
 }
 
 var dimScreen = 1;
+var lookedConsole = 0;
 document.addEventListener("keydown", function(e) {
   e = e || window.event;
   if (e.keyCode == "27") {
@@ -419,6 +419,11 @@ document.addEventListener("keydown", function(e) {
       document.getElementById("header").style.webkitFilter = "grayscale(0)";
       setCookie("grayscaleBackCOOKIE", 0, 365);
     }
+  } else if (e.keyCode == "123") {
+    if (lookedConsole == 0) {
+      console.log("\nI see you're looking at the console aye..? Feel free to play around on here... Just don't ruin anything.\nJavaScript source: " + PAGEurl + "/newtab.js");
+      lookedConsole = 1;
+    };
   }
 }, false);
 
