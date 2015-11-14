@@ -317,6 +317,12 @@ function GetClock() {
         setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
       };
     } else if (tmonth[nmonth] == "November") {
+      if (ndate  == 13) {
+        var thisAlert = "#PrayForParis";
+        document.getElementById("welcomeMessage").style.visibility = "hidden";
+        alertName.innerHTML = thisAlert;
+        setTimeout(function() {alertShow; document.title = thisAlert;}, 1000);
+      };
       if (ndate == 16) {
         var thisAlert = "Happy birthday, Emma!";
         document.getElementById("welcomeMessage").style.visibility = "hidden";
