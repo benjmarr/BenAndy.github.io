@@ -183,7 +183,7 @@ setTimeout(function() {
                       document.getElementById("link4").style.webkitFilter = "grayscale(1)";
                       setTimeout(function() {
                         document.getElementById("link5").style.webkitFilter = "grayscale(1)";
-                        setInterval(function() {
+                        setTimeout(function() {
                           document.getElementById("link6").style.webkitFilter = "grayscale(1)";
                         }, 500);
                       }, 500);
