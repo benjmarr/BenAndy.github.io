@@ -1,7 +1,7 @@
 // Copyright Benjamin (c) All rights reserved - 2015
 
 console.log("Skye New Tab page copyright (c) Benjamin, 2015 - All rights reserved.");
-var backgroundNumber = Array(21,22,23,24,25,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+var backgroundNumber = Array(21,22,23,24,25,26,27,8,9,10,11,12,13,14,15,16,17,18,19,20);
 // NOTE Maximum of 20 backgrounds NOTE Add number onto end for new images, delete lowest number (This is just a weird developer note)
 var randomBackground = backgroundNumber[Math.floor(Math.random() * backgroundNumber.length)];
 var PAGEurl = "http://benandy.github.io/skye/newtab";
@@ -199,7 +199,7 @@ setTimeout(function() {
   }, 500);
 
   document.getElementById("header").style.backgroundImage = "url('content/background/" + randomBackground + ".jpg')";
-  document.getElementById("ImageUpdateDate").innerHTML = "Thursday, 12<sup>th</sup> November 2015";
+  document.getElementById("ImageUpdateDate").innerHTML = "Monday, 23<sup>rd</sup> November 2015";
 }, 50); // NOTE WHEN ADDING NEW BACKGROUNDS CHANGE BACKGROUND VALUE AT TOP OF PAGE
 
 var tday = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
