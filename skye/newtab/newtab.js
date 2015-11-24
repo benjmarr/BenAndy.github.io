@@ -207,10 +207,10 @@ var tmonth = new Array("January","February","March","April","May","June","July",
 
 setInterval(GetClock,100);
 function GetClock() {
-  var d=new Date();
-  var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
-  var d=new Date();
-  var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+  var d = new Date();
+  var nday = d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+  var d = new Date();
+  var nhour = d.getHours(),nmin=d.getMinutes(),ap;
   var thour = d.getHours();
 
   if (nhour == 0) {
@@ -225,8 +225,8 @@ function GetClock() {
     nhour-=12;
   }
 
-  if (nmin<=9) {
-    nmin="0"+nmin;
+  if (nmin <= 9) {
+    nmin = "0" + nmin;
   }
 
   if (ndate == 1) {
