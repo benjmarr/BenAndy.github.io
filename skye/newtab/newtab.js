@@ -106,7 +106,7 @@ setTimeout(function() { // Thanks to Mario2Sonic for the idea! https://www.youtu
     if (quoteNumber == 1) {
       document.getElementById("quoteBox").innerHTML = marked1 + "Do not let the behavior of others destroy your inner peace." + marked2 + "Dalai Lama";
     } else if (quoteNumber == 2) {
-      document.getElementById("quoteBox").innerHTML = marked1 + "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." + marked2 + "Helen Keller";
+      document.getElementById("quoteBox").innerHTML = marked1 + "The purpose of art is washing the dust of daily life off our souls." + marked2 + "Pablo Picasso";
     } else if (quoteNumber == 3) {
       document.getElementById("quoteBox").innerHTML = marked1 + "Try to be a rainbow in someone's cloud." + marked2 + "Maya Angelou";
     } else if (quoteNumber == 4) {
