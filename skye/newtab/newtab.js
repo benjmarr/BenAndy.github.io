@@ -522,7 +522,7 @@ function timer() {
   document.getElementById("timerButton").innerHTML = "<span id='timerStop'><a>Stop the timer</a></span>";
 
   document.getElementById("timerStop").addEventListener("click", function() {
-    document.getElementById("timerButton").innerHTML = "Timer stopped."
+    document.getElementById("timerButton").innerHTML = "Timer stopped.";
     clearInterval(secondCount);
     setTimeout(function() {
       document.getElementById("timer").style.opacity = "0";
