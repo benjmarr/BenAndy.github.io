@@ -39,3 +39,10 @@ setInterval(function() {
     };
   };
 }, 500);
+
+document.addEventListener("keydown", function(e) {
+  e = e || window.event;
+  if (e.keyCode == "82") {
+    setCookie("record", 0, 365);
+  };
+}, false);
