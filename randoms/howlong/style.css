@@ -1,0 +1,12 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 10%;
+  font-size: 300%;
+}
