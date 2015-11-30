@@ -20,18 +20,22 @@ function getCookie(cname) {
     return "";
 }
 
-var sec;
-
-if (getCookie("howlong") == "") {
-  setCookie("howlong", 0, 365);
-  sec = 0;
-} else {
-  sec = getCookie("howlong");
-}
+var sec = 0;
 
 setInterval(function() {
   sec = sec + 1;
   document.getElementById("time").innerHTML = sec;
-  setCookie("howlong", sec, 365);
-  console.log(sec);
 }, 1000);
+
+setInterval(function() {
+  if (getCookie("record") == "") {
+    setCookie("record", 0, 365);
+  } else {
+    if (sec > getCookie("record")) {
+      setCookie("record", sec, 365);
+      document.getElementById("record").innerHTML = sec;
+    } else {
+      document.getElementById("record").innerHTML = getCookie("record");
+    };
+  };
+}, 500);
