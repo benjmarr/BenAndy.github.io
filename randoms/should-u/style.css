@@ -1,0 +1,19 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  -webkit-user-select: none;
+}
+
+.main {
+  opacity: 0;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 20%;
+  cursor: pointer;
+  transition: opacity 1s;
+}
