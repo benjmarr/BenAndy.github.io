@@ -1,0 +1,15 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  background-color: black;
+  -webkit-user-select: none;
+}
+
+.x {
+  color: lime;
+  font-family: 'Droid Sans Mono';
+}
