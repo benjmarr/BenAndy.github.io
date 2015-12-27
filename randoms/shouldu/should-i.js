@@ -23,7 +23,6 @@ document.getElementById("x").addEventListener("click", function() {
     document.getElementById("x").innerHTML = "<span title='Click Me!'>" + pingas + "</span>";
     document.getElementById("x").style.opacity = "1";
   }, 1000);
-  console.log(pingas);
 }, false);
 
 if (document.addEventListener) {
