@@ -6,6 +6,7 @@
 
 body {
   -webkit-user-select: none;
+  transition: background-color 1s;
 }
 
 .main {
