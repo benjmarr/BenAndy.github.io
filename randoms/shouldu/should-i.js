@@ -22,7 +22,7 @@ document.getElementById("x").addEventListener("click", function() {
 
   if (ineedcoffeetoo == 0) {
     pingas = "Yes";
-    dibble = "#40FF00";
+    dibble = "#5ADF2E";
   } else if (ineedcoffeetoo == 1) {
     pingas = "Maybe";
     dibble = "#FACC2E";
