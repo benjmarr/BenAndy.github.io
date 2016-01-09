@@ -33,14 +33,10 @@ a:hover {
 }
 
 #title {
-  font-family: 'Titillium Web', sans-serif;
-  color: black;
-  text-align: center;
   margin-top: 3%;
-  font-size: 500%;
   cursor: default;
   opacity: 0;
-  transition: opacity 2s, color 1s;
+  transition: opacity 2s;
 }
 
 #xInstall {

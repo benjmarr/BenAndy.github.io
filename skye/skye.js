@@ -6,9 +6,6 @@ document.getElementById("header").style.backgroundImage = "url('content/backgrou
 
 setTimeout(function() {
   document.getElementById("title").style.opacity = "1";
-  setTimeout(function() {
-    document.getElementById("title").style.color = "white";
-  }, 950);
 }, 1500);
 
 setInterval(function() {
