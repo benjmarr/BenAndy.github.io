@@ -1,0 +1,26 @@
+/*Copyright Benjamin (c) 2016 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  -webkit-user-select: none;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1%;
+  cursor: default;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 300%;
+}
+
+.list {
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 120%;
+  cursor: default;
+  font-family: 'Montserrat', sans-serif;
+}
