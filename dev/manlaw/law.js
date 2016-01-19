@@ -27,3 +27,9 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
+
+setTimeout(function() {
+  document.getElementById("body").style.backgroundColor = "#393939";
+  document.getElementById("x").style.color = "#FFFFFF";
+  document.getElementById("xx").style.color = "#FFFFFF";
+}, 1000);

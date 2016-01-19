@@ -6,21 +6,25 @@
 
 body {
   -webkit-user-select: none;
+  transition: background-color 1s;
 }
 
 .title {
   text-align: center;
   margin-top: 1%;
   cursor: default;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-size: 300%;
+  transition: color 1s;
 }
 
 .list {
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
+  margin-bottom: 2%;
   font-size: 120%;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
+  transition: color 1s;
 }
