@@ -42,3 +42,4 @@ var showOpacity = function(id, time) {
 showOpacity("nav0", 1500);
 showOpacity("nav1", 2000);
 showOpacity("nav2", 2500);
+showOpacity("nav3", 3000);
