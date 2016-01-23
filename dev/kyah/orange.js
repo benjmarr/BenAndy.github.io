@@ -19,7 +19,8 @@ var opacity = function(id, opacity, delay) {
 };
 
 opacity("x", "1", "1000");
-opacity("img", "1", "1500");
+opacity("xx", "1", "1500");
+opacity("img", "1", "2000");
 
 var imageAmount = 7;
 var currentImage = 1;
