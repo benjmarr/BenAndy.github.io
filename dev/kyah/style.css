@@ -1,0 +1,33 @@
+/*Copyright Benjamin (c) 2016 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  -webkit-user-select: none;
+}
+
+.title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  font-size: 400%;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.img {
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.swap {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 150%;
+  cursor: pointer;
+}
