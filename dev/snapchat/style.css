@@ -23,7 +23,7 @@ body {
   font-size: 300%;
   cursor: default;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s, font-size 1s;
 }
 
 .logIn {
@@ -43,7 +43,8 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   opacity: 0;
-  transition: opacity 1s;
+  font-size: 100%;
+  transition: opacity 1s, font-size 1s;
 }
 
 input {

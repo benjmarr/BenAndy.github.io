@@ -26,6 +26,10 @@ opacity("log", "1", 3000);
 opacity("userPass", "1", 3500);
 
 document.getElementById("press").addEventListener("click", function() {
+  document.getElementById("body").style.backgroundColor = "#FF0000";
+  document.getElementById("x").style.fontSize = "150%";
+  document.getElementById("x").innerHTML = "Snapchat Online... is not a thing";
   document.getElementById("log").innerHTML = "Woah woah, wait... What the hell are you doing?!";
+  document.getElementById("userPass").style.fontSize = "200%";
   document.getElementById("userPass").innerHTML = "You were just about to give your Snapchat log in details to a random website? You don't know what will happen! Giving your usernames and passwords to random unofficial websites is one of the worst things you can do these days! If you've given out your log in details for accounts to random websites, you should change your passwords right away - you don't know who could have access to your accounts now. The only official Snapchat platforms are applications on mobile devices.";
 }, false);
