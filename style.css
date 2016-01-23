@@ -52,3 +52,8 @@ a:hover {
   opacity: 0;
   transition: opacity 1s;
 }
+
+#nav3 {
+  opacity: 0;
+  transition: opacity 1s;
+}
