@@ -38,3 +38,11 @@ document.getElementById("press").addEventListener("click", function() {
   document.getElementById("img").style.height = "7%";
   document.getElementById("img").style.width = "7%";
 }, false);
+
+document.getElementById("img").addEventListener("click", function() {
+  opacity("body", "0", 0);
+  document.getElementById("body").style.backgroundColor = "#FFFFFF";
+  setTimeout(function() {
+    window.location = "";
+  }, 500);
+}, false);

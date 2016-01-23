@@ -7,7 +7,7 @@
 body {
   -webkit-user-select: none;
   background-color: #FFFFFF;
-  transition: background-color 1s;
+  transition: background-color 1s, opacity 1s;
 }
 
 #img {
