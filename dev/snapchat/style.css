@@ -13,7 +13,9 @@ body {
 #img {
   margin-top: 3%;
   opacity: 0;
-  transition: opacity 1s;
+  width: 15%;
+  height: 15%;
+  transition: opacity 1s, height 4s, width 4s;
 }
 
 .title {
@@ -67,4 +69,13 @@ button {
   padding-left: 3%;
   padding-right: 3%;
   cursor: pointer;
+}
+
+.img {
+  margin-top: 2%;
+  height: 0%;
+  width: 0%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s, height 3s, width 3s;
 }
