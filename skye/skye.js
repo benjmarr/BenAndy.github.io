@@ -53,7 +53,7 @@ if (document.addEventListener) {
 setTimeout(function() {
   var userAg = navigator.userAgent;
   if (userAg.indexOf("Chrome") != -1) {
-    console.log("Chrome browser");
+    
   } else {
     console.log("Wrong browser for extension.");
     document.getElementById("header").style.opacity = "0.3";
