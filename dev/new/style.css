@@ -6,6 +6,20 @@
 
 body {
   -webkit-user-select: none;
+  background-color: #FFFFFF;
+  transition: background-color 1s;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 a {
@@ -22,9 +36,20 @@ a:hover {
   text-align: center;
   font-size: 500%;
   margin-top: 10%;
+  cursor: default;
+  color: #000000;
+  transition: color 0.5s;
 }
 
 .nav {
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
   font-size: 200%;
+  opacity: 1;
+  transition: color 0.5s, opacity 1s;
+}
+
+#nav0, #nav1, #nav2, #nav3, #nav4 {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
