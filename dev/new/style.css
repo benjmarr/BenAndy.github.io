@@ -1,0 +1,9 @@
+/*Copyright Benjamin (c) 2016 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  -webkit-user-select: none;
+}
