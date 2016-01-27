@@ -27,3 +27,10 @@ if (document.addEventListener) {
     window.event.returnValue = false;
   });
 }
+
+// opacity() method
+var opacity = function(id, opacity, delay) {
+  setTimeout(function() {
+    document.getElementById(id).style.opacity = opacity;
+  }, delay);
+};
