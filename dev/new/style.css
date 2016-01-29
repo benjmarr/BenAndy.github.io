@@ -7,6 +7,8 @@
 body {
   -webkit-user-select: none;
   background-color: #FFFFFF;
+  margin: 0px;
+  overflox-x: hidden;
   transition: background-color 1s;
 }
 
