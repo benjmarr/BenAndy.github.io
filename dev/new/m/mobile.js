@@ -25,11 +25,17 @@ var opacity = function(id, opacity, delay) {
   }, delay);
 };
 
+// Set header background
+document.getElementById("header").style.backgroundImage = "url('../content/mobile.jpg')";
+
 // Page load animations
 opacity("titleBox", "1", 500);
 setTimeout(function() {
   for (var i = 0; i < 5; i++) {
     opacity("nav" + i, 1, i * 500);
+    if (i === 4) {
+      opacity("header", 1, 1000);
+    };
   };
 }, 1000);
 
