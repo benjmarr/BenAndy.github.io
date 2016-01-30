@@ -44,6 +44,14 @@ a:hover {
   transition: color 0.5s, opacity 1s;
 }
 
+.devTitle {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 500%;
+  margin-top: 1%;
+  cursor: default;
+}
+
 .nav {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
@@ -55,4 +63,27 @@ a:hover {
 #nav0, #nav1, #nav2, #nav3, #nav4 {
   opacity: 0;
   transition: opacity 0.5s;
+}
+
+.devApplications {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 150%;
+  margin-top: -1%;
+  cursor: default;
+}
+
+.devInformation {
+  font-family: 'Titillium Web', sans-serif;
+  cursor: default;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+.devImages {
+  border-radius: 10px;
+  width: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }

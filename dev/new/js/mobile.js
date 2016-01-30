@@ -25,17 +25,11 @@ var opacity = function(id, opacity, delay) {
   }, delay);
 };
 
-// Set header background
-document.getElementById("header").style.backgroundImage = "url('../content/mobile.jpg')";
-
 // Page load animations
 opacity("titleBox", "1", 500);
 setTimeout(function() {
   for (var i = 0; i < 5; i++) {
     opacity("nav" + i, 1, i * 500);
-    if (i === 4) {
-      opacity("header", 1, 1000);
-    };
   };
 }, 1000);
 
@@ -43,7 +37,7 @@ setTimeout(function() {
 var nav0Data = ["Skye New Tab", "http://benandy.github.io/skye", "blank"];
 var nav1Data = ["Should You?", "http://benandy.github.io/r/shouldyou", "blank"];
 var nav2Data = ["Snapchat Online", "http://benandy.github.io/r/snapchat", "blank"];
-var nav3Data = ["Web Development Services", "https://benandy.typeform.com/to/hLLp1H", "blank"];
+var nav3Data = ["Web Development Services", "development.html", "self"];
 var nav4Data = ["Contact Me", "https://benandy.typeform.com/to/EyWPJI", "blank"];
 
 // Set Nav
