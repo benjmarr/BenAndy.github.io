@@ -4,21 +4,33 @@
 
 body {
   background-image: url("content/back.gif");
+  -webkit-user-select: none;
 }
 
 .titleAddress {
   height: 0px;
   font-family: 'Montserrat', sans-serif;
+  cursor: default;
 }
 
 .titlePhone {
   text-align: right;
   font-family: 'Montserrat', sans-serif;
+  cursor: default;
 }
 
 .titleMain {
   text-align: center;
-  font-size: 250%;
+  font-size: 300%;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 5%;
+  cursor: default;
+  margin-top: -2%;
+}
+
+.titleSub {
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Montserrat', sans-serif;
+  cursor: default;
+  margin-top: 1%;
 }
