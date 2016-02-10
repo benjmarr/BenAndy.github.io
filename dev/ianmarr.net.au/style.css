@@ -1,0 +1,24 @@
+.titanic {
+  float: none;
+}
+
+body {
+  background-image: url("content/back.gif");
+}
+
+.titleAddress {
+  height: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titlePhone {
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titleMain {
+  text-align: center;
+  font-size: 250%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5%;
+}
