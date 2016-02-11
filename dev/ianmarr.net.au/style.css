@@ -21,8 +21,8 @@ body {
 
 .titleMain {
   text-align: center;
-  font-size: 300%;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 500%;
+  font-family: 'Nunito', sans-serif;
   cursor: default;
   margin-top: -2%;
 }
@@ -30,7 +30,11 @@ body {
 .titleSub {
   text-align: center;
   font-size: 150%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
   cursor: default;
-  margin-top: 1%;
+  margin-top: -0.5%;
+}
+
+.nav {
+  text-align: center;
 }
