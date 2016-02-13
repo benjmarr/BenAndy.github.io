@@ -97,3 +97,8 @@ a:hover {
   visibility: hidden;
   transition: opacity 1s;
 }
+
+.cookieTitle {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+}
