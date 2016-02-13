@@ -32,11 +32,19 @@ a:hover {
   text-decoration: underline;
 }
 
+h3 {
+  text-align: center;
+  font-size: 200%;
+}
+
 #title {
   margin-top: 2%;
   margin-bottom: 1.5%;
   cursor: default;
-  opacity: 0;
+  text-align: center;
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 300%;
   transition: opacity 2s;
 }
 
@@ -77,6 +85,7 @@ a:hover {
   margin-right: 5%;
   margin-top: 2%;
   opacity: 0.9;
+  text-align: center;
   transition: opacity 1s;
 }
 

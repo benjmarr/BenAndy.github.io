@@ -4,10 +4,6 @@ console.log("Copyright Benjamin (c) All rights reserved - 2015");
 
 document.getElementById("header").style.backgroundImage = "url('content/background/5.jpg')";
 
-setTimeout(function() {
-  document.getElementById("title").style.opacity = "1";
-}, 1500);
-
 setInterval(function() {
   document.getElementById("xInstall").style.backgroundColor = "#D7D7D7";
   document.getElementById("xInstall").style.color = "#515151";
@@ -53,7 +49,7 @@ if (document.addEventListener) {
 setTimeout(function() {
   var userAg = navigator.userAgent;
   if (userAg.indexOf("Chrome") != -1) {
-    
+
   } else {
     console.log("Wrong browser for extension.");
     document.getElementById("header").style.opacity = "0.3";
