@@ -1,5 +1,19 @@
 /*Copyright Benjamin (c) 2015 - All rights reserved*/
 
+.titanic {
+  float: none;
+}
+
 #loadImg {
   margin-top: 20%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.title {
+  opacity: 0;
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  transition: opacity 1s, font-size 1s;
 }
