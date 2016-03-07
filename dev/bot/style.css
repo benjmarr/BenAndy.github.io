@@ -1,0 +1,17 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  background-color: black;
+}
+
+.chatBoxMSG {
+  color: #3ADF00;
+}
+
+.chatBoxSYS {
+  color: #0080FF;
+}
