@@ -1,11 +1,12 @@
 // Copyright Benjamin (c) 2015 - All rights reserved
 
+// Cookie handlers
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + "; " + expires;
-}''
+};
 
 function getCookie(cname) {
     var name = cname + "=";
@@ -16,8 +17,9 @@ function getCookie(cname) {
         if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
     }
     return "";
-}''
+};
 
+// Disable right click
 if (document.addEventListener) {
   document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
@@ -28,6 +30,7 @@ if (document.addEventListener) {
   });
 };
 
+// Loading animation
 var loadSpinDeg = 0;
 var loadSpin = setInterval(function() {
   if (loadSpinDeg === 361) {
@@ -38,14 +41,12 @@ var loadSpin = setInterval(function() {
   document.getElementById("loadImg").style.transform = "rotate(" + loadSpinDeg + "deg)";
 }, 1);
 
-var pageSetup = function() {
-
-};
-
+// Load complete animations
 window.onload = function() {
   setTimeout(function() {
     document.getElementById("loadImg").style.opacity = "0";
     setTimeout(function() {
+      document.getElementById("header").style.opacity = "0.3";
       document.getElementById("loadImg").style.visibility = "hidden";
       document.getElementById("loadImg").style.marginTop = "0";
       document.getElementById("loadImg").style.height = "0";

@@ -4,6 +4,20 @@
   float: none;
 }
 
+header {
+  background: url('../assets/back.jpg');
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
 body {
   -webkit-user-select: none;
 }
@@ -19,12 +33,14 @@ body {
   text-align: center;
   font-size: 100%;
   margin-top: -2%;
+  cursor: default;
   font-family: 'Titillium Web', sans-serif;
   transition: opacity 1s, font-size 1s;
 }
 
 .titleSub {
   opacity: 0;
+  cursor: default;
   text-align: center;
   margin-left: 19%;
   font-family: 'Titillium Web', sans-serif;
@@ -35,10 +51,12 @@ body {
 
 .navBoxes {
   opacity: 0;
+  cursor: default;
   font-family: 'Titillium Web', sans-serif;
   transition: opacity 1s;
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
