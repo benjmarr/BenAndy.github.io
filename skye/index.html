@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-AU">
   <head>
-    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:600" rel="stylesheet" type="text/css">
-    <link href="styles.css" rel="stylesheet" type="text/css" title="x" />
-    <link href="content/logoNoback.png" rel="icon" type="image/png" />
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:600" rel="stylesheet" type="text/css" />
+    <link href="master.css" rel="stylesheet" media="screen" title="no title" charset="utf-8" />
+    <link href="assets/logo.png" rel="icon" type="image/png" />
     <meta name="description" content="Replace your new tab page with a more modern page! Featuring time, dates, many background images, welcome messages and more!" />
-    <meta name="keywords" content="skye, new, tab, google, chrome, extension, plugin, add, on, addon, add-on, unsplash" />
+    <meta name="keywords" content="skye, new, tab, google, chrome, extension, plugin, add, on, addon, add-on, unsplash, photography" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Benjamin" />
     <meta charset="utf-8" />
-    <title>Skye New Tab Page</title>
+    <title>Skye New Tab</title>
   </head>
   <body>
-    <header id="header">
-    </header>
-    <div id="wrongBrowserAlert">Hey there, please know that Skye New Tab is a <a href="http://chrome.google.com">Google Chrome</a> PC extension and will not work on other browsers. If you wish to use Skye New Tab please download and install <a href="http://chrome.google.com">Google Chrome</a>. Then you can download the plugin by pressing the "INSTALL NOW" button.</div>
-    <center>
-      <img src="content/logoNoback.png" alt="Logo" id="title" width="20%" />
-    </center>
-    <center>
-      <button class="navMenu" id="navContact">Contact the Developer</button>
-      <button class="navMenu" id="navReviews">Reviews</button>
-      <button class="navMenu" id="navGithub">View on GitHub</button>
-      <button class="navMenu" id="navSupport">Support</button>
-    </center>
-    <center>
-      <br /><br /><br /><button id="xInstall">INSTALL NOW</button><br /><br />
-    </center>
-    <div id="information">
-      Replace your boring, default new tab page with a more modern and slick looking page! This page features the time, date, date alerts (for dates such as Christmas and New years), multiple background images - with a grayscale background option, social media icons, inspirational quotes, a timer, social media links and keyboard shortcuts! Background images and quotes are updated every ten days.
-      <br /><br />
-      Everytime you open your new tab page, you will quickly be suprised with a modern new tab page. Each time you load the page, a random background image will be selected from a pool of wonderful photos provided by <a href="http://unsplash.com" target="_blank">unsplash.com</a>! The time, date, and an inspirational quote will also be shown to you - to help you keep track of the time, and keep you happy throughout the day.
+    <header id="header"></header>
+    <img src="assets/load.png" id="loadImg" />
+    <img src="assets/logo.png" id="titleLogo" />
+    <p class="welcomeText" id="welTxt">
+      Replace your boring, default new tab page with a more modern and slick looking page! This page features the time, date, date alerts (for dates such as Christmas and New years), multiple background images - with a grayscale background option, social media icons, inspirational quotes, a timer, social media links and keyboard shortcuts! New background images and quotes are updated every ten days.<br /><br />Everytime you open your new tab page, you will quickly be suprised with a modern new tab page. Each time you load the page, a random background image will be selected from a pool of wonderful photos provided by unsplash.com! The time, date, and an inspirational quote will also be shown to you - to help you keep track of the time, and keep you happy throughout the day.
+    </p>
+    <button type="button" name="installButton" id="install"></button>
+    <div id="nav">
+      <button type="button" name="devContact" class="navButton" id="button1"></button>
+      <button type="button" name="reviews" class="navButton" id="button2"></button>
+      <button type="button" name="viewGitHub" class="navButton" id="button3"></button>
     </div>
+    <script src="skye.js"></script>
   </body>
-  <script src="skye.js"></script>
 </html>
