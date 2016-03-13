@@ -46,7 +46,7 @@ window.onload = function() {
   setTimeout(function() {
     document.getElementById("loadImg").style.opacity = "0";
     setTimeout(function() {
-      document.getElementById("header").style.opacity = "0.3";
+      document.getElementById("header").style.opacity = "0.4";
       document.getElementById("loadImg").style.visibility = "hidden";
       document.getElementById("loadImg").style.marginTop = "0";
       document.getElementById("loadImg").style.height = "0";
