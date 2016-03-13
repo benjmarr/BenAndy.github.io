@@ -60,3 +60,23 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.title404 {
+  cursor: default;
+  opacity: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 10%;
+  transition: opacity 1s;
+}
+
+.msg404 {
+  cursor: default;
+  opacity: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 250%;
+  margin-top: 2%;
+  transition: opacity 1s;
+}
