@@ -139,5 +139,6 @@ window.onload = function() {
   styleOpacity(2300, "title", "1");
   styleOpacity(1500, "clockBox", "1");
   styleOpacity(1900, "dateBox", "1");
-  styleOpacity(2400, "alertBox", "1");
+  styleOpacity(2300, "alertBox", "1");
+  styleOpacity(2700, "linkDiv", "1");
 };
