@@ -6,14 +6,21 @@
     <link href="assets/images/favicon128x128.png" rel="icon" type="image/png" />
     <meta name="author" content="Benjamin" />
     <meta charset="utf-8" />
-    <title>Skye New Tab</title>
+    <title>New Tab</title>
   </head>
   <body id="body">
-    <p id="title">
+    <header id="header"></header>
+    <img src="assets/images/options.png" alt="Options Cog" class="optionsCog" id="options" />
+    <p class="unsplashCred" id="unsplash">
+      Images provided by <a href="https://unsplash.com">Unsplash.com</a>
+    </p>
+    <p class="pageTitle" id="title">
       Skye New Tab
     </p>
-    <header id="header"></header>
-    <script src="skye.js"></script>
-    <script src="background.js"></script>
+    <div id="clockBox"></div>
+    <div id="dateBox"></div>
+    <div id="alertBox"></div>
+    <script src="assets/skye.js"></script>
+    <script src="assets/background.js"></script>
   </body>
 </html>

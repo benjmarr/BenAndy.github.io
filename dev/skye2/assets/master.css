@@ -6,7 +6,8 @@
 
 body {
   -webkit-user-select: none;
-  background-color: white;
+  background-color: black;
+  opacity: 0;
   transition: opacity 2s;
 }
 
@@ -19,7 +20,7 @@ header {
   margin-right: -8px;
   z-index: -1;
   background-size: cover;
-  opacity: 1;
+  opacity: 0.7;
   transition: -webkit-filter 1s, opacity 1s;
 }
 
@@ -38,4 +39,24 @@ a:hover {
   color: white;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.pageTitle {
+  color: white;
+  text-align: center;
+  margin-top: -2%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.optionsCog {
+  width: 3%;
+}
+
+.unsplashCred {
+  font-family: 'Titillium Web', sans-serif;
+  display: block;
+  color: white;
+  font-size: 70%;
+  margin-top: -3%;
+  text-align: right;
 }
