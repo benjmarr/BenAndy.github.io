@@ -46,10 +46,14 @@ a:hover {
   text-align: center;
   margin-top: -2%;
   font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .optionsCog {
   width: 3%;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .unsplashCred {
@@ -59,4 +63,36 @@ a:hover {
   font-size: 70%;
   margin-top: -3%;
   text-align: right;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mainClock {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  margin-top: 13%;
+  text-align: center;
+  font-size: 500%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mainDate {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 300%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mainAlert {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 200%;
+  opacity: 0;
+  transition: opacity 1s;
 }

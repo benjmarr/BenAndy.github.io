@@ -66,7 +66,48 @@ if (getCookie("usingName") === "") {
   retriveUserName();
 };
 
+// Set date & time
+var tday = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var tmonth = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+setInterval(clock, 1000);
+function clock() {
+  var d = new Date();
+  var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate();
+  var nhour = d.getHours(), nmin = d.getMinutes(), ap;
+  var thour = d.getHours();
+  if (nhour === 0) {
+    ap = " AM";
+    nhour = 12;
+  } else if (nhour < 12) {
+    ap = " AM";
+  } else if (nhour === 12) {
+    ap = " PM";
+  } else if (nhour > 12) {
+    ap = " PM";
+    nhour -= 12;
+  };
+  if (nmin <= 9) {
+    nmin = "0" + nmin;
+  };
+  if (ndate === 1 || ndate === 21 || ndate === 31) {
+    var strdndth = "st";
+  } else if (ndate === 2 || ndate === 22) {
+    var strdndth = "nd";
+  } else if (ndate === 3 || ndate === 23) {
+    var strdndth = "rd";
+  } else {
+    var strdndth = "th";
+  };
+  document.getElementById("clockBox").innerHTML = nhour + ":" + nmin;
+};
+
 // Run when page finished loading
 window.onload = function() {
-  styleOpacity(0, "body", "1");
+  styleOpacity(300, "body", "1");
+  styleOpacity(1300, "options", "1");
+  styleOpacity(1800, "unsplash", "1");
+  styleOpacity(2300, "title", "1");
+  styleOpacity(2800, "clockBox", "1");
+  styleOpacity(3300, "dateBox", "1");
+  styleOpacity(3800, "alertBox", "1");
 };
