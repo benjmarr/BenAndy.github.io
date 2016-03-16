@@ -66,7 +66,7 @@ if (getCookie("usingName") === "") {
   retriveUserName();
 };
 
-// Set date & time
+// Set date, time, date alerts & welcome messages
 var tday = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var tmonth = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 setInterval(clock, 1000);
@@ -98,7 +98,37 @@ function clock() {
   } else {
     var strdndth = "th";
   };
-  document.getElementById("clockBox").innerHTML = nhour + ":" + nmin;
+  if (tmonth[nmonth] === "January") {
+    if (ndate === 1) {
+      document.getElementById("alertBox").innerHTML = "Happy new year!";
+    };
+  } else if (tmonth[nmonth] === "December") {
+    if (ndate === 25) {
+      document.getElementById("alertBox").innerHTML = "Merry Christmas!";
+    };
+  } else {
+    if (thour < 12) {
+      if (getCookie("usingName") === "false") {
+        document.getElementById("alertBox").innerHTML = "Good morning";
+      } else {
+        document.getElementById("alertBox").innerHTML = "Good morning, " + getCookie("userName");
+      };
+    } else if (thour < 18) {
+      if (getCookie("usingName") === "false") {
+        document.getElementById("alertBox").innerHTML = "Good afternoon";
+      } else {
+        document.getElementById("alertBox").innerHTML = "Good afternoon, " + getCookie("userName");
+      };
+    } else {
+      if (getCookie("usingName") === "false") {
+        document.getElementById("alertBox").innerHTML = "Good evening";
+      } else {
+        document.getElementById("alertBox").innerHTML = "Good evening, " + getCookie("userName");
+      }
+    };
+  };
+  document.getElementById("dateBox").innerHTML = tday[nday] + ", " + tmonth[nmonth] + " " + ndate + "<sup>" + strdndth + "</sup>";
+  document.getElementById("clockBox").innerHTML = nhour + ":" + nmin + ap;
 };
 
 // Run when page finished loading
@@ -107,7 +137,7 @@ window.onload = function() {
   styleOpacity(1300, "options", "1");
   styleOpacity(1800, "unsplash", "1");
   styleOpacity(2300, "title", "1");
-  styleOpacity(2800, "clockBox", "1");
-  styleOpacity(3300, "dateBox", "1");
-  styleOpacity(3800, "alertBox", "1");
+  styleOpacity(1500, "clockBox", "1");
+  styleOpacity(1900, "dateBox", "1");
+  styleOpacity(2400, "alertBox", "1");
 };
