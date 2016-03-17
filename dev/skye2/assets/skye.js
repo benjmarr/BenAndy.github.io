@@ -49,6 +49,12 @@ var styleGrayscale = function(delay, id, value) {
     };
   }, delay);
 };
+  // Visibility style
+var styleVisibility = function(delay, id, value) {
+  setTimeout(function() {
+    document.getElementById(id).style.visibility = value;
+  }, delay);
+};
 
 // Get name
 var retriveUserName = function() {
@@ -69,7 +75,7 @@ if (getCookie("usingName") === "") {
 // Set date, time, date alerts & welcome messages
 var tday = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var tmonth = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-setInterval(clock, 1000);
+setInterval(clock, 100);
 function clock() {
   var d = new Date();
   var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate();
@@ -127,9 +133,68 @@ function clock() {
       }
     };
   };
+  if (getCookie("opAMPM") === "show") {
+    document.getElementById("clockBox").innerHTML = nhour + ":" + nmin + ap;
+  } else {
+    document.getElementById("clockBox").innerHTML = nhour + ":" + nmin;
+  };
   document.getElementById("dateBox").innerHTML = tday[nday] + ", " + tmonth[nmonth] + " " + ndate + "<sup>" + strdndth + "</sup>";
-  document.getElementById("clockBox").innerHTML = nhour + ":" + nmin + ap;
 };
+
+// Options button click
+document.getElementById("options").addEventListener("click", function() {
+  styleOpacity(0, "opM", 0.9);
+  styleOpacity(0, "options", 0);
+  styleVisibility(1000, "options", "hidden");
+}, false);
+
+// Options close
+document.getElementById("opMclose").addEventListener("click", function() {
+  styleOpacity(0, "opM", 0);
+  styleOpacity(1000, "options", 1);
+  styleVisibility(0, "options", "visible");
+}, false);
+
+// Option menu options
+  // Show & hide the AM/PM
+if (getCookie("opAMPM") === "") {
+  setCookie("opAMPM", "show", 365);
+};
+var opAMPM = function(value) {
+  if (value === "show") {
+    setCookie("opAMPM", "show", 365);
+    document.getElementById("opAMPM").innerHTML = "Hide the AM/PM";
+  } else if (value === "hide") {
+    setCookie("opAMPM", "hide", 365);
+    document.getElementById("opAMPM").innerHTML = "Show the AM/PM";
+  } else if (value === "pageLoad") {
+    if (getCookie("opAMPM") === "show") {
+      opAMPM("show");
+    } else {
+      opAMPM("hide");
+    };
+  };
+};
+document.getElementById("opAMPM").addEventListener("click", function() {
+  if (getCookie("opAMPM") === "show") {
+    opAMPM("hide");
+  } else {
+    opAMPM("show");
+  };
+}, false);
+opAMPM("pageLoad");
+  // Change background image
+document.getElementById("opChBkImg").addEventListener("click", function() {
+  styleOpacity(0, "header", "0");
+  styleOpacity(1100, "header", "1");
+  setTimeout(function() {
+    setBack("random");
+  }, 1000);
+}, false);
+  // Change your name
+document.getElementById("opChngNme").addEventListener("click", function() {
+  retriveUserName();
+}, false);
 
 // Run when page finished loading
 window.onload = function() {

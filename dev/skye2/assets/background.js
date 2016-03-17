@@ -9,15 +9,31 @@ var backgroundNumber = function() {
   return backgroundNames[Math.floor(Math.random() * backgroundNames.length)];
 };
 
+// Set last updated date in options & information menu
+document.getElementById("infoImgUpdt").innerHTML = imageUpdateDate;
+
 // Setting background
 var setBackID;
 var setBack = function(id) {
   if (id === "random") {
     setBackID = backgroundNumber();
     document.getElementById("header").style.backgroundImage = "url('assets/images/backgrounds/" + setBackID + ".jpg')";
+  } else {
+    setBackID = id;
+    document.getElementById("header").style.backgroundImage = "url('assets/images/backgrounds/" + setBackID + ".jpg')";
   };
 };
 setBack("random");
+
+// Five minute background change
+var newBackID;
+setInterval(function() {
+  styleOpacity(0, "header", "0");
+  styleOpacity(1100, "header", "1");
+  setTimeout(function() {
+    setBack("random");
+  }, 1000);
+}, 300000);
 
 // Background image data
 var imageData = function(imgUrl, imgAuth, imgAuthPro) {

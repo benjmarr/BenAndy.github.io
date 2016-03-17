@@ -115,3 +115,35 @@ a:hover {
   cursor: default;
   padding-right: 13px;
 }
+
+.optionsMenu {
+  border-radius: 10px;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: default;
+  background-color: black;
+  opacity: 0;
+	left: 0;
+	right: 0;
+	top: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+	margin-left: auto;
+ 	margin-right: auto;
+	max-width: 740px;
+  color: white;
+  position: absolute;
+  transition: opacity 1s;
+}
+
+.opTtl {
+  text-align: center;
+}
+
+.x {
+  width: 2%;
+  position: absolute;
+  right: 0px;
+  padding-right: 2%;
+}
