@@ -56,6 +56,23 @@ var styleVisibility = function(delay, id, value) {
   }, delay);
 };
 
+// Clear menus
+var clearMenu = function(opB) {
+  styleOpacity(0, "opM", 0);
+  styleVisibility(1000, "opM", "hidden");
+  styleOpacity(0, "dteFom", 0);
+  styleVisibility(1000, "dteFom", "hidden");
+  styleOpacity(0, "bkgrndImgInf", 0);
+  styleVisibility(1000, "bkgrndImgInf", "hidden");
+  if (opB === "true") {
+    styleVisibility(0, "options", "visible");
+    styleOpacity(0, "options", 1);
+  } else {
+    styleVisibility(1000, "options", "hidden");
+    styleOpacity(0, "options", 0);
+  };
+};
+
 // Get name
 var retriveUserName = function() {
   var promptName = prompt("What's your name? If you don't wish to have your name shown, just press enter.", "Type your name here!");
@@ -157,20 +174,14 @@ function clock() {
 
 // Options button click
 document.getElementById("options").addEventListener("click", function() {
-  styleOpacity(0, "opM", 0.9);
-  styleOpacity(0, "options", 0);
-  styleVisibility(0, "opM", "visible");
-  styleVisibility(1000, "options", "hidden");
-  styleOpacity(0, "dteFom", 0);
-  styleVisibility(1000, "dteFom", "hidden");
+  clearMenu("false");
+  styleVisibility(1000, "opM", "visible");
+  styleOpacity(1000, "opM", 0.9);
 }, false);
 
 // Options close
 document.getElementById("opMclose").addEventListener("click", function() {
-  styleOpacity(0, "opM", 0);
-  styleOpacity(1000, "options", 1);
-  styleVisibility(1000, "opM", "hidden");
-  styleVisibility(0, "options", "visible");
+  clearMenu("true");
 }, false);
 
 // Option menu options
@@ -215,12 +226,9 @@ document.getElementById("opChngNme").addEventListener("click", function() {
 }, false);
   // Change the date format
 document.getElementById("opChngeDteFrmt").addEventListener("click", function() {
-  styleOpacity(0, "opM", 0);
-  styleVisibility(1000, "opM", "hidden");
-  styleOpacity(1000, "dteFom", 0.9);
-  styleVisibility(500, "dteFom", "visible");
-  styleVisibility(500, "options", "visible");
-  styleOpacity(500, "options", "1");
+  clearMenu("true");
+  styleVisibility(1000, "dteFom", "visible");
+  styleOpacity(1000, "dteFom", 1);
 }, false);
 document.getElementById("dteFomclose").addEventListener("click", function() {
   styleOpacity(0, "dteFom", 0);
