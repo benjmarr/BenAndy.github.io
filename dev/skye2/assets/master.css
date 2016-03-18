@@ -114,6 +114,9 @@ a:hover {
   padding-left: 13px;
   cursor: default;
   padding-right: 13px;
+  -webkit-filter: grayscale(0);
+  opacity: 1;
+  transition: -webkit-filter 0.5s, opacity 0.5s;
 }
 
 .optionsMenu {
