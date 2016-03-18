@@ -54,48 +54,52 @@ window.onload = function() {
       document.getElementById("titleLogo").style.opacity = "1";
       setTimeout(function() {
         document.getElementById("welTxt").style.opacity = "1";
-        setTimeout(function() {
-          document.getElementById("install").style.opacity = "1";
+        if (main) {
           setTimeout(function() {
-            document.getElementById("nav").style.opacity = "1";
+            document.getElementById("install").style.opacity = "1";
+            setTimeout(function() {
+              document.getElementById("nav").style.opacity = "1";
+            }, 500);
           }, 500);
-        }, 500);
+        };
       }, 500);
     }, 1000);
   }, 1000);
 };
 
 // Buttons
-// // View on GitHub button
-document.getElementById("button3").innerHTML = "View Source on GitHub";
-document.getElementById("button3").addEventListener("click", function() {
-  window.open("https://github.com/BenAndy/SkyeNewTab","_blank");
-}, false);
+if (main) {
+  // // View on GitHub button
+  document.getElementById("button3").innerHTML = "View Source on GitHub";
+  document.getElementById("button3").addEventListener("click", function() {
+    window.open("https://github.com/BenAndy/SkyeNewTab","_blank");
+  }, false);
 
-// // Reviews button
-document.getElementById("button2").innerHTML = "Extension Reviews";
-document.getElementById("button2").addEventListener("click", function() {
-  window.open("https://chrome.google.com/webstore/detail/skye-new-tab/hmgfgpieichmjmcbccbdcmfolhlmjcpg/reviews","_blank");
-}, false);
+  // // Reviews button
+  document.getElementById("button2").innerHTML = "Extension Reviews";
+  document.getElementById("button2").addEventListener("click", function() {
+    window.open("https://chrome.google.com/webstore/detail/skye-new-tab/hmgfgpieichmjmcbccbdcmfolhlmjcpg/reviews","_blank");
+  }, false);
 
-// // Developer contact button
-document.getElementById("button1").innerHTML = "Contact the Developer";
-document.getElementById("button1").addEventListener("click", function() {
-  window.open("https://benandy.typeform.com/to/zlElxa","_blank");
-}, false);
+  // // Developer contact button
+  document.getElementById("button1").innerHTML = "Contact the Developer";
+  document.getElementById("button1").addEventListener("click", function() {
+    window.open("https://benandy.typeform.com/to/zlElxa","_blank");
+  }, false);
 
-// // Install Button
-document.getElementById("install").innerHTML = "INSTALL NOW";
-document.getElementById("install").addEventListener("click", function() {
-  var userAg = navigator.userAgent;
-  if (userAg.indexOf("Chrome") != -1) {
-    // Browser is Chrome on desktop
-    window.open("https://chrome.google.com/webstore/detail/skye-new-tab/hmgfgpieichmjmcbccbdcmfolhlmjcpg","_blank");
-  } else {
-    // Browser is not Chrome on desktop
-    var wrongBrowser = confirm("Hey there! This extension only works on the Google Chrome browser and on non-mobile devises. Please move to a desktop version of Chrome to install this extension.\n\nDo you still want to view the extension on the Google Chrome store?");
-    if (wrongBrowser) {
+  // // Install Button
+  document.getElementById("install").innerHTML = "INSTALL NOW";
+  document.getElementById("install").addEventListener("click", function() {
+    var userAg = navigator.userAgent;
+    if (userAg.indexOf("Chrome") != -1) {
+      // Browser is Chrome on desktop
       window.open("https://chrome.google.com/webstore/detail/skye-new-tab/hmgfgpieichmjmcbccbdcmfolhlmjcpg","_blank");
+    } else {
+      // Browser is not Chrome on desktop
+      var wrongBrowser = confirm("Hey there! This extension only works on the Google Chrome browser and on non-mobile devises. Please move to a desktop version of Chrome to install this extension.\n\nDo you still want to view the extension on the Google Chrome store?");
+      if (wrongBrowser) {
+        window.open("https://chrome.google.com/webstore/detail/skye-new-tab/hmgfgpieichmjmcbccbdcmfolhlmjcpg","_blank");
+      };
     };
-  };
-}, false);
+  }, false);
+};
