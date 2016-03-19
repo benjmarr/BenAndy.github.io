@@ -55,6 +55,12 @@ var styleVisibility = function(delay, id, value) {
     document.getElementById(id).style.visibility = value;
   }, delay);
 };
+  // Background color style
+var styleBackgroundColor = function(delay, id, value) {
+  setTimeout(function() {
+    document.getElementById(id).style.backgroundColor = value;
+  }, delay);
+};
 
 // Clear menus
 var clearMenu = function(opB) {
@@ -255,15 +261,40 @@ document.getElementById("opDteFom3").addEventListener("click", function() {
 document.getElementById("opDteFom4").addEventListener("click", function() {
   setCookie("opDteFom", 4, 365);
 }, false);
+  // Hide or show the Google search box
+if (getCookie("opGSearch") === "") {
+  setCookie("opGSearch", "show", 365);
+  document.getElementById("opGSearch").innerHTML = "Hide the Google search box";
+} else if (getCookie("opGSearch") === "show") {
+  document.getElementById("opGSearch").innerHTML = "Hide the Google search box";
+} else {
+  document.getElementById("opGSearch").innerHTML = "Show the Google search box";
+}
+document.getElementById("opGSearch").addEventListener("click", function() {
+  if (getCookie("opGSearch") === "show") {
+    setCookie("opGSearch", "hide", 365);
+    document.getElementById("opGSearch").innerHTML = "Show the Google Search box";
+    styleOpacity(0, "gSearchF", 0);
+    styleVisibility(1000, "gSearchF", "hidden");
+  } else {
+    setCookie("opGSearch", "show", 365);
+    document.getElementById("opGSearch").innerHTML = "Hide the Google search box";
+    styleOpacity(0, "gSearchF", 1);
+    styleVisibility(0, "gSearchF", "visible");
+  }
+}, false);
 
 // Run when page finished loading
 window.onload = function() {
-  styleOpacity(300, "body", 1);
-  styleOpacity(1300, "options", 1);
-  styleOpacity(1800, "unsplash", 1);
-  styleOpacity(2300, "title", 1);
-  styleOpacity(1500, "clockBox", 1);
-  styleOpacity(1900, "dateBox", 1);
-  styleOpacity(2300, "alertBox", 1);
-  styleOpacity(2700, "linkDiv", 1);
+  styleOpacity(0, "body", 1);
+  styleOpacity(200, "options", 1);
+  styleOpacity(400, "unsplash", 1);
+  styleOpacity(600, "title", 1);
+  styleOpacity(800, "clockBox", 1);
+  styleOpacity(1000, "dateBox", 1);
+  styleOpacity(1200, "alertBox", 1);
+  styleOpacity(1400, "linkDiv", 1);
+  if (getCookie("opGSearch") === "show") {
+    styleOpacity(1600, "gSearchF", 1);
+  };
 };
