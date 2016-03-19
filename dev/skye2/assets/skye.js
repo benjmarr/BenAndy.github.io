@@ -42,7 +42,7 @@ var styleOpacity = function(delay, id, value) {
   // Grayscale style
 var styleGrayscale = function(delay, id, value) {
   setTimeout(function() {
-    if (value) {
+    if (value === "true") {
       document.getElementById(id).style.webkitFilter = "grayscale(1)";
     } else {
       document.getElementById(id).style.webkitFilter = "grayscale(0)";
@@ -69,6 +69,8 @@ var clearMenu = function(opB) {
   styleOpacity(0, "dteFom", 0);
   styleVisibility(1000, "dteFom", "hidden");
   styleOpacity(0, "bkgrndImgInf", 0);
+  styleVisibility(0, "icnVsblty", "hidden");
+  styleOpacity(1000, "icnVsblty", 0);
   styleVisibility(1000, "bkgrndImgInf", "hidden");
   if (opB === "true") {
     styleVisibility(0, "options", "visible");
@@ -234,7 +236,7 @@ document.getElementById("opChngNme").addEventListener("click", function() {
 document.getElementById("opChngeDteFrmt").addEventListener("click", function() {
   clearMenu("true");
   styleVisibility(1000, "dteFom", "visible");
-  styleOpacity(1000, "dteFom", 1);
+  styleOpacity(1000, "dteFom", 0.9);
 }, false);
 document.getElementById("dteFomclose").addEventListener("click", function() {
   styleOpacity(0, "dteFom", 0);
