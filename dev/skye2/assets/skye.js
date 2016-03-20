@@ -72,6 +72,8 @@ var clearMenu = function(opB) {
   styleVisibility(1000, "bkgrndImgInf", "hidden");
   styleOpacity(0, "icnVsblty", 0);
   styleVisibility(1000, "icnVsblty", "hidden");
+  styleOpacity(0, "kybdCntrls", 0);
+  styleVisibility(1000, "kybdCntrls", "hidden");
   if (opB === "true") {
     styleVisibility(0, "options", "visible");
     styleOpacity(0, "options", 1);
@@ -322,7 +324,15 @@ document.getElementById("opWlcmMsgs").addEventListener("click", function() {
     styleOpacity(0, "alertBox", 1);
   };
 }, false);
-
+  // Keyboard controls menu
+document.getElementById("opKybdCntrls").addEventListener("click", function() {
+  clearMenu("true");
+  styleVisibility(1000, "kybdCntrls", "visible");
+  styleOpacity(1000, "kybdCntrls", 1);
+}, false);
+document.getElementById("kybdCntrlsclose").addEventListener("click", function() {
+  clearMenu("true");
+}, false);
 
 // Run when page finished loading
 window.onload = function() {
