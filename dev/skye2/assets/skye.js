@@ -69,9 +69,9 @@ var clearMenu = function(opB) {
   styleOpacity(0, "dteFom", 0);
   styleVisibility(1000, "dteFom", "hidden");
   styleOpacity(0, "bkgrndImgInf", 0);
-  styleVisibility(0, "icnVsblty", "hidden");
-  styleOpacity(1000, "icnVsblty", 0);
   styleVisibility(1000, "bkgrndImgInf", "hidden");
+  styleOpacity(0, "icnVsblty", 0);
+  styleVisibility(1000, "icnVsblty", "hidden");
   if (opB === "true") {
     styleVisibility(0, "options", "visible");
     styleOpacity(0, "options", 1);
@@ -180,6 +180,23 @@ function clock() {
   };
 };
 
+document.addEventListener("keydown", function(e) {
+  e = e || window.event;
+  if (e.keyCode === 27) {
+    clearMenu("true");
+  } else if (e.keyCode === 79) {
+    clearMenu("false");
+    styleVisibility(1000, "opM", "visible");
+    styleOpacity(1000, "opM", 0.9);
+  } else if (e.keyCode === 78) {
+    styleOpacity(0, "header", "0");
+    styleOpacity(1100, "header", "1");
+    setTimeout(function() {
+      setBack("random");
+    }, 1000);
+  };
+}, false);
+
 // Options button click
 document.getElementById("options").addEventListener("click", function() {
   clearMenu("false");
@@ -285,6 +302,27 @@ document.getElementById("opGSearch").addEventListener("click", function() {
     styleVisibility(0, "gSearchF", "visible");
   }
 }, false);
+  // Hide or show the welcome messages
+if (getCookie("opWlcmMsgs") === "") {
+  setCookie("opWlcmMsgs", "show", 365);
+  document.getElementById("opWlcmMsgs").innerHTML = "Hide the welcome message";
+} else if (getCookie("opWlcmMsgs") === "show") {
+  document.getElementById("opWlcmMsgs").innerHTML = "Hide the welcome message";
+} else {
+  document.getElementById("opWlcmMsgs").innerHTML = "Show the welcome message";
+};
+document.getElementById("opWlcmMsgs").addEventListener("click", function() {
+  if (getCookie("opWlcmMsgs") === "show") {
+    setCookie("opWlcmMsgs", "hide", 365);
+    document.getElementById("opWlcmMsgs").innerHTML = "Show the welcome message";
+    styleOpacity(0, "alertBox", 0);
+  } else {
+    setCookie("opWlcmMsgs", "show", 365);
+    document.getElementById("opWlcmMsgs").innerHTML = "Hide the welcome message";
+    styleOpacity(0, "alertBox", 1);
+  };
+}, false);
+
 
 // Run when page finished loading
 window.onload = function() {
@@ -294,7 +332,9 @@ window.onload = function() {
   styleOpacity(600, "title", 1);
   styleOpacity(800, "clockBox", 1);
   styleOpacity(1000, "dateBox", 1);
-  styleOpacity(1200, "alertBox", 1);
+  if (getCookie("opWlcmMsgs") === "show") {
+    styleOpacity(1200, "alertBox", 1);
+  };
   styleOpacity(1400, "linkDiv", 1);
   if (getCookie("opGSearch") === "show") {
     styleOpacity(1600, "gSearchF", 1);
