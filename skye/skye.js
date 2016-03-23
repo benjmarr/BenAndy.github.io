@@ -69,6 +69,12 @@ window.onload = function() {
 
 // Buttons
 if (main) {
+  // // Issues and suggestions
+  document.getElementById("button4").innerHTML = "Issues &amp; Suggestions";
+  document.getElementById("button4").addEventListener("click", function() {
+    window.open("https://github.com/BenAndy/SkyeNewTab/issues","_blank");
+  }, false);
+
   // // View on GitHub button
   document.getElementById("button3").innerHTML = "View Source on GitHub";
   document.getElementById("button3").addEventListener("click", function() {
