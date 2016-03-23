@@ -44,7 +44,6 @@ a:hover {
 .pageTitle {
   color: white;
   text-align: center;
-  margin-top: -2%;
   font-family: 'Titillium Web', sans-serif;
   opacity: 0;
   cursor: default;
