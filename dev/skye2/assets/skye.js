@@ -65,20 +65,20 @@ var styleBackgroundColor = function(delay, id, value) {
 // Clear menus
 var clearMenu = function(opB) {
   styleOpacity(0, "opM", 0);
-  styleVisibility(1000, "opM", "hidden");
+  styleVisibility(300, "opM", "hidden");
   styleOpacity(0, "dteFom", 0);
-  styleVisibility(1000, "dteFom", "hidden");
+  styleVisibility(300, "dteFom", "hidden");
   styleOpacity(0, "bkgrndImgInf", 0);
-  styleVisibility(1000, "bkgrndImgInf", "hidden");
+  styleVisibility(300, "bkgrndImgInf", "hidden");
   styleOpacity(0, "icnVsblty", 0);
-  styleVisibility(1000, "icnVsblty", "hidden");
+  styleVisibility(300, "icnVsblty", "hidden");
   styleOpacity(0, "kybdCntrls", 0);
-  styleVisibility(1000, "kybdCntrls", "hidden");
+  styleVisibility(300, "kybdCntrls", "hidden");
   if (opB === "true") {
     styleVisibility(0, "options", "visible");
     styleOpacity(0, "options", 1);
   } else {
-    styleVisibility(1000, "options", "hidden");
+    styleVisibility(300, "options", "hidden");
     styleOpacity(0, "options", 0);
   };
 };
@@ -202,8 +202,8 @@ document.addEventListener("keydown", function(e) {
 // Options button click
 document.getElementById("options").addEventListener("click", function() {
   clearMenu("false");
-  styleVisibility(1000, "opM", "visible");
-  styleOpacity(1000, "opM", 0.9);
+  styleVisibility(300, "opM", "visible");
+  styleOpacity(300, "opM", 0.9);
 }, false);
 
 // Options close
@@ -254,12 +254,12 @@ document.getElementById("opChngNme").addEventListener("click", function() {
   // Change the date format
 document.getElementById("opChngeDteFrmt").addEventListener("click", function() {
   clearMenu("true");
-  styleVisibility(1000, "dteFom", "visible");
-  styleOpacity(1000, "dteFom", 0.9);
+  styleVisibility(300, "dteFom", "visible");
+  styleOpacity(300, "dteFom", 0.9);
 }, false);
 document.getElementById("dteFomclose").addEventListener("click", function() {
   styleOpacity(0, "dteFom", 0);
-  styleVisibility(1000, "dteFom", 0);
+  styleVisibility(300, "dteFom", 0);
 }, false);
 if (getCookie("opDteFom") === "") {
   setCookie("opDteFom", 1, 365);
@@ -296,7 +296,7 @@ document.getElementById("opGSearch").addEventListener("click", function() {
     setCookie("opGSearch", "hide", 365);
     document.getElementById("opGSearch").innerHTML = "Show the Google Search box";
     styleOpacity(0, "gSearchF", 0);
-    styleVisibility(1000, "gSearchF", "hidden");
+    styleVisibility(300, "gSearchF", "hidden");
   } else {
     setCookie("opGSearch", "show", 365);
     document.getElementById("opGSearch").innerHTML = "Hide the Google search box";
@@ -327,8 +327,8 @@ document.getElementById("opWlcmMsgs").addEventListener("click", function() {
   // Keyboard controls menu
 document.getElementById("opKybdCntrls").addEventListener("click", function() {
   clearMenu("true");
-  styleVisibility(1000, "kybdCntrls", "visible");
-  styleOpacity(1000, "kybdCntrls", 1);
+  styleVisibility(300, "kybdCntrls", "visible");
+  styleOpacity(300, "kybdCntrls", 1);
 }, false);
 document.getElementById("kybdCntrlsclose").addEventListener("click", function() {
   clearMenu("true");

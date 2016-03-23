@@ -54,7 +54,7 @@ a:hover {
   width: 3%;
   opacity: 0;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: opacity 0.3s;
 }
 
 .unsplashCred {
@@ -137,7 +137,7 @@ a:hover {
 	max-width: 740px;
   color: white;
   position: absolute;
-  transition: opacity 1s;
+  transition: opacity 0.3s;
 }
 
 .opTtl {
