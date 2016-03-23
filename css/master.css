@@ -80,3 +80,35 @@ a {
   margin-top: 2%;
   transition: opacity 1s;
 }
+
+.privTtl {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 1%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.privMsg {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  margin-top: 3%;
+  cursor: default;
+}
+
+.privMsgTtl {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 300%;
+  margin-top: 1%;
+}
+
+#privMAIN {
+  opacity: 0;
+  transition: opacity 1s;
+}
