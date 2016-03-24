@@ -182,6 +182,7 @@ function clock() {
   };
 };
 
+// Keyboard shortcuts
 document.addEventListener("keydown", function(e) {
   e = e || window.event;
   if (e.keyCode === 27) {
@@ -239,14 +240,6 @@ document.getElementById("opAMPM").addEventListener("click", function() {
   };
 }, false);
 opAMPM("pageLoad");
-  // Change background image
-document.getElementById("opChBkImg").addEventListener("click", function() {
-  styleOpacity(0, "header", 0);
-  styleOpacity(1100, "header", "1");
-  setTimeout(function() {
-    setBack("random");
-  }, 1000);
-}, false);
   // Change your name
 document.getElementById("opChngNme").addEventListener("click", function() {
   retriveUserName();

@@ -28,13 +28,26 @@ var setBack = function(id) {
 
 // Five minute background change
 var newBackID;
-setInterval(function() {
+newBackTimer = setInterval(function() {
   styleOpacity(0, "header", "0");
   styleOpacity(1100, "header", "1");
   setTimeout(function() {
     setBack("random");
   }, 1000);
 }, 300000);
+
+// New background image option
+var opChBkImgFnctn = function() {
+  clearInterval(newBackTimer);
+  styleOpacity(0, "header", 0);
+  styleOpacity(1100, "header", "1");
+  setTimeout(function() {
+    setBack("random");
+  }, 1000);
+};
+document.getElementById("opChBkImg").addEventListener("click", function() {
+  opChBkImgFnctn();
+}, false);
 
 // Background image information menu
 var backImgInfo = function(imgUrl, imgAuth, imgAuthPro) {
