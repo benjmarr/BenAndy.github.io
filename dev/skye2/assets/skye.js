@@ -1,5 +1,5 @@
-// Copyright Benjamin (c) 2015 - All rights reserved
-console.log("Skye New Tab copyright Benjamin (c) 2015 - All rights reserved");
+// Copyright Benjamin Developments (c) 2015 - All rights reserved
+console.log("Skye New Tab copyright Benjamin Developments (c) 2015 - All rights reserved");
 console.log("skye.js loaded.");
 var rootUrl = "https://github.com/BenAndy/SkyeNewTab/tree/master";
 

@@ -1,4 +1,4 @@
-// Copyright Benjamin (c) 2015 - All rights reserved
+// Copyright Benjamin Developments (c) 2015 - All rights reserved
 console.log("links.js loaded.");
 
 if (getCookie("opIcnVsblty") === "") {

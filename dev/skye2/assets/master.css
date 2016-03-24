@@ -1,4 +1,4 @@
-/*Copyright Benjamin (c) 2015 - All rights reserved*/
+/*Copyright Benjamin Developments (c) 2015 - All rights reserved*/
 
 .titanic {
   float: none;
@@ -55,6 +55,12 @@ a:hover {
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.3s;
+}
+
+.optionsMenuFoot {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .unsplashCred {
