@@ -6,3 +6,6 @@ Implemented change log.
 v2.14.115:
 Changed menu animation time, menus now open faster.
 Fixed issue where "Skye New Tab" heading wasn't visible in some view ports.
+
+v2.14.116:
+Added footer for options menu and changed some of the information in the options menu.
