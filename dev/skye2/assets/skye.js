@@ -2,6 +2,7 @@
 console.log("Skye New Tab copyright Benjamin Developments (c) 2015 - All rights reserved");
 console.log("skye.js loaded.");
 var rootUrl = "https://github.com/BenAndy/SkyeNewTab/tree/master";
+var ckiUpdDte = "March 25, 2016";
 
 // Cookie handlers
 function setCookie(cname, cvalue, exdays) {
@@ -74,6 +75,8 @@ var clearMenu = function(opB) {
   styleVisibility(300, "icnVsblty", "hidden");
   styleOpacity(0, "kybdCntrls", 0);
   styleVisibility(300, "kybdCntrls", "hidden");
+  styleOpacity(0, "ckiUpd", 0);
+  styleVisibility(300, "ckiUpd", "hidden");
   if (opB === "true") {
     styleVisibility(0, "options", "visible");
     styleOpacity(0, "options", 1);
@@ -82,6 +85,22 @@ var clearMenu = function(opB) {
     styleOpacity(0, "options", 0);
   };
 };
+
+// Cookie update alerts
+if (getCookie("ckiUpd") === "") {
+  setCookie("ckiUpd", "January 1, 1970", 365);
+};
+if (getCookie("ckiUpd") === ckiUpdDte) {
+  console.log("Cookes last updated on " + ckiUpdDte);
+} else {
+  setCookie("ckiUpd", ckiUpdDte, 365);
+  styleVisibility(0, "ckiUpd", "visible");
+  styleOpacity(0, "ckiUpd", 0.9);
+  document.getElementById("ckiUpdMsg").innerHTML = "New cookies have been added since you last visited Skye. Cookies were last updated on " + ckiUpdDte + ". You can view our cookie and privacy policy below.";
+};
+document.getElementById("ckiUpdclose").addEventListener("click", function() {
+  clearMenu("true");
+}, false);
 
 // Get name
 var retriveUserName = function() {
