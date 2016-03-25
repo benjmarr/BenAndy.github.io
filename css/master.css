@@ -108,6 +108,15 @@ a {
   margin-top: 1%;
 }
 
+.privMsgBull {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: -3%;
+  text-align: left;
+}
+
 #privMAIN {
   opacity: 0;
   transition: opacity 1s;
