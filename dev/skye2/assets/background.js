@@ -3,7 +3,7 @@
 console.log("background.js loaded.");
 
 // Random background selection script
-var backgroundNames = Array(61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 52, 53, 54, 55, 56, 57, 58, 59, 60);
+var backgroundNames = Array(61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 54, 55, 56, 57, 58, 59, 60);
 var imageUpdateDate = "Sunday, 21<sup>st</sup> February 2016";
 var backgroundNumber = function() {
   return backgroundNames[Math.floor(Math.random() * backgroundNames.length)];
@@ -88,10 +88,10 @@ var backImageData = function() {
     backImgInfo("https://unsplash.com/photos/mWRR1xj95hg", "Christian Joudrey", "https://unsplash.com/cjoudrey");
   } else if (setBackID === 71) {
     backImgInfo("https://unsplash.com/photos/yEOCA6oiVqg", "Tim Marshall", "https://unsplash.com/timmarshall");
-  } else if (setBackID === 52) {
-    backImgInfo("https://unsplash.com/photos/4jcFu1byopQ", "Davide Ragusa", "https://unsplash.com/davideragusa");
-  } else if (setBackID === 53) {
-    backImgInfo("https://unsplash.com/photos/GYumuBnTqKc", "E+N Photographies", "https://unsplash.com/nicomiot");
+  } else if (setBackID === 72) {
+    backImgInfo("https://unsplash.com/photos/HkTMcmlMOUQ", "Ales Krivec", "https://unsplash.com/aleskrivec");
+  } else if (setBackID === 73) {
+    backImgInfo("https://unsplash.com/photos/xcC5ozHk_N8", "Joseph Barrientos", "https://unsplash.com/thata7guy");
   } else if (setBackID === 54) {
     backImgInfo("https://unsplash.com/photos/6-jTZysYY_U", "NASA", "https://unsplash.com/nasa");
   } else if (setBackID === 55) {
