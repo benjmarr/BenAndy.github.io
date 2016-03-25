@@ -104,6 +104,7 @@ var nday;
 var nmonth;
 var ndate;
 var strdndth;
+var hourtf;
 var tday = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var tmonth = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 setInterval(clock, 100);
@@ -166,11 +167,30 @@ function clock() {
       }
     };
   };
-  if (getCookie("opAMPM") === "show") {
-    document.getElementById("clockBox").innerHTML = nhour + ":" + nmin + ap;
+  if (getCookie("opTwntyFrHrTm") === "24") {
+    hourtf = nhour + 12;
+    if  (nhour < 12) {
+      if (getCookie("opAMPM") === "show") {
+        document.getElementById("clockBox").innerHTML = hourtf + ":" + nmin + ap;
+      } else {
+        document.getElementById("clockBox").innerHTML = hourtf + ":" + nmin;
+      };
+    } else {
+      if (getCookie("opAMPM") === "show") {
+        document.getElementById("clockBox").innerHTML = hourtf + ":" + nmin + ap;
+      } else {
+        document.getElementById("clockBox").innerHTML = hourtf + ":" + nmin;
+      };
+    };
   } else {
-    document.getElementById("clockBox").innerHTML = nhour + ":" + nmin;
+    if (getCookie("opAMPM") === "show") {
+      document.getElementById("clockBox").innerHTML = nhour + ":" + nmin + ap;
+    } else {
+      document.getElementById("clockBox").innerHTML = nhour + ":" + nmin;
+    };
   };
+
+
   if (getCookie("opDteFom") === "1") {
     document.getElementById("dateBox").innerHTML = tday[nday] + ", " + tmonth[nmonth] + " " + ndate + "<sup>" + strdndth + "</sup>";
   } else if (getCookie("opDteFom") === "2") {
@@ -325,6 +345,26 @@ document.getElementById("opKybdCntrls").addEventListener("click", function() {
 }, false);
 document.getElementById("kybdCntrlsclose").addEventListener("click", function() {
   clearMenu("true");
+}, false);
+  // 24 hour time option
+if (getCookie("opTwntyFrHrTm") === "") {
+  setCookie("opTwntyFrHrTm", "12", 365);
+  document.getElementById("opTwntyFrHrTm").innerHTML = "Change to 24 hour time";
+} else if (getCookie("opTwntyFrHrTm") === "12") {
+  setCookie("opTwntyFrHrTm", "12", 365);
+  document.getElementById("opTwntyFrHrTm").innerHTML = "Change to 24 hour time";
+} else {
+  setCookie("opTwntyFrHrTm", "24", 365);
+  document.getElementById("opTwntyFrHrTm").innerHTML = "Change to 12 hour time";
+};
+document.getElementById("opTwntyFrHrTm").addEventListener("click", function() {
+  if (getCookie("opTwntyFrHrTm") === "12") {
+    setCookie("opTwntyFrHrTm", "24", 365);
+    document.getElementById("opTwntyFrHrTm").innerHTML = "Change to 12 hour time";
+  } else {
+    setCookie("opTwntyFrHrTm", "12", 365);
+    document.getElementById("opTwntyFrHrTm").innerHTML = "Change to 24 hour time";
+  };
 }, false);
 
 // Run when page finished loading
