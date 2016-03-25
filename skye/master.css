@@ -57,7 +57,7 @@ header {
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
-  transition: opacity 1s;
+  transition: opacity 1s, transform 600ms;
 }
 
 #nav {
@@ -77,6 +77,14 @@ header {
   background-color: #453F3F;
   font-size: 150%;
   font-family: 'Titillium Web', sans-serif;
+}
+
+button {
+  transition: transform 600ms;
+}
+
+button:hover {
+  transform: scale(0.95);
 }
 
 .welcomeText {
