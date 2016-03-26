@@ -80,6 +80,9 @@ var homePageLoad = function() {
         document.getElementById("subTitleBox").style.fontSize = "130%";
         setTimeout(function() {
           document.getElementById("navBox").style.opacity = "1";
+          setTimeout(function() {
+            document.getElementById("ftr").style.opacity = "0.8";
+          }, 500);
         }, 200);
       }, 300);
     }, 1000);
@@ -107,6 +110,9 @@ var page404setUp = function() {
           document.getElementById("title").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("msg").style.opacity = "1";
+            setTimeout(function() {
+              document.getElementById("ftr").style.opacity = "0.8";
+            }, 500);
           }, 300);
         }, 300);
       }, 300);
@@ -135,6 +141,9 @@ var privacySetup = function() {
           document.getElementById("title").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("privMAIN").style.opacity = "1";
+            setTimeout(function() {
+              document.getElementById("ftr").style.opacity = "0.8";
+            }, 500);
           }, 300);
         }, 300);
       }, 300);
