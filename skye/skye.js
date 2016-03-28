@@ -53,14 +53,16 @@ window.onload = function() {
       document.getElementById("titleLogo").style.visibility = "visible";
       document.getElementById("titleLogo").style.opacity = "1";
       setTimeout(function() {
-        document.getElementById("welTxt").style.opacity = "1";
         if (main) {
+          document.getElementById("welTxt").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("install").style.opacity = "1";
             setTimeout(function() {
               document.getElementById("nav").style.opacity = "1";
             }, 500);
           }, 500);
+        } else if (faq) {
+          document.getElementById("faqTtl").style.opacity = "1";
         };
       }, 500);
     }, 1000);

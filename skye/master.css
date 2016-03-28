@@ -98,3 +98,10 @@ button:hover {
   cursor: default;
   transition: opacity 1s;
 }
+
+.faqTtl {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
