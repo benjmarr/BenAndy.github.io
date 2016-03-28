@@ -27,3 +27,6 @@ Added new background images.
 
 v2.14.122:
 Changed the old cookie policy link (http://benandy.github.io/skye/cookiepolicy) to the new cookie policy link (http://benandy.github.io/cookie).
+
+v2.14.123:
+Fixed small issue where the second date formatting option was missing a space between the month and the date values.

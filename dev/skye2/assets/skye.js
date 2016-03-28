@@ -213,7 +213,7 @@ function clock() {
   if (getCookie("opDteFom") === "1") {
     document.getElementById("dateBox").innerHTML = tday[nday] + ", " + tmonth[nmonth] + " " + ndate + "<sup>" + strdndth + "</sup>";
   } else if (getCookie("opDteFom") === "2") {
-    document.getElementById("dateBox").innerHTML = tmonth[nmonth] + ndate + "<sup>" + strdndth + "</sup>";
+    document.getElementById("dateBox").innerHTML = tmonth[nmonth] + " " + ndate + "<sup>" + strdndth + "</sup>";
   } else if (getCookie("opDteFom") === "3") {
     document.getElementById("dateBox").innerHTML = tday[nday] + ", " + ndate + " " + tmonth[nmonth];
   } else if (getCookie("opDteFom") === "4") {
