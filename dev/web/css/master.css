@@ -1,0 +1,151 @@
+/*Copyright Benjamin (c) 2015 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+header {
+  background: url('https://source.unsplash.com/user/ben_andy');
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+body {
+  -webkit-user-select: none;
+}
+
+#loadImg {
+  margin-top: 20%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.title {
+  opacity: 0;
+  text-align: center;
+  font-size: 100%;
+  margin-top: -2%;
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  transition: opacity 1s, font-size 1s;
+}
+
+.titleSub {
+  opacity: 0;
+  cursor: default;
+  text-align: center;
+  margin-left: 19%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 90%;
+  margin-top: -2%;
+  transition: opacity 1s, font-size 1s;
+}
+
+.navBoxes {
+  opacity: 0;
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  transition: opacity 1s;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.title404 {
+  cursor: default;
+  opacity: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 10%;
+  transition: opacity 1s;
+}
+
+.msg404 {
+  cursor: default;
+  opacity: 0;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 250%;
+  margin-top: 2%;
+  transition: opacity 1s;
+}
+
+.privTtl {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 1%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.privMsg {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  margin-top: 3%;
+  cursor: default;
+}
+
+.privMsgTtl {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 300%;
+  margin-top: 1%;
+}
+
+.privMsgBull {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: -3%;
+  text-align: left;
+}
+
+#privMAIN {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.footer {
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  text-align: center;
+  margin-top: 3%;
+  transition: opacity 2s;
+}
+
+.devIntro {
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  text-align: center;
+  margin-top: 3%;
+  transition: opacity 2s;
+}
+
+.devIntro {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 1%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#formArea {
+  visibility: hidden;
+}
