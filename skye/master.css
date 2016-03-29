@@ -103,5 +103,31 @@ button:hover {
   font-family: 'Titillium Web', sans-serif;
   text-align: center;
   opacity: 0;
+  font-size: 300%;
+  transition: opacity 1s;
+}
+
+.faqInt {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.faqQ {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 200%;
+  margin-left: 1%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.faqA {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+}
+
+.faqS {
+  opacity: 0;
   transition: opacity 1s;
 }

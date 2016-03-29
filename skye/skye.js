@@ -63,6 +63,12 @@ window.onload = function() {
           }, 500);
         } else if (faq) {
           document.getElementById("faqTtl").style.opacity = "1";
+          setTimeout(function() {
+            document.getElementById("faqIntro").style.opacity = "1";
+            setTimeout(function() {
+              document.getElementById("faqSection").style.opacity = "1";
+            }, 500);
+          }, 500);
         };
       }, 500);
     }, 1000);
@@ -71,6 +77,12 @@ window.onload = function() {
 
 // Buttons
 if (main) {
+  // // FAQ
+  document.getElementById("button5").innerHTML = "FAQ";
+  document.getElementById("button5").addEventListener("click", function() {
+    window.open("http://benandy.github.io/skye/faq");
+  }, false);
+
   // // Issues and suggestions
   document.getElementById("button4").innerHTML = "Issues &amp; Suggestions";
   document.getElementById("button4").addEventListener("click", function() {
