@@ -54,6 +54,7 @@ window.onload = function() {
       document.getElementById("titleLogo").style.opacity = "1";
       setTimeout(function() {
         if (main) {
+          document.getElementById("ftr").style.opacity = "1";
           document.getElementById("welTxt").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("install").style.opacity = "1";
@@ -62,6 +63,7 @@ window.onload = function() {
             }, 500);
           }, 500);
         } else if (faq) {
+          document.getElementById("ftr").style.opacity = "1";
           document.getElementById("faqTtl").style.opacity = "1";
           setTimeout(function() {
             document.getElementById("faqIntro").style.opacity = "1";
