@@ -7,3 +7,4 @@ var homeSetup = false;
 var page404 = false;
 var privacyPage = false;
 var dev = false;
+var navBar = false;

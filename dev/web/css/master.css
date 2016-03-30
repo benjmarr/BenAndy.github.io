@@ -149,3 +149,12 @@ a {
 #formArea {
   visibility: hidden;
 }
+
+.navBar {
+  cursor: default;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 1%;
+  opacity: 0;
+  transition: opacity 1s;
+  text-align: center;
+}

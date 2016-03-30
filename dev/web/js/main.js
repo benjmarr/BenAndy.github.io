@@ -63,6 +63,12 @@ window.onload = function() {
   if (dev) {
     devSetup();
   };
+
+  if (navBar) {
+    setTimeout(function() {
+      document.getElementById("nvBr").style.opacity = "1";
+    }, 1500);
+  };
 };
 
 // Home page setup
@@ -189,4 +195,11 @@ var devSetup = function() {
   } else {
     document.getElementById("devYesNo").innerHTML = "not developing websites. Please come back later to see what's happening!";
   };
+};
+
+// Nav bar build
+if (navBar) {
+  var navDataNAME = ["Home", "Skye New Tab", "Development Services"];
+  var navDataURLS = ["http://benandy.github.io", "http://benandy.github.io/skye", "http://benandy.github.io/development"];
+  document.getElementById("nvBr").innerHTML = "<a href='" + navDataURLS[0] + "'>" + navDataNAME[0] + "</a> - <a href='" + navDataURLS[1] + "'>" + navDataNAME[1] + "</a> - <a href='" + navDataURLS[2] + "'>" + navDataNAME[2] + "</a>";
 };
