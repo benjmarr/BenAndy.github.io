@@ -113,7 +113,6 @@ a {
   font-family: 'Titillium Web', sans-serif;
   margin-top: 1%;
   margin-bottom: 1%;
-  margin-left: -3%;
   text-align: left;
 }
 
@@ -147,7 +146,9 @@ a {
 }
 
 #formArea {
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s;
 }
 
 .navBar {
@@ -157,4 +158,56 @@ a {
   opacity: 0;
   transition: opacity 1s;
   text-align: center;
+}
+
+.devForm {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.8em;
+  width: 30em;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.devForm * {
+  box-sizing: border-box;
+}
+
+.devForm label {
+  padding: 0;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.devForm input,
+.devForm select,
+.devForm textarea {
+  width: 20em;
+  border: 1px solid #ccc;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 0.9em;
+  padding: 0.3em;
+}
+
+.devForm textarea {
+  height: 100px;
+}
+
+.devForm button {
+  padding: 1em;
+  border-radius: 0.5em;
+  background: #eee;
+  border: none;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.myForm button:hover {
+  background: #ccc;
+  cursor: pointer;
 }

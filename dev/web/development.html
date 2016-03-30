@@ -19,12 +19,73 @@
     <div class="privTtl" id="title">
       Web Development Services
     </div>
+    <div class="devIntro" id="dvDsc">
+      Benjamin Developments offers custom web development services. If you wish to build a website which perfectly matches your business goals and individual preferences, we can do it for you!
+      <br /><br />
+      For each individual project we put the customer in the center of the development process. Whether you have a brief idea of your future website or a detailed specification, we will apply our technical expertise and help you to bring it to life. You will be able to see results quickly and adjust your requierments on teh go.
+      <br />
+      <h2><strong>We build a veriety of websites</strong><br />In particular;</h2>
+      <div class="privMsgBull">
+        &bull; <strong>Real estate.</strong> Tools for home owners, buyers and tenants, as well as systems for agents and brokers.
+        <br />&bull; <strong>Education.</strong> Learning and testing process automation, students databses, personal assessment, interactive textbooks.
+        <br />&bull; <strong>Marketing and advertising.</strong> Marketing automation tools, classified ads, affiliate and referral systems.
+        <br />&bull; <strong>E-commerce.</strong> Online marketplace, auctions and group buying websites. Payment gateway integration, billing systems, multi-currency transactions, recurring payments, accounting and reporting tools.
+        <br />&bull; <strong>Health care.</strong> HIPAA-compliant systems for ambulance, home care, skilled nursing facilities, assisted living facilities and plastic surgery clinics.
+      </div>
+    </div>
     <div class="devIntro" id="dvInt">
       Benjamin Developments is currently <span id="devYesNo"></span>
     </div>
-    <span id="formArea">
+    <div id="formArea">
+      <form class="devForm" method="get">
+        <p>
+          <label>Full name<br />
+            <input type="text" name="fullName" required />
+          </label>
+        </p><br />
 
-    </span>
+        <p>
+          <label>Email address<br />
+            <input type="text" name="fullName" required />
+          </label>
+        </p><br />
+
+        <p>
+          <label>Budget range<br />
+            <select name="budgetRange">
+              <option value="" selected="selected">Select One</option>
+              <option value="less100">< $100</option>
+              <option value="100t300">$100 - $300</option>
+              <option value="300t500">$300 - $500</option>
+              <option value="500t1000">$500 - $1000</option>
+              <option value="1000t2000">$1000 - $2000</option>
+              <option value="more2000">> $2000</option>
+            </select>
+          </label>
+        </p><br />
+
+        <p>
+          <label>Do you have design sketches?<br />
+            <select name="designSketches">
+              <option value="" selected="selected">Select One</option>
+              <option value="less100">Yes</option>
+              <option value="100t300">No</option>
+            </select>
+          </label><br />
+        </p>
+
+        <p>
+          <label>Message<br />
+            <textarea name="msg" maxlength="2000"></textarea>
+          </label>
+        </p><br />
+
+        <!-- Submit -->
+        <p>
+          <button>Submit</button>
+        </p>
+      </form>
+    </div>
     <div class="footer" id="ftr">
       <a href="http://benandy.github.io/privacy">Privacy Policy</a> - <a href="http://benandy.github.io/cookie">Cookie Policy</a>
       <br />

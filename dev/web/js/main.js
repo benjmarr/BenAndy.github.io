@@ -183,6 +183,13 @@ var devSetup = function() {
           setTimeout(function() {
             document.getElementById("dvInt").style.opacity = "1";
             document.getElementById("ftr").style.opacity = "0.8";
+            setTimeout(function() {
+              if (developing) {
+                document.getElementById("formArea").style.visibility = "visible";
+                document.getElementById("formArea").style.opacity = "1";
+                document.getElementById("dvDsc").style.opacity = "1";
+              };
+            }, 300);
           }, 300);
         }, 300);
       }, 300);
@@ -190,9 +197,11 @@ var devSetup = function() {
   }, 500);
 
   if (developing) {
-    document.getElementById("formArea").style.visibility = "visible";
-    document.getElementById("devYesNo").innerHTML = "developing websites.<br />If you're interested in getting your website developed with Benjamin Developments, fill out the form below.<br /><br />Please note; Benjamin Developments is a web development service not a web designer service. We will need design sketches to develop your website off. You can create your own and send them to us or get a professional web designer to design for you.";
+    document.getElementById("devYesNo").innerHTML = "developing websites.<br /><br />Please note; Benjamin Developments is a web development service not a web designer service. We will need design sketches to develop your website off. You can create your own and send them to us or get a professional web designer to design for you.<br /><br />If you're interested in having your website developed by Benjamin Developments, contact us below!";
   } else {
+    document.getElementById("formArea").innerHTML = "<br /><br /><br /><br />";
+    document.getElementById("dvDsc").style.visibility = "hidden";
+    document.getElementById("dvDsc").innerHTML = "<br />";
     document.getElementById("devYesNo").innerHTML = "not developing websites. Please come back later to see what's happening!";
   };
 };
