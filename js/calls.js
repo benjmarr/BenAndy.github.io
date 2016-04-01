@@ -1,6 +1,6 @@
 // Copyright Benjamin (c) 2016 - All rights reserved
 
-var developing = false;
+var developing = true;
 
 var loadSpin = false;
 var homeSetup = false;
