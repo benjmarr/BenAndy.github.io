@@ -163,6 +163,10 @@ var privacySetup = function() {
 
 // Development services page setup
 var devSetup = function() {
+  document.getElementById("submitDev").addEventListener("click", function() {
+    alert("Thanks for contacting us, we'll get back to you shortly!");
+    window.location = "http://benandy.github.io";
+  }, false);
   setTimeout(function() {
     document.getElementById("loadImg").style.opacity = "0";
     setTimeout(function() {
