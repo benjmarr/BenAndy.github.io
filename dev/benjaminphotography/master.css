@@ -1,0 +1,32 @@
+/*Copyright Benjamin Developments (c) 2016 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  -webkit-user-select: none;
+}
+
+#loadImg {
+  margin-top: 20%;
+  opacity: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 1s;
+}
+
+header {
+  background: url('https://source.unsplash.com/user/ben_andy');
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s;
+}
