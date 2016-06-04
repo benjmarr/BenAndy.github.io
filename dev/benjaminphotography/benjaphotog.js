@@ -37,5 +37,8 @@ window.onload = function() {
     document.getElementById("loadImg").style.width = "0%";
     document.getElementById("loadImg").style.marginTop = "0%";
     document.getElementById("header").style.opacity = "0.7";
+    setTimeout(function() {
+      document.getElementById("title").style.opacity = "1";
+    }, 500);
   }, 1000);
 };

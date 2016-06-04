@@ -30,3 +30,7 @@ header {
   opacity: 0;
   transition: opacity 1s;
 }
+
+#title {
+  opacity: 0;
+}
