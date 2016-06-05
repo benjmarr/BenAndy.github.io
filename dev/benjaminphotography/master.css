@@ -17,6 +17,11 @@ body {
   transition: opacity 1s;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 header {
   background: url('https://source.unsplash.com/user/ben_andy');
   height: 100vh;
@@ -31,6 +36,27 @@ header {
   transition: opacity 1s;
 }
 
-#title {
+.title {
+  font-family: 'Lobster', cursive;
+  text-align: center;
   opacity: 0;
+  font-size: 350%;
+  transition: opacity 1s;
+}
+
+.navigationBar {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  opacity: 0;
+  padding-top: 1%;
+  font-size: 200%;
+  transition: opacity 1s;
+}
+
+.footer {
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  text-align: center;
+  margin-top: 3%;
+  transition: opacity 2s;
 }
