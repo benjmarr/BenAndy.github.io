@@ -3,4 +3,5 @@ Atom Configuration:
   - UI Theme: One Dark
   - Syntax Theme: Atom Gooey
 - Packages v
-  - Minimap
+  - minimap (Enabled)
+  - activate-power-mode (Disabled)
