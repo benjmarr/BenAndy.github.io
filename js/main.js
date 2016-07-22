@@ -206,7 +206,7 @@ var devSetup = function() {
     document.getElementById("formArea").innerHTML = "<br /><br /><br /><br />";
     document.getElementById("dvDsc").style.visibility = "hidden";
     document.getElementById("dvDsc").innerHTML = "<br />";
-    document.getElementById("devYesNo").innerHTML = "not developing websites. Please come back later to see what's happening!";
+    document.getElementById("devYesNo").innerHTML = "not developing websites. Please come back later to see what's happening!<br /><br />Please note; Benjamin Developments is a web development service not a web designer service. We will need design sketches to develop your website off. You can create your own and send them to us or get a professional web designer to design for you.";
   };
 };
 

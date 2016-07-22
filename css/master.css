@@ -45,7 +45,6 @@ body {
   margin-left: 19%;
   font-family: 'Titillium Web', sans-serif;
   font-size: 90%;
-  margin-top: -2%;
   transition: opacity 1s, font-size 1s;
 }
 
