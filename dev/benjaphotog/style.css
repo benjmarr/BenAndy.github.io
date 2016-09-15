@@ -1,0 +1,20 @@
+/*Copyright Benjamin Developments (c) 2016 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+/*Title*/
+.title {
+  font-size: 150%;
+  text-align: center;
+}
+
+/*Navigation bar*/
+.navBar {
+  text-align: center;
+}
+
+.navOption {
+
+}
