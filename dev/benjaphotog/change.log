@@ -1,3 +1,11 @@
+1.0.1 Beta 3:
+Added title and navigation bar fade-in animations.
+Added background images from source.unsplash.com/user/ben_andy.
+Added loading image when page is first opened.
+Added redirect links to the navigation bar.
+Added font styles.
+Changed cursors.
+
 1.0.1 Beta 2:
 Added some functionality to the navigation bar.
 Added "calls.js" to ID pages.
