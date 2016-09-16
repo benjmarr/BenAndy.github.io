@@ -1,6 +1,6 @@
 // Copyright Benjamin Developments (c) 2016 - All rights reserved
 
-var appVersion = "1.0.1 Beta 3";
+var appVersion = "1.0.1 Beta 4";
 console.log("Benjamin Photography version " + appVersion);
 
 // Loading animations
@@ -57,5 +57,10 @@ if (mainIndex) {
   // Facebook
   document.getElementById("navOptionFacebook").addEventListener("click", function() {
     window.open("https://www.facebook.com/BenjaPhotog/", "_blank");
+  }, false);
+
+  // About
+  document.getElementById("navOptionAbout").addEventListener("click", function() {
+    // about redirect
   }, false);
 };
