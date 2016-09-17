@@ -1,3 +1,12 @@
+1.0.1 Beta 5:
+Added navigation bar setup to "benjaphotog.js".
+Added navigation redirect to "about.html".
+Placed header items on the "About" page.
+Added "about.html".
+Added title redirect.
+Changed cursor type over title.
+Other minor changes.
+
 1.0.1 Beta 4:
 Added "About" to navigation bar.
 Added spacing between the page title and the navigation bar.

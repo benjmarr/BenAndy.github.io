@@ -2,3 +2,4 @@
 
 // Page identifiers
 var mainIndex;
+var aboutPage;

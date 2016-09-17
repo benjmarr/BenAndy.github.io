@@ -1,6 +1,6 @@
 // Copyright Benjamin Developments (c) 2016 - All rights reserved
 
-var appVersion = "1.0.1 Beta 4";
+var appVersion = "1.0.1 Beta 5";
 console.log("Benjamin Photography version " + appVersion);
 
 // Loading animations
@@ -37,8 +37,15 @@ window.onload = function() {
   }, 100);
 };
 
-// Navigation bar
-if (mainIndex) {
+// Navigation bar & title
+if (mainIndex || aboutPage) {
+  // Make navigation bar & title
+  document.getElementById("title").innerHTML = "Benjamin Photography";
+  document.getElementById("navigationBar").innerHTML = "<span id='navOptionMyPhotos' class='navOption'>My Photos</span> - <span id='navOptionUnsplash' class='navOption'>Unsplash</span> - <span id='navOptionContact' class='navOption'>Contact</span> - <span id='navOptionFacebook' class='navOption'>Facebook</span> - <span id='navOptionAbout' class='navOption'>About</span>";
+  // Title
+  document.getElementById("title").addEventListener("click", function() {
+    window.location = "index.html";
+  }, false);
   // My Photos
   document.getElementById("navOptionMyPhotos").addEventListener("click", function() {
     // my photos page redirect
@@ -61,6 +68,6 @@ if (mainIndex) {
 
   // About
   document.getElementById("navOptionAbout").addEventListener("click", function() {
-    // about redirect
+    window.location = "about.html";
   }, false);
 };

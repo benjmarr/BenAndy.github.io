@@ -31,7 +31,7 @@ header {
   font-size: 150%;
   text-align: center;
   font-family: 'Muli', sans-serif;
-  cursor: default;
+  cursor: pointer;
   opacity: 0;
   padding-bottom: 0.5%;
   transition: opacity 1s;
