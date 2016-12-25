@@ -4,11 +4,8 @@
   float: none;
 }
 
-html, body {
+body {
   background-color: #FFFFFF;
-  margin-top: 0;
-  height: 100%;
-  width: 100%;
   transition: background-color 0.5s;
 }
 

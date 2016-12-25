@@ -14,4 +14,4 @@ window.onload = function() {
       }, 300);
     }, 300);
   }, 200);
-}
+};
