@@ -31,7 +31,7 @@ a:hover {
   font-family: 'Flamenco', cursive;
   text-align: center;
   font-size: 150%;
-  margin-top: 20%;
+  margin-top: 10%;
   opacity: 0;
   transition: opacity 0.6s;
 }
@@ -40,7 +40,7 @@ a:hover {
   font-family: 'Flamenco', cursive;
   text-align: center;
   font-size: 50%;
-  margin-top: 10%;
+  margin-top: 7%;
   opacity: 0;
   transition: opacity 0.6s, font-size 0.5s;
 }
