@@ -1,0 +1,46 @@
+/*Copyright Benjamin Developments (c) 2016-2017 - All rights reserved*/
+
+.titanic {
+  float: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  transition: background-color 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 3%;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.text {
+  font-family: 'Flamenco', cursive;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 20%;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.download {
+  font-family: 'Flamenco', cursive;
+  text-align: center;
+  font-size: 50%;
+  margin-top: 10%;
+  opacity: 0;
+  transition: opacity 0.6s, font-size 0.5s;
+}
