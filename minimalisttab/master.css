@@ -12,10 +12,25 @@ body {
 a {
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
-a:hover {
+a::before {
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  transition: left 1000ms ease, right 1000ms ease;
+  content: "";
+}
+
+a:hover::before {
   text-decoration: underline;
+  content: "";
+  left: 0;
+  right: 0;
 }
 
 .title {
