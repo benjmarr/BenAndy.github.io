@@ -1,4 +1,4 @@
-/*Copyright Benjamin (c) 2016 - All rights reserved*/
+/*Copyright Benjamin Developments (c) 2017 - All rights reserved*/
 
 .titanic {
   float: none;
@@ -6,7 +6,8 @@
 
 body {
   -webkit-user-select: none;
-  transition: background-color 1s;
+  opacity: 0;
+  transition: opacity 1s, background-color 0.5s;
 }
 
 .title {
@@ -15,7 +16,7 @@ body {
   cursor: default;
   font-family: 'Pacifico', cursive;
   font-size: 300%;
-  transition: color 1s;
+  color: #FFFFFF;
 }
 
 .list {
@@ -26,5 +27,5 @@ body {
   font-size: 120%;
   cursor: default;
   font-family: 'Montserrat', sans-serif;
-  transition: color 1s;
+  color: #FFFFFF;
 }
