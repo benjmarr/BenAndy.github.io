@@ -4,9 +4,17 @@
   float: none;
 }
 
-.title {
+body {
+  font-family: 'Lato', sans-serif;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+}
+
+.main {
   margin-top: 6%;
   font-size: 250%;
+}
+
+.highscore {
+  margin-top: 3%;
+  font-size: 150%;
 }
