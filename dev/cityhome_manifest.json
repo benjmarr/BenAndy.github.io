@@ -1,0 +1,21 @@
+{
+  "version": "1.0.1",
+  "name": "City Home",
+  "short_name": "City Home",
+  "description": ">>ADD EXTENSION DISCRIPTION HERE<<",
+  "manifest_version": 2,
+  "author": "calebs2500",
+  "offline_enabled": true if works offline, otherwise false. Dont enclose boolean in speechmarks
+  "homepage_url": "Page for your extenion like 'ayy download here'. like advertisement page",
+  "incognito": "split",
+  "icons": {
+    https://developer.chrome.com/extensions/manifest/icons
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "cookies",
+    "unlimitedStorage",
+  ]
+}
