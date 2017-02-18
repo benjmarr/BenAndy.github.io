@@ -1,5 +1,4 @@
 // Copyright Benjamin Developments (c) 2017 - All rights reserved
-console.log("js start");
 var rl = "https://github.com/BenAndy/SkyeNewTab/tree/master";
 var cud = "February 18th, 2017";
 
@@ -91,7 +90,7 @@ var cn = function(x) {
   if (x) {
     setTimeout(function() {
       document.getElementById("mom").style.visibility = "visible";
-      document.getElementById("mom").style.opacity = 1;
+      document.getElementById("mom").style.opacity = 0.8;
       document.getElementById("o").style.opacity = 0;
       setTimeout(function() {
         document.getElementById("o").style.visibility = "hidden";
@@ -125,13 +124,13 @@ document.getElementById("gs").addEventListener("click", function() {
 }, false);
     // Toggle 24 hour time
 if (gc("otht") === "") {
-  sc("ogs", "12", 99*99);
+  sc("otht", "12", 99*99);
 };
 document.getElementById("tht").addEventListener("click", function() {
-  if (gc("otht") === "12") {
-    gc("otht", "24", 99*99);
+  if (gc("otht") === "24") {
+    gc("otht", "12", 99*99);
   } else {
-    get("otht", "12", 99*99);
+    gc("otht", "24", 99*99);
   };
 }, false);
     // Toggle AM/PM visibility
@@ -238,7 +237,7 @@ function c() {
     if (gc("oap") === "v") {
       document.getElementById("cb").innerHTML = nh + ":" + nmm + ap;
     } else {
-      document.getElementById("cb").innerHTML = mh + ":" + nmm;
+      document.getElementById("cb").innerHTML = nh + ":" + nmm;
     };
   };
   if (gc("dfo") === "0") {
@@ -286,5 +285,3 @@ _gaq.push(['_trackPageview']);
   ga.src = 'https://ssl.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-
-console.log("js end");
