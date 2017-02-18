@@ -33,6 +33,16 @@ retriveUserName = rum
 userName = n
 alertBox = ab
 opTwntyFrHrTm = tht
+opAMPM = ap
+mainDate = md
+dateBox = db
+opChngeDteFrmt = df
+dteFom = dfm
+opDteFom1 = dfo0
+opDteFom2 = dfo1
+opDteFom3 = dfo2
+opDteFom4 = dfo3
+opDteFom = dfo
 
 TO CLOSE ANY MENU = cn
 
