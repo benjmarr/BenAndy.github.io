@@ -36,20 +36,29 @@ if (document.addEventListener) {
   });
 };
 
-// Close menus
-var cm = function(x) {
-
+// Get name
+var rum = function() {
+  var pn = prompt("What would you like to be called? You can change your name later in the options menu if need be. If you don't wish to have your name displayed, just press [ENTER].", "Your name");
+  if (pn === "Your name" || pn === "" || pn === null) {
+    sc("n", "false", 99*99);
+  } else {
+    sc("n", pn, 99*99);
+  };
+};
+if (gc("n") === "") {
+  rum();
 };
 
 // Background image & information
 var bn = Array(208, 209, 210);
-var iud = "Saturday 18<sup>th</sup> February 2017";
+var iud = "Saturday 18<sup>th</sup> February, 2017";
 var bo = function() {
   return bn[Math.floor(Math.random() * bn.length)];
 };
 var sbi = bo();
 document.getElementById("iue", iud);
 document.getElementById("b").style.backgroundImage = "url('a/i/b/" + sbi + ".jpg')";
+document.getElementById("iue").innerHTML = iud;
 var bii = function(x, y, z) {
   z = "https://unsplash.com/@" + z;
   document.getElementById("bii0").innerHTML = y;
@@ -79,7 +88,24 @@ var cn = function(x) {
     y(ms[i]);
     console.log(i);
   };
+  if (x) {
+    setTimeout(function() {
+      document.getElementById("mom").style.visibility = "visible";
+      document.getElementById("mom").style.opacity = 1;
+      document.getElementById("o").style.opacity = 0;
+      setTimeout(function() {
+        document.getElementById("o").style.visibility = "hidden";
+      }, 301);
+    }, 300);
+  } else {
+    document.getElementById("o").style.opacity = 1;
+    document.getElementById("o").style.visibility = "visible";
+  };
 };
+  // Close menu button
+document.getElementById("cn").addEventListener("click", function() {
+  cn();
+}, false);
   // Open options menu
 document.getElementById("o").addEventListener("click", function() {
   cn(true);
@@ -97,6 +123,76 @@ document.getElementById("gs").addEventListener("click", function() {
     document.getElementById("b").style.webkitFilter = "grayscale(0)";
   };
 }, false);
+  // Toggle 24 hour time
+if (gc("otht") === "") {
+  sc("ogs", "12", 99*99);
+};
+document.getElementById("tht").addEventListener("click", function() {
+
+}, false);
+
+// Clock and date
+var nd;
+var nm;
+var ne;
+var st;
+var htf
+var td = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+var tm = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+setInterval(c, 100);
+function c() {
+  var d = new Date();
+  nd = d.getDay();
+  nm = d.getMonth();
+  ne = d.getDate();
+  var nh = d.getHours, nmm = d.getMinutes, ap;
+  var th = d.getHours();
+  if (nh === 0) {
+    ap = " AM";
+    nh = 12;
+  } else if (nh < 12) {
+    ap = " AM";
+  } else if (nh === 12) {
+    ap = " PM";
+  } else if (nh > 12) {
+    ap = " PM";
+    nh -= 12;
+  };
+  if (nmm <= 9) {
+    nmm = "" + nmm;
+  };
+  if (ne === 1 || ne === 21 || ne === 31) {
+    st = "st";
+  } else if (ne === 2 || ne === 22) {
+    st = "nd";
+  } else if (ne === 3 || ne === 23) {
+    st = "rd";
+  } else {
+    st = "th";
+  };
+  var nnn;
+  if (gc("n") != "false") {
+    nnn = true;
+  };
+  if (th < 12) {
+    if (nnn) {
+      document.getElementById("ab").innerHTML = "Good morning, " + gc("n");
+    } else {
+      document.getElementById("ab").innerHTML = "Good morning";
+    };
+  } else if (th < 18) {if (nnn) {
+      document.getElementById("ab").innerHTML = "Good afternoon, " + gc("n");
+    } else {
+      document.getElementById("ab").innerHTML = "Good afternoon";
+    };
+  } else {
+    if (nnn) {
+      document.getElementById("ab").innerHTML = "Good evening, " + gc("n");
+    } else {
+      document.getElementById("ab").innerHTML = "Good evening";
+    };
+  };
+};
 
 // Page load complete
 window.onload = function() {
@@ -105,8 +201,18 @@ window.onload = function() {
     document.getElementById("b").style.webkitFilter = "grayscale(0)";
   };
   setTimeout(function() {
-  document.getElementById("o").style.opacity = 1;
-}, 300);
+    document.getElementById("o").style.opacity = 1;
+    document.getElementById("dt").style.opacity = 1;
+  }, 300);
+  setTimeout(function() {
+    document.getElementById("dt").style.opacity = 0;
+    setTimeout(function() {
+      document.getElementById("dt").innerHTML = "Skye New Tab";
+      setTimeout(function() {
+        document.getElementById("dt").style.opacity = 1;
+      }, 99);
+    }, 501);
+  }, 2300);
 };
 
 // Google Analytics

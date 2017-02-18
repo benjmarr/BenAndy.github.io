@@ -19,6 +19,20 @@ bkgrndImgInf4 = bii3
 bkgrndImgInf = biim
 options = o
 opGryscl = ogs
+dText = dt
+clockBox = cb
+nday = nd
+nmonth = nm
+ndate = ne
+strdndth = st
+hourtf = htf
+tday = td
+tmonth = tm
+clock = c
+retriveUserName = rum
+userName = n
+alertBox = ab
+opTwntyFrHrTm = tht
 
 TO CLOSE ANY MENU = cn
 
@@ -32,3 +46,6 @@ opM = mom
 optionsMenu = om
 opTtl = omt
 optionsCog = oc
+pageTitle = ts
+mainClock = mc
+mainAlert = ma

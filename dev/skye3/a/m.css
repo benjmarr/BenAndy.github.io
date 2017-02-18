@@ -43,7 +43,7 @@ a:hover {
 
 .om {
   border-radius: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   cursor: default;
   background-color: black;
   opacity: 0;
@@ -61,6 +61,38 @@ a:hover {
   color: white;
   position: absolute;
   transition: opacity 0.3s;
+}
+
+.ma {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  margin-top: 2%;
+  cursor: default;
+  text-align: center;
+  font-size: 200%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.mc {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  margin-top: 10%;
+  cursor: default;
+  text-align: center;
+  font-size: 700%;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.ts {
+  color: white;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  opacity: 0;
+  cursor: default;
+  margin-top: -1.5%;
+  transition: opacity 0.5s;
 }
 
 .oc {
