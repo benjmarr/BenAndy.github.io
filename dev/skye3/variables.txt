@@ -1,0 +1,21 @@
+VARIABLES
+~~~~~~~~~
+backgroundNames = bn
+backgroundNumber = bo
+ckiUpdDte = cud
+clearMenu = cm
+getCookie = gc
+imageUpdateDate = iud
+rootUrl = rl
+setCookie = sc
+
+TO CLOSE ANY MENU = cn
+
+~~~~~~~
+CSS IDS
+~~~~~~~
+body = a
+header = b
+infoImgUpdt = iue
+opM = mom
+optionsMenu = om
