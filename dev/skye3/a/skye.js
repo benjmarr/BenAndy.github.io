@@ -1,5 +1,5 @@
 // Copyright Benjamin Developments (c) 2017 - All rights reserved
-console.log("load");
+console.log("js start");
 var rl = "https://github.com/BenAndy/SkyeNewTab/tree/master";
 var cud = "February 18th, 2017";
 
@@ -41,10 +41,83 @@ var cm = function(x) {
 
 };
 
-// Background image
+// Background image & information
 var bn = Array(208, 209, 210);
 var iud = "Saturday 18<sup>th</sup> February 2017";
 var bo = function() {
-  return bn[Math.floor(math.random() * bn.length)];
+  return bn[Math.floor(Math.random() * bn.length)];
 };
+var sbi = bo();
 document.getElementById("iue", iud);
+document.getElementById("b").style.backgroundImage = "url('a/i/b/" + sbi + ".jpg')";
+var bii = function(x, y, z) {
+  z = "https://unsplash.com/@" + z;
+  document.getElementById("bii0").innerHTML = y;
+  document.getElementById("bii1").innerHTML = "<a target='_blank' href='" + z + "'>" + z + "</a>";
+  document.getElementById("bii2").innerHTML = "<a target='_blank' href='https://unsplash.com/photos/" + x + "'>" + "https://unsplash.com/photos/" + x + "</a>"
+  document.getElementById("bii3").innerHTML = "<a target='_blank' href='" + z + "/portfolio'>Click to see</a>";
+};
+if (sbi === bn[0]) {
+  bii("Sq8rpq2KB7U", "Vinh Pham", "fluffpiece");
+} else if (sbi === bn[1]) {
+  bii("pGKyqck99cg", "Jacob Rank", "jacobaustinrank");
+} else if (sbi === bn[2]) {
+  bii("EARYIkg21D4", "Maja Petric", "majapetric");
+};
+
+// Set/Read/Change/Open options
+  // Close all menus
+var cn = function(x) {
+  var ms = Array("mom");
+  var y = function(z) {
+    setTimeout(function() {
+      document.getElementById(z).style.visibility = "hidden";
+    }, 301);
+  };
+  for (i = 0; i < ms.length; i++) {
+    document.getElementById(ms[i]).style.opacity = 0;
+    y(ms[i]);
+    console.log(i);
+  };
+};
+  // Open options menu
+document.getElementById("o").addEventListener("click", function() {
+  cn(true);
+}, false);
+  // Toggle background grayscale
+if (gc("ogs") === "") {
+  sc("ogs", "f", 99*99);
+};
+document.getElementById("gs").addEventListener("click", function() {
+  if (gc("ogs") === "f") {
+    sc("ogs", "t", 99*99);
+    document.getElementById("b").style.webkitFilter = "grayscale(1)";
+  } else {
+    sc("ogs", "f", 99*99);
+    document.getElementById("b").style.webkitFilter = "grayscale(0)";
+  };
+}, false);
+
+// Page load complete
+window.onload = function() {
+  document.getElementById("a").style.opacity = 1;
+  if (gc("ogs") === "f") {
+    document.getElementById("b").style.webkitFilter = "grayscale(0)";
+  };
+  setTimeout(function() {
+  document.getElementById("o").style.opacity = 1;
+}, 300);
+};
+
+// Google Analytics
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-89454896-3']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = 'https://ssl.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+console.log("js end");

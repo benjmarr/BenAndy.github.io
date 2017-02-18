@@ -2,12 +2,23 @@ VARIABLES
 ~~~~~~~~~
 backgroundNames = bn
 backgroundNumber = bo
+changeToID = cti
 ckiUpdDte = cud
 clearMenu = cm
 getCookie = gc
 imageUpdateDate = iud
 rootUrl = rl
+setBack = sb
+setBackID = sbi
 setCookie = sc
+backImageInfo = bii
+bkgrndImgInf1 = bii0
+bkgrndImgInf2 = bii1
+bkgrndImgInf3 = bii2
+bkgrndImgInf4 = bii3
+bkgrndImgInf = biim
+options = o
+opGryscl = ogs
 
 TO CLOSE ANY MENU = cn
 
@@ -19,3 +30,5 @@ header = b
 infoImgUpdt = iue
 opM = mom
 optionsMenu = om
+opTtl = omt
+optionsCog = oc
