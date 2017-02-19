@@ -1,6 +1,6 @@
 // Copyright Benjamin Developments (c) 2017 - All rights reserved
 var rl = "https://github.com/BenAndy/SkyeNewTab/tree/master";
-var cud = "February 18th, 2017";
+var cud = "000001";
 
 // Cookie handlers
 function sc(cname, cvalue, exdays) {
@@ -34,6 +34,16 @@ if (document.addEventListener) {
     };
   });
 };
+
+// Display alert message if need be
+if (gc("alrtmsg") != cud) {
+  document.getElementById("am").style.visibility = "visible";
+  document.getElementById("am").style.opacity = 0.9;
+  sc("alrtmsg", cud, 99*99);
+};
+document.getElementById("cnam").addEventListener("click", function() {
+  cn();
+}, false);
 
 // Get name
 var rum = function() {
@@ -76,7 +86,7 @@ if (sbi === bn[0]) {
 // Set/Read/Change/Open options
     // Close all menus
 var cn = function(x) {
-  var ms = Array("mom", "dfm", "sbr", "biim");
+  var ms = Array("mom", "dfm", "sbr", "biim", "am");
   var y = function(z) {
     setTimeout(function() {
       document.getElementById(z).style.visibility = "hidden";

@@ -134,10 +134,11 @@ a:hover {
 .mc {
   font-family: 'Titillium Web', sans-serif;
   color: white;
-  margin-top: 10%;
+  margin-top: 7%;
+  padding-bottom: 2%;
   cursor: default;
   text-align: center;
-  font-size: 700%;
+  font-size: 1000%;
   opacity: 0;
   transition: opacity 0.4s;
 }
