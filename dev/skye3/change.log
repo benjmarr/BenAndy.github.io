@@ -1,0 +1,375 @@
+Skye New Tab change log
+All changes can be viewed at https://github.com/BenAndy/SkyeNewTab/commits/master
+
+v2.15.215:
+Added three new background images.
+
+v2.15.214:
+Titillium Web font now sources from Google Fonts, not locally.
+Moved searchBox.js, links.js and background.js into skye.js.
+Removed calls.js.
+Removed browser action popup as it was unnecessary.
+
+v2.15.213:
+Fixed small text issue (line 4 - assets/background.js).
+
+v2.15.212:
+Removed unused CSS rule.
+Added five new background images.
+
+v2.15.211:
+Added three new background images.
+
+v2.15.210:
+Fixed small error with "chrome://newtab" file name.
+
+v2.15.209:
+Added five new background images.
+
+v2.15.208:
+File rename to help identify used pages with Google Analytics.
+
+v2.15.207:
+Small text change.
+Added Google Analytics to pass the content security protocol.
+
+v2.15.206:
+Added five new background images.
+
+v2.15.205:
+Implemented Google Analytics.
+Copyright changes.
+
+v2.15.204:
+Added three new background images.
+Copyright changes.
+
+v2.15.203:
+Fixed text jump when loading popup.
+Removed timed background changes.
+
+v2.15.202:
+Added four new background images.
+
+v2.15.201:
+Added two new background images.
+
+v2.15.200:
+Fixed small typo which caused massive issues.
+
+v2.15.199:
+Added three new background images.
+
+v2.15.198:
+Fixed an issue where "Not Connected" message wouldn't display when offline.
+
+v2.15.197:
+Changed opening background color to white.
+
+v2.15.196:
+Reduced stored background images to only two.
+Added two new background images.
+Removed keyboard shortcut to change background.
+Changed default icon visibility settings to option 4.
+Background image now automatically cycles every 20 minutes.
+Changed load animatins on icon visibility option 4.
+Added fade in animation to "connected"/"not connected" text.
+
+v2.15.195:
+Re-wrote background.js.
+Increased page opening load time.
+
+v2.14.195:
+Background now changes every ten minutes, instead of every five.
+
+v2.14.194:
+Added six new background images.
+
+v2.14.193:
+Removed two backgrounds images to decrease extension download size. There are now eight (8) background images on file.
+Removed old commented code from searchBox.js.
+Made a "makeSearchBox" function in searchBox.js.
+Removed favicon code from index.html as it's not needed.
+
+v2.14.192:
+Added "Fresh New Tab Page for Google Chrome" to popup page.
+
+v2.14.191:
+Removed new logo file as it's not currently being used.
+
+v2.14.190:
+Added "Fresh New Tab Page for Google Chrome" before "Skye New Tab" title.
+Moved innerHTML() code down a few lines with other custom methods.
+Reverted back to old icon.
+
+v2.14.189:
+Added icon image to assets/images/skyeIcon_128_edited-3.jpg.
+Added new icon into manifest.json.
+
+v2.14.188:
+Fixed issue where welcome message wouldn't display.
+
+v2.14.187:
+Added eight new background images.
+Fixed footer issues in menu.
+Fixed footer spacing issue in cookie update message.
+Triggered cookie update message on first v2.14.187 load.
+
+v2.14.186:
+Copyright updates.
+Updated manifest.json. You now must be running Google Chrome version 48.0.2564 or newer.
+
+v2.14.185:
+Added three new background images.
+
+v2.14.184:
+Added four new background images.
+
+v2.14.183:
+Added Skye New Tab birthday to the events.
+
+v2.14.182:
+Added three new background images.
+
+v2.14.181:
+Added five new background images.
+
+v2.14.180:
+Removed advertisement space.
+Fixed grammar error in line 2 of change.log.
+
+v2.14.179:
+Lowered the chance of getting the same background image twice in a row.
+Small changes to the background image data formatting.
+Added five new background images.
+
+v2.14.178:
+Updated Instragram logo (https://github.com/BenAndy/SkyeNewTab/issues/17).
+
+v2.14.177:
+Added five new background images.
+
+v2.14.176:
+Removed some unnecessary lines of code from popup.html.
+Spaced out the popup menu.
+Changed the date font size on the popup menu.
+Removed the AM/PM indicator from the popup menu.
+Updated "author" in manifest.json from "Benjamin" to "Benjamin Developments".
+
+v2.14.175:
+Small changes in background.js decrease file size (https://github.com/BenAndy/SkyeNewTab/issues/16).
+Added six new background images.
+Removed 10 images from the download file in an attempt to decrease extension download times. There will now be a range of 10 background images, instead of 20 (https://github.com/BenAndy/SkyeNewTab/issues/16).
+
+v2.14.174:
+Added six new background images.
+
+v2.14.173:
+Added seven new background images.
+
+v2.14.172:
+Fixed an issue where background images wouldn't display in popup window.
+Minor changes to the popup window.
+Fixed an issue where cookie update alerts would show when you open Skye for the very first time.
+
+v2.14.171:
+Changed the five minute background change interval from since you loaded the page, from every five minutes according to clock (https://github.com/BenAndy/SkyeNewTab/issues/15).
+Removed old commented code that is no longed needed.
+
+v2.14.170:
+Added five new background images.
+Added 'sha256-gtWI+QKNgFNitrRjtO4FMMtjswIRSSEukir/J8SGoWk=' hash to CSP (https://github.com/BenAndy/SkyeNewTab/issues/14).
+
+v2.14.169:
+Added four new background images.
+
+v2.14.168:
+Removed a comment that is no longer needed.
+Removed an interval function that is no longer needed.
+Removed a title tag that is no longer needed.
+Updated homepage URL in manifest.json.
+Updated security policy in manifest.json.
+Added footer.js for footer API.
+
+v2.14.167:
+Right click now works in the search box (https://github.com/BenAndy/SkyeNewTab/issues/13).
+
+v2.14.166:
+Clicking on the image next to the search box now brings up the search box menu.
+Small grammar changes in search box menu.
+
+v2.14.165:
+Removed background image author's web address data and now use https://unsplash.com/AUTHOR/portfolio.
+Added one new background image.
+Compacted image data array.
+Link to https://unsplash.com in background image data menu now opens in new tab.
+Updated author in index.html and popup.html's meta data.
+
+v2.14.164:
+Added background image author's web address to image information.
+
+v2.14.163:
+Added three new background images.
+
+v2.14.162:
+Added placeholder for background image author's web address.
+
+v2.14.161:
+Fixed issue where AM/PM would still show in 24 hour time.
+Moved advertisement related things to advertisement.js.
+Minor changes in background.js.
+
+v2.14.160:
+Small changes with gathering user's name.
+Reversed change.log from oldest-newest to newest-oldest.
+
+v2.14.159:
+Changed get image URL for online/offline detection.
+
+v2.14.158:
+Separated advertisement from online/offline and Unsplash credit.
+Moved online/offline and Unsplash credit back to it's original place.
+
+v2.14.157:
+Added text advertisement area.
+Compacted online/offline code.
+Moved advertisement area to bottom right.
+
+v2.14.156:
+Speed up background change animations.
+background.js enhancements.
+
+v2.14.155:
+Fixed version number error in change.log.
+
+v2.14.154:
+Made online/offline notice bigger.
+Minor enhancements.
+Added line 2 to change.log.
+
+v2.14.153:
+Added spacing above pop up menu title.
+
+v2.14.152:
+Pop up menu enhancements.
+
+v2.14.151:
+Fixed issue where unsplash credit would show in pop up (https://github.com/BenAndy/SkyeNewTab/issues/11).
+Fixed issue where keyboard controls where still active while typing in search boxes (https://github.com/BenAndy/SkyeNewTab/issues/10).
+
+v2.14.150:
+Added spacing below the pop up menu.
+Disabled keyboard shortcuts in pop up menu.
+Implemented popup.js code into skye.js and searchBox.js & removed popup.js.
+
+v2.14.149:
+Added a pop up menu.
+
+v2.14.148:
+Decreased page opening animation time.
+
+v2.14.147:
+Added an online/offline indicator (top right corner) (https://github.com/BenAndy/SkyeNewTab/issues/9).
+Fixed typo - line 100 (skye.js).
+Added some of the font data locally, to decrease external source load time.
+
+v2.14.146:
+Added five new background images.
+
+v2.14.145:
+Added two new background images.
+
+v2.14.144:
+Changed all links to secure HTTP (HTTPS).
+
+v2.14.143:
+Added three new background images.
+
+v2.14.142:
+Small fixes and changes.
+
+v2.14.141:
+Added six new background images.
+
+v2.14.140:
+Added four new background images.
+
+v2.14.139:
+Added GitHub search.
+
+v2.14.138:
+Fixed typo (https://github.com/BenAndy/SkyeNewTab/issues/8).
+
+v2.14.137:
+Added three new background images.
+
+v2.14.136:
+Small fix.
+
+v2.14.135:
+Added five new background images.
+
+v2.14.133:
+Introduction to 'innerHTML(id, string)' method.
+
+v2.14.132:
+Minor changes.
+
+v2.14.132:
+Fixed bug where hitting "ESC" on name prompt would return your name as "null" (https://github.com/BenAndy/SkyeNewTab/issues/6).
+
+v2.14.131:
+Added YouTube search engine to the search box.
+
+v2.14.130:
+Added new search engines to the search box. You can change the search engine you search with in the options menu, under "Search box options".
+Moved search box visibility settings to "Search box options", under the options menu.
+
+v2.14.129:
+Small changes.
+
+v2.14.128:
+Fixed change log URL.
+
+v2.14.127:
+Added grayscale animations when changing background images.
+
+v2.14.126:
+Added background grayscale feature.
+
+v2.14.125:
+Added three new background images.
+
+v2.14.124:
+Added terms and conditions link into footers.
+
+v2.14.123:
+Fixed small issue where the second date formatting option was missing a space between the month and the date values.
+
+v2.14.122:
+Changed the old cookie policy link (http://benandy.github.io/skye/cookiepolicy) to the new cookie policy link (http://benandy.github.io/cookie).
+
+v2.14.121:
+Added new background images.
+
+v2.14.120:
+Small improvements.
+
+v2.14.119:
+Added cookie update notice.
+
+v2.14.118:
+Added 24 hour time option.
+
+v2.14.117:
+Small changes & fixes.
+
+v2.14.116:
+Added footer for options menu and changed some of the information in the options menu.
+
+v2.14.115:
+Changed menu animation time, menus now open faster.
+Fixed issue where "Skye New Tab" heading wasn't visible in some view ports.
+
+v2.14.114:
+Implemented change log.

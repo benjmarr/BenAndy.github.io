@@ -41,6 +41,27 @@ a:hover {
   cursor: pointer;
 }
 
+.omf {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.ll {
+  padding-left: 15px;
+  cursor: default;
+  padding-right: 15px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.l {
+  margin-top: 5%;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 1s;
+}
+
 .om {
   border-radius: 10px;
   font-family: 'Titillium Web', sans-serif;
@@ -61,6 +82,31 @@ a:hover {
   color: white;
   position: absolute;
   transition: opacity 0.3s;
+}
+
+#si {
+  background-color: transparent;
+  font-family: 'Titillium Web', sans-serif;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 3%;
+  margin-bottom: 1%;
+  color: white;
+}
+
+.sbc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1.5%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .md {

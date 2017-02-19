@@ -76,7 +76,7 @@ if (sbi === bn[0]) {
 // Set/Read/Change/Open options
     // Close all menus
 var cn = function(x) {
-  var ms = Array("mom", "dfm");
+  var ms = Array("mom", "dfm", "sbr", "biim");
   var y = function(z) {
     setTimeout(function() {
       document.getElementById(z).style.visibility = "hidden";
@@ -106,6 +106,12 @@ document.getElementById("cnmom").addEventListener("click", function() {
   cn();
 }, false);
 document.getElementById("cndfm").addEventListener("click", function() {
+  cn();
+}, false);
+document.getElementById("cnsbr").addEventListener("click", function() {
+  cn();
+}, false);
+document.getElementById("cnbiim").addEventListener("click", function() {
   cn();
 }, false);
     // Open options menu
@@ -171,6 +177,66 @@ document.getElementById("dfo2").addEventListener("click", function() {
 document.getElementById("dfo3").addEventListener("click", function() {
   sc("dfo", "3", 99*99);
 }, false);
+    // Change or remove your name
+document.getElementById("cu").addEventListener("click", function() {
+  rum();
+  cn();
+}, false);
+    // Search box options
+document.getElementById("osb").addEventListener("click", function() {
+  cn();
+  setTimeout(function() {
+    document.getElementById("sbr").style.visibility = "visible";
+    document.getElementById("sbr").style.opacity = 0.9;
+  }, 400);
+}, false);
+if (gc("osb") === "") {
+  sc("osb", "g", 99*99);
+};
+if (gc("osbvh") === "") {
+  sc("osbvh", "v", 99*99);
+};
+document.getElementById("sbrvh").addEventListener("click", function() {
+  if (gc("osbvh") === "v") {
+    sc("osbvh", "h", 99*99);
+  } else {
+    sc("osbvh", "v", 99*99);
+  };
+  ttt();
+}, false);
+document.getElementById("sbr0").addEventListener("click", function() {
+  sc("osb", "g", 99*99);
+  sc("osbvh", "v", 99*99);
+  ttt();
+}, false);
+document.getElementById("sbr1").addEventListener("click", function() {
+  sc("osb", "t", 99*99);
+  sc("osbvh", "v", 99*99);
+  ttt();
+}, false);
+document.getElementById("sbr2").addEventListener("click", function() {
+  sc("osb", "f", 99*99);
+  sc("osbvh", "v", 99*99);
+  ttt();
+}, false);
+document.getElementById("sbr3").addEventListener("click", function() {
+  sc("osb", "y", 99*99);
+  sc("osbvh", "v", 99*99);
+  ttt();
+}, false);
+document.getElementById("sbr4").addEventListener("click", function() {
+  sc("osb", "gi", 99*99);
+  sc("osbvh", "v", 99*99);
+  ttt();
+}, false);
+    // View background image infomration
+document.getElementById("ibi").addEventListener("click", function() {
+  cn();
+  setTimeout(function() {
+    document.getElementById("biim").style.visibility = "visible";
+    document.getElementById("biim").style.opacity = 1;
+  }, 400);
+}, false);
 
 // Clock and date
 var nd;
@@ -180,7 +246,7 @@ var st;
 var htf;
 var td = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var tm = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-setInterval(c, 1000);
+setInterval(c, 100);
 function c() {
   var d = new Date();
   nd = d.getDay();
@@ -258,9 +324,44 @@ function c() {
   };
 };
 
+// Search box
+var hasi = function() {
+  var x = Array("0", "1", "2", "3", "4");
+  for (i = 0; i < x.length; i++) {
+    document.getElementById("si" + x[i]).style.opacity = 0;
+  };
+};
+var msb = function(x, y) {
+  document.getElementById("qb").innerHTML = "<form id='formForm' method='get' action='" + x + "'><input type='text' name='q' size='31' id='si' /></form>";
+  hasi();
+  setTimeout(function() {
+    console.log("si" + y);
+    document.getElementById("si" + y).style.opacity = 1;
+    if (gc("osbvh") === "h") {
+      hasi();
+      document.getElementById("qb").style.opacity = 0;
+    } else {
+      document.getElementById("qb").style.opacity = 1;
+    };
+  }, 100);
+};
+var ttt = function() {
+  if (gc("osb") === "g") {
+    msb("https://www.google.com/search", 0);
+  } else if (gc("osb") === "t") {
+    msb("https://www.twitter.com/search", 1);
+  } else if (gc("osb") === "f") {
+    msb("https://www.facebook.com/search/top", 2);
+  } else if (gc("osb") === "y") {
+    msb("https://www.youtube.com/reults", 3);
+  } else if (gc("osb") === "gi") {
+    msb("https://www.github.com/search", 4);
+  };
+};
+ttt();
+
 // Page load complete
 window.onload = function() {
-  c();
   document.getElementById("a").style.opacity = 1;
   if (gc("ogs") === "f") {
     document.getElementById("b").style.webkitFilter = "grayscale(0)";
@@ -271,6 +372,7 @@ window.onload = function() {
     document.getElementById("cb").style.opacity = 1;
     document.getElementById("db").style.opacity = 1;
     document.getElementById("ab").style.opacity = 1;
+    document.getElementById("ld").style.opacity = 1;
   }, 300);
   setTimeout(function() {
     document.getElementById("dt").style.opacity = 0;
