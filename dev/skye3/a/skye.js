@@ -90,19 +90,22 @@ var cn = function(x) {
   if (x) {
     setTimeout(function() {
       document.getElementById("mom").style.visibility = "visible";
-      document.getElementById("mom").style.opacity = 0.8;
+      document.getElementById("mom").style.opacity = 0.9;
       document.getElementById("o").style.opacity = 0;
       setTimeout(function() {
         document.getElementById("o").style.visibility = "hidden";
       }, 301);
-    }, 300);
+    }, 400);
   } else {
     document.getElementById("o").style.opacity = 1;
     document.getElementById("o").style.visibility = "visible";
   };
 };
     // Close menu button
-document.getElementById("cn").addEventListener("click", function() {
+document.getElementById("cnmom").addEventListener("click", function() {
+  cn();
+}, false);
+document.getElementById("cndfm").addEventListener("click", function() {
   cn();
 }, false);
     // Open options menu
@@ -127,10 +130,11 @@ if (gc("otht") === "") {
   sc("otht", "12", 99*99);
 };
 document.getElementById("tht").addEventListener("click", function() {
+  console.log("x");
   if (gc("otht") === "24") {
-    gc("otht", "12", 99*99);
+    sc("otht", "12", 99*99);
   } else {
-    gc("otht", "24", 99*99);
+    sc("otht", "24", 99*99);
   };
 }, false);
     // Toggle AM/PM visibility
@@ -152,8 +156,8 @@ document.getElementById("df").addEventListener("click", function() {
   cn();
   setTimeout(function() {
     document.getElementById("dfm").style.visibility = "visible";
-    document.getElementById("dfm").style.opacity = 1;
-  }, 300);
+    document.getElementById("dfm").style.opacity = 0.9;
+  }, 400);
 }, false);
 document.getElementById("dfo0").addEventListener("click", function() {
   sc("dfo", "0", 99*99);
@@ -167,17 +171,16 @@ document.getElementById("dfo2").addEventListener("click", function() {
 document.getElementById("dfo3").addEventListener("click", function() {
   sc("dfo", "3", 99*99);
 }, false);
-// TODO MAKE SURE THIS WORKS AND FIX grayscale
 
 // Clock and date
 var nd;
 var nm;
 var ne;
 var st;
-var htf
+var htf;
 var td = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 var tm = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-setInterval(c, 100);
+setInterval(c, 1000);
 function c() {
   var d = new Date();
   nd = d.getDay();
@@ -197,7 +200,7 @@ function c() {
     nh -= 12;
   };
   if (nmm <= 9) {
-    nmm = "" + nmm;
+    nmm = "0" + nmm;
   };
   if (ne === 1 || ne === 21 || ne === 31) {
     st = "st";
@@ -231,8 +234,12 @@ function c() {
     };
   };
   if (gc("otht") === "24") {
-    htf = nh + 12;
-    document.getElementById("cb").innerHTML = htf + ":" + nmm;
+    if (nh > 12) {
+      htf = nh + 12;
+      document.getElementById("cb").innerHTML = htf + ":" + nmm;
+    } else {
+      document.getElementById("cb").innerHTML = nh + ":" + nmm;
+    };
   } else {
     if (gc("oap") === "v") {
       document.getElementById("cb").innerHTML = nh + ":" + nmm + ap;
@@ -253,6 +260,7 @@ function c() {
 
 // Page load complete
 window.onload = function() {
+  c();
   document.getElementById("a").style.opacity = 1;
   if (gc("ogs") === "f") {
     document.getElementById("b").style.webkitFilter = "grayscale(0)";

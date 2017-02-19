@@ -43,8 +43,10 @@ opDteFom2 = dfo1
 opDteFom3 = dfo2
 opDteFom4 = dfo3
 opDteFom = dfo
+nhour = nh
+nmin = nmm
 
-TO CLOSE ANY MENU = cn
+TO CLOSE ANY MENU = cn + menuID
 
 ~~~~~~~
 CSS IDS
