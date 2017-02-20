@@ -1,6 +1,13 @@
 Skye New Tab change log
 All changes can be viewed at https://github.com/BenAndy/SkyeNewTab/commits/master
 
+v3.0.1:
+Changed clock text size.
+Changed hotlink icon size.
+Fixed 24 hour time (https://github.com/BenAndy/SkyeNewTab/issues/18).
+Added redirects for hotlinks.
+Fixed spelling issue on line 31 of newtab.html
+
 v3.0.0:
 Skye New Tab 3.0 is here! Every single line of code has been re-written from scratch to improve Skye's performance and your experiance using Skye.
 Please reprot all issues to benjaminandyy@gmail.com OR https://github.com/BenAndy/SkyeNewTab/issues

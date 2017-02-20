@@ -146,7 +146,6 @@ if (gc("otht") === "") {
   sc("otht", "12", 99*99);
 };
 document.getElementById("tht").addEventListener("click", function() {
-  console.log("x");
   if (gc("otht") === "24") {
     sc("otht", "12", 99*99);
   } else {
@@ -161,6 +160,10 @@ document.getElementById("ap").addEventListener("click", function() {
   if (gc("oap") === "v") {
     sc("oap", "h", 99*99);
   } else {
+    sc("oap", "v", 99*99);
+  };
+  if (gc("otht") === "24") {
+    sc("otht", "12", 99*99);
     sc("oap", "v", 99*99);
   };
 }, false);
@@ -310,9 +313,8 @@ function c() {
     };
   };
   if (gc("otht") === "24") {
-    if (nh > 12) {
-      htf = nh + 12;
-      document.getElementById("cb").innerHTML = htf + ":" + nmm;
+    if (nh < 12) {
+      document.getElementById("cb").innerHTML = nh + 12 + ":" + nmm;
     } else {
       document.getElementById("cb").innerHTML = nh + ":" + nmm;
     };
@@ -369,6 +371,31 @@ var ttt = function() {
   };
 };
 ttt();
+
+// Hotlinks click
+var rp = function(x) {
+  document.getElementById("a").style.backgroundColor = "#00000";
+  document.getElementById("a").style.opacity = 0;
+  window.location = x;
+};
+document.getElementById("l0").addEventListener("click", function() {
+  rp("https://www.google.com");
+}, false);
+document.getElementById("l1").addEventListener("click", function() {
+  rp("https://www.facebook.com");
+}, false);
+document.getElementById("l2").addEventListener("click", function() {
+  rp("https://www.instagram.com");
+}, false);
+document.getElementById("l3").addEventListener("click", function() {
+  rp("https://www.pinterest.com");
+}, false);
+document.getElementById("l4").addEventListener("click", function() {
+  rp("https://www.twitter.com");
+}, false);
+document.getElementById("l5").addEventListener("click", function() {
+  rp("https://youtube.com");
+}, false);
 
 // Page load complete
 window.onload = function() {

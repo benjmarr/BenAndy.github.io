@@ -59,7 +59,7 @@ a:hover {
   margin-top: 5%;
   opacity: 0;
   cursor: default;
-  transition: opacity 1s;
+  transition: opacity 0.3s;
 }
 
 .om {
@@ -134,8 +134,8 @@ a:hover {
 .mc {
   font-family: 'Titillium Web', sans-serif;
   color: white;
-  margin-top: 7%;
-  padding-bottom: 2%;
+  margin-top: 5%;
+  padding-bottom: 1%;
   cursor: default;
   text-align: center;
   font-size: 1000%;
