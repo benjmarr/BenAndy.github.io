@@ -1,7 +1,7 @@
 Atom Configuration:
 - Themes v
-  - UI Theme: One Dark
-  - Syntax Theme: Atom Gooey
+  - UI Theme: Nord Atom (nord-atom-ui)
+  - Syntax Theme: Base16 Tomorrow Dark
 - Packages v
   - minimap (Enabled)
   - activate-power-mode (Disabled)
