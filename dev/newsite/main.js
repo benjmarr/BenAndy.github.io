@@ -1,4 +1,5 @@
-// Copyright Benjamin Developments (c) 2016-2017 - All rights reserved
+// Copyright Benjamin Developments 2016-2017 (c) All rights reserved
+var version = "3.0.1";
 
 // Cookie handlers
 function sc(cname, cvalue, exdays) {
