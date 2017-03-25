@@ -1,0 +1,42 @@
+/*Copyright Benjamin Developments (c) 2016-2017 - All rights reserved*/
+
+header {
+  background-image: url("assets/back.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  margin-left: -8px;
+  margin-right: -8px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.titanic {
+  float: none;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 500%;
+  margin-top: -100%;
+  transition: margin-top 0.5s;
+}
+
+.subTitle {
+  font-family: 'Raleway', sans-serif;
+  padding-left: 0.4%;
+  margin-left: -100%;
+  transition: margin-left 0.5s;
+}
+
+.sTSmall {
+  font-size: 80%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 70%;
+}
