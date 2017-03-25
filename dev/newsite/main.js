@@ -1,5 +1,5 @@
 // Copyright Benjamin Developments 2015-2017 (c) All rights reserved
-var version = "3.0.2";
+var version = "3.0.3";
 console.log("Website version: v" + version);
 
 // Cookie handlers
@@ -20,18 +20,28 @@ function gc(cname) {
   return "";
 };
 
+if (dsu) {
+  $(".menuArrow").on("click", function() {
+    $(".menuArrow").animate({"-webkit-transform": "rotate(270deg)"}, 500);
+    console.log("x");
+  });
+};
+
 // Window on load
 window.onload = function() {
   $(".footer").html("<br /><br />Copyright Benjamin Developments 2015-2017 &copy; All rights reserved<br /><a href='https://benandy.github.io/cookie.html' target='_blank'>Cookie Policy</a> - <a href='https://benandy.github.io/privacy.html' target='_blank'>Privacy Policy</a> - <a href='https://benandy.github.io/terms' target='_blank'>Terms and Conditions</a>");
   if (dsu) {
+    $(".title").animate({"margin-top": "0px"}, 500);
     setTimeout(function() {
-      $("header").css({"opacity": "0.2"});
-    }, 100);
-    $(".title").css({"margin-top": "0px"});
-    setTimeout(function() {
-      $(".subTitle").css({"margin-left": "0px"});
-      $(".footer").css({"opacity": "1"});
-    }, 250);
+      $("header").animate({"opacity": "0.2"}, 500);
+      $(".footer").animate({"opacity": "1"}, 2000);
+      setTimeout(function() {
+        $(".menuArrow").animate({"margin-top": "0px"}, 500);
+        setTimeout(function() {
+          $(".subTitle").animate({"margin-left": "0px"}, 500);
+        }, 100);
+      }, 150);
+    }, 150);
   };
   if (pid === 0) {
 

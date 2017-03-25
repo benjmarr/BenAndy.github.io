@@ -11,7 +11,6 @@ header {
   margin-right: -8px;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.5s;
 }
 
 .titanic {
@@ -22,14 +21,12 @@ header {
   font-family: 'Raleway', sans-serif;
   font-size: 500%;
   margin-top: -100%;
-  transition: margin-top 0.5s;
 }
 
 .subTitle {
   font-family: 'Raleway', sans-serif;
   padding-left: 0.4%;
   margin-left: -100%;
-  transition: margin-left 0.5s;
 }
 
 .sTSmall {
@@ -42,5 +39,13 @@ header {
   color: #848484;
   opacity: 0;
   padding-bottom: 2%;
-  transition: opacity 2s;
+}
+
+.menuArrow {
+  text-align: center;
+  -webkit-transform: rotate(90deg);
+  margin-top: 1%;
+  font-size: 300%;
+  cursor: pointer;
+  margin-top: -100%;
 }
