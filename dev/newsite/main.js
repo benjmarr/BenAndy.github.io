@@ -1,5 +1,6 @@
-// Copyright Benjamin Developments 2016-2017 (c) All rights reserved
-var version = "3.0.1";
+// Copyright Benjamin Developments 2015-2017 (c) All rights reserved
+var version = "3.0.2";
+console.log("Website version: v" + version);
 
 // Cookie handlers
 function sc(cname, cvalue, exdays) {
@@ -21,13 +22,20 @@ function gc(cname) {
 
 // Window on load
 window.onload = function() {
-  setTimeout(function() {
-    $("header").css({"opacity": "0.2"});
-  }, 100);
-  $(".title").css({"margin-top": "0px"});
-  setTimeout(function() {
-    $(".subTitle").css({"margin-left": "0px"});
-  }, 250);
+  $(".footer").html("<br /><br />Copyright Benjamin Developments 2015-2017 &copy; All rights reserved<br /><a href='https://benandy.github.io/cookie.html' target='_blank'>Cookie Policy</a> - <a href='https://benandy.github.io/privacy.html' target='_blank'>Privacy Policy</a> - <a href='https://benandy.github.io/terms' target='_blank'>Terms and Conditions</a>");
+  if (dsu) {
+    setTimeout(function() {
+      $("header").css({"opacity": "0.2"});
+    }, 100);
+    $(".title").css({"margin-top": "0px"});
+    setTimeout(function() {
+      $(".subTitle").css({"margin-left": "0px"});
+      $(".footer").css({"opacity": "1"});
+    }, 250);
+  };
+  if (pid === 0) {
+
+  };
 };
 
 // Google Analytics

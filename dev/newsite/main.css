@@ -1,4 +1,4 @@
-/*Copyright Benjamin Developments 2016-2017 (c) All rights reserved*/
+/*Copyright Benjamin Developments 2015-2017 (c) All rights reserved*/
 
 header {
   background-image: url("assets/back.jpg");
@@ -40,4 +40,7 @@ header {
   text-align: center;
   font-size: 70%;
   color: #848484;
+  opacity: 0;
+  padding-bottom: 2%;
+  transition: opacity 2s;
 }
