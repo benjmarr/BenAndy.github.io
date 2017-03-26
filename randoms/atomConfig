@@ -1,8 +1,10 @@
 Atom Configuration:
-- Themes v
+
+Themes...
   - UI Theme: One Dark
   - Syntax Theme: Base16 Tomorrow Dark
-- Packages v
+Packages...
   - minimap (Enabled)
   - activate-power-mode (Disabled)
   - todo-show (Enabled)
+  - Emmet
