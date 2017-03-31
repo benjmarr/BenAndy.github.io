@@ -1,5 +1,9 @@
 /*Copyright Benjamin Developments 2015-2017 (c) All rights reserved*/
 
+.titanic {
+  float: none;
+}
+
 header {
   background-image: url("assets/back.jpg");
   background-repeat: repeat;
@@ -13,8 +17,21 @@ header {
   opacity: 0;
 }
 
-.titanic {
-  float: none;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 200;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .title {
@@ -41,11 +58,11 @@ header {
   padding-bottom: 2%;
 }
 
-.menuArrow {
+.navBar {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  -webkit-transform: rotate(90deg);
+  font-size: 120%;
   margin-top: 1%;
-  font-size: 300%;
-  cursor: pointer;
-  margin-top: -100%;
+  padding-bottom: 2%;
+  margin-left: -200%;
 }

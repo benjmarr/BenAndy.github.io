@@ -1,5 +1,5 @@
 // Copyright Benjamin Developments 2015-2017 (c) All rights reserved
-var version = "3.0.3";
+var version = "3.0.4b";
 console.log("Website version: v" + version);
 
 // Cookie handlers
@@ -21,10 +21,7 @@ function gc(cname) {
 };
 
 if (dsu) {
-  $(".menuArrow").on("click", function() {
-    $(".menuArrow").animate({"-webkit-transform": "rotate(270deg)"}, 500);
-    console.log("x");
-  });
+
 };
 
 // Window on load
@@ -36,15 +33,12 @@ window.onload = function() {
       $("header").animate({"opacity": "0.2"}, 500);
       $(".footer").animate({"opacity": "1"}, 2000);
       setTimeout(function() {
-        $(".menuArrow").animate({"margin-top": "0px"}, 500);
+        $(".navBar").animate({"margin-left": "0px"}, 600);
         setTimeout(function() {
           $(".subTitle").animate({"margin-left": "0px"}, 500);
         }, 100);
       }, 150);
     }, 150);
-  };
-  if (pid === 0) {
-
   };
 };
 
